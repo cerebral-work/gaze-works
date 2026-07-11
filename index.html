@@ -354,7 +354,28 @@ section { padding:8rem 2rem; position:relative; overflow-x:hidden; }
   padding:.2rem .5rem; border:1px solid var(--line); border-radius:3px;
 }
 .fragment mark { background:rgba(200,168,120,.2); color:var(--gold-bright); padding:0 .15em; border-radius:2px; }
-.fragment.highlighted { background:rgba(200,168,120,.06); border-radius:4px; }
+.fragment.highlighted { animation: fragHighlight 2.5s ease-out; }
+@keyframes fragHighlight {
+  0% { background:rgba(224,196,152,.15); border-color:var(--gold); }
+  100% { background:transparent; border-color:var(--border); }
+}
+.fragment:hover .frag-share { opacity:1; }
+.fragment .frag-share {
+  font-family:'Spline Sans',sans-serif; font-style:normal; font-size:.5rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint);
+  cursor:pointer; opacity:0; transition:opacity .3s; margin-left:.5rem; vertical-align:middle;
+}
+.fragment .frag-share:hover { color:var(--gold); }
+
+/* TOAST */
+.toast {
+  position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(120%);
+  background:var(--bg-card); border:1px solid var(--gold-deep); padding:.8rem 1.5rem;
+  font-size:.7rem; letter-spacing:.1em; color:var(--gold-bright); z-index:400;
+  border-radius:4px; transition:transform .4s cubic-bezier(.16,1,.3,1);
+  pointer-events:none; font-family:'Spline Sans',sans-serif;
+}
+.toast.show { transform:translateX(-50%) translateY(0); }
 .no-results { text-align:center; padding:3rem; color:var(--ink-faint); font-style:italic; display:none; }
 
 /* MANIFESTO */
@@ -636,6 +657,7 @@ footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; 
   <button id="installBtn">Install</button>
   <button class="close" id="installClose">×</button>
 </div>
+<div class="toast" id="toast"></div>
 
 <div class="kbd-hint">
   <kbd>j</kbd>/<kbd>k</kbd> navigate · <kbd>/</kbd> search · <kbd>e</kbd> expand
@@ -801,7 +823,6 @@ try {
 
   // Initial render — Claude era
   renderHeatmap(...eraRange('claude'));
-
   // Scrubber events
   scrubber.addEventListener('click', (e) => {
     const target = e.target;
@@ -819,20 +840,31 @@ try {
   const sortsEl = document.getElementById('distSorts');
   const filtersEl = document.getElementById('distFilters');
 
-  // State
-  let sortKey = 'commits';
-  let activeFilter = 'all';
-
-  // Build category filter chips from repo data
+  // State — check URL params for persisted values
+  const params = new URLSearchParams(location.search);
+  let sortKey = params.get('sort') || 'commits';
+  let activeFilter = params.get('filter') || 'all';
   const cats = [...new Set(repos.map(r => r.category))].sort();
   const filterChips = [{ key: 'all', label: 'All' }, ...cats.map(c => ({ key: c, label: c }))];
   filterChips.forEach(({ key, label }) => {
     const chip = document.createElement('button');
-    chip.className = 'dist-filter-chip' + (key === 'all' ? ' active' : '');
+    chip.className = 'dist-filter-chip' + (key === activeFilter ? ' active' : '');
     chip.dataset.category = key;
     chip.textContent = label;
     filtersEl.appendChild(chip);
   });
+
+  // Set initial active sort button from URL param
+  sortsEl.querySelectorAll('.dist-sort-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.sort === sortKey);
+  });
+
+  function syncDistUrl() {
+    const u = new URL(location.href);
+    if (sortKey !== 'commits') u.searchParams.set('sort', sortKey); else u.searchParams.delete('sort');
+    if (activeFilter !== 'all') u.searchParams.set('filter', activeFilter); else u.searchParams.delete('filter');
+    history.replaceState(null, '', u);
+  }
 
   function renderDist() {
     list.innerHTML = '';
@@ -882,6 +914,7 @@ try {
       sortsEl.querySelectorAll('.dist-sort-btn').forEach(b => b.classList.remove('active'));
       target.classList.add('active');
       sortKey = target.dataset.sort || 'commits';
+      syncDistUrl();
       renderDist();
     }
   });
@@ -893,9 +926,11 @@ try {
       filtersEl.querySelectorAll('.dist-filter-chip').forEach(c => c.classList.remove('active'));
       target.classList.add('active');
       activeFilter = target.dataset.category || 'all';
+      syncDistUrl();
       renderDist();
     }
   });
+
 
   renderDist();
 })();
@@ -991,6 +1026,50 @@ let currentFiltered = [];
 const FRAG_BATCH = 15;
 let fragObserver = null;
 
+// Stable fragment ID from text (first 40 chars, base36)
+function fragId(text) {
+  // Use TextEncoder for Unicode-safe base64
+  const bytes = new TextEncoder().encode(text.slice(0, 40));
+  let bin = '';
+  for (const b of bytes) bin += String.fromCharCode(b);
+  return btoa(bin).replace(/[^a-zA-Z0-9]/g, '').slice(0, 12).toLowerCase();
+}
+// Build ID → index map for deep-link resolution
+const fragIdMap = new Map();
+fragments.forEach((f, i) => fragIdMap.set(fragId(f.t), i));
+
+function renderOneFragment(i, q) {
+  const f = currentFiltered[i];
+  const el = document.createElement('div');
+  el.className = 'fragment';
+  el.dataset.idx = i;
+  el.dataset.fragId = fragId(f.t);
+  let text = f.t;
+  if (q) {
+    const idx = text.toLowerCase().indexOf(q);
+    if (idx >= 0) {
+      text = text.substring(0, idx) + '<mark>' + text.substring(idx, idx + q.length) + '</mark>' + text.substring(idx + q.length);
+    }
+  }
+  const dayLabel = f.d || '';
+  const tagsHtml = f.tags.map(tg => '<span class="frag-tag">' + tg + '</span>').join('');
+  const shareHtml = '<span class="frag-share" title="Copy share link">🔗</span>';
+  el.innerHTML = text + '<span class="time">' + dayLabel + '</span>' + tagsHtml + shareHtml;
+
+  // Click share button to copy deep-link
+  const shareBtn = el.querySelector('.frag-share');
+  if (shareBtn) shareBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const url = location.origin + location.pathname + '#frag=' + el.dataset.fragId;
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(url).then(function() { showToast('Link copied'); }).catch(function() {});
+    }
+  });
+
+  fragList.appendChild(el);
+  requestAnimationFrame(() => el.classList.add('visible'));
+}
+
 function renderFragments() {
   const q = searchInput.value.toLowerCase().trim();
   let filtered = fragments;
@@ -1014,37 +1093,17 @@ function renderFragments() {
     sentinel.className = 'frag-sentinel';
     sentinel.style.height = '1px';
     fragList.appendChild(sentinel);
-    let nextBatch = initial;
-    fragObserver = new IntersectionObserver((entries) => {
+    let nextBatch = FRAG_BATCH;
+    fragObserver = new IntersectionObserver(function(entries) {
       if (entries[0].isIntersecting && nextBatch < currentFiltered.length) {
         const count = Math.min(FRAG_BATCH, currentFiltered.length - nextBatch);
         for (let i = 0; i < count; i++) renderOneFragment(nextBatch + i, q);
         nextBatch += count;
-        // Move sentinel to end
         fragList.appendChild(sentinel);
       }
     }, { rootMargin: '200px 0px' });
     fragObserver.observe(sentinel);
   }
-}
-
-function renderOneFragment(i, q) {
-  const f = currentFiltered[i];
-  const el = document.createElement('div');
-  el.className = 'fragment';
-  el.dataset.idx = i;
-  let text = f.t;
-  if (q) {
-    const idx = text.toLowerCase().indexOf(q);
-    if (idx >= 0) {
-      text = text.substring(0, idx) + '<mark>' + text.substring(idx, idx + q.length) + '</mark>' + text.substring(idx + q.length);
-    }
-  }
-  const dayLabel = f.d || '';
-  const tagsHtml = f.tags.map(tg => '<span class="frag-tag">' + tg + '</span>').join('');
-  el.innerHTML = text + '<span class="time">' + dayLabel + '</span>' + tagsHtml;
-  fragList.appendChild(el);
-  requestAnimationFrame(() => el.classList.add('visible'));
 }
 
 searchInput.addEventListener('input', renderFragments);
@@ -1073,16 +1132,74 @@ document.getElementById('exportBtn').addEventListener('click', () => {
   a.click();
 });
 
-// ============= SHARE FRAGMENT (deep-link) =============
-if (location.hash.startsWith('#frag=')) {
-  const fragId = location.hash.slice(6);
-  // Scroll to fragments section and highlight
-  setTimeout(() => {
-    document.getElementById('fragments').scrollIntoView();
-    const fragEl = fragList.querySelector('.fragment');
-    if (fragEl) fragEl.classList.add('highlighted');
-  }, 500);
+// ============= TOAST =============
+const toastEl = document.getElementById('toast');
+let toastTimer;
+function showToast(msg) {
+  toastEl.textContent = msg;
+  toastEl.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2000);
 }
+
+// ============= FRAGMENT DEEP-LINK =============
+function handleFragDeepLink() {
+  if (!location.hash.startsWith('#frag=')) return;
+  const id = location.hash.slice(6);
+  const idx = fragIdMap.get(id);
+  if (idx === undefined) return;
+
+  // Scroll to fragments section
+  document.getElementById('fragments')?.scrollIntoView();
+
+  // Find the fragment in current filtered list
+  const filteredIdx = currentFiltered.findIndex(f => fragId(f.t) === id);
+  const targetIdx = filteredIdx >= 0 ? filteredIdx : idx;
+
+  // If the fragment isn't rendered yet (beyond initial batch), render up to it
+  const existing = fragList.querySelector('.fragment[data-frag-id="' + id + '"]');
+  if (existing) {
+    existing.classList.add('highlighted');
+    existing.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } else {
+    // Render all fragments up to the target
+    const q = searchInput.value.toLowerCase().trim();
+    const count = Math.min(targetIdx + 1, currentFiltered.length);
+    for (let i = FRAG_BATCH; i < count; i++) renderOneFragment(i, q);
+    // Remove sentinel if it exists
+    fragList.querySelector('.frag-sentinel')?.remove();
+    // Add sentinel back at end if more remain
+    if (currentFiltered.length > count) {
+      const sentinel = document.createElement('div');
+      sentinel.className = 'frag-sentinel';
+      sentinel.style.height = '1px';
+      fragList.appendChild(sentinel);
+      let nextBatch = count;
+      if (fragObserver) fragObserver.disconnect();
+      fragObserver = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting && nextBatch < currentFiltered.length) {
+          const c = Math.min(FRAG_BATCH, currentFiltered.length - nextBatch);
+          for (let i = 0; i < c; i++) renderOneFragment(nextBatch + i, q);
+          nextBatch += c;
+          fragList.appendChild(sentinel);
+        }
+      }, { rootMargin: '200px 0px' });
+      fragObserver.observe(sentinel);
+    }
+    // Highlight and scroll
+    setTimeout(() => {
+      const el = fragList.querySelector('.fragment[data-frag-id="' + id + '"]');
+      if (el) {
+        el.classList.add('highlighted');
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 100);
+  }
+}
+
+window.addEventListener('hashchange', handleFragDeepLink);
+// Handle on initial load (after fragments render)
+setTimeout(handleFragDeepLink, 1000);
 
 // ============= KEYBOARD NAV =============
 let kbHighlightIdx = -1;
