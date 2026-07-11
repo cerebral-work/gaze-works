@@ -1159,7 +1159,7 @@ const revealObs = new IntersectionObserver((entries) => {
       e.target.querySelectorAll('.counter').forEach(animateCounter);
     }
   });
-}, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
+}, { threshold: 0, rootMargin: '0px 0px -80px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
 
 const statGrid = document.querySelector('.stats');
