@@ -12,7 +12,7 @@
  *   --fragments: also extract session fragments (slow, scans all session logs)
  */
 
-import { readFileSync, writeFileSync, readdirSync, statSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync, statSync, existsSync, realpathSync } from 'fs';
 import { execSync } from 'child_process';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -175,6 +175,7 @@ function collectCommitDays(repoPath: string): DayCount[] {
 
 function discoverRepos(): { name: string; path: string }[] {
   const repos: { name: string; path: string }[] = [];
+  const seenPaths = new Set<string>();  // dedup by realpath
 
   // Scan top-level project groups
   for (const group of readdirSync(projectsRoot)) {
@@ -185,7 +186,8 @@ function discoverRepos(): { name: string; path: string }[] {
 
     // Check if group itself is a git repo (e.g., 'identity', 'reverie')
     if (existsSync(join(groupPath, '.git'))) {
-      repos.push({ name: group, path: groupPath });
+      const real = realpathSync(groupPath);
+      if (!seenPaths.has(real)) { seenPaths.add(real); repos.push({ name: group, path: groupPath }); }
       continue;
     }
 
@@ -196,7 +198,8 @@ function discoverRepos(): { name: string; path: string }[] {
       try { subIsDir = statSync(subPath).isDirectory(); } catch { continue; }
       if (!subIsDir) continue;
       if (existsSync(join(subPath, '.git'))) {
-        repos.push({ name: `${group}/${sub}`, path: subPath });
+        const real = realpathSync(subPath);
+        if (!seenPaths.has(real)) { seenPaths.add(real); repos.push({ name: `${group}/${sub}`, path: subPath }); }
       }
     }
   }
@@ -314,11 +317,20 @@ console.log(`  Found ${repoPaths.length} git repos`);
 console.log('Collecting git stats...');
 const repos: Repo[] = [];
 const allCommitDays: Record<string, number> = {};
-
+const seenRepoKeys = new Set<string>();  // dedup by commit count + first hash
 for (const { name, path } of repoPaths) {
   process.stdout.write(`  ${name}...`);
   const stats = collectGitStats(path);
   if (!stats) { process.stdout.write(' skip (no git data)\n'); continue; }
+
+  // Dedup by commit count + first commit hash (catches worktrees/clones of same repo)
+  let firstHash = '';
+  try {
+    firstHash = execSync('git log --reverse --pretty=format:%H --all 2>/dev/null | head -1', { cwd: path, encoding: 'utf-8' }).trim();
+  } catch { /* ignore */ }
+  const dedupKey = `${stats.commits}:${firstHash}`;
+  if (seenRepoKeys.has(dedupKey)) { process.stdout.write(' skip (duplicate of earlier repo)\n'); continue; }
+  seenRepoKeys.add(dedupKey);
 
   const days = collectCommitDays(path);
   for (const { date, count } of days) {
