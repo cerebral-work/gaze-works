@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0908">
+<title>GAZE — Works of the Cerebral Work Institute</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="apple-touch-icon" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,500;1,9..144,700&family=Spline+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0908; --bg-soft: #131210; --bg-card: #16140f;
+  --ink: #e8e2d4; --ink-dim: #8a8270; --ink-faint: #4a4438;
+  --gold: #c8a878; --gold-bright: #e0c498; --gold-deep: #8a7050;
+  --rust: #8a4a30; --line: #2a2620;
+  --light-bg: #f5f0e6; --light-ink: #2a2218; --light-card: #ebe5d8; --light-line: #d5cbb8;
+  --light-gold: #8a6d3b; --light-gold-bright: #a8854a; --light-gold-dim: #b89a6a;
+}
+[data-theme="light"] {
+  --bg: var(--light-bg); --bg-soft: var(--light-card); --bg-card: var(--light-card);
+  --ink: var(--light-ink); --ink-dim: #6a6358; --ink-faint: #9a9388;
+  --gold: var(--light-gold); --gold-bright: var(--light-gold-bright); --gold-deep: var(--light-gold-dim);
+  --line: var(--light-line);
+}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior:smooth; }
+body {
+  background:var(--bg); color:var(--ink);
+  font-family:'Spline Sans',system-ui,sans-serif; font-weight:300; line-height:1.6;
+  overflow-x:hidden; text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  transition:background .5s,color .5s;
+}
+::-webkit-scrollbar { width:6px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--gold-deep); border-radius:3px; }
+.grain {
+  position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* SCROLL PROGRESS BAR */
+.scroll-progress {
+  position:fixed; top:0; left:0; height:2px; z-index:200;
+  background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-bright));
+  width:0%; transition:width .1s linear;
+}
+
+/* NAV */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  padding:1.25rem 2rem; display:flex; justify-content:space-between; align-items:center;
+  background:linear-gradient(180deg,rgba(10,9,8,.92) 0%,rgba(10,9,8,.7) 70%,transparent 100%);
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+}
+[data-theme="light"] nav {
+  background:linear-gradient(180deg,rgba(245,240,230,.92) 0%,rgba(245,240,230,.7) 70%,transparent 100%);
+}
+nav .mark { font-family:'Fraunces',serif; font-weight:900; font-size:1.1rem; letter-spacing:.15em; color:var(--gold); text-transform:uppercase; }
+nav .mark::before { content:'◉ '; font-size:.8rem; }
+nav .links { display:flex; gap:1.8rem; align-items:center; }
+nav .links a { font-size:.72rem; font-weight:400; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-dim); text-decoration:none; transition:color .3s; }
+nav .links a:hover { color:var(--gold-bright); }
+.theme-toggle {
+  background:transparent; border:1px solid var(--line); color:var(--gold-deep);
+  font-size:1rem; cursor:pointer; padding:.3rem .5rem; transition:all .3s; border-radius:4px;
+}
+.theme-toggle:hover { border-color:var(--gold); color:var(--gold); }
+@media (max-width:640px) { nav .links a:not(.theme-toggle) { display:none; } }
+
+/* HERO */
+.hero {
+  min-height:100vh; min-height:100dvh; display:flex; flex-direction:column; justify-content:center; align-items:center;
+  position:relative; padding:2rem; text-align:center;
+}
+.hero .eyebrow {
+  font-size:.68rem; font-weight:400; letter-spacing:.42em; text-transform:uppercase;
+  color:var(--gold-deep); margin-bottom:2.5rem;
+  opacity:0; animation:fadeUp 1.2s .3s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero h1 {
+  font-family:'Fraunces',serif; font-weight:900; font-size:clamp(3.5rem,14vw,11rem);
+  line-height:.9; letter-spacing:-.03em; color:var(--ink); max-width:12ch;
+  opacity:0; animation:fadeUp 1.4s .6s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero h1 .word { display:block; }
+.hero h1 .word:nth-child(2) { color:var(--gold); font-style:italic; font-weight:500; }
+.hero .sub {
+  font-family:'Fraunces',serif; font-style:italic; font-weight:300;
+  font-size:clamp(1rem,2.5vw,1.35rem); color:var(--ink-dim); max-width:40ch; margin-top:2.5rem; line-height:1.5;
+  opacity:0; animation:fadeUp 1.2s 1.2s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero .scroll-hint {
+  position:absolute; bottom:3rem; left:50%; transform:translateX(-50%);
+  font-size:.6rem; letter-spacing:.3em; text-transform:uppercase; color:var(--ink-faint);
+  opacity:0; animation:fadeUp 1s 2s cubic-bezier(.16,1,.3,1) forwards, pulse 2.5s 3s ease-in-out infinite;
+}
+.hero .scroll-hint::after { content:' ↓'; }
+.hero::after {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 30%,var(--bg) 85%); z-index:-1;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
+@keyframes pulse { 0%,100%{opacity:.4;} 50%{opacity:1;} }
+
+/* SECTIONS */
+section { padding:8rem 2rem; position:relative; }
+@media (max-width:640px) { section { padding:5rem 1.25rem; } }
+.section-label {
+  font-size:.62rem; font-weight:400; letter-spacing:.35em; text-transform:uppercase;
+  color:var(--gold-deep); margin-bottom:1.5rem; display:flex; align-items:center; gap:.75rem;
+}
+.section-label::before { content:''; width:2rem; height:1px; background:var(--gold-deep); }
+.section-title {
+  font-family:'Fraunces',serif; font-weight:700; font-size:clamp(2rem,5vw,3.5rem);
+  line-height:1.05; letter-spacing:-.02em; max-width:24ch; margin-bottom:2rem;
+}
+.section-title em { font-style:italic; font-weight:300; color:var(--gold); }
+
+/* STATS */
+.stats {
+  max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr);
+  gap:1px; background:var(--line); border:1px solid var(--line);
+}
+@media (max-width:900px) { .stats { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px) { .stats { grid-template-columns:1fr; } }
+.stat { background:var(--bg); padding:2.5rem 1.75rem; display:flex; flex-direction:column; justify-content:space-between; min-height:200px; transition:background .4s; }
+.stat:hover { background:var(--bg-soft); }
+.stat .num { font-family:'Fraunces',serif; font-weight:900; font-size:clamp(2rem,5vw,4rem); line-height:1; letter-spacing:-.04em; color:var(--gold); font-variant-numeric:tabular-nums; }
+.stat .num .suffix { font-size:.4em; font-weight:500; color:var(--gold-deep); margin-left:.1em; }
+.stat .label { font-size:.7rem; font-weight:400; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-dim); margin-top:1.25rem; }
+.stat .note { font-family:'Fraunces',serif; font-style:italic; font-size:.82rem; color:var(--ink-faint); margin-top:.4rem; }
+
+/* HEATMAP SCRUBBER */
+.heatmap-scrubber { display:flex; gap:.4rem; justify-content:center; margin-bottom:1rem; flex-wrap:wrap; align-items:center; }
+.scrub-btn { background:none; border:1px solid transparent; color:var(--ink-faint); font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; padding:.25rem .6rem; border-radius:2px; cursor:pointer; transition:all .2s; font-family:'Spline Sans',sans-serif; }
+.scrub-btn:hover { color:var(--ink); border-color:var(--bg-soft); }
+.scrub-btn.active { color:var(--gold); border-color:var(--gold-deep); }
+.scrub-sep { color:var(--ink-faint); margin:0 .2rem; }
+
+/* HEATMAP — fixed cells, centered, no scroll */
+.heatmap-wrap { max-width:1200px; margin:0 auto; padding:1rem 0; display:flex; justify-content:center; overflow-x:auto; }
+.heatmap-axis { display:flex; align-items:flex-start; gap:.4rem; }
+.heatmap-dow { display:flex; flex-direction:column; gap:2px; font-size:.5rem; color:var(--ink-faint); flex:none; }
+.heatmap-dow span { height:14px; display:flex; align-items:center; justify-content:flex-end; }
+.heatmap-grid { display:flex; gap:2px; }
+.heatmap-col { display:flex; flex-direction:column; gap:2px; }
+.heatmap-cell { width:14px; height:14px; border-radius:2px; background:var(--bg-soft); flex:none; }
+.heatmap-cell:hover { outline:1px solid var(--gold-bright); z-index:10; position:relative; }
+/* discrete intensity — gold for commits, rust for sessions */
+.heatmap-cell.l1 { background:rgba(200,168,120,.25); }
+.heatmap-cell.l2 { background:rgba(200,168,120,.5); }
+.heatmap-cell.l3 { background:var(--gold-deep); }
+.heatmap-cell.l4 { background:var(--gold-bright); }
+.heatmap-cell.s1 { background:rgba(180,95,60,.3); }
+.heatmap-cell.s2 { background:rgba(180,95,60,.55); }
+.heatmap-cell.s3 { background:var(--rust); }
+.heatmap-cell.s4 { background:#d4593a; }
+.heatmap-cell.both { background:var(--gold); box-shadow:inset 0 0 0 1px var(--rust); }
+.heatmap-cell.both.l3 { background:var(--gold); }
+.heatmap-cell.both.l4 { background:var(--gold-bright); box-shadow:inset 0 0 0 1px var(--rust); }
+.heatmap-months { display:flex; gap:2px; margin-left:1.5rem; margin-bottom:.4rem; font-size:.5rem; color:var(--ink-faint); text-transform:uppercase; justify-content:center; }
+.heatmap-months span { white-space:nowrap; }
+.heatmap-legend { display:flex; gap:1.5rem; justify-content:center; margin-top:1.5rem; font-size:.65rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-dim); flex-wrap:wrap; }
+.heatmap-legend span { display:flex; align-items:center; gap:.4rem; }
+.heatmap-legend .swatch { width:14px; height:14px; border-radius:2px; }
+.heatmap-legend .ramp { display:flex; gap:2px; }
+.heatmap-legend .ramp i { width:12px; height:14px; border-radius:2px; display:block; }
+.heatmap-summary { display:flex; justify-content:center; gap:3rem; margin-top:1rem; font-size:.7rem; color:var(--ink-dim); flex-wrap:wrap; }
+.heatmap-summary b { color:var(--gold); font-weight:500; }
+
+/* DISTRIBUTION — horizontal ranked list (log scale) */
+/* DISTRIBUTION CONTROLS */
+.dist-controls { max-width:900px; margin:0 auto 1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; }
+.dist-sorts { display:flex; gap:.4rem; }
+.dist-sort-btn { background:none; border:1px solid transparent; color:var(--ink-faint); font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; padding:.25rem .6rem; border-radius:2px; cursor:pointer; transition:all .2s; font-family:'Spline Sans',sans-serif; }
+.dist-sort-btn:hover { color:var(--ink); border-color:var(--bg-soft); }
+.dist-sort-btn.active { color:var(--gold); border-color:var(--gold-deep); }
+.dist-filters { display:flex; gap:.4rem; flex-wrap:wrap; }
+.dist-filter-chip { font-size:.6rem; letter-spacing:.1em; text-transform:uppercase; padding:.2rem .5rem; border:1px solid var(--line); color:var(--ink-dim); cursor:pointer; transition:all .2s; background:transparent; border-radius:2px; font-family:'Spline Sans',sans-serif; }
+.dist-filter-chip:hover { border-color:var(--gold-deep); color:var(--gold); }
+.dist-filter-chip.active { border-color:var(--gold); color:var(--gold); background:rgba(200,168,120,.08); }
+
+.dist-list { max-width:900px; margin:0 auto; display:flex; flex-direction:column; gap:.35rem; }
+.dist-row { display:flex; align-items:center; gap:.75rem; padding:.35rem 0; cursor:default; transition:background .2s; border-radius:2px; }
+.dist-row:hover { background:var(--bg-soft); padding-left:.5rem; padding-right:.5rem; }
+.dist-rank { font-family:'Fraunces',serif; font-weight:300; font-size:.85rem; color:var(--ink-faint); width:1.5rem; text-align:right; flex:none; }
+.dist-name { font-size:.75rem; color:var(--ink); width:11rem; flex:none; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.dist-bar-wrap { flex:1; height:18px; background:var(--bg-soft); border-radius:2px; overflow:hidden; position:relative; min-width:60px; }
+.dist-bar { height:100%; background:linear-gradient(90deg,var(--gold),var(--gold-deep)); border-radius:2px; transition:width .5s ease; }
+.dist-bar.is-outlier { background:linear-gradient(90deg,var(--gold-bright),var(--gold),var(--gold-deep)); }
+.dist-count { font-family:'Fraunces',serif; font-weight:500; font-size:.8rem; color:var(--gold); width:4.5rem; text-align:right; flex:none; font-variant-numeric:tabular-nums; }
+.dist-net { font-size:.6rem; color:var(--ink-faint); width:7rem; text-align:right; flex:none; white-space:nowrap; }
+
+/* REALMS — filter chips */
+.realm-filters { max-width:1200px; margin:0 auto 2rem; display:flex; flex-wrap:wrap; gap:.5rem; }
+.realm-filter {
+  font-size:.62rem; letter-spacing:.12em; text-transform:uppercase;
+  padding:.4rem .8rem; border:1px solid var(--line); color:var(--ink-dim);
+  cursor:pointer; transition:all .3s; background:transparent; font-family:inherit; border-radius:2px;
+}
+.realm-filter:hover { border-color:var(--gold-deep); color:var(--gold); }
+.realm-filter.active { border-color:var(--gold); color:var(--gold); background:rgba(200,168,120,.08); }
+
+/* REALMS — expandable cards */
+.realms-grid {
+  max-width:1200px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:1rem;
+}
+.realm-card {
+  background:var(--bg-card); border:1px solid var(--line); padding:1.75rem 1.5rem;
+  cursor:pointer; transition:border-color .3s,background .3s;
+  position:relative; overflow:hidden;
+}
+.realm-card:hover { border-color:var(--gold-deep); background:var(--bg-soft); }
+.realm-card .name { font-family:'Fraunces',serif; font-weight:700; font-size:1.2rem; color:var(--ink); }
+.realm-card .cat-tag { display:inline-block; font-size:.55rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:.4rem; }
+.realm-card .metric-row { display:flex; align-items:baseline; gap:.5rem; margin:.5rem 0; flex-wrap:wrap; }
+.realm-card .metric { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; color:var(--gold); line-height:1; }
+.realm-card .metric-label { font-size:.58rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); }
+.realm-card .desc { font-size:.8rem; color:var(--ink-dim); line-height:1.5; margin-top:.5rem; }
+.realm-card .expand-hint {
+  font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gold-deep);
+  margin-top:1rem; transition:transform .3s;
+}
+.realm-card.expanded .expand-hint::after { content:' ▲'; }
+.realm-card .expand-hint::after { content:' ▼'; }
+.realm-detail {
+  max-height:0; overflow:hidden; transition:max-height .5s cubic-bezier(.16,1,.3,1);
+}
+.realm-card.expanded .realm-detail { max-height:800px; }
+.realm-detail-inner { padding-top:1.25rem; border-top:1px solid var(--line); margin-top:1rem; }
+.realm-detail-inner .stat-line { display:flex; justify-content:space-between; font-size:.75rem; padding:.25rem 0; color:var(--ink-dim); }
+.realm-detail-inner .stat-line span:last-child { color:var(--gold); font-family:'Fraunces',serif; font-weight:500; }
+
+/* QUOTE */
+.quote { max-width:800px; margin:0 auto; text-align:center; padding:6rem 2rem; }
+.quote blockquote {
+  font-family:'Fraunces',serif; font-style:italic; font-weight:300;
+  font-size:clamp(1.5rem,4vw,2.8rem); line-height:1.3; letter-spacing:-.01em; color:var(--ink); position:relative;
+}
+.quote blockquote .mark-open { font-size:3em; color:var(--gold-deep); line-height:0; vertical-align:-.4em; margin-right:.1em; font-style:normal; font-weight:900; }
+.quote cite { display:block; margin-top:2rem; font-style:normal; font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-deep); }
+
+/* FRAGMENTS — searchable */
+.search-bar {
+  max-width:700px; margin:0 auto 2.5rem; position:relative;
+}
+.search-bar input {
+  width:100%; background:var(--bg-card); border:1px solid var(--line); color:var(--ink);
+  font-family:'Spline Sans',sans-serif; font-size:1rem; font-weight:300;
+  padding:1rem 1rem 1rem 2.75rem; outline:none; transition:border-color .3s;
+  border-radius:2px;
+}
+.search-bar input:focus { border-color:var(--gold-deep); }
+.search-bar input::placeholder { color:var(--ink-faint); }
+.search-bar .icon {
+  position:absolute; left:1rem; top:50%; transform:translateY(-50%);
+  color:var(--gold-deep); font-size:1.1rem; pointer-events:none;
+}
+.search-bar .count {
+  position:absolute; right:1rem; top:50%; transform:translateY(-50%);
+  font-size:.7rem; letter-spacing:.1em; color:var(--ink-faint); pointer-events:none;
+}
+.tag-filters {
+  max-width:700px; margin:0 auto 2rem; display:flex; flex-wrap:wrap; gap:.5rem;
+}
+.tag-filter {
+  font-size:.62rem; letter-spacing:.12em; text-transform:uppercase;
+  padding:.4rem .8rem; border:1px solid var(--line); color:var(--ink-dim);
+  cursor:pointer; transition:all .3s; background:transparent; font-family:inherit; border-radius:2px;
+}
+.tag-filter:hover { border-color:var(--gold-deep); color:var(--gold); }
+.tag-filter.active { border-color:var(--gold); color:var(--gold); background:rgba(200,168,120,.08); }
+.fragments { max-width:700px; margin:0 auto; }
+.fragment {
+  font-family:'Fraunces',serif; font-style:italic; font-weight:300;
+  font-size:1rem; color:var(--ink-dim); line-height:1.6;
+  padding:1rem 0; border-bottom:1px solid var(--line);
+  opacity:0; transform:translateY(12px);
+  transition:opacity .6s,transform .6s;
+}
+.fragment.visible { opacity:1; transform:translateY(0); }
+.fragment::before { content:'› '; color:var(--gold-deep); font-style:normal; }
+.fragment .time {
+  font-family:'Spline Sans',sans-serif; font-style:normal; font-size:.62rem;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); margin-left:.5rem;
+}
+.fragment .frag-tag {
+  font-family:'Spline Sans',sans-serif; font-style:normal; font-size:.58rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--gold-deep); margin-left:.5rem;
+  padding:.15rem .4rem; border:1px solid var(--line); border-radius:2px;
+}
+.fragment mark { background:rgba(200,168,120,.2); color:var(--gold-bright); padding:0 .15em; border-radius:2px; }
+.fragment.highlighted { background:rgba(200,168,120,.06); border-radius:4px; }
+.no-results { text-align:center; padding:3rem; color:var(--ink-faint); font-style:italic; display:none; }
+
+/* MANIFESTO */
+.manifesto { max-width:700px; margin:0 auto; font-family:'Fraunces',serif; font-weight:300; font-style:italic; font-size:clamp(1.1rem,2.8vw,1.6rem); line-height:1.6; color:var(--ink-dim); }
+.manifesto p { margin-bottom:1.5rem; }
+.manifesto strong { font-weight:700; font-style:normal; color:var(--gold); }
+
+/* ACTIONS */
+.actions-row { max-width:700px; margin:0 auto; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.action-btn {
+  background:transparent; border:1px solid var(--gold-deep);
+  color:var(--gold); font-family:'Spline Sans',sans-serif; font-size:.72rem; letter-spacing:.2em;
+  text-transform:uppercase; padding:.8rem 2rem; cursor:pointer; transition:all .3s; border-radius:2px;
+}
+.action-btn:hover { border-color:var(--gold); background:rgba(200,168,120,.06); }
+
+/* FOOTER */
+footer { padding:4rem 2rem; text-align:center; border-top:1px solid var(--line); }
+footer p { font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-faint); }
+footer p a { color:var(--gold-deep); text-decoration:none; }
+footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; color:var(--gold-deep); margin-bottom:1rem; letter-spacing:.1em; }
+
+/* REVEAL */
+.reveal { opacity:0; transform:translateY(30px); transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1); }
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* SURPRISE */
+.surprise-display {
+  max-width:700px; margin:1.5rem auto 0; text-align:center;
+  font-family:'Fraunces',serif; font-style:italic; font-size:1.3rem; color:var(--gold-bright);
+  min-height:2em; opacity:0; transition:opacity .5s; line-height:1.5;
+}
+.surprise-display.show { opacity:1; }
+
+/* PWA INSTALL PROMPT */
+.install-prompt {
+  position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(120%);
+  background:var(--bg-card); border:1px solid var(--gold-deep); padding:1.5rem 2rem;
+  display:flex; align-items:center; gap:1.5rem; z-index:300; border-radius:4px;
+  transition:transform .5s cubic-bezier(.16,1,.3,1); max-width:90vw;
+}
+.install-prompt.show { transform:translateX(-50%) translateY(0); }
+.install-prompt .seal { font-size:2rem; color:var(--gold); }
+.install-prompt .text { font-size:.8rem; color:var(--ink-dim); }
+.install-prompt .text strong { color:var(--gold); display:block; font-family:'Fraunces',serif; font-weight:700; margin-bottom:.2rem; }
+.install-prompt button { background:var(--gold); color:var(--bg); border:none; padding:.6rem 1.5rem; font-family:'Spline Sans',sans-serif; font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; cursor:pointer; border-radius:2px; }
+.install-prompt .close { background:transparent; color:var(--ink-faint); border:1px solid var(--line); }
+
+/* KEYBOARD HINT */
+.kbd-hint { position:fixed; bottom:1rem; right:1rem; font-size:.6rem; color:var(--ink-faint); letter-spacing:.1em; text-transform:uppercase; opacity:.5; z-index:50; }
+.kbd-hint kbd { background:var(--bg-card); border:1px solid var(--line); padding:.1rem .3rem; border-radius:2px; font-family:'Spline Sans',monospace; font-size:.55rem; }
+@media (max-width:640px) { .kbd-hint { display:none; } }
+/* RESPONSIVE — heatmap + distribution */
+@media (max-width:768px) {
+  .heatmap-wrap { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+  .heatmap-cell { width:10px; height:10px; }
+  .heatmap-dow span { height:10px; font-size:.45rem; }
+  .heatmap-grid { gap:1px; }
+  .heatmap-col { gap:1px; }
+  .heatmap-scrubber { gap:.25rem; }
+  .scrub-btn { font-size:.55rem; padding:.2rem .4rem; }
+  .scrub-sep { display:none; }
+
+  .dist-controls { flex-direction:column; align-items:stretch; }
+  .dist-sorts { flex-wrap:wrap; }
+  .dist-row { flex-wrap:wrap; gap:.3rem; padding:.3rem 0; }
+  .dist-name { width:100%; font-size:.7rem; }
+  .dist-bar-wrap { order:3; width:100%; min-width:0; height:14px; }
+  .dist-rank { width:1.2rem; font-size:.7rem; }
+  .dist-count { font-size:.7rem; width:3.5rem; }
+  .dist-net { width:5rem; font-size:.55rem; }
+}
+
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav>
+  <span class="mark">Gaze</span>
+  <div class="links">
+    <a href="#scale">Scale</a>
+    <a href="#heatmap">Heatmap</a>
+    <a href="#chart">Chart</a>
+    <a href="#realms">Realms</a>
+    <a href="#fragments">Fragments</a>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">☾</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">Cerebral Work Institute · unsigned.gg · April 21 – July 9, 2026</p>
+  <h1>
+    <span class="word">Gaze</span>
+    <span class="word">upon</span>
+    <span class="word">our works</span>
+  </h1>
+  <p class="sub">Eighty days. One operator and an intelligence. Seven thousand commits, six million lines, three thousand sessions — across fifty-six repositories, without stopping.</p>
+  <p class="scroll-hint">Descend</p>
+</header>
+
+<section id="scale">
+  <div class="section-label reveal">The Scale</div>
+  <h2 class="section-title reveal">In <em>eighty days</em>, they built what teams take years to approach.</h2>
+  <div class="stats reveal">
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="3753">0</span></div>
+      <div class="label">Claude Code Sessions</div>
+      <div class="note">Each a conversation, a plan, a build.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="7590">0</span></div>
+      <div class="label">Git Commits</div>
+      <div class="note">Since April 21. Signed. Every one.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="8625996">0</span><span class="suffix">+</span></div>
+      <div class="label">Lines Inserted</div>
+      <div class="note">Across fifty-six repositories.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="56">0</span></div>
+      <div class="label">Repositories</div>
+      <div class="note">From Rust cores to Terraform to Kubernetes.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="80">0</span></div>
+      <div class="label">Days</div>
+      <div class="note">April 21 – July 9, 2026.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="255">0</span></div>
+      <div class="label">Active Days</div>
+      <div class="note">With commits. Out of 80.</div>
+    </div>
+    <div class="stat">
+      <div class="num">2</div>
+      <div class="label">Builders</div>
+      <div class="note">One human. One intelligence.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="159">0</span></div>
+      <div class="label">Peak Day</div>
+      <div class="note">July 6 — 159 commits in one day.</div>
+    </div>
+  </div>
+</section>
+
+<section id="heatmap">
+  <div class="section-label reveal">The Heatmap</div>
+  <h2 class="section-title reveal">Every <em>commit</em>, every session — the Claude era, mapped across time.</h2>
+  <div class="heatmap-scrubber reveal" id="heatmapScrubber">
+    <button class="scrub-btn active" data-era="claude">Claude era</button>
+    <button class="scrub-btn" data-era="all">Full era</button>
+    <span class="scrub-sep">·</span>
+    <button class="scrub-btn" data-era="2021">2021</button>
+    <button class="scrub-btn" data-era="2022">2022</button>
+    <button class="scrub-btn" data-era="2023">2023</button>
+    <button class="scrub-btn" data-era="2024">2024</button>
+    <button class="scrub-btn" data-era="2025">2025</button>
+    <button class="scrub-btn" data-era="2026">2026</button>
+  </div>
+  <div class="heatmap-wrap reveal">
+    <div class="heatmap-axis">
+      <div class="heatmap-dow" id="heatmapDow"></div>
+      <div class="heatmap-grid" id="heatmapGrid"></div>
+    </div>
+  </div>
+  <div class="heatmap-months reveal" id="heatmapMonths"></div>
+  <div class="heatmap-legend reveal">
+    <span><span class="ramp"><i style="background:rgba(200,168,120,.25)"></i><i style="background:rgba(200,168,120,.5)"></i><i style="background:var(--gold-deep)"></i><i style="background:var(--gold-bright)"></i></span> Commits</span>
+    <span><span class="ramp"><i style="background:rgba(180,95,60,.3)"></i><i style="background:rgba(180,95,60,.55)"></i><i style="background:var(--rust)"></i><i style="background:#d4593a"></i></span> Sessions</span>
+    <span><span class="swatch" style="background:var(--gold);box-shadow:inset 0 0 0 1px var(--rust)"></span> Both</span>
+    <span><span class="swatch" style="background:var(--bg-soft)"></span> Quiet</span>
+  </div>
+  <div class="heatmap-summary reveal" id="heatmapSummary"></div>
+</section>
+
+<section id="chart">
+  <div class="section-label reveal">The Distribution</div>
+  <h2 class="section-title reveal">Commits per <em>repository</em> — the shape of the work.</h2>
+  <div class="dist-controls reveal">
+    <div class="dist-sorts" id="distSorts">
+      <button class="dist-sort-btn active" data-sort="commits">Commits</button>
+      <button class="dist-sort-btn" data-sort="net">Net lines</button>
+      <button class="dist-sort-btn" data-sort="insertions">Inserted</button>
+      <button class="dist-sort-btn" data-sort="deletions">Deleted</button>
+    </div>
+    <div class="dist-filters" id="distFilters"></div>
+  </div>
+  <div class="dist-list reveal" id="distList"></div>
+</section>
+
+<section id="timeline">
+  <div class="section-label reveal">The Chronicle</div>
+  <h2 class="section-title reveal">A <em>compressed eighty days</em> — told in fragments.</h2>
+  <div class="timeline reveal">
+    <div class="tl-entry"><div class="when">July 9 · Today</div><h3>GAZE — the chronicle itself</h3><p>This PWA. Built to gaze upon all the works — 7,590 commits, 3,753 sessions, 56 repositories. Deployed on Cloudflare Pages. The Ozymandias throughline made real.</p></div>
+    <div class="tl-entry"><div class="when">July 7–8 · The Bake-off</div><h3>Metrics durability: Thanos vs VictoriaMetrics</h3><p>The M2 bake-off. Distributed-trace waterfall pane for mission control. Adversarial review across unsigned-paas PRs. Identity-provider and LDAP architecture research for Kubernetes-native platforms.</p></div>
+    <div class="tl-entry"><div class="when">July 4–6 · The Acceleration</div><h3>159 commits in a single day</h3><p>The peak. July 6 saw 159 commits across the estate — ArgoCD ApplicationSets sweep, KEDA re-vendor, onboard quiz banks, etcd-backup, Kyverno locks.</p></div>
+    <div class="tl-entry"><div class="when">July 1–3 · The Onrush</div><h3>89–110 commits per day</h3><p>The Claude era hits full stride. Sessions multiply: 74–87 per day. The unsigned-paas platform becomes the single largest repository. ArgoCD fleets pin. LiteLLM gateway renames.</p></div>
+    <div class="tl-entry"><div class="when">June 2026 · The Build Month</div><h3>2,157 sessions, 1,000+ commits</h3><p>The full month of June: 2,157 Claude Code sessions. Reverie releases 0.11–0.13. agent-jury built in an afternoon. mission-control operator console. The cerebral-design canon ratified. tailnet provisioned as IaC.</p></div>
+    <div class="tl-entry"><div class="when">May 30 · The Peak Day</div><h3>302 sessions in one day</h3><p>The single highest session count: 302 Claude Code conversations on May 30. The machine was alive. Every conversation a fork in a decision tree.</p></div>
+    <div class="tl-entry"><div class="when">May 27 · The Genesis</div><h3>72 sessions — the ramp begins</h3><p>The Claude era ignites. From May 27 onward, session counts explode: 72, then 302, then 109, then 94… The operator and the intelligence stop negotiating the boundary between thought and execution.</p></div>
+    <div class="tl-entry"><div class="when">May 1 · The First</div><h3>The first Claude session</h3><p>One session. The beginning. The first conversation between the operator and the intelligence.</p></div>
+    <div class="tl-entry"><div class="when">April 21–30 · The Build-Up</div><h3>740 commits before Claude</h3><p>The ten days before the Claude era. 740 commits across the estate — April 21 alone saw 146. The platform was already under construction. The intelligence was about to arrive.</p></div>
+  </div>
+</section>
+
+<section id="realms">
+  <div class="section-label reveal">The Realms</div>
+  <h2 class="section-title reveal">Fifty-six <em>repositories</em>, each a world. Click to expand.</h2>
+  <div class="realm-filters reveal" id="realmFilters"></div>
+  <div class="realms-grid reveal" id="realmsGrid"></div>
+</section>
+
+<section>
+  <div class="quote reveal">
+    <blockquote>
+      <span class="mark-open">"</span>We're sicknasty fam. I just try to stay humble — because <em style="color:var(--gold)">gaze upon our works, ye mighty, and despair.</em>
+    </blockquote>
+    <cite>— The Operator, closing a session</cite>
+  </div>
+</section>
+
+<section id="fragments">
+  <div class="section-label reveal">The Fragments</div>
+  <h2 class="section-title reveal">Voices from the <em>session logs</em> — searchable.</h2>
+  <div class="search-bar reveal">
+    <span class="icon">⌕</span>
+    <input type="text" id="fragSearch" placeholder="Search fragments — try 'token', 'design', 'cluster', 'merge'..." autocomplete="off">
+    <span class="count" id="fragCount"></span>
+  </div>
+  <div class="tag-filters reveal" id="tagFilters"></div>
+  <div class="fragments reveal" id="fragmentsList"></div>
+  <div class="no-results" id="noResults">No fragments match your search.</div>
+  <div class="actions-row">
+    <button class="action-btn reveal" id="surpriseBtn">Surprise me</button>
+    <button class="action-btn reveal" id="exportBtn">Export data</button>
+  </div>
+  <div class="surprise-display" id="surpriseDisplay"></div>
+</section>
+
+<section>
+  <div class="section-label reveal">The Truth</div>
+  <h2 class="section-title reveal">What this <em>actually</em> was.</h2>
+  <div class="manifesto reveal">
+    <p>This was not a sprint. It was a <strong>velocity</strong> — the kind that happens when an operator and an intelligence stop negotiating the boundary between thought and execution and just <em>build</em>.</p>
+    <p>Three thousand seven hundred fifty-three sessions. Each one a fork in a decision tree: a plan, a recon, a refactor, a merge, a grill, a wrap, a resurrected thread. The operator steered; the intelligence compiled, reviewed, filed, deployed, and — when asked — told stories about it.</p>
+    <p>Fifty-six repositories, each a world: a Kubernetes platform with ArgoCD fleets and a LiteLLM gateway; a monorepo estate on Cloudflare; an agent-memory engine in Rust; a tailnet in Terraform; Google Workspace declared as code; an adversarial review jury built in an afternoon; a design canon ratified across six releases; a bare-metal Talos foundry; an operator console; a benchmark harness; dotfiles unified under chezmoi. Eight million lines inserted, three million deleted, signed with a GPG key that has never been compromised.</p>
+    <p>And at the end, the operator looked at it all and did not say <em>look what I built</em>. They said: <strong>gaze upon our works, ye mighty, and despair.</strong></p>
+    <p>The works are real. The despair is optional.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="seal">◉</div>
+  <p>Cerebral Work Institute · unsigned.gg · 80 days · April 21 – July 9, 2026 · <a href="https://cerebral.work">cerebral.work</a></p>
+  <p style="margin-top:.5rem; color:var(--ink-faint);">Deployed on Cloudflare Pages · 2026-07-09</p>
+</footer>
+
+<div class="install-prompt" id="installPrompt">
+  <span class="seal">◉</span>
+  <div class="text"><strong>Install GAZE</strong>Carry the works in your pocket.</div>
+  <button id="installBtn">Install</button>
+  <button class="close" id="installClose">×</button>
+</div>
+
+<div class="kbd-hint">
+  <kbd>j</kbd>/<kbd>k</kbd> navigate · <kbd>/</kbd> search · <kbd>e</kbd> expand
+</div>
+
+<script>
+// ============= DATA =============
+const repos = /* @BUILD:repos */ [];
+const fragments = /* @BUILD:fragments */ [];
+const commitDays = /* @BUILD:commitDays */ [];
+const sessionDays = /* @BUILD:sessionDays */ [];
+const sessionDayMap = {};
+sessionDays.forEach(([d,c]) => sessionDayMap[d] = c);
+const commitDayMap = {};
+commitDays.forEach(([d,c]) => commitDayMap[d] = c);
+
+// ============= SCROLL PROGRESS =============
+const scrollProgress = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  scrollProgress.style.width = pct + '%';
+});
+
+// ============= THEME TOGGLE =============
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'light' ? null : 'light';
+  if (next) document.documentElement.setAttribute('data-theme', next);
+  else document.documentElement.removeAttribute('data-theme');
+  themeToggle.textContent = next === 'light' ? '\u2600' : '\u263E';
+  try { localStorage.setItem('gaze-theme', next || 'dark'); } catch(e){}
+});
+try {
+  const saved = localStorage.getItem('gaze-theme');
+  if (saved === 'light') { document.documentElement.setAttribute('data-theme','light'); themeToggle.textContent = '\u2600'; }
+} catch(e){}
+
+// ============= HEATMAP =============
+(function() {
+  const grid = document.getElementById('heatmapGrid');
+  const dowEl = document.getElementById('heatmapDow');
+  const monthsEl = document.getElementById('heatmapMonths');
+  const summaryEl = document.getElementById('heatmapSummary');
+  const scrubber = document.getElementById('heatmapScrubber');
+
+  // Compute full data range once
+  const allDatesSet = new Set();
+  commitDays.forEach(([d]) => allDatesSet.add(d));
+  sessionDays.forEach(([d]) => allDatesSet.add(d));
+  const sortedDates = [...allDatesSet].sort();
+  const dataFirst = sortedDates[0];
+  const dataLast = sortedDates[sortedDates.length - 1];
+
+  // DOW labels (built once)
+  const dowLabels = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+  dowLabels.forEach(l => {
+    const s = document.createElement('span');
+    s.textContent = l;
+    dowEl.appendChild(s);
+  });
+
+  // Discrete intensity levels — 4 tiers
+  function commitLevel(c) { return c > 60 ? 4 : c > 20 ? 3 : c > 5 ? 2 : 1; }
+  function sessionLevel(s) { return s > 150 ? 4 : s > 60 ? 3 : s > 20 ? 2 : 1; }
+
+  function renderHeatmap(firstDate, lastDate) {
+    // Clear previous render
+    grid.innerHTML = '';
+    monthsEl.innerHTML = '';
+
+    // Align to Sunday/Saturday
+    const first = new Date(firstDate);
+    const last = new Date(lastDate);
+    first.setDate(first.getDate() - first.getDay());
+    last.setDate(last.getDate() + (6 - last.getDay()));
+
+    // Build weeks
+    const cols = [];
+    const monthMarkers = [];
+    const cur = new Date(first);
+    let lastMonth = -1;
+    while (cur <= last) {
+      const week = [];
+      for (let i = 0; i < 7; i++) {
+        const ds = cur.toISOString().slice(0, 10);
+        week.push({ date: ds, commits: commitDayMap[ds] || 0, sessions: sessionDayMap[ds] || 0 });
+        if (i === 0) {
+          const m = cur.getMonth();
+          if (m !== lastMonth) {
+            monthMarkers.push({ col: cols.length, label: cur.toLocaleString('en', { month: 'short' }) });
+            lastMonth = m;
+          }
+        }
+        cur.setDate(cur.getDate() + 1);
+      }
+      cols.push(week);
+    }
+
+    // Month labels
+    const cellW = 16;
+    monthMarkers.forEach(m => {
+      const span = document.createElement('span');
+      span.textContent = m.label;
+      span.style.position = 'absolute';
+      span.style.left = (m.col * cellW) + 'px';
+      monthsEl.appendChild(span);
+    });
+    monthsEl.style.position = 'relative';
+    monthsEl.style.height = '.8rem';
+    monthsEl.style.marginLeft = '1.5rem';
+
+    // Render cells
+    let activeDays = 0;
+    let peakDay = { date: '', total: 0, commits: 0, sessions: 0 };
+    let peakSessions = { date: '', count: 0 };
+
+    cols.forEach(week => {
+      const col = document.createElement('div');
+      col.className = 'heatmap-col';
+      week.forEach(day => {
+        const cell = document.createElement('div');
+        cell.className = 'heatmap-cell';
+        const hasC = day.commits > 0;
+        const hasS = day.sessions > 0;
+        const total = day.commits + day.sessions;
+        if (total > 0) {
+          activeDays++;
+          if (total > peakDay.total) peakDay = { date: day.date, total, commits: day.commits, sessions: day.sessions };
+          if (day.sessions > peakSessions.count) peakSessions = { date: day.date, count: day.sessions };
+          if (hasC && hasS) { cell.classList.add('both'); cell.classList.add('l' + commitLevel(day.commits)); }
+          else if (hasC) { cell.classList.add('l' + commitLevel(day.commits)); }
+          else { cell.classList.add('s' + sessionLevel(day.sessions)); }
+          cell.title = day.date + ': ' + day.commits + ' commit' + (day.commits === 1 ? '' : 's') + ', ' + day.sessions + ' session' + (day.sessions === 1 ? '' : 's');
+        } else {
+          cell.title = day.date + ': quiet';
+        }
+        col.appendChild(cell);
+      });
+      grid.appendChild(col);
+    });
+
+    // Summary
+    const totalDays = Math.round((last - first) / 86400000) + 1;
+    const quietDays = totalDays - activeDays;
+    summaryEl.innerHTML =
+      '<span><b>' + cols.length + '</b> weeks · ' + totalDays + ' days</span>' +
+      '<span><b>' + activeDays + '</b> active · ' + quietDays + ' quiet</span>' +
+      '<span>peak day <b>' + peakDay.date + '</b> (' + peakDay.commits + 'C / ' + peakDay.sessions + 'S)</span>' +
+      '<span>peak sessions <b>' + peakSessions.count + '</b> on ' + peakSessions.date + '</span>';
+  }
+
+  function eraRange(era) {
+    if (era === 'all') return [new Date(dataFirst + 'T00:00:00'), new Date(dataLast + 'T00:00:00')];
+    if (era === 'claude') return [new Date('2026-01-01T00:00:00'), new Date(dataLast + 'T00:00:00')];
+    // Year mode
+    const year = parseInt(era, 10);
+    return [new Date(year, 0, 1), new Date(year, 11, 31)];
+  }
+
+  // Initial render — Claude era
+  renderHeatmap(...eraRange('claude'));
+
+  // Scrubber events
+  scrubber.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('scrub-btn')) {
+      scrubber.querySelectorAll('.scrub-btn').forEach(b => b.classList.remove('active'));
+      target.classList.add('active');
+      renderHeatmap(...eraRange(target.dataset.era || 'claude'));
+    }
+  });
+})();
+
+// ============= DISTRIBUTION =============
+(function() {
+  const list = document.getElementById('distList');
+  const sortsEl = document.getElementById('distSorts');
+  const filtersEl = document.getElementById('distFilters');
+
+  // State
+  let sortKey = 'commits';
+  let activeFilter = 'all';
+
+  // Build category filter chips from repo data
+  const cats = [...new Set(repos.map(r => r.category))].sort();
+  const filterChips = [{ key: 'all', label: 'All' }, ...cats.map(c => ({ key: c, label: c }))];
+  filterChips.forEach(({ key, label }) => {
+    const chip = document.createElement('button');
+    chip.className = 'dist-filter-chip' + (key === 'all' ? ' active' : '');
+    chip.dataset.category = key;
+    chip.textContent = label;
+    filtersEl.appendChild(chip);
+  });
+
+  function renderDist() {
+    list.innerHTML = '';
+
+    // Filter
+    let filtered = repos;
+    if (activeFilter !== 'all') filtered = repos.filter(r => r.category === activeFilter);
+
+    // Sort
+    const sorted = [...filtered].sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
+    const top = sorted.slice(0, 30);
+    if (top.length === 0) return;
+
+    // Log scale relative to visible set
+    const maxVal = top[0][sortKey] || 1;
+    const minVal = top[top.length - 1][sortKey] || 0;
+    const logScale = (c) => Math.log(1 + c);
+    const maxLog = logScale(maxVal);
+    const minLog = logScale(minVal);
+    const range = maxLog - minLog || 1;
+
+    top.forEach((r, i) => {
+      const row = document.createElement('div');
+      row.className = 'dist-row';
+      const val = r[sortKey] || 0;
+      const pct = ((logScale(val) - minLog) / range * 92 + 8).toFixed(1);
+      const isOutlier = val > maxVal * 0.3;
+      const barClass = isOutlier ? 'dist-bar is-outlier' : 'dist-bar';
+      const net = r.insertions - r.deletions;
+      const netStr = net >= 0 ? '+' + net.toLocaleString() : '\u2212' + Math.abs(net).toLocaleString();
+      const countStr = sortKey === 'net' ? netStr + ' lines' : val.toLocaleString();
+
+      row.innerHTML =
+        '<div class="dist-rank">' + (i + 1) + '</div>' +
+        '<div class="dist-name" title="' + r.name + '">' + r.name + '</div>' +
+        '<div class="dist-bar-wrap"><div class="' + barClass + '" style="width:' + pct + '%"></div></div>' +
+        '<div class="dist-count">' + countStr + '</div>' +
+        '<div class="dist-net">' + netStr + ' lines</div>';
+      list.appendChild(row);
+    });
+  }
+
+  // Sort events
+  sortsEl.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('dist-sort-btn')) {
+      sortsEl.querySelectorAll('.dist-sort-btn').forEach(b => b.classList.remove('active'));
+      target.classList.add('active');
+      sortKey = target.dataset.sort || 'commits';
+      renderDist();
+    }
+  });
+
+  // Filter events
+  filtersEl.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.classList.contains('dist-filter-chip')) {
+      filtersEl.querySelectorAll('.dist-filter-chip').forEach(c => c.classList.remove('active'));
+      target.classList.add('active');
+      activeFilter = target.dataset.category || 'all';
+      renderDist();
+    }
+  });
+
+  renderDist();
+})();
+
+// ============= REALMS =============
+const grid = document.getElementById('realmsGrid');
+const realmFiltersEl = document.getElementById('realmFilters');
+
+// Categories
+const categories = {};
+repos.forEach(r => {
+  const cat = r.category || 'other';
+  if (!categories[cat]) categories[cat] = [];
+  categories[cat].push(r);
+});
+
+let activeCategory = null;
+
+// Build filter chips
+Object.keys(categories).sort().forEach(cat => {
+  const btn = document.createElement('button');
+  btn.className = 'realm-filter';
+  btn.textContent = cat + ' (' + categories[cat].length + ')';
+  btn.addEventListener('click', () => {
+    if (activeCategory === cat) { activeCategory = null; btn.classList.remove('active'); }
+    else {
+      document.querySelectorAll('.realm-filter').forEach(b => b.classList.remove('active'));
+      activeCategory = cat;
+      btn.classList.add('active');
+    }
+    renderRealms();
+  });
+  realmFiltersEl.appendChild(btn);
+});
+
+function renderRealms() {
+  grid.innerHTML = '';
+  const filtered = activeCategory ? repos.filter(r => (r.category || 'other') === activeCategory) : repos;
+  filtered.sort((a,b) => b.commits - a.commits).forEach(r => {
+    const card = document.createElement('div');
+    card.className = 'realm-card';
+    card.innerHTML = `
+      <div class="cat-tag">${r.category || 'other'}</div>
+      <div class="name">${r.name}</div>
+      <div class="metric-row"><span class="metric">${r.commits.toLocaleString()}</span><span class="metric-label">commits · +${r.insertions.toLocaleString()}/-${r.deletions.toLocaleString()}</span></div>
+      <div class="desc">${r.desc || ''}</div>
+      <div class="expand-hint">Expand</div>
+      <div class="realm-detail"><div class="realm-detail-inner">
+        <div class="stat-line"><span>Insertions</span><span>+${r.insertions.toLocaleString()}</span></div>
+        <div class="stat-line"><span>Deletions</span><span>-${r.deletions.toLocaleString()}</span></div>
+        <div class="stat-line"><span>Net lines</span><span>${(r.insertions - r.deletions).toLocaleString()}</span></div>
+      </div></div>
+    `;
+    card.addEventListener('click', () => card.classList.toggle('expanded'));
+    grid.appendChild(card);
+  });
+}
+renderRealms();
+
+// ============= FRAGMENTS =============
+const fragList = document.getElementById('fragmentsList');
+const noResults = document.getElementById('noResults');
+const searchInput = document.getElementById('fragSearch');
+const countEl = document.getElementById('fragCount');
+
+// Collect all unique tags
+const allTags = [...new Set(fragments.flatMap(f => f.tags))].sort();
+const tagFiltersEl = document.getElementById('tagFilters');
+let activeTag = null;
+
+allTags.forEach(tag => {
+  const btn = document.createElement('button');
+  btn.className = 'tag-filter';
+  btn.textContent = tag;
+  btn.addEventListener('click', () => {
+    if (activeTag === tag) { activeTag = null; btn.classList.remove('active'); }
+    else {
+      document.querySelectorAll('.tag-filter').forEach(b => b.classList.remove('active'));
+      activeTag = tag;
+      btn.classList.add('active');
+    }
+    renderFragments();
+  });
+  tagFiltersEl.appendChild(btn);
+});
+
+let fragIndex = 0;
+
+function renderFragments() {
+  const q = searchInput.value.toLowerCase().trim();
+  let filtered = fragments;
+  if (q) filtered = filtered.filter(f => f.t.toLowerCase().includes(q));
+  if (activeTag) filtered = filtered.filter(f => f.tags.includes(activeTag));
+
+  countEl.textContent = filtered.length;
+  fragList.innerHTML = '';
+  noResults.style.display = filtered.length === 0 ? 'block' : 'none';
+
+  filtered.forEach((f, i) => {
+    const el = document.createElement('div');
+    el.className = 'fragment';
+    el.dataset.idx = i;
+    let text = f.t;
+    if (q) {
+      const idx = text.toLowerCase().indexOf(q);
+      if (idx >= 0) {
+        text = text.substring(0, idx) + '<mark>' + text.substring(idx, idx + q.length) + '</mark>' + text.substring(idx + q.length);
+      }
+    }
+    const dayLabel = f.d || '';
+    const tagsHtml = f.tags.map(tg => '<span class="frag-tag">' + tg + '</span>').join('');
+    el.innerHTML = text + '<span class="time">' + dayLabel + '</span>' + tagsHtml;
+    fragList.appendChild(el);
+    setTimeout(() => el.classList.add('visible'), i * 40);
+  });
+}
+
+searchInput.addEventListener('input', renderFragments);
+renderFragments();
+
+// ============= SURPRISE ME =============
+const surpriseBtn = document.getElementById('surpriseBtn');
+const surpriseDisplay = document.getElementById('surpriseDisplay');
+surpriseBtn.addEventListener('click', () => {
+  const random = fragments[Math.floor(Math.random() * fragments.length)];
+  surpriseDisplay.textContent = '"' + random.t + '"';
+  surpriseDisplay.classList.remove('show');
+  void surpriseDisplay.offsetWidth;
+  surpriseDisplay.classList.add('show');
+});
+
+// ============= EXPORT =============
+document.getElementById('exportBtn').addEventListener('click', () => {
+  const data = {repos, fragments, commitDays, sessionDays,
+    stats: {totalCommits: 7590, totalInsertions: 8625996, totalDeletions: 3750647,
+            totalRepos: 56, totalSessions: 3753, dateRange: ["2026-04-21","2026-07-09"]}};
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'gaze-data.json';
+  a.click();
+});
+
+// ============= SHARE FRAGMENT (deep-link) =============
+if (location.hash.startsWith('#frag=')) {
+  const fragId = location.hash.slice(6);
+  // Scroll to fragments section and highlight
+  setTimeout(() => {
+    document.getElementById('fragments').scrollIntoView();
+    const fragEl = fragList.querySelector('.fragment');
+    if (fragEl) fragEl.classList.add('highlighted');
+  }, 500);
+}
+
+// ============= KEYBOARD NAV =============
+let kbHighlightIdx = -1;
+document.addEventListener('keydown', (e) => {
+  // Don't intercept if typing in an input
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+    if (e.key === 'Escape') e.target.blur();
+    return;
+  }
+  
+  if (e.key === '/') {
+    e.preventDefault();
+    searchInput.focus();
+  } else if (e.key === 'j' || e.key === 'k') {
+    const frags = fragList.querySelectorAll('.fragment');
+    if (frags.length === 0) return;
+    if (e.key === 'j') kbHighlightIdx = Math.min(kbHighlightIdx + 1, frags.length - 1);
+    else kbHighlightIdx = Math.max(kbHighlightIdx - 1, 0);
+    frags.forEach(f => f.classList.remove('highlighted'));
+    frags[kbHighlightIdx].classList.add('highlighted');
+    frags[kbHighlightIdx].scrollIntoView({behavior:'smooth', block:'center'});
+  } else if (e.key === 'e') {
+    // Expand a random realm
+    const cards = document.querySelectorAll('.realm-card');
+    if (cards.length > 0) {
+      const r = cards[Math.floor(Math.random() * cards.length)];
+      r.classList.toggle('expanded');
+      r.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+});
+
+// ============= AMBIENT AUDIO =============
+let audioCtx = null;
+let dronePlaying = false;
+function startDrone() {
+  if (dronePlaying) return;
+  try {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc1 = audioCtx.createOscillator();
+    const osc2 = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc1.frequency.value = 55; // Low A
+    osc2.frequency.value = 82.4; // E
+    osc1.type = 'sine';
+    osc2.type = 'sine';
+    gain.gain.value = 0;
+    gain.gain.linearRampToValueAtTime(0.04, audioCtx.currentTime + 2);
+    osc1.connect(gain); osc2.connect(gain); gain.connect(audioCtx.destination);
+    osc1.start(); osc2.start();
+    dronePlaying = true;
+  } catch(e) {}
+}
+// Start on first interaction
+['click','keydown','touchstart'].forEach(ev => {
+  document.addEventListener(ev, startDrone, {once:true, passive:true});
+});
+
+// ============= COUNT-UP =============
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  if (el.dataset.done) return;
+  el.dataset.done = '1';
+  const dur = 1800, start = performance.now(), isLarge = target >= 1000;
+  function tick(now) {
+    const t = Math.min((now - start) / dur, 1);
+    const eased = 1 - Math.pow(1 - t, 4);
+    const val = Math.floor(target * eased);
+    el.textContent = isLarge ? val.toLocaleString('en-US') : val.toString();
+    if (t < 1) requestAnimationFrame(tick);
+    else el.textContent = isLarge ? target.toLocaleString('en-US') : target.toString();
+  }
+  requestAnimationFrame(tick);
+}
+
+// ============= REVEAL OBSERVER =============
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      e.target.querySelectorAll('.counter').forEach(animateCounter);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+const statGrid = document.querySelector('.stats');
+if (statGrid) {
+  const statObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.counter').forEach((c, i) => setTimeout(() => animateCounter(c), i * 100));
+        statObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  statGrid.observe(statGrid);
+}
+
+// ============= PWA INSTALL PROMPT =============
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  setTimeout(() => {
+    document.getElementById('installPrompt').classList.add('show');
+  }, 3000);
+});
+
+document.getElementById('installBtn').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+  }
+  document.getElementById('installPrompt').classList.remove('show');
+});
+
+document.getElementById('installClose').addEventListener('click', () => {
+  document.getElementById('installPrompt').classList.remove('show');
+});
+
+// ============= PWA =============
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+}
+</script>
+</body>
+</html>
