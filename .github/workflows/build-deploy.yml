@@ -3,32 +3,21 @@ name: Build & Deploy
 on:
   push:
     branches: [main]
-  schedule:
-    # Daily at 4am UTC — regenerate with latest commits even without a push
-    - cron: '0 4 * * *'
   workflow_dispatch:
 
 permissions:
   contents: read
   deployments: write
-  pages: write
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # full git history for commit counting
 
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
-
-      - name: Collect data from git
-        run: bun scripts/collect.ts
-        env:
-          HOME: /home/runner
 
       - name: Build
         run: bun scripts/build.ts
