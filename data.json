@@ -39,9 +39,9 @@
     {
       "name": "unsigned/paas",
       "commits": 770,
-      "insertions": 216456,
-      "deletions": 20034,
-      "net": 196422,
+      "insertions": 216072,
+      "deletions": 20273,
+      "net": 195799,
       "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
       "category": "platform"
     },
@@ -55,20 +55,11 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/terrarium-somnium",
-      "commits": 255,
-      "insertions": 116344,
-      "deletions": 24709,
-      "net": 91635,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "terrarium",
-      "commits": 254,
-      "insertions": 116052,
-      "deletions": 24708,
-      "net": 91344,
+      "commits": 256,
+      "insertions": 116371,
+      "deletions": 24730,
+      "net": 91641,
       "desc": "",
       "category": "ops"
     },
@@ -155,10 +146,10 @@
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 54,
-      "insertions": 1341,
-      "deletions": 181,
-      "net": 1160,
+      "commits": 55,
+      "insertions": 1369,
+      "deletions": 183,
+      "net": 1186,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
@@ -271,15 +262,6 @@
       "category": "templates"
     },
     {
-      "name": "unsigned/agent-jury",
-      "commits": 19,
-      "insertions": 14957,
-      "deletions": 519,
-      "net": 14438,
-      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
-      "category": "agent"
-    },
-    {
       "name": "templates/rust",
       "commits": 18,
       "insertions": 750,
@@ -313,6 +295,15 @@
       "deletions": 247,
       "net": 2827,
       "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/works",
+      "commits": 15,
+      "insertions": 13989,
+      "deletions": 2154,
+      "net": 11835,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -370,15 +361,6 @@
       "category": "infra"
     },
     {
-      "name": "cerebral/works",
-      "commits": 12,
-      "insertions": 13594,
-      "deletions": 1519,
-      "net": 12075,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "templates/python",
       "commits": 11,
       "insertions": 610,
@@ -386,6 +368,15 @@
       "net": 574,
       "desc": "Python project template. Standard scaffolding.",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/agent-jury",
+      "commits": 11,
+      "insertions": 8296,
+      "deletions": 285,
+      "net": 8011,
+      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
+      "category": "agent"
     },
     {
       "name": "unsigned/action-runners",
@@ -8143,7 +8134,7 @@
     ],
     [
       "2026-06-13",
-      92
+      80
     ],
     [
       "2026-06-14",
@@ -8151,15 +8142,15 @@
     ],
     [
       "2026-06-15",
-      80
+      67
     ],
     [
       "2026-06-16",
-      56
+      46
     ],
     [
       "2026-06-17",
-      51
+      41
     ],
     [
       "2026-06-18",
@@ -8187,11 +8178,11 @@
     ],
     [
       "2026-06-24",
-      54
+      29
     ],
     [
       "2026-06-25",
-      41
+      25
     ],
     [
       "2026-06-26",
@@ -8223,39 +8214,39 @@
     ],
     [
       "2026-07-03",
-      99
+      97
     ],
     [
       "2026-07-04",
-      186
+      148
     ],
     [
       "2026-07-05",
-      113
+      101
     ],
     [
       "2026-07-06",
-      232
-    ],
-    [
-      "2026-07-07",
-      157
-    ],
-    [
-      "2026-07-08",
-      180
-    ],
-    [
-      "2026-07-09",
       179
     ],
     [
+      "2026-07-07",
+      146
+    ],
+    [
+      "2026-07-08",
+      158
+    ],
+    [
+      "2026-07-09",
+      170
+    ],
+    [
       "2026-07-10",
-      71
+      62
     ],
     [
       "2026-07-11",
-      175
+      160
     ]
   ],
   "sessionDays": [
@@ -8549,7 +8540,7 @@
     ],
     [
       "2026-07-11",
-      72
+      77
     ]
   ]
 }
