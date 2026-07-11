@@ -964,7 +964,7 @@ let fragObserver = null;
 function renderFragments() {
   const q = searchInput.value.toLowerCase().trim();
   let filtered = fragments;
-  if (q) filtered = filtered.filter(f => f.t.toLowerCase().includes(q));
+  if (q) filtered = filtered.filter(f => f.t.toLowerCase().includes(q) || f.tags.some(t => t.toLowerCase().includes(q)) || (f.d && f.d.toLowerCase().includes(q)));
   if (activeTag) filtered = filtered.filter(f => f.tags.includes(activeTag));
 
   countEl.textContent = filtered.length;
