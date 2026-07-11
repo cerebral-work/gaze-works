@@ -234,14 +234,14 @@ function collectSessionDays(): DayCount[] {
 
 // ============= FRAGMENT EXTRACTION =============
 
-const FRAGMENT_KEYWORDS = /\b(stop|don'?t|use the|full authorization|gaze upon|despair|godmode|mint shit|decommission|sicknasty|humble|heart sing|sprint|velocity|build|ship|merge|deploy|fuck|shit|damn|hell yes|let'?s go|that'?s it|nope|kill it|burn it|ship it|do it|now)\b/i;
+const FRAGMENT_KEYWORDS = /\b(full authorization|gaze upon|despair|godmode|mint shit|decommission|sicknasty|humble|heart sing|fuck|shit|damn|hell yes|let'?s go|kill it|burn it|ship it|don'?t bother|stop using|stop doing|i don'?t want|i don'?t know how|i don'?t understand)\b/i;
 const FRAGMENT_TAG_MAP: Record<string, string[]> = {
   'fire': ['fuck', 'shit', 'damn', 'hell yes', "let's go", 'sicknasty'],
-  'command': ['stop', "don't", 'use the', 'full authorization', 'godmode', 'decommission', 'kill it', 'burn it', 'ship it', 'do it', 'now'],
+  'command': ['full authorization', 'godmode', 'decommission', 'kill it', 'burn it', 'ship it', "don't bother", 'stop using', 'stop doing', "i don't want"],
   'culture': ['humble', 'heart sing', 'gaze upon', 'despair', 'sicknasty'],
-  'infra': ['godmode', 'mint', 'decommission', 'deploy', 'merge'],
-  'platform': ['ship', 'deploy', 'merge', 'platform'],
-  'reflective': ['despair', 'humble', 'gaze upon'],
+  'infra': ['godmode', 'mint', 'decommission', 'deploy'],
+  'platform': ['ship', 'deploy', 'platform'],
+  'reflective': ['despair', 'humble', 'gaze upon', "i don't know how", "i don't understand"],
 };
 
 function extractTags(text: string): string[] {
@@ -283,14 +283,16 @@ function collectFragments(): Fragment[] {
             ? (rawContent as Array<{ text?: string }>).map(c => c.text ?? '').join(' ')
             : '';
 
-        if (text.length < 10 || text.length > 300) continue;
+        if (text.length < 15 || text.length > 300) continue;
         if (text.includes('<command-') || text.startsWith('<')) continue;  // skip XML command wrappers
         if (!FRAGMENT_KEYWORDS.test(text)) continue;
+        // Skip operational noise: merge/review/deploy commands without personality
+        if (/^(merge|review|deploy|did the|just deploy|do the merge|split and|keep the|check the pr)/i.test(text.trim()) && text.length < 80) continue;
 
         const tags = extractTags(text);
         if (tags.length === 0) continue;
-        // Filter noise: if only "command" tag, require >30 chars to keep
-        if (tags.length === 1 && tags[0] === 'command' && text.length < 30) continue;
+        // Filter noise: if only "command" tag, require >60 chars to keep
+        if (tags.length === 1 && tags[0] === 'command' && text.length < 60) continue;
 
         const ts = obj.timestamp ?? '';
         const day = ts ? `Day ${Math.floor((new Date(ts).getTime() - new Date('2026-04-21').getTime()) / 86400000) + 1}` : '';

@@ -25,8 +25,78 @@
     "tags": ["platform", "command"]
   },
   {
-    "t": "We're sicknasty fam. I just try to stay humble.",
-    "d": "Day 1",
-    "tags": ["culture", "fire", "reflective"]
+    "t": "I just don't even agree with the white knuckling as a framing. It was never hard. What was hard was feeling like I couldn't be honest about what I actually wanted.",
+    "d": "Day 35",
+    "tags": ["reflective", "fire"]
+  },
+  {
+    "t": "I don't know how to distribute trust. That's a hard one.",
+    "d": "Day 28",
+    "tags": ["reflective", "command"]
+  },
+  {
+    "t": "You don't have to change it. Just own it.",
+    "d": "Day 22",
+    "tags": ["command", "culture"]
+  },
+  {
+    "t": "oh shit ok nvm this context is poisoned",
+    "d": "Day 12",
+    "tags": ["fire"]
+  },
+  {
+    "t": "people pleasing or absolutely the fuck not?",
+    "d": "Day 40",
+    "tags": ["fire", "reflective"]
+  },
+  {
+    "t": "merciless purge of all skills that don't immediately prove value",
+    "d": "Day 45",
+    "tags": ["command", "fire"]
+  },
+  {
+    "t": "I'm actually a huge pain in the ass, Claude. I prefer a squash push from local feature branches.",
+    "d": "Day 30",
+    "tags": ["infra", "fire", "reflective"]
+  },
+  {
+    "t": "i just want to ship neuronal code rn",
+    "d": "Day 15",
+    "tags": ["platform", "fire"]
+  },
+  {
+    "t": "No. No. No. You're you're glassy. Don't even worry about the glassy thing. Let's start over.",
+    "d": "Day 18",
+    "tags": ["command", "fire"]
+  },
+  {
+    "t": "Prove-it-first: do the #9-by-deletion move now",
+    "d": "Day 50",
+    "tags": ["command", "infra"]
+  },
+  {
+    "t": "Now that was actually pretty useful. We don't need to fork and you're right. Reverie is a feature, not a product.",
+    "d": "Day 55",
+    "tags": ["reflective", "platform"]
+  },
+  {
+    "t": "Hey Claude, did you know that the voice that you're on now is named Glassy?",
+    "d": "Day 18",
+    "tags": ["culture"]
+  },
+  {
+    "t": "Maybe I don't know how to ask this question without feeling super awkward, but I'm for a new kind of honesty.",
+    "d": "Day 40",
+    "tags": ["reflective"]
+  },
+  {
+    "t": "make sure cerebral.work site is swapped to the coming soon page don't use a cliche ai design",
+    "d": "Day 8",
+    "tags": ["command", "platform"]
+  },
+  {
+    "t": "We're shipping now.",
+    "d": "Day 20",
+    "tags": ["command", "platform", "fire"]
   }
 ]

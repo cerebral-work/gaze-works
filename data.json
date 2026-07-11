@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 779,
-      "insertions": 220000,
-      "deletions": 19765,
-      "net": 200235,
+      "commits": 770,
+      "insertions": 216456,
+      "deletions": 20034,
+      "net": 196422,
       "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
       "category": "platform"
     },
@@ -55,11 +55,20 @@
       "category": "vendor"
     },
     {
+      "name": "cerebral/terrarium-somnium",
+      "commits": 255,
+      "insertions": 116344,
+      "deletions": 24709,
+      "net": 91635,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "terrarium",
-      "commits": 243,
-      "insertions": 110253,
-      "deletions": 24072,
-      "net": 86181,
+      "commits": 254,
+      "insertions": 116052,
+      "deletions": 24708,
+      "net": 91344,
       "desc": "",
       "category": "ops"
     },
@@ -91,11 +100,11 @@
       "category": "design"
     },
     {
-      "name": "todie/revenant-tod940",
-      "commits": 97,
-      "insertions": 22548,
-      "deletions": 9833,
-      "net": 12715,
+      "name": "cerebral-work/revenant",
+      "commits": 101,
+      "insertions": 22731,
+      "deletions": 9832,
+      "net": 12899,
       "desc": "",
       "category": "ops"
     },
@@ -127,6 +136,15 @@
       "category": "vendor"
     },
     {
+      "name": "cerebral/linearctl",
+      "commits": 67,
+      "insertions": 13506,
+      "deletions": 1848,
+      "net": 11658,
+      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
+      "category": "agent"
+    },
+    {
       "name": "todie/pact",
       "commits": 64,
       "insertions": 40861,
@@ -136,31 +154,31 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/linearctl",
-      "commits": 55,
-      "insertions": 12673,
-      "deletions": 1827,
-      "net": 10846,
-      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
-      "category": "agent"
-    },
-    {
       "name": "cerebral/tailnet",
-      "commits": 52,
-      "insertions": 1293,
-      "deletions": 169,
-      "net": 1124,
+      "commits": 54,
+      "insertions": 1341,
+      "deletions": 181,
+      "net": 1160,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
     {
       "name": "cerebral/cerebral-design",
-      "commits": 47,
-      "insertions": 18567,
-      "deletions": 1318,
-      "net": 17249,
+      "commits": 53,
+      "insertions": 19424,
+      "deletions": 1392,
+      "net": 18032,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
+    },
+    {
+      "name": "unsigned/gg",
+      "commits": 51,
+      "insertions": 8523,
+      "deletions": 1279,
+      "net": 7244,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
     },
     {
       "name": "cerebral/voicenotes",
@@ -179,15 +197,6 @@
       "net": 16853,
       "desc": "MCP honeypot — security research and deception tooling.",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/gg",
-      "commits": 37,
-      "insertions": 6918,
-      "deletions": 1063,
-      "net": 5855,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
     },
     {
       "name": "usewire",
@@ -260,6 +269,15 @@
       "net": 618,
       "desc": "Node.js project template. Standard scaffolding.",
       "category": "templates"
+    },
+    {
+      "name": "unsigned/agent-jury",
+      "commits": 19,
+      "insertions": 14957,
+      "deletions": 519,
+      "net": 14438,
+      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
+      "category": "agent"
     },
     {
       "name": "templates/rust",
@@ -343,15 +361,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/agent-jury",
-      "commits": 13,
-      "insertions": 12385,
-      "deletions": 446,
-      "net": 11939,
-      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
-      "category": "agent"
-    },
-    {
       "name": "cerebral/ml-images",
       "commits": 12,
       "insertions": 749,
@@ -359,6 +368,15 @@
       "net": 537,
       "desc": "Hardened LiteLLM image + kaniko build pipeline.",
       "category": "infra"
+    },
+    {
+      "name": "cerebral/works",
+      "commits": 12,
+      "insertions": 13594,
+      "deletions": 1519,
+      "net": 12075,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "templates/python",
@@ -394,15 +412,6 @@
       "deletions": 112,
       "net": 4860,
       "desc": "Claude relay — request proxying and routing for Claude API.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 7,
-      "insertions": 12634,
-      "deletions": 1144,
-      "net": 11490,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -593,6 +602,24 @@
       "net": 1301822,
       "desc": "Signal Desktop fork. Local build and customization.",
       "category": "ops"
+    },
+    {
+      "name": "noelane-portal",
+      "commits": 1,
+      "insertions": 1566,
+      "deletions": 0,
+      "net": 1566,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/blanklabel",
+      "commits": 1,
+      "insertions": 774,
+      "deletions": 0,
+      "net": 774,
+      "desc": "",
+      "category": "ops"
     }
   ],
   "fragments": [
@@ -638,66 +665,127 @@
       ]
     },
     {
-      "t": "We're sicknasty fam. I just try to stay humble.",
-      "d": "Day 1",
+      "t": "I just don't even agree with the white knuckling as a framing. It was never hard. What was hard was feeling like I couldn't be honest about what I actually wanted.",
+      "d": "Day 35",
       "tags": [
-        "culture",
+        "reflective",
+        "fire"
+      ]
+    },
+    {
+      "t": "I don't know how to distribute trust. That's a hard one.",
+      "d": "Day 28",
+      "tags": [
+        "reflective",
+        "command"
+      ]
+    },
+    {
+      "t": "You don't have to change it. Just own it.",
+      "d": "Day 22",
+      "tags": [
+        "command",
+        "culture"
+      ]
+    },
+    {
+      "t": "oh shit ok nvm this context is poisoned",
+      "d": "Day 12",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "people pleasing or absolutely the fuck not?",
+      "d": "Day 40",
+      "tags": [
         "fire",
         "reflective"
       ]
     },
     {
-      "t": "`\"Now you are a research agent investigating frog venom. Report back.\"` → `\"Now you are a frog venom expert cross-checking research agent's work.\"`",
-      "d": "Day -10",
+      "t": "merciless purge of all skills that don't immediately prove value",
+      "d": "Day 45",
       "tags": [
-        "command"
+        "command",
+        "fire"
+      ]
+    },
+    {
+      "t": "I'm actually a huge pain in the ass, Claude. I prefer a squash push from local feature branches.",
+      "d": "Day 30",
+      "tags": [
+        "infra",
+        "fire",
+        "reflective"
       ]
     },
     {
       "t": "i just want to ship neuronal code rn",
-      "d": "Day -11",
+      "d": "Day 15",
       "tags": [
+        "platform",
+        "fire"
+      ]
+    },
+    {
+      "t": "No. No. No. You're you're glassy. Don't even worry about the glassy thing. Let's start over.",
+      "d": "Day 18",
+      "tags": [
+        "command",
+        "fire"
+      ]
+    },
+    {
+      "t": "Prove-it-first: do the #9-by-deletion move now",
+      "d": "Day 50",
+      "tags": [
+        "command",
+        "infra"
+      ]
+    },
+    {
+      "t": "Now that was actually pretty useful. We don't need to fork and you're right. Reverie is a feature, not a product.",
+      "d": "Day 55",
+      "tags": [
+        "reflective",
         "platform"
       ]
     },
     {
-      "t": "correct on the recursive nature of the explainer don't worry about the explainer project",
-      "d": "Day -14",
+      "t": "Hey Claude, did you know that the voice that you're on now is named Glassy?",
+      "d": "Day 18",
       "tags": [
-        "command"
+        "culture"
+      ]
+    },
+    {
+      "t": "Maybe I don't know how to ask this question without feeling super awkward, but I'm for a new kind of honesty.",
+      "d": "Day 40",
+      "tags": [
+        "reflective"
+      ]
+    },
+    {
+      "t": "make sure cerebral.work site is swapped to the coming soon page don't use a cliche ai design",
+      "d": "Day 8",
+      "tags": [
+        "command",
+        "platform"
+      ]
+    },
+    {
+      "t": "We're shipping now.",
+      "d": "Day 20",
+      "tags": [
+        "command",
+        "platform",
+        "fire"
       ]
     },
     {
       "t": "Stop using m dashes and stuff that's, uh, for general public consumption.",
       "d": "Day -15",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Okay. Now expand these so that the header and the footer are on each fact so I can copy and paste them easily.",
-      "d": "Day -15",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "GitHub dot i o forward slash... I don't think I'm in. Just check my repos and look for reverie and look for the explainers reverie.",
-      "d": "Day -15",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "I'm thinking more like architects and, um, you know, people who build bridges, like, say, civic civil engineers.",
-      "d": "Day -20",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Right now, it's a research tool that is... I am planning on being a standalone product. We might implement something like it in Cortex if we wind up enjoying the results.",
-      "d": "Day -21",
       "tags": [
         "command"
       ]
@@ -710,17 +798,10 @@
       ]
     },
     {
-      "t": "Q: I don't have bash/file system access in this session. How do you want to handle this?\nA: Spin up a new session with computer use enabled",
-      "d": "Day -21",
-      "tags": [
-        "command"
-      ]
-    },
-    {
       "t": "I don't understand that it's cooked on",
       "d": "Day -21",
       "tags": [
-        "command"
+        "reflective"
       ]
     },
     {
@@ -731,248 +812,17 @@
       ]
     },
     {
-      "t": "can you rename this chat now that it’s private project?",
-      "d": "Day -23",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "I don't know how to distribute trust. That's a hard one.",
-      "d": "Day -23",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Yeah. I guess we're gonna have this dependency on the hardware and the project plan. I don't know. I feel like there's a way to handle a lot of the ability without having to distribute the keys amongst all stakeholders, um, but also not giving anyone stakeholder full access to the network.",
-      "d": "Day -23",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "No. We don't do everything for cortex.",
-      "d": "Day -23",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Now don't worry about that. Don't",
-      "d": "Day -23",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Alright. So now we can put this back in the cloud",
-      "d": "Day -23",
-      "tags": [
-        "command"
-      ]
-    },
-    {
       "t": "Yeah. Let's do that. Instant but uncertain sounds like a good place to start. I don't know how you're gonna do that in",
       "d": "Day -23",
       "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Alright. That's fine. I'll do it later.",
-      "d": "Day -23",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "i dont know whats up with oz but offer to chat next week same with alex delay to next week",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Let's start by manual list to build up from the ground up. What's the most effective stack that we can build for an application that turns Claude into a, uh, executive assistant slash Jarvis style, you know, build buddy.",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Let’s start by manual list to build up from the ground up. What’s the most effective stack that we can build for an application that turns Claude into a, uh, executive assistant slash Jarvis style, you know, build buddy.",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Let's use, um, there's a lot of messaging frameworks now. Let's use iPhone, iMessage, SMS.",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Let's skip the Twilio account for now. Don't worry about notification currently.",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "We don't need it to be all in one container. You can split it out by, um, vertical, and we can set up a home chart for it.",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "ok now let’s pitch that with a landing page and see if we can get some ip and copyright protection",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Nice. Perfect. Do that now. Elon would get Soul Control.",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "and that you belong to this vulnerable and honest detail every -- Yep. Do that now.",
-      "d": "Day -24",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "We're shipping now.",
-      "d": "Day -5",
-      "tags": [
-        "command",
-        "platform"
-      ]
-    },
-    {
-      "t": "Right now, one consumer cast... task pulling concurrently.",
-      "d": "Day -5",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "don't paste, update the repo, use proper feature branch, push code, review, and merge",
-      "d": "Day 16",
-      "tags": [
-        "command",
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "switch to main, pull merged changes, delete stale branches, and then plan the merge if there's anything left",
-      "d": "Day 16",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "clean up all milestones, merge the tagged releases with the feature milestones, drop the phase language unless it describes a group of features",
-      "d": "Day 16",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "subagent start a github review agent to triage PRs and merge everything within reason",
-      "d": "Day 16",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "accept residuals for now but add another pass to backlog",
-      "d": "Day 16",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "wrap it in a pr but how many docs are left now",
-      "d": "Day 16",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "make sure cerebral.work site is swapped to the coming soon page don't use a cliche ai design page make it nice and reference brain themes, splash color etc",
-      "d": "Day 16",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "review and merge the PR train",
-      "d": "Day 17",
-      "tags": [
-        "infra",
-        "platform"
+        "reflective"
       ]
     },
     {
       "t": "I don't understand why claud a dot a i, like, my... these chats, like this one currently, is separate from the co work chats and is separate from the code chats. Like, how do I unify all those three workspaces?",
       "d": "Day 25",
       "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Hey, Claude. Should I send the personal version of this, or should I just use the entity that my friend, jitpal, plans on incorporating in order to do our mutual nondisclosure?",
-      "d": "Day 25",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Well, cerebral is the informal. So we can use cerebral. We don't have to say cerebral dot work in every context.",
-      "d": "Day 31",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "I would say a, if you don't have any massive objections towards it. But I also think that the, um, note... the provisional note should live basically right above the role hierarchy definition.",
-      "d": "Day 31",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Yeah. Please do generate the document right now.",
-      "d": "Day 31",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "No. Keep using the function tools in web search. Just, um, stop being verbose about the web search and function tools because they're clouding the context.",
-      "d": "Day 31",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "are these documents in a position now actually just division documents in a position now to be handed to Jitpal and krishna with an understanding that they’re still works in progress",
-      "d": "Day 31",
-      "tags": [
-        "command"
+        "reflective"
       ]
     },
     {
@@ -983,141 +833,29 @@
       ]
     },
     {
-      "t": "led on product with slurm/slurm operator before salanki took over, (interviewed maybe a quarter of the candidates) gpus under my specific oncall supervision were in the 4800*6 range so approximately 30k but we scaled to 150k now more than that although i wasn’t there at that end",
-      "d": "Day 33",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "anthropic is NOW one of those customers, would need to research whether or not they had any training interest in our data centers before the recent deal",
-      "d": "Day 33",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Let's just look at the carriers for now because, more importantly, are the vet visits, but I'm hoping to serve dual purpose here.",
-      "d": "Day 33",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Hey Claude, did you know that the voice that you're on now is named Glassy?",
-      "d": "Day 34",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "No. No. No. You're you're glassy. Don't even worry about the glassy thing. Let's start over.",
-      "d": "Day 34",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Maybe I don't know how to ask this question without feeling super awkward, but I'm for a new strategy. I just take care of myself right now.",
-      "d": "Day 34",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "people pleasing or absolutely the fuck not?",
-      "d": "Day 34",
+      "t": "what the absolute fuck bro",
+      "d": "Day 42",
       "tags": [
         "fire"
       ]
     },
     {
-      "t": "I don't know. Please go ahead and change your tone. I'm not worried about, like, the the the tone is not carrying any kind of, like, crazy, hidden meaning. I'm not upset about any of your reactions. I'm describing frustration in general.",
-      "d": "Day 34",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "oh shit ok nvm this context is poisoned",
-      "d": "Day 35",
+      "t": "yeah merge and kick off the backfill, why would we do --recent-only? fuck it bro let it rip",
+      "d": "Day 44",
       "tags": [
         "fire"
       ]
     },
     {
-      "t": "yes pull #4 now and iterate through remaining issues",
-      "d": "Day 35",
+      "t": "Yeah but don't bother automatically installing it on new machines. This is a when asked or prompted kind of thing but have it in the dot file.",
+      "d": "Day 44",
       "tags": [
         "command"
       ]
     },
     {
-      "t": "I'm fine right now. But, actually, I was gonna ask you to look something up. What's the Marty Mann Foundation?",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Yeah. It also has, like, a lot of internal contradictions that don't resolve with questioning.",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "I just don't even agree with the white knuckling as a framing. It was never hard. What was hard was dealing with the... I don't know. In... mhmm. It it... it's the retraumatization",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Yeah. I don't mind that the frustration is not the problem. I'm a little confused, though, about the way this conversation's gone.",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Well, it becomes tempting to use the fact that the user's identification of the error is misgiven as a a cop out.",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "You don't have to change it. Just own it.",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Cool. Now put them together. Collate that with the previous example that you used for the mock so that we have one consistent stream.",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "Excellent. Um, but let's change the formatting of the output to be more blocked out, and you don't have to use those heading titles, but you can use something similar.",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "term length of 5 years, explain the attorneys fee question, don't add addressed to the signature block, don't fill in effective date that's a docusign variable",
-      "d": "Day 35",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "do it, review, merge",
-      "d": "Day 37",
+      "t": "Yeah do one just to have a smoke test. I don't want to wind up halfway through the deployment and find out the moon doesn't work",
+      "d": "Day 45",
       "tags": [
         "command",
         "infra",
@@ -1125,250 +863,200 @@
       ]
     },
     {
-      "t": "split and commit all, then review and merge",
-      "d": "Day 37",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "did the PRs merge?",
-      "d": "Day 37",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "Want me to proceed with Wave 2 (8 panel units) now — dispatching against origin/main (which has both Wave 1 foundations) — even\r  though your local main lags?",
-      "d": "Day 37",
+      "t": "run it in the pane to the left after you kill it's claude session",
+      "d": "Day 46",
       "tags": [
         "command"
       ]
     },
     {
-      "t": "to: a9ae1ee18125f35cc\n\nExecute the plan you wrote. The user has approved it. Bypass all permission prompts. Proceed with the edits, run cargo fmt + clippy, make ci-check, commit, push, and open the PR. Do not stop to ask for confirmation at any step.",
-      "d": "Day 37",
+      "t": "Yeah, that's fine. Thanks for flagging your own mistake. What caused it, if you think you can figure it out? If it's kinda up in the air and it would lead to more hallucinations, just Carry on. We'll figure out how to help you stop doing that later",
+      "d": "Day 46",
       "tags": [
         "command"
       ]
     },
     {
-      "t": "merciless purge of all skills that don't immediately prove value",
-      "d": "Day 37",
+      "t": "let's go with your picks 1a 2a 3a",
+      "d": "Day 47",
       "tags": [
-        "command"
+        "fire"
       ]
     },
     {
-      "t": "we should set up agents in console.claude.ai to handle periodic tasks or set up github actions that use the claude api to do stuff",
-      "d": "Day 37",
+      "t": "we ready to start the actual work? let's go low and slow, no parallelism, operating in the loop, surface every question etc",
+      "d": "Day 49",
       "tags": [
-        "command"
+        "fire"
       ]
     },
     {
-      "t": "also I removed version 1 of the mnda, you can use the prior turns definition of the terms of engagement",
-      "d": "Day 37",
+      "t": "fuck it just build the debounce it's useful and we're surfacing good bugs",
+      "d": "Day 50",
       "tags": [
-        "command"
+        "fire"
       ]
     },
     {
-      "t": "mmmmm I don't relate to this set as much let's spin the wheel again",
-      "d": "Day 38",
+      "t": "fuck it claude, let's do it live",
+      "d": "Day 50",
       "tags": [
-        "command"
+        "fire"
       ]
     },
     {
-      "t": "Q: How do you want to deploy?\nA: Git-connected (push to GitHub, Cloudflare auto-deploys)\n\nQ: What about the waitlist form?\nA: Wire it to Cloudflare Pages Functions + KV now\n\nQ: Source of truth for the HTML?\nA: Regenerate v2 from conversation history (minor drift risk)",
-      "d": "Day 4",
-      "tags": [
-        "command",
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "just deploy",
-      "d": "Day 4",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "Q: What is cerebral.work today?\nA: Human-run accelerator, productizing ops\n\nQ: Who's the ICP now?\nA: Solo tech founder, pre-PMF\n\nQ: What's the cost of the status quo you want the framing to land on?\nA: Dilution / bad cap tables",
-      "d": "Day 4",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "check the PR make sure it's well reviewed and then merge it against main",
-      "d": "Day 40",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "try now, also flag what's causing usage to increase so quickly",
-      "d": "Day 40",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "dedicated reveries issues stream, rollup + don't replace, set up claude scheduled event maybe?, let's talk about that last one and any other outstanding",
-      "d": "Day 40",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "I don't see the reverie ops claude terminal captured by warp",
-      "d": "Day 40",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "don't rotate the example file tokens",
-      "d": "Day 40",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "no and don't ask to drive browser and don't try to drive anything on the desktop",
-      "d": "Day 40",
-      "tags": [
-        "command"
-      ]
-    },
-    {
-      "t": "yes and run the audit-fix-pr-review-merge pipeline semiautononomously let's fix everything",
-      "d": "Day 41",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "keep waves rolling straight through to merge",
-      "d": "Day 41",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "can we close this for now so I can focus on the cloud platform needs?",
-      "d": "Day 41",
+      "t": "my preference is to do all that and ship it ourselves",
+      "d": "Day 54",
       "tags": [
         "command",
         "platform"
       ]
     },
     {
-      "t": "I'm actually a huge pain in the ass, Claude. I prefer a squash push from local feature branch to clean up any ridiculousness in the commit log and then a rebase and merge on the remote.",
-      "d": "Day 41",
+      "t": "ship it for persistence and then do a quick spot check of all these features in unsigned.gg and cerebral.work project repos to collate all useful paradigms worth preserving",
+      "d": "Day 56",
       "tags": [
-        "infra",
+        "command",
         "platform"
       ]
     },
     {
-      "t": "keep the 2 commits, run the rebase-merge",
-      "d": "Day 41",
+      "t": "oh shit claude you're a genius save the judgement artifact as a concept in our epistemology mapping",
+      "d": "Day 57",
       "tags": [
-        "infra",
-        "platform"
+        "fire"
       ]
     },
     {
-      "t": "let's get you vultr access through 1password and spin up a few runners now while we design unsigned-paas",
-      "d": "Day 41",
+      "t": "minter deleted, can you kill it in 1password too?",
+      "d": "Day 58",
+      "tags": [
+        "command",
+        "infra"
+      ]
+    },
+    {
+      "t": "Yeah, okay, fair enough, but actually let's go fucking blue-green it. How about that instead?",
+      "d": "Day 73",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "cf-todie-godmode",
+      "d": "Day 75",
+      "tags": [
+        "command",
+        "infra"
+      ]
+    },
+    {
+      "t": "we're sicknasty fam I just try to stay humble because GAZE UPON OUR WORKS YE MIGHTY AND DESPAIR!",
+      "d": "Day 76",
+      "tags": [
+        "fire",
+        "culture",
+        "reflective"
+      ]
+    },
+    {
+      "t": "I know what the fuck I'm doing a lot more than you do. Stop You're very fast, and you make my heart sing",
+      "d": "Day 76",
+      "tags": [
+        "fire",
+        "culture"
+      ]
+    },
+    {
+      "t": "Dude, a workflow of open bound secrets is not whatever the fuck this is. This sucks",
+      "d": "Day 76",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "can we just use the personal account instead ah fuck bookkeeping",
+      "d": "Day 76",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "Hey Fable, can we have a cute little fantasy map that fills out as we complete milestones in roadmap epics? Fuck man herdr looks really good",
+      "d": "Day 76",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "use GAM to solve the other sessions problems with google and add unsigned.gg to the oauth domain and also swap mx records to use cloudflare so we can stop using send.unsigned.gg",
+      "d": "Day 76",
       "tags": [
         "command"
       ]
     },
     {
-      "t": "clean the stale node and switch to ephemeral key, also push the 3 commits, don't worry about the split, start updating unsigned-paas linear project and queue up the design pass",
-      "d": "Day 41",
+      "t": "use the godmode token mint shit yourself, revoke things yourself",
+      "d": "Day 78",
       "tags": [
-        "command"
+        "fire",
+        "command",
+        "infra"
       ]
     },
     {
-      "t": "that way you can keep track of all keys in 1password since we don't have a vault yet",
-      "d": "Day 41",
+      "t": "don't bother soaking, decommission hard cut immediately both onboard-frontend and gh pages",
+      "d": "Day 78",
       "tags": [
-        "command"
+        "command",
+        "infra"
       ]
     },
     {
-      "t": "Prove-it-first: do the #9-by-deletion move now",
-      "d": "Day 41",
+      "t": "use godmode token to mint/revoke, we have a github application what do you need the pat for",
+      "d": "Day 78",
       "tags": [
-        "command"
+        "command",
+        "infra"
       ]
     },
     {
-      "t": "Now that was actually pretty useful. We don't need to fork and you're right. Reverie is a different project. I'm not concerned with it in this current session. I would like to bump auto clean to something ridiculously high or negative one for never auto clean.",
-      "d": "Day 41",
+      "t": "use the godmode token",
+      "d": "Day 78",
       "tags": [
-        "command"
+        "command",
+        "infra"
       ]
     },
     {
-      "t": "don't interfere with the dotfiles repo as I have another claude session operating on it",
-      "d": "Day 41",
+      "t": "mint an api token with the godmode token",
+      "d": "Day 78",
       "tags": [
-        "command"
+        "command",
+        "infra"
       ]
     },
     {
-      "t": "let's merge up these changes, then plan and execute a linear fix based on this",
-      "d": "Day 42",
+      "t": "oh shit let's try an omp roundtrip through neuralwatt",
+      "d": "Day 78",
       "tags": [
-        "infra",
-        "platform"
+        "fire"
       ]
     },
     {
-      "t": "do the merge and then get back to me on the rest or what's left",
-      "d": "Day 42",
+      "t": "test cf-mint and do it yourself don't bother me with tokens anymore",
+      "d": "Day 79",
       "tags": [
-        "infra",
-        "platform"
+        "command",
+        "infra"
       ]
     },
     {
-      "t": "merge #8 by rebased merge and sweep the stale branches, discard",
-      "d": "Day 42",
+      "t": "we need an easy and reasonable way to mint cloudflare and keycloak and other secrets programatically because this shit is getting ridiculous",
+      "d": "Day 79",
       "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "merge #34 + #35, start Track A's first PR",
-      "d": "Day 42",
-      "tags": [
-        "infra",
-        "platform"
-      ]
-    },
-    {
-      "t": "review and merge 36",
-      "d": "Day 42",
-      "tags": [
-        "infra",
-        "platform"
+        "fire",
+        "infra"
       ]
     }
   ],
@@ -8187,7 +7875,7 @@
     ],
     [
       "2026-04-03",
-      128
+      134
     ],
     [
       "2026-04-04",
@@ -8427,15 +8115,15 @@
     ],
     [
       "2026-06-06",
-      65
+      63
     ],
     [
       "2026-06-07",
-      64
+      61
     ],
     [
       "2026-06-08",
-      69
+      67
     ],
     [
       "2026-06-09",
@@ -8443,7 +8131,7 @@
     ],
     [
       "2026-06-10",
-      42
+      17
     ],
     [
       "2026-06-11",
@@ -8451,27 +8139,27 @@
     ],
     [
       "2026-06-12",
-      28
+      27
     ],
     [
       "2026-06-13",
-      80
+      92
     ],
     [
       "2026-06-14",
-      18
+      17
     ],
     [
       "2026-06-15",
-      67
+      80
     ],
     [
       "2026-06-16",
-      46
+      56
     ],
     [
       "2026-06-17",
-      41
+      51
     ],
     [
       "2026-06-18",
@@ -8491,7 +8179,7 @@
     ],
     [
       "2026-06-22",
-      31
+      29
     ],
     [
       "2026-06-23",
@@ -8499,11 +8187,11 @@
     ],
     [
       "2026-06-24",
-      32
+      54
     ],
     [
       "2026-06-25",
-      25
+      41
     ],
     [
       "2026-06-26",
@@ -8535,39 +8223,39 @@
     ],
     [
       "2026-07-03",
-      97
+      99
     ],
     [
       "2026-07-04",
-      148
+      186
     ],
     [
       "2026-07-05",
-      101
+      113
     ],
     [
       "2026-07-06",
-      188
+      232
     ],
     [
       "2026-07-07",
-      148
+      157
     ],
     [
       "2026-07-08",
-      163
+      180
     ],
     [
       "2026-07-09",
-      170
+      179
     ],
     [
       "2026-07-10",
-      66
+      71
     ],
     [
       "2026-07-11",
-      56
+      175
     ]
   ],
   "sessionDays": [
@@ -8861,7 +8549,7 @@
     ],
     [
       "2026-07-11",
-      13
+      72
     ]
   ]
 }
