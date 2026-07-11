@@ -119,7 +119,7 @@ nav .links a:hover { color:var(--gold-bright); }
 @keyframes pulse { 0%,100%{opacity:.4;} 50%{opacity:1;} }
 
 /* SECTIONS */
-section { padding:8rem 2rem; position:relative; }
+section { padding:8rem 2rem; position:relative; overflow-x:hidden; }
 @media (max-width:640px) { section { padding:5rem 1.25rem; } }
 .section-label {
   font-size:.62rem; font-weight:400; letter-spacing:.35em; text-transform:uppercase;
@@ -720,6 +720,8 @@ try {
     monthsEl.style.position = 'relative';
     monthsEl.style.height = '.8rem';
     monthsEl.style.marginLeft = '1.5rem';
+    monthsEl.style.width = (cols.length * cellW) + 'px';
+    monthsEl.style.overflow = 'hidden';
 
     // Render cells
     let activeDays = 0;
