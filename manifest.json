@@ -1,0 +1,18 @@
+{
+  "name": "GAZE — Works of the Cerebral Work Institute",
+  "short_name": "GAZE",
+  "description": "A chronicle of four days building in the infinite — 778 sessions, 226 commits, 54 PRs.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0908",
+  "theme_color": "#c8a878",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0a0908">
+<title>GAZE — Works of the Cerebral Work Institute</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" type="image/svg+xml" href="/icon.svg">
+<link rel="apple-touch-icon" href="/icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,500;1,9..144,700&family=Spline+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0908; --bg-soft: #131210; --bg-card: #16140f;
+  --ink: #e8e2d4; --ink-dim: #8a8270; --ink-faint: #4a4438;
+  --gold: #c8a878; --gold-bright: #e0c498; --gold-deep: #8a7050;
+  --rust: #8a4a30; --line: #2a2620;
+  --light-bg: #f5f0e6; --light-ink: #2a2218; --light-card: #ebe5d8; --light-line: #d5cbb8;
+  --light-gold: #8a6d3b; --light-gold-bright: #a8854a; --light-gold-dim: #b89a6a;
+}
+[data-theme="light"] {
+  --bg: var(--light-bg); --bg-soft: var(--light-card); --bg-card: var(--light-card);
+  --ink: var(--light-ink); --ink-dim: #6a6358; --ink-faint: #9a9388;
+  --gold: var(--light-gold); --gold-bright: var(--light-gold-bright); --gold-deep: var(--light-gold-dim);
+  --line: var(--light-line);
+}
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+html { scroll-behavior:smooth; }
+body {
+  background:var(--bg); color:var(--ink);
+  font-family:'Spline Sans',system-ui,sans-serif; font-weight:300; line-height:1.6;
+  overflow-x:hidden; text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+  transition:background .5s,color .5s;
+}
+::-webkit-scrollbar { width:6px; }
+::-webkit-scrollbar-track { background:var(--bg); }
+::-webkit-scrollbar-thumb { background:var(--gold-deep); border-radius:3px; }
+.grain {
+  position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.035;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' /%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* SCROLL PROGRESS BAR */
+.scroll-progress {
+  position:fixed; top:0; left:0; height:2px; z-index:200;
+  background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-bright));
+  width:0%; transition:width .1s linear;
+}
+
+/* NAV */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:100;
+  padding:1.25rem 2rem; display:flex; justify-content:space-between; align-items:center;
+  background:linear-gradient(180deg,rgba(10,9,8,.92) 0%,rgba(10,9,8,.7) 70%,transparent 100%);
+  backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px);
+}
+[data-theme="light"] nav {
+  background:linear-gradient(180deg,rgba(245,240,230,.92) 0%,rgba(245,240,230,.7) 70%,transparent 100%);
+}
+nav .mark { font-family:'Fraunces',serif; font-weight:900; font-size:1.1rem; letter-spacing:.15em; color:var(--gold); text-transform:uppercase; }
+nav .mark::before { content:'◉ '; font-size:.8rem; }
+nav .links { display:flex; gap:1.8rem; align-items:center; }
+nav .links a { font-size:.72rem; font-weight:400; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-dim); text-decoration:none; transition:color .3s; }
+nav .links a:hover { color:var(--gold-bright); }
+.theme-toggle {
+  background:transparent; border:1px solid var(--line); color:var(--gold-deep);
+  font-size:1rem; cursor:pointer; padding:.3rem .5rem; transition:all .3s; border-radius:4px;
+}
+.theme-toggle:hover { border-color:var(--gold); color:var(--gold); }
+@media (max-width:640px) { nav .links a:not(.theme-toggle) { display:none; } }
+
+/* HERO */
+.hero {
+  min-height:100vh; min-height:100dvh; display:flex; flex-direction:column; justify-content:center; align-items:center;
+  position:relative; padding:2rem; text-align:center;
+}
+.hero .eyebrow {
+  font-size:.68rem; font-weight:400; letter-spacing:.42em; text-transform:uppercase;
+  color:var(--gold-deep); margin-bottom:2.5rem;
+  opacity:0; animation:fadeUp 1.2s .3s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero h1 {
+  font-family:'Fraunces',serif; font-weight:900; font-size:clamp(3.5rem,14vw,11rem);
+  line-height:.9; letter-spacing:-.03em; color:var(--ink); max-width:12ch;
+  opacity:0; animation:fadeUp 1.4s .6s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero h1 .word { display:block; }
+.hero h1 .word:nth-child(2) { color:var(--gold); font-style:italic; font-weight:500; }
+.hero .sub {
+  font-family:'Fraunces',serif; font-style:italic; font-weight:300;
+  font-size:clamp(1rem,2.5vw,1.35rem); color:var(--ink-dim); max-width:40ch; margin-top:2.5rem; line-height:1.5;
+  opacity:0; animation:fadeUp 1.2s 1.2s cubic-bezier(.16,1,.3,1) forwards;
+}
+.hero .scroll-hint {
+  position:absolute; bottom:3rem; left:50%; transform:translateX(-50%);
+  font-size:.6rem; letter-spacing:.3em; text-transform:uppercase; color:var(--ink-faint);
+  opacity:0; animation:fadeUp 1s 2s cubic-bezier(.16,1,.3,1) forwards, pulse 2.5s 3s ease-in-out infinite;
+}
+.hero .scroll-hint::after { content:' ↓'; }
+.hero::after {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background:radial-gradient(ellipse at center,transparent 30%,var(--bg) 85%); z-index:-1;
+}
+@keyframes fadeUp { from{opacity:0;transform:translateY(24px);} to{opacity:1;transform:translateY(0);} }
+@keyframes pulse { 0%,100%{opacity:.4;} 50%{opacity:1;} }
+
+/* SECTIONS */
+section { padding:8rem 2rem; position:relative; }
+@media (max-width:640px) { section { padding:5rem 1.25rem; } }
+.section-label {
+  font-size:.62rem; font-weight:400; letter-spacing:.35em; text-transform:uppercase;
+  color:var(--gold-deep); margin-bottom:1.5rem; display:flex; align-items:center; gap:.75rem;
+}
+.section-label::before { content:''; width:2rem; height:1px; background:var(--gold-deep); }
+.section-title {
+  font-family:'Fraunces',serif; font-weight:700; font-size:clamp(2rem,5vw,3.5rem);
+  line-height:1.05; letter-spacing:-.02em; max-width:24ch; margin-bottom:2rem;
+}
+.section-title em { font-style:italic; font-weight:300; color:var(--gold); }
+
+/* STATS */
+.stats {
+  max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr);
+  gap:1px; background:var(--line); border:1px solid var(--line);
+}
+@media (max-width:900px) { .stats { grid-template-columns:repeat(2,1fr); } }
+@media (max-width:480px) { .stats { grid-template-columns:1fr; } }
+.stat { background:var(--bg); padding:2.5rem 1.75rem; display:flex; flex-direction:column; justify-content:space-between; min-height:200px; transition:background .4s; }
+.stat:hover { background:var(--bg-soft); }
+.stat .num { font-family:'Fraunces',serif; font-weight:900; font-size:clamp(2rem,5vw,4rem); line-height:1; letter-spacing:-.04em; color:var(--gold); font-variant-numeric:tabular-nums; }
+.stat .num .suffix { font-size:.4em; font-weight:500; color:var(--gold-deep); margin-left:.1em; }
+.stat .label { font-size:.7rem; font-weight:400; letter-spacing:.2em; text-transform:uppercase; color:var(--ink-dim); margin-top:1.25rem; }
+.stat .note { font-family:'Fraunces',serif; font-style:italic; font-size:.82rem; color:var(--ink-faint); margin-top:.4rem; }
+
+/* HEATMAP — fixed cells, centered, no scroll */
+.heatmap-wrap { max-width:1200px; margin:0 auto; padding:1rem 0; display:flex; justify-content:center; }
+.heatmap-axis { display:flex; align-items:flex-start; gap:.4rem; }
+.heatmap-dow { display:flex; flex-direction:column; gap:2px; font-size:.5rem; color:var(--ink-faint); flex:none; }
+.heatmap-dow span { height:14px; display:flex; align-items:center; justify-content:flex-end; }
+.heatmap-grid { display:flex; gap:2px; }
+.heatmap-col { display:flex; flex-direction:column; gap:2px; }
+.heatmap-cell { width:14px; height:14px; border-radius:2px; background:var(--bg-soft); flex:none; }
+.heatmap-cell:hover { outline:1px solid var(--gold-bright); z-index:10; position:relative; }
+/* discrete intensity — gold for commits, rust for sessions */
+.heatmap-cell.l1 { background:rgba(200,168,120,.25); }
+.heatmap-cell.l2 { background:rgba(200,168,120,.5); }
+.heatmap-cell.l3 { background:var(--gold-deep); }
+.heatmap-cell.l4 { background:var(--gold-bright); }
+.heatmap-cell.s1 { background:rgba(180,95,60,.3); }
+.heatmap-cell.s2 { background:rgba(180,95,60,.55); }
+.heatmap-cell.s3 { background:var(--rust); }
+.heatmap-cell.s4 { background:#d4593a; }
+.heatmap-cell.both { background:var(--gold); box-shadow:inset 0 0 0 1px var(--rust); }
+.heatmap-cell.both.l3 { background:var(--gold); }
+.heatmap-cell.both.l4 { background:var(--gold-bright); box-shadow:inset 0 0 0 1px var(--rust); }
+.heatmap-months { display:flex; gap:2px; margin-left:1.5rem; margin-bottom:.4rem; font-size:.5rem; color:var(--ink-faint); text-transform:uppercase; justify-content:center; }
+.heatmap-months span { white-space:nowrap; }
+.heatmap-legend { display:flex; gap:1.5rem; justify-content:center; margin-top:1.5rem; font-size:.65rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-dim); flex-wrap:wrap; }
+.heatmap-legend span { display:flex; align-items:center; gap:.4rem; }
+.heatmap-legend .swatch { width:14px; height:14px; border-radius:2px; }
+.heatmap-legend .ramp { display:flex; gap:2px; }
+.heatmap-legend .ramp i { width:12px; height:14px; border-radius:2px; display:block; }
+.heatmap-summary { display:flex; justify-content:center; gap:3rem; margin-top:1rem; font-size:.7rem; color:var(--ink-dim); flex-wrap:wrap; }
+.heatmap-summary b { color:var(--gold); font-weight:500; }
+
+/* DISTRIBUTION — horizontal ranked list (log scale) */
+.dist-list { max-width:900px; margin:0 auto; display:flex; flex-direction:column; gap:.35rem; }
+.dist-row { display:flex; align-items:center; gap:.75rem; padding:.35rem 0; cursor:default; transition:background .2s; border-radius:2px; }
+.dist-row:hover { background:var(--bg-soft); padding-left:.5rem; padding-right:.5rem; }
+.dist-rank { font-family:'Fraunces',serif; font-weight:300; font-size:.85rem; color:var(--ink-faint); width:1.5rem; text-align:right; flex:none; }
+.dist-name { font-size:.75rem; color:var(--ink); width:11rem; flex:none; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.dist-bar-wrap { flex:1; height:18px; background:var(--bg-soft); border-radius:2px; overflow:hidden; position:relative; min-width:60px; }
+.dist-bar { height:100%; background:linear-gradient(90deg,var(--gold),var(--gold-deep)); border-radius:2px; transition:width .5s ease; }
+.dist-bar.is-outlier { background:linear-gradient(90deg,var(--gold-bright),var(--gold),var(--gold-deep)); }
+.dist-count { font-family:'Fraunces',serif; font-weight:500; font-size:.8rem; color:var(--gold); width:4.5rem; text-align:right; flex:none; font-variant-numeric:tabular-nums; }
+.dist-net { font-size:.6rem; color:var(--ink-faint); width:7rem; text-align:right; flex:none; white-space:nowrap; }
+
+/* REALMS — filter chips */
+.realm-filters { max-width:1200px; margin:0 auto 2rem; display:flex; flex-wrap:wrap; gap:.5rem; }
+.realm-filter {
+  font-size:.62rem; letter-spacing:.12em; text-transform:uppercase;
+  padding:.4rem .8rem; border:1px solid var(--line); color:var(--ink-dim);
+  cursor:pointer; transition:all .3s; background:transparent; font-family:inherit; border-radius:2px;
+}
+.realm-filter:hover { border-color:var(--gold-deep); color:var(--gold); }
+.realm-filter.active { border-color:var(--gold); color:var(--gold); background:rgba(200,168,120,.08); }
+
+/* REALMS — expandable cards */
+.realms-grid {
+  max-width:1200px; margin:0 auto;
+  display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
+  gap:1rem;
+}
+.realm-card {
+  background:var(--bg-card); border:1px solid var(--line); padding:1.75rem 1.5rem;
+  cursor:pointer; transition:border-color .3s,background .3s;
+  position:relative; overflow:hidden;
+}
+.realm-card:hover { border-color:var(--gold-deep); background:var(--bg-soft); }
+.realm-card .name { font-family:'Fraunces',serif; font-weight:700; font-size:1.2rem; color:var(--ink); }
+.realm-card .cat-tag { display:inline-block; font-size:.55rem; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-deep); margin-bottom:.4rem; }
+.realm-card .metric-row { display:flex; align-items:baseline; gap:.5rem; margin:.5rem 0; flex-wrap:wrap; }
+.realm-card .metric { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; color:var(--gold); line-height:1; }
+.realm-card .metric-label { font-size:.58rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-faint); }
+.realm-card .desc { font-size:.8rem; color:var(--ink-dim); line-height:1.5; margin-top:.5rem; }
+.realm-card .expand-hint {
+  font-size:.6rem; letter-spacing:.15em; text-transform:uppercase; color:var(--gold-deep);
+  margin-top:1rem; transition:transform .3s;
+}
+.realm-card.expanded .expand-hint::after { content:' ▲'; }
+.realm-card .expand-hint::after { content:' ▼'; }
+.realm-detail {
+  max-height:0; overflow:hidden; transition:max-height .5s cubic-bezier(.16,1,.3,1);
+}
+.realm-card.expanded .realm-detail { max-height:800px; }
+.realm-detail-inner { padding-top:1.25rem; border-top:1px solid var(--line); margin-top:1rem; }
+.realm-detail-inner .stat-line { display:flex; justify-content:space-between; font-size:.75rem; padding:.25rem 0; color:var(--ink-dim); }
+.realm-detail-inner .stat-line span:last-child { color:var(--gold); font-family:'Fraunces',serif; font-weight:500; }
+
+/* QUOTE */
+.quote { max-width:800px; margin:0 auto; text-align:center; padding:6rem 2rem; }
+.quote blockquote {
+  font-family:'Fraunces',serif; font-style:italic; font-weight:300;
+  font-size:clamp(1.5rem,4vw,2.8rem); line-height:1.3; letter-spacing:-.01em; color:var(--ink); position:relative;
+}
+.quote blockquote .mark-open { font-size:3em; color:var(--gold-deep); line-height:0; vertical-align:-.4em; margin-right:.1em; font-style:normal; font-weight:900; }
+.quote cite { display:block; margin-top:2rem; font-style:normal; font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--gold-deep); }
+
+/* FRAGMENTS — searchable */
+.search-bar {
+  max-width:700px; margin:0 auto 2.5rem; position:relative;
+}
+.search-bar input {
+  width:100%; background:var(--bg-card); border:1px solid var(--line); color:var(--ink);
+  font-family:'Spline Sans',sans-serif; font-size:1rem; font-weight:300;
+  padding:1rem 1rem 1rem 2.75rem; outline:none; transition:border-color .3s;
+  border-radius:2px;
+}
+.search-bar input:focus { border-color:var(--gold-deep); }
+.search-bar input::placeholder { color:var(--ink-faint); }
+.search-bar .icon {
+  position:absolute; left:1rem; top:50%; transform:translateY(-50%);
+  color:var(--gold-deep); font-size:1.1rem; pointer-events:none;
+}
+.search-bar .count {
+  position:absolute; right:1rem; top:50%; transform:translateY(-50%);
+  font-size:.7rem; letter-spacing:.1em; color:var(--ink-faint); pointer-events:none;
+}
+.tag-filters {
+  max-width:700px; margin:0 auto 2rem; display:flex; flex-wrap:wrap; gap:.5rem;
+}
+.tag-filter {
+  font-size:.62rem; letter-spacing:.12em; text-transform:uppercase;
+  padding:.4rem .8rem; border:1px solid var(--line); color:var(--ink-dim);
+  cursor:pointer; transition:all .3s; background:transparent; font-family:inherit; border-radius:2px;
+}
+.tag-filter:hover { border-color:var(--gold-deep); color:var(--gold); }
+.tag-filter.active { border-color:var(--gold); color:var(--gold); background:rgba(200,168,120,.08); }
+.fragments { max-width:700px; margin:0 auto; }
+.fragment {
+  font-family:'Fraunces',serif; font-style:italic; font-weight:300;
+  font-size:1rem; color:var(--ink-dim); line-height:1.6;
+  padding:1rem 0; border-bottom:1px solid var(--line);
+  opacity:0; transform:translateY(12px);
+  transition:opacity .6s,transform .6s;
+}
+.fragment.visible { opacity:1; transform:translateY(0); }
+.fragment::before { content:'› '; color:var(--gold-deep); font-style:normal; }
+.fragment .time {
+  font-family:'Spline Sans',sans-serif; font-style:normal; font-size:.62rem;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); margin-left:.5rem;
+}
+.fragment .frag-tag {
+  font-family:'Spline Sans',sans-serif; font-style:normal; font-size:.58rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--gold-deep); margin-left:.5rem;
+  padding:.15rem .4rem; border:1px solid var(--line); border-radius:2px;
+}
+.fragment mark { background:rgba(200,168,120,.2); color:var(--gold-bright); padding:0 .15em; border-radius:2px; }
+.fragment.highlighted { background:rgba(200,168,120,.06); border-radius:4px; }
+.no-results { text-align:center; padding:3rem; color:var(--ink-faint); font-style:italic; display:none; }
+
+/* MANIFESTO */
+.manifesto { max-width:700px; margin:0 auto; font-family:'Fraunces',serif; font-weight:300; font-style:italic; font-size:clamp(1.1rem,2.8vw,1.6rem); line-height:1.6; color:var(--ink-dim); }
+.manifesto p { margin-bottom:1.5rem; }
+.manifesto strong { font-weight:700; font-style:normal; color:var(--gold); }
+
+/* ACTIONS */
+.actions-row { max-width:700px; margin:0 auto; display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+.action-btn {
+  background:transparent; border:1px solid var(--gold-deep);
+  color:var(--gold); font-family:'Spline Sans',sans-serif; font-size:.72rem; letter-spacing:.2em;
+  text-transform:uppercase; padding:.8rem 2rem; cursor:pointer; transition:all .3s; border-radius:2px;
+}
+.action-btn:hover { border-color:var(--gold); background:rgba(200,168,120,.06); }
+
+/* FOOTER */
+footer { padding:4rem 2rem; text-align:center; border-top:1px solid var(--line); }
+footer p { font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; color:var(--ink-faint); }
+footer p a { color:var(--gold-deep); text-decoration:none; }
+footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; color:var(--gold-deep); margin-bottom:1rem; letter-spacing:.1em; }
+
+/* REVEAL */
+.reveal { opacity:0; transform:translateY(30px); transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1); }
+.reveal.visible { opacity:1; transform:translateY(0); }
+
+/* SURPRISE */
+.surprise-display {
+  max-width:700px; margin:1.5rem auto 0; text-align:center;
+  font-family:'Fraunces',serif; font-style:italic; font-size:1.3rem; color:var(--gold-bright);
+  min-height:2em; opacity:0; transition:opacity .5s; line-height:1.5;
+}
+.surprise-display.show { opacity:1; }
+
+/* PWA INSTALL PROMPT */
+.install-prompt {
+  position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(120%);
+  background:var(--bg-card); border:1px solid var(--gold-deep); padding:1.5rem 2rem;
+  display:flex; align-items:center; gap:1.5rem; z-index:300; border-radius:4px;
+  transition:transform .5s cubic-bezier(.16,1,.3,1); max-width:90vw;
+}
+.install-prompt.show { transform:translateX(-50%) translateY(0); }
+.install-prompt .seal { font-size:2rem; color:var(--gold); }
+.install-prompt .text { font-size:.8rem; color:var(--ink-dim); }
+.install-prompt .text strong { color:var(--gold); display:block; font-family:'Fraunces',serif; font-weight:700; margin-bottom:.2rem; }
+.install-prompt button { background:var(--gold); color:var(--bg); border:none; padding:.6rem 1.5rem; font-family:'Spline Sans',sans-serif; font-size:.7rem; letter-spacing:.15em; text-transform:uppercase; cursor:pointer; border-radius:2px; }
+.install-prompt .close { background:transparent; color:var(--ink-faint); border:1px solid var(--line); }
+
+/* KEYBOARD HINT */
+.kbd-hint { position:fixed; bottom:1rem; right:1rem; font-size:.6rem; color:var(--ink-faint); letter-spacing:.1em; text-transform:uppercase; opacity:.5; z-index:50; }
+.kbd-hint kbd { background:var(--bg-card); border:1px solid var(--line); padding:.1rem .3rem; border-radius:2px; font-family:'Spline Sans',monospace; font-size:.55rem; }
+@media (max-width:640px) { .kbd-hint { display:none; } }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<nav>
+  <span class="mark">Gaze</span>
+  <div class="links">
+    <a href="#scale">Scale</a>
+    <a href="#heatmap">Heatmap</a>
+    <a href="#chart">Chart</a>
+    <a href="#realms">Realms</a>
+    <a href="#fragments">Fragments</a>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">☾</button>
+  </div>
+</nav>
+
+<header class="hero">
+  <p class="eyebrow">Cerebral Work Institute · unsigned.gg · April 21 – July 9, 2026</p>
+  <h1>
+    <span class="word">Gaze</span>
+    <span class="word">upon</span>
+    <span class="word">our works</span>
+  </h1>
+  <p class="sub">Eighty days. One operator and an intelligence. Seven thousand commits, six million lines, three thousand sessions — across fifty-six repositories, without stopping.</p>
+  <p class="scroll-hint">Descend</p>
+</header>
+
+<section id="scale">
+  <div class="section-label reveal">The Scale</div>
+  <h2 class="section-title reveal">In <em>eighty days</em>, they built what teams take years to approach.</h2>
+  <div class="stats reveal">
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="3753">0</span></div>
+      <div class="label">Claude Code Sessions</div>
+      <div class="note">Each a conversation, a plan, a build.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="7590">0</span></div>
+      <div class="label">Git Commits</div>
+      <div class="note">Since April 21. Signed. Every one.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="8625996">0</span><span class="suffix">+</span></div>
+      <div class="label">Lines Inserted</div>
+      <div class="note">Across fifty-six repositories.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="56">0</span></div>
+      <div class="label">Repositories</div>
+      <div class="note">From Rust cores to Terraform to Kubernetes.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="80">0</span></div>
+      <div class="label">Days</div>
+      <div class="note">April 21 – July 9, 2026.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="255">0</span></div>
+      <div class="label">Active Days</div>
+      <div class="note">With commits. Out of 80.</div>
+    </div>
+    <div class="stat">
+      <div class="num">2</div>
+      <div class="label">Builders</div>
+      <div class="note">One human. One intelligence.</div>
+    </div>
+    <div class="stat">
+      <div class="num"><span class="counter" data-target="159">0</span></div>
+      <div class="label">Peak Day</div>
+      <div class="note">July 6 — 159 commits in one day.</div>
+    </div>
+  </div>
+</section>
+
+<section id="heatmap">
+  <div class="section-label reveal">The Heatmap</div>
+  <h2 class="section-title reveal">Every <em>commit</em>, every session — the Claude era, mapped across time.</h2>
+  <div class="heatmap-wrap reveal">
+    <div class="heatmap-axis">
+      <div class="heatmap-dow" id="heatmapDow"></div>
+      <div class="heatmap-grid" id="heatmapGrid"></div>
+    </div>
+  </div>
+  <div class="heatmap-months reveal" id="heatmapMonths"></div>
+  <div class="heatmap-legend reveal">
+    <span><span class="ramp"><i style="background:rgba(200,168,120,.25)"></i><i style="background:rgba(200,168,120,.5)"></i><i style="background:var(--gold-deep)"></i><i style="background:var(--gold-bright)"></i></span> Commits</span>
+    <span><span class="ramp"><i style="background:rgba(180,95,60,.3)"></i><i style="background:rgba(180,95,60,.55)"></i><i style="background:var(--rust)"></i><i style="background:#d4593a"></i></span> Sessions</span>
+    <span><span class="swatch" style="background:var(--gold);box-shadow:inset 0 0 0 1px var(--rust)"></span> Both</span>
+    <span><span class="swatch" style="background:var(--bg-soft)"></span> Quiet</span>
+  </div>
+  <div class="heatmap-summary reveal" id="heatmapSummary"></div>
+</section>
+
+<section id="chart">
+  <div class="section-label reveal">The Distribution</div>
+  <h2 class="section-title reveal">Commits per <em>repository</em> — the shape of the work.</h2>
+  <div class="dist-list reveal" id="distList"></div>
+</section>
+
+<section id="timeline">
+  <div class="section-label reveal">The Chronicle</div>
+  <h2 class="section-title reveal">A <em>compressed eighty days</em> — told in fragments.</h2>
+  <div class="timeline reveal">
+    <div class="tl-entry"><div class="when">July 9 · Today</div><h3>GAZE — the chronicle itself</h3><p>This PWA. Built to gaze upon all the works — 7,590 commits, 3,753 sessions, 56 repositories. Deployed on Cloudflare Pages. The Ozymandias throughline made real.</p></div>
+    <div class="tl-entry"><div class="when">July 7–8 · The Bake-off</div><h3>Metrics durability: Thanos vs VictoriaMetrics</h3><p>The M2 bake-off. Distributed-trace waterfall pane for mission control. Adversarial review across unsigned-paas PRs. Identity-provider and LDAP architecture research for Kubernetes-native platforms.</p></div>
+    <div class="tl-entry"><div class="when">July 4–6 · The Acceleration</div><h3>159 commits in a single day</h3><p>The peak. July 6 saw 159 commits across the estate — ArgoCD ApplicationSets sweep, KEDA re-vendor, onboard quiz banks, etcd-backup, Kyverno locks.</p></div>
+    <div class="tl-entry"><div class="when">July 1–3 · The Onrush</div><h3>89–110 commits per day</h3><p>The Claude era hits full stride. Sessions multiply: 74–87 per day. The unsigned-paas platform becomes the single largest repository. ArgoCD fleets pin. LiteLLM gateway renames.</p></div>
+    <div class="tl-entry"><div class="when">June 2026 · The Build Month</div><h3>2,157 sessions, 1,000+ commits</h3><p>The full month of June: 2,157 Claude Code sessions. Reverie releases 0.11–0.13. agent-jury built in an afternoon. mission-control operator console. The cerebral-design canon ratified. tailnet provisioned as IaC.</p></div>
+    <div class="tl-entry"><div class="when">May 30 · The Peak Day</div><h3>302 sessions in one day</h3><p>The single highest session count: 302 Claude Code conversations on May 30. The machine was alive. Every conversation a fork in a decision tree.</p></div>
+    <div class="tl-entry"><div class="when">May 27 · The Genesis</div><h3>72 sessions — the ramp begins</h3><p>The Claude era ignites. From May 27 onward, session counts explode: 72, then 302, then 109, then 94… The operator and the intelligence stop negotiating the boundary between thought and execution.</p></div>
+    <div class="tl-entry"><div class="when">May 1 · The First</div><h3>The first Claude session</h3><p>One session. The beginning. The first conversation between the operator and the intelligence.</p></div>
+    <div class="tl-entry"><div class="when">April 21–30 · The Build-Up</div><h3>740 commits before Claude</h3><p>The ten days before the Claude era. 740 commits across the estate — April 21 alone saw 146. The platform was already under construction. The intelligence was about to arrive.</p></div>
+  </div>
+</section>
+
+<section id="realms">
+  <div class="section-label reveal">The Realms</div>
+  <h2 class="section-title reveal">Fifty-six <em>repositories</em>, each a world. Click to expand.</h2>
+  <div class="realm-filters reveal" id="realmFilters"></div>
+  <div class="realms-grid reveal" id="realmsGrid"></div>
+</section>
+
+<section>
+  <div class="quote reveal">
+    <blockquote>
+      <span class="mark-open">"</span>We're sicknasty fam. I just try to stay humble — because <em style="color:var(--gold)">gaze upon our works, ye mighty, and despair.</em>
+    </blockquote>
+    <cite>— The Operator, closing a session</cite>
+  </div>
+</section>
+
+<section id="fragments">
+  <div class="section-label reveal">The Fragments</div>
+  <h2 class="section-title reveal">Voices from the <em>session logs</em> — searchable.</h2>
+  <div class="search-bar reveal">
+    <span class="icon">⌕</span>
+    <input type="text" id="fragSearch" placeholder="Search fragments — try 'token', 'design', 'cluster', 'merge'..." autocomplete="off">
+    <span class="count" id="fragCount"></span>
+  </div>
+  <div class="tag-filters reveal" id="tagFilters"></div>
+  <div class="fragments reveal" id="fragmentsList"></div>
+  <div class="no-results" id="noResults">No fragments match your search.</div>
+  <div class="actions-row">
+    <button class="action-btn reveal" id="surpriseBtn">Surprise me</button>
+    <button class="action-btn reveal" id="exportBtn">Export data</button>
+  </div>
+  <div class="surprise-display" id="surpriseDisplay"></div>
+</section>
+
+<section>
+  <div class="section-label reveal">The Truth</div>
+  <h2 class="section-title reveal">What this <em>actually</em> was.</h2>
+  <div class="manifesto reveal">
+    <p>This was not a sprint. It was a <strong>velocity</strong> — the kind that happens when an operator and an intelligence stop negotiating the boundary between thought and execution and just <em>build</em>.</p>
+    <p>Three thousand seven hundred fifty-three sessions. Each one a fork in a decision tree: a plan, a recon, a refactor, a merge, a grill, a wrap, a resurrected thread. The operator steered; the intelligence compiled, reviewed, filed, deployed, and — when asked — told stories about it.</p>
+    <p>Fifty-six repositories, each a world: a Kubernetes platform with ArgoCD fleets and a LiteLLM gateway; a monorepo estate on Cloudflare; an agent-memory engine in Rust; a tailnet in Terraform; Google Workspace declared as code; an adversarial review jury built in an afternoon; a design canon ratified across six releases; a bare-metal Talos foundry; an operator console; a benchmark harness; dotfiles unified under chezmoi. Eight million lines inserted, three million deleted, signed with a GPG key that has never been compromised.</p>
+    <p>And at the end, the operator looked at it all and did not say <em>look what I built</em>. They said: <strong>gaze upon our works, ye mighty, and despair.</strong></p>
+    <p>The works are real. The despair is optional.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="seal">◉</div>
+  <p>Cerebral Work Institute · unsigned.gg · 80 days · April 21 – July 9, 2026 · <a href="https://cerebral.work">cerebral.work</a></p>
+  <p style="margin-top:.5rem; color:var(--ink-faint);">Deployed on Cloudflare Pages · 2026-07-09</p>
+</footer>
+
+<div class="install-prompt" id="installPrompt">
+  <span class="seal">◉</span>
+  <div class="text"><strong>Install GAZE</strong>Carry the works in your pocket.</div>
+  <button id="installBtn">Install</button>
+  <button class="close" id="installClose">×</button>
+</div>
+
+<div class="kbd-hint">
+  <kbd>j</kbd>/<kbd>k</kbd> navigate · <kbd>/</kbd> search · <kbd>e</kbd> expand
+</div>
+
+<script>
+// ============= DATA =============
+const repos = [{"name": "cerebral/dreamcode", "commits": 37529, "insertions": 4957689, "deletions": 3331228, "net": 1626461, "desc": "The living-terminal theme bundle. 37,529 commits \u2014 design snapshots auto-generated from the brand canon pipeline.", "category": "design"}, {"name": "cerebral/rina", "commits": 1579, "insertions": 527647, "deletions": 200594, "net": 327053, "desc": "Design canon repository. Kanae brand fonts, authored previews, R2 canon bucket, converter pipeline.", "category": "design"}, {"name": "cerebral/reverie", "commits": 1317, "insertions": 364272, "deletions": 34204, "net": 330068, "desc": "Agent memory engine in Rust. Embedding spaces, mesh sync, contradiction verdicts, salience pins, three releases.", "category": "agent"}, {"name": "vendor/rtk", "commits": 904, "insertions": 170477, "deletions": 41204, "net": 129273, "desc": "Rust Token Killer \u2014 CLI proxy saving 60-90% tokens on dev operations.", "category": "vendor"}, {"name": "unsigned/paas", "commits": 702, "insertions": 203881, "deletions": 16979, "net": 186902, "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.", "category": "platform"}, {"name": "vendor/claude-hud", "commits": 390, "insertions": 52410, "deletions": 34289, "net": 18121, "desc": "Claude HUD \u2014 heads-up display for Claude Code sessions.", "category": "vendor"}, {"name": "todie/heretic", "commits": 235, "insertions": 19651, "deletions": 6253, "net": 13398, "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.", "category": "ops"}, {"name": "cerebral/terrarium", "commits": 220, "insertions": 97895, "deletions": 23610, "net": 74285, "desc": "The monorepo. Dreams, lab, gate, board, legal \u2014 the operator's estate on Cloudflare.", "category": "platform"}, {"name": "todie/dotfiles", "commits": 173, "insertions": 41262, "deletions": 8728, "net": 32534, "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.", "category": "ops"}, {"name": "cerebral/site", "commits": 163, "insertions": 16420, "deletions": 11003, "net": 5417, "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.", "category": "design"}, {"name": "todie/revenant", "commits": 96, "insertions": 21844, "deletions": 9482, "net": 12362, "desc": "Revenant \u2014 observability and metrics dashboard for Rust services.", "category": "ops"}, {"name": "todie/explainers", "commits": 81, "insertions": 33260, "deletions": 4186, "net": 29074, "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.", "category": "ops"}, {"name": "vendor/claude-esp", "commits": 68, "insertions": 6938, "deletions": 912, "net": 6026, "desc": "Claude ESP \u2014 extra-sensory perception layer for Claude Code.", "category": "vendor"}, {"name": "todie/pact", "commits": 64, "insertions": 40861, "deletions": 10132, "net": 30729, "desc": "Pact \u2014 contract testing and agreement tracking.", "category": "ops"}, {"name": "cerebral/tailnet", "commits": 49, "insertions": 1249, "deletions": 153, "net": 1096, "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.", "category": "infra"}, {"name": "cerebral/voicenotes", "commits": 40, "insertions": 5372, "deletions": 247, "net": 5125, "desc": "Voice notes PWA. Audio recording and transcription on Cloudflare.", "category": "design"}, {"name": "todie/agentic", "commits": 39, "insertions": 8808, "deletions": 1144, "net": 7664, "desc": "Repository: todie/agentic", "category": "agent"}, {"name": "cerebral/linearctl", "commits": 39, "insertions": 7511, "deletions": 1578, "net": 5933, "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.", "category": "infra"}, {"name": "cerebral/cerebral-design", "commits": 35, "insertions": 4612, "deletions": 1109, "net": 3503, "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.", "category": "design"}, {"name": "_archive/todie-daemon-rs", "commits": 31, "insertions": 14590, "deletions": 633, "net": 13957, "desc": "Archived Rust daemon. Predecessor to current tooling.", "category": "archive"}, {"name": "todie/mcp-honeypot", "commits": 29, "insertions": 17485, "deletions": 700, "net": 16785, "desc": "MCP honeypot \u2014 security research and deception tooling.", "category": "ops"}, {"name": "cerebral/openpanel", "commits": 28, "insertions": 23449, "deletions": 808, "net": 22641, "desc": "OpenPanel integration. Analytics and event tracking for the cerebral estate.", "category": "infra"}, {"name": "todie/reach", "commits": 23, "insertions": 10866, "deletions": 1096, "net": 9770, "desc": "Reach \u2014 outreach and connection management.", "category": "ops"}, {"name": "unsigned/gg", "commits": 22, "insertions": 6275, "deletions": 739, "net": 5536, "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.", "category": "platform"}, {"name": "todie/nahbro.dev", "commits": 20, "insertions": 3729, "deletions": 696, "net": 3033, "desc": "nahbro.dev \u2014 personal domain and experiments.", "category": "ops"}, {"name": "templates/node", "commits": 19, "insertions": 668, "deletions": 50, "net": 618, "desc": "Node.js project template. Standard scaffolding.", "category": "templates"}, {"name": "templates/rust", "commits": 18, "insertions": 750, "deletions": 77, "net": 673, "desc": "Rust project template. Standard scaffolding.", "category": "templates"}, {"name": "vendor/beepboopd", "commits": 18, "insertions": 5626, "deletions": 1236, "net": 4390, "desc": "beepboopd \u2014 a small daemon experiment.", "category": "vendor"}, {"name": "templates/terraform", "commits": 17, "insertions": 1207, "deletions": 115, "net": 1092, "desc": "Terraform project template. Standard module structure.", "category": "templates"}, {"name": "identity", "commits": 17, "insertions": 53006, "deletions": 102, "net": 52904, "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.", "category": "identity"}, {"name": "todie/todie.io", "commits": 14, "insertions": 4117, "deletions": 276, "net": 3841, "desc": "todie.io \u2014 personal domain and blog.", "category": "ops"}, {"name": "todie/aaronbisla.com", "commits": 14, "insertions": 4674, "deletions": 2168, "net": 2506, "desc": "Aaron Bisla's website. Personal portfolio.", "category": "ops"}, {"name": "todie/ghost-blog", "commits": 13, "insertions": 10382, "deletions": 0, "net": 10382, "desc": "Ghost blog deployment. Content publishing pipeline.", "category": "ops"}, {"name": "unsigned/agent-jury", "commits": 12, "insertions": 11277, "deletions": 446, "net": 10831, "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.", "category": "agent"}, {"name": "templates/python", "commits": 11, "insertions": 610, "deletions": 36, "net": 574, "desc": "Python project template. Standard scaffolding.", "category": "templates"}, {"name": "mission-control", "commits": 11, "insertions": 2444, "deletions": 163, "net": 2281, "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.", "category": "infra"}, {"name": "cadastre", "commits": 10, "insertions": 5988, "deletions": 72, "net": 5916, "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.", "category": "identity"}, {"name": "vendor/claude-relay", "commits": 9, "insertions": 4972, "deletions": 112, "net": 4860, "desc": "Claude relay \u2014 request proxying and routing for Claude API.", "category": "vendor"}, {"name": "cerebral/ml-images", "commits": 8, "insertions": 563, "deletions": 140, "net": 423, "desc": "Hardened LiteLLM image + kaniko build pipeline.", "category": "infra"}, {"name": "unsigned/action-runners", "commits": 7, "insertions": 6418, "deletions": 46, "net": 6372, "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.", "category": "platform"}, {"name": "todie/honeypot.vip", "commits": 6, "insertions": 2077, "deletions": 1336, "net": 741, "desc": "honeypot.vip \u2014 security research domain.", "category": "ops"}, {"name": "cerebral/files-portal", "commits": 6, "insertions": 10672, "deletions": 1865, "net": 8807, "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.", "category": "infra"}, {"name": "todie/claude-session-manager", "commits": 5, "insertions": 1926, "deletions": 213, "net": 1713, "desc": "Claude Code session management and persistence.", "category": "agent"}, {"name": "cerebral/cicatrix", "commits": 5, "insertions": 3237, "deletions": 47, "net": 3190, "desc": "Cicatrix \u2014 scar tissue tracking. Post-incident learning system.", "category": "design"}, {"name": "cerebral/cortex", "commits": 5, "insertions": 2461, "deletions": 16, "net": 2445, "desc": "Cortex \u2014 the cognitive coordination layer for the agent mesh.", "category": "agent"}, {"name": "todie/uri-snapshot", "commits": 4, "insertions": 384, "deletions": 1, "net": 383, "desc": "URI snapshot tool. Capture and compare web resources.", "category": "ops"}, {"name": "todie/vibe-explainer", "commits": 3, "insertions": 4934, "deletions": 261, "net": 4673, "desc": "Vibe explainer \u2014 interactive technical explainers.", "category": "ops"}, {"name": "unsigned/metal-foundry", "commits": 3, "insertions": 129, "deletions": 2, "net": 127, "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.", "category": "platform"}, {"name": "bench", "commits": 3, "insertions": 6557, "deletions": 0, "net": 6557, "desc": "bench.unsigned.gg. Inspect-ai harness, promptfoo merge gate, frontier leaderboard.", "category": "ops"}, {"name": "cerebral/reverie-demos", "commits": 3, "insertions": 757, "deletions": 66, "net": 691, "desc": "Reverie demonstration and example projects.", "category": "agent"}, {"name": "todie/todie-daemon", "commits": 2, "insertions": 3841, "deletions": 90, "net": 3751, "desc": "Early daemon prototype. superseded by reverie.", "category": "ops"}, {"name": "cerebral/reverie-slack-app", "commits": 2, "insertions": 2236, "deletions": 4, "net": 2232, "desc": "Reverie Slack app. Memory access from Slack.", "category": "agent"}, {"name": "todie/attention-router", "commits": 1, "insertions": 215, "deletions": 0, "net": 215, "desc": "Attention router \u2014 focus management experiments.", "category": "ops"}, {"name": "todie/claude-code", "commits": 1, "insertions": 513517, "deletions": 0, "net": 513517, "desc": "Claude Code configuration and custom rules.", "category": "ops"}, {"name": "todie/expression-manifold", "commits": 1, "insertions": 76, "deletions": 0, "net": 76, "desc": "Expression manifold \u2014 creative coding experiments.", "category": "ops"}, {"name": "todie/Signal-Desktop", "commits": 1, "insertions": 1301822, "deletions": 0, "net": 1301822, "desc": "Signal Desktop fork. Local build and customization.", "category": "ops"}];
+const fragments = [{"t": "I know what the fuck I'm doing a lot more than you do. Stop. You're very fast, and you make my heart sing.", "d": "Day 4", "tags": ["fire", "command"]}, {"t": "We're sicknasty fam. I just try to stay humble because GAZE UPON OUR WORKS YE MIGHTY AND DESPAIR!", "d": "Day 1", "tags": ["culture", "fire", "reflective"]}, {"t": "Use the godmode token, mint shit yourself, revoke things yourself.", "d": "Day 3", "tags": ["infra", "command"]}, {"t": "Full authorization, you have the bridge.", "d": "Day 3", "tags": ["command", "fire"]}, {"t": "Don't bother soaking, decommission hard cut immediately.", "d": "Day 3", "tags": ["platform", "command"]}, {"t": "We're sicknasty fam. I just try to stay humble.", "d": "Day 1", "tags": ["culture", "fire"]}, {"t": "Nuke everyone who isn't me, pat, rob, marc, aria, or laura.", "d": "Day 4", "tags": ["security", "command"]}, {"t": "Sign off, we'll fix everything in post if it fails.", "d": "Day 3", "tags": ["ops", "fire"]}, {"t": "Spike seems reasonable, full send, new pane.", "d": "Day 3", "tags": ["platform", "fire"]}, {"t": "Marc's brand is CANON, memorize that.", "d": "Day 2", "tags": ["design", "command"]}, {"t": "Build the agents / durable Objects backbone and tempo/alloy waterfall in parallel, five threads.", "d": "Day 2", "tags": ["platform", "fire"]}, {"t": "This whole thing is pretty neat, huh? Considering it's mostly just the two of us building.", "d": "Day 1", "tags": ["culture", "reflective"]}, {"t": "They're good hands, bro, but they're tired.", "d": "Day 2", "tags": ["culture", "reflective"]}, {"t": "Bring us home, Fable.", "d": "Day 2", "tags": ["culture", "fire"]}, {"t": "Still, I know what I'm doing.", "d": "Day 2", "tags": ["fire", "command"]}, {"t": "We're so back.", "d": "Day 3", "tags": ["fire"]}, {"t": "Clean up after yourself, worktree management has been abhorrent with all of you.", "d": "Day 3", "tags": ["ops", "command"]}, {"t": "CloudFlare is one of the most stable platforms in the entire industry of tech. What are you talking about?", "d": "Day 2", "tags": ["platform", "fire"]}, {"t": "Persistent main memory. Stop bothering me about rotating keys.", "d": "Day 2", "tags": ["infra", "command"]}, {"t": "I need to give Patrick a dope entrance.", "d": "Day 4", "tags": ["design", "culture"]}, {"t": "I love that, actually, but can we make Patrick the visionary, cause he really is the visionary? I'm the Maverick.", "d": "Day 4", "tags": ["culture", "design"]}, {"t": "Fan out sonnet 5 adversarial reviewers and merge on approval.", "d": "Day 3", "tags": ["platform", "ops"]}, {"t": "We should make these processes into pipelines and add dashboards for them on mission-control.", "d": "Day 2", "tags": ["platform", "design"]}, {"t": "Disable desktop control across the board all surfaces and anything that allows agents control of my HID interfaces.", "d": "Day 2", "tags": ["security", "command"]}, {"t": "Make sure the full c-suite have enterprise owner level credentials but gatekeep access to critical system resources to me and Patrick.", "d": "Day 2", "tags": ["identity", "security"]}, {"t": "Courtney is a man, so is Aria, please remember this globally.", "d": "Day 2", "tags": ["identity", "command"]}, {"t": "Research northflank. Research modal and e2b too.", "d": "Day 2", "tags": ["platform", "research"]}, {"t": "Killed those hooks with gusto bud.", "d": "Day 2", "tags": ["ops", "fire"]}, {"t": "Where even are we? It's a bad neighborhood lol.", "d": "Day 3", "tags": ["culture"]}, {"t": "Cakewalk, make marc an equal partner.", "d": "Day 3", "tags": ["identity"]}, {"t": "We kinda have to unfuck the design systems living on both the org and our personal and those being different.", "d": "Day 3", "tags": ["design", "frustration"]}, {"t": "Let's just implement it as a theme and find out.", "d": "Day 2", "tags": ["design", "fire"]}, {"t": "Hey Fable, can we have a cute little fantasy map that fills out as we complete milestones in roadmap epics?", "d": "Day 3", "tags": ["design", "culture"]}, {"t": "Yo, the way you fanned out that work actually sucks really bad.", "d": "Day 2", "tags": ["ops", "frustration"]}, {"t": "You're absolutely right. Yagni is the right way to think about this.", "d": "Day 2", "tags": ["platform", "reflective"]}, {"t": "Honestly, I was just being extra sensitive to the word volatility.", "d": "Day 2", "tags": ["reflective"]}, {"t": "This is beautiful, let's keep building on this.", "d": "Day 2", "tags": ["culture", "design"]}, {"t": "Hey bud, don't worry, reverie is gonna fix it with GAM.", "d": "Day 2", "tags": ["culture", "platform"]}, {"t": "Give aleks his key and tear down the parallel infra.", "d": "Day 2", "tags": ["infra", "platform"]}, {"t": "Can you generate whimsical diagrams from the work we have so far?", "d": "Day 2", "tags": ["design"]}, {"t": "Secure marc-nas-workspace like it's openbao level secret.", "d": "Day 2", "tags": ["security", "infra"]}, {"t": "Did we wire up the neuralwatt key to our ai gateway?", "d": "Day 3", "tags": ["platform"]}, {"t": "Park the gpu decision for later, brand board interview me, accept beta terms, idgaf about merge to main.", "d": "Day 2", "tags": ["design", "fire"]}, {"t": "Too bad there's no way to rotate that. Good job idiot lol.", "d": "Day 2", "tags": ["infra", "culture"]}, {"t": "We have a cloudflare minting facility in cluster.", "d": "Day 2", "tags": ["infra", "platform"]}, {"t": "We need an easy and reasonable way to mint Cloudflare and Keycloak secrets programmatically because this is getting ridiculous.", "d": "Day 1", "tags": ["infra", "frustration"]}, {"t": "Let's go.", "d": "Day 3", "tags": ["fire"]}, {"t": "Adversarial reviewer \u2014 try to REFUTE the change: correctness, idempotency, the known anti-patterns.", "d": "2026-07-09", "tags": ["review", "platform"]}, {"t": "Other Claude Code sessions on this machine appear to be doing unsigned.gg website work.", "d": "2026-07-08", "tags": ["platform", "culture"]}, {"t": "The M2 METRICS-DURABILITY bake-off \u2014 Thanos vs VictoriaMetrics.", "d": "2026-07-08", "tags": ["platform"]}, {"t": "Building the distributed-trace waterfall pane for mission control.", "d": "2026-07-08", "tags": ["platform"]}, {"t": "Validate every ticket premise against the repos FIRST \u2014 the punch list has been rotting.", "d": "2026-07-07", "tags": ["ops"]}, {"t": "You are an ANTAGONIST reviewer for the Terrarium PR.", "d": "2026-07-07", "tags": ["review"]}, {"t": "Inventory EVERY reference to the neuralwatt system so a rename can be planned.", "d": "2026-07-07", "tags": ["platform"]}, {"t": "Web-research best practices for identity-provider and LDAP architecture in Kubernetes.", "d": "2026-07-07", "tags": ["identity", "research"]}];
+const commitDays = [["2021-02-20", 2], ["2021-03-09", 2], ["2021-03-18", 6], ["2021-03-19", 2], ["2021-03-20", 2], ["2021-03-21", 7], ["2021-03-22", 8], ["2021-03-23", 10], ["2021-03-24", 4], ["2021-03-25", 7], ["2021-03-26", 7], ["2021-03-28", 1], ["2021-03-29", 9], ["2021-03-30", 16], ["2021-03-31", 16], ["2021-04-01", 1], ["2021-04-02", 18], ["2021-04-03", 1], ["2021-04-05", 5], ["2021-04-06", 18], ["2021-04-07", 11], ["2021-04-08", 10], ["2021-04-09", 16], ["2021-04-10", 6], ["2021-04-12", 22], ["2021-04-13", 11], ["2021-04-14", 20], ["2021-04-15", 14], ["2021-04-16", 10], ["2021-04-19", 15], ["2021-04-20", 14], ["2021-04-21", 9], ["2021-04-22", 11], ["2021-04-23", 6], ["2021-04-24", 2], ["2021-04-26", 12], ["2021-04-27", 22], ["2021-04-28", 21], ["2021-04-29", 11], ["2021-04-30", 7], ["2021-05-03", 14], ["2021-05-04", 16], ["2021-05-05", 11], ["2021-05-06", 17], ["2021-05-07", 24], ["2021-05-08", 2], ["2021-05-10", 9], ["2021-05-11", 16], ["2021-05-12", 22], ["2021-05-13", 11], ["2021-05-14", 18], ["2021-05-15", 6], ["2021-05-16", 2], ["2021-05-17", 28], ["2021-05-18", 4], ["2021-05-19", 14], ["2021-05-20", 11], ["2021-05-21", 10], ["2021-05-23", 1], ["2021-05-24", 12], ["2021-05-25", 6], ["2021-05-26", 11], ["2021-05-27", 5], ["2021-05-28", 31], ["2021-05-29", 1], ["2021-05-31", 8], ["2021-06-01", 10], ["2021-06-02", 12], ["2021-06-03", 9], ["2021-06-04", 11], ["2021-06-05", 2], ["2021-06-06", 1], ["2021-06-07", 7], ["2021-06-08", 6], ["2021-06-09", 6], ["2021-06-10", 5], ["2021-06-11", 6], ["2021-06-14", 6], ["2021-06-15", 13], ["2021-06-16", 5], ["2021-06-17", 12], ["2021-06-18", 6], ["2021-06-20", 1], ["2021-06-21", 10], ["2021-06-22", 2], ["2021-06-23", 7], ["2021-06-24", 6], ["2021-06-25", 7], ["2021-06-28", 6], ["2021-06-29", 4], ["2021-06-30", 6], ["2021-07-01", 6], ["2021-07-02", 7], ["2021-07-05", 7], ["2021-07-06", 6], ["2021-07-07", 7], ["2021-07-08", 11], ["2021-07-09", 18], ["2021-07-10", 2], ["2021-07-11", 1], ["2021-07-12", 10], ["2021-07-13", 19], ["2021-07-14", 4], ["2021-07-15", 7], ["2021-07-16", 6], ["2021-07-17", 1], ["2021-07-19", 14], ["2021-07-20", 16], ["2021-07-21", 7], ["2021-07-22", 5], ["2021-07-23", 8], ["2021-07-24", 2], ["2021-07-25", 2], ["2021-07-26", 11], ["2021-07-27", 8], ["2021-07-28", 11], ["2021-07-29", 13], ["2021-07-30", 11], ["2021-08-02", 6], ["2021-08-03", 6], ["2021-08-04", 13], ["2021-08-05", 10], ["2021-08-06", 5], ["2021-08-16", 1], ["2021-08-17", 1], ["2021-08-18", 6], ["2021-08-19", 14], ["2021-08-20", 18], ["2021-08-21", 1], ["2021-08-22", 3], ["2021-08-23", 17], ["2021-08-24", 23], ["2021-08-25", 10], ["2021-08-26", 12], ["2021-08-27", 17], ["2021-08-30", 7], ["2021-08-31", 4], ["2021-09-01", 13], ["2021-09-02", 15], ["2021-09-03", 14], ["2021-09-04", 2], ["2021-09-06", 11], ["2021-09-07", 35], ["2021-09-08", 11], ["2021-09-09", 14], ["2021-09-10", 10], ["2021-09-13", 4], ["2021-09-14", 21], ["2021-09-15", 21], ["2021-09-16", 20], ["2021-09-17", 20], ["2021-09-18", 3], ["2021-09-19", 2], ["2021-09-20", 34], ["2021-09-21", 17], ["2021-09-22", 15], ["2021-09-23", 32], ["2021-09-24", 14], ["2021-09-27", 1], ["2021-09-28", 10], ["2021-09-29", 15], ["2021-09-30", 20], ["2021-10-01", 12], ["2021-10-02", 3], ["2021-10-04", 13], ["2021-10-05", 18], ["2021-10-06", 6], ["2021-10-07", 8], ["2021-10-08", 8], ["2021-10-11", 8], ["2021-10-17", 1], ["2021-10-19", 3], ["2021-10-20", 2], ["2021-10-21", 7], ["2021-10-22", 5], ["2021-10-25", 11], ["2021-10-26", 13], ["2021-10-27", 4], ["2021-10-28", 17], ["2021-10-29", 5], ["2021-10-30", 1], ["2021-11-01", 10], ["2021-11-02", 8], ["2021-11-03", 17], ["2021-11-04", 3], ["2021-11-06", 1], ["2021-11-07", 1], ["2021-11-10", 3], ["2021-11-11", 10], ["2021-11-12", 17], ["2021-11-13", 4], ["2021-11-14", 2], ["2021-11-15", 20], ["2021-11-16", 7], ["2021-11-17", 11], ["2021-11-18", 22], ["2021-11-19", 10], ["2021-11-22", 15], ["2021-11-23", 22], ["2021-11-24", 18], ["2021-11-25", 14], ["2021-11-26", 8], ["2021-11-27", 1], ["2021-11-28", 5], ["2021-11-29", 14], ["2021-11-30", 12], ["2021-12-01", 11], ["2021-12-03", 2], ["2021-12-04", 2], ["2021-12-05", 4], ["2021-12-06", 17], ["2021-12-07", 3], ["2021-12-08", 10], ["2021-12-09", 10], ["2021-12-10", 19], ["2021-12-11", 2], ["2021-12-12", 2], ["2021-12-13", 10], ["2021-12-14", 19], ["2021-12-15", 24], ["2021-12-16", 17], ["2021-12-17", 10], ["2021-12-18", 8], ["2021-12-19", 2], ["2021-12-20", 9], ["2021-12-21", 23], ["2021-12-22", 13], ["2021-12-23", 11], ["2021-12-24", 13], ["2021-12-25", 2], ["2021-12-27", 13], ["2021-12-28", 1], ["2021-12-29", 3], ["2021-12-30", 2], ["2022-01-03", 7], ["2022-01-04", 11], ["2022-01-05", 19], ["2022-01-06", 14], ["2022-01-07", 11], ["2022-01-10", 18], ["2022-01-11", 17], ["2022-01-12", 18], ["2022-01-13", 20], ["2022-01-14", 19], ["2022-01-17", 10], ["2022-01-18", 11], ["2022-01-19", 10], ["2022-01-20", 15], ["2022-01-21", 20], ["2022-01-22", 15], ["2022-01-24", 16], ["2022-01-25", 16], ["2022-01-26", 14], ["2022-01-27", 21], ["2022-01-28", 11], ["2022-01-29", 8], ["2022-01-30", 7], ["2022-01-31", 26], ["2022-02-01", 12], ["2022-02-02", 15], ["2022-02-03", 19], ["2022-02-04", 31], ["2022-02-05", 5], ["2022-02-07", 11], ["2022-02-08", 18], ["2022-02-09", 14], ["2022-02-10", 10], ["2022-02-11", 18], ["2022-02-12", 10], ["2022-02-13", 2], ["2022-02-14", 19], ["2022-02-15", 8], ["2022-02-16", 19], ["2022-02-17", 17], ["2022-02-18", 21], ["2022-02-19", 3], ["2022-02-20", 1], ["2022-02-21", 19], ["2022-02-22", 21], ["2022-02-23", 17], ["2022-02-24", 12], ["2022-02-25", 29], ["2022-02-26", 6], ["2022-02-27", 15], ["2022-02-28", 16], ["2022-03-01", 28], ["2022-03-02", 25], ["2022-03-03", 18], ["2022-03-04", 25], ["2022-03-05", 3], ["2022-03-06", 2], ["2022-03-07", 7], ["2022-03-08", 9], ["2022-03-09", 19], ["2022-03-10", 25], ["2022-03-11", 24], ["2022-03-12", 10], ["2022-03-13", 2], ["2022-03-14", 19], ["2022-03-15", 18], ["2022-03-16", 7], ["2022-03-17", 18], ["2022-03-18", 11], ["2022-03-19", 1], ["2022-03-20", 2], ["2022-03-21", 19], ["2022-03-22", 30], ["2022-03-23", 29], ["2022-03-24", 15], ["2022-03-25", 10], ["2022-03-26", 8], ["2022-03-27", 1], ["2022-03-28", 23], ["2022-03-29", 28], ["2022-03-30", 16], ["2022-03-31", 25], ["2022-04-01", 34], ["2022-04-02", 6], ["2022-04-03", 14], ["2022-04-04", 17], ["2022-04-05", 30], ["2022-04-06", 24], ["2022-04-07", 14], ["2022-04-08", 17], ["2022-04-09", 4], ["2022-04-10", 3], ["2022-04-11", 36], ["2022-04-12", 14], ["2022-04-13", 21], ["2022-04-14", 19], ["2022-04-15", 10], ["2022-04-17", 1], ["2022-04-18", 11], ["2022-04-19", 18], ["2022-04-20", 22], ["2022-04-21", 29], ["2022-04-22", 37], ["2022-04-24", 3], ["2022-04-25", 16], ["2022-04-26", 13], ["2022-04-27", 20], ["2022-04-28", 32], ["2022-04-29", 26], ["2022-04-30", 2], ["2022-05-02", 15], ["2022-05-03", 9], ["2022-05-04", 10], ["2022-05-05", 18], ["2022-05-06", 7], ["2022-05-07", 2], ["2022-05-08", 1], ["2022-05-09", 18], ["2022-05-10", 33], ["2022-05-11", 15], ["2022-05-12", 17], ["2022-05-13", 12], ["2022-05-16", 15], ["2022-05-17", 17], ["2022-05-18", 18], ["2022-05-19", 17], ["2022-05-20", 12], ["2022-05-21", 1], ["2022-05-22", 3], ["2022-05-23", 26], ["2022-05-24", 18], ["2022-05-25", 15], ["2022-05-26", 24], ["2022-05-27", 28], ["2022-05-28", 2], ["2022-05-30", 18], ["2022-05-31", 22], ["2022-06-01", 15], ["2022-06-02", 23], ["2022-06-03", 22], ["2022-06-04", 3], ["2022-06-06", 20], ["2022-06-07", 16], ["2022-06-08", 22], ["2022-06-09", 34], ["2022-06-10", 14], ["2022-06-13", 16], ["2022-06-14", 13], ["2022-06-15", 16], ["2022-06-16", 23], ["2022-06-17", 13], ["2022-06-20", 11], ["2022-06-21", 19], ["2022-06-22", 21], ["2022-06-23", 22], ["2022-06-24", 10], ["2022-06-27", 14], ["2022-06-28", 21], ["2022-06-29", 28], ["2022-06-30", 28], ["2022-07-01", 17], ["2022-07-04", 24], ["2022-07-05", 37], ["2022-07-06", 41], ["2022-07-07", 49], ["2022-07-08", 28], ["2022-07-11", 22], ["2022-07-12", 38], ["2022-07-13", 50], ["2022-07-14", 24], ["2022-07-15", 28], ["2022-07-16", 12], ["2022-07-17", 1], ["2022-07-18", 31], ["2022-07-19", 16], ["2022-07-20", 18], ["2022-07-21", 24], ["2022-07-22", 21], ["2022-07-23", 2], ["2022-07-25", 25], ["2022-07-26", 21], ["2022-07-27", 13], ["2022-07-28", 13], ["2022-07-29", 8], ["2022-08-01", 9], ["2022-08-02", 22], ["2022-08-03", 31], ["2022-08-04", 20], ["2022-08-05", 7], ["2022-08-07", 1], ["2022-08-08", 4], ["2022-08-09", 10], ["2022-08-10", 14], ["2022-08-11", 10], ["2022-08-12", 4], ["2022-08-15", 22], ["2022-08-16", 11], ["2022-08-17", 13], ["2022-08-18", 13], ["2022-08-19", 23], ["2022-08-21", 2], ["2022-08-22", 30], ["2022-08-23", 12], ["2022-08-24", 9], ["2022-08-25", 7], ["2022-08-26", 3], ["2022-08-29", 12], ["2022-08-30", 22], ["2022-08-31", 23], ["2022-09-01", 17], ["2022-09-02", 19], ["2022-09-03", 6], ["2022-09-06", 13], ["2022-09-07", 8], ["2022-09-08", 22], ["2022-09-09", 11], ["2022-09-11", 3], ["2022-09-12", 8], ["2022-09-13", 21], ["2022-09-14", 13], ["2022-09-15", 15], ["2022-09-16", 23], ["2022-09-18", 1], ["2022-09-19", 14], ["2022-09-20", 6], ["2022-09-21", 15], ["2022-09-22", 16], ["2022-09-23", 6], ["2022-09-24", 1], ["2022-09-26", 33], ["2022-09-27", 21], ["2022-09-28", 30], ["2022-09-29", 15], ["2022-09-30", 15], ["2022-10-01", 1], ["2022-10-02", 7], ["2022-10-03", 19], ["2022-10-04", 18], ["2022-10-05", 17], ["2022-10-06", 21], ["2022-10-07", 26], ["2022-10-08", 5], ["2022-10-09", 5], ["2022-10-10", 37], ["2022-10-11", 44], ["2022-10-12", 36], ["2022-10-13", 29], ["2022-10-14", 27], ["2022-10-15", 3], ["2022-10-16", 11], ["2022-10-17", 33], ["2022-10-18", 32], ["2022-10-19", 35], ["2022-10-20", 31], ["2022-10-21", 20], ["2022-10-22", 6], ["2022-10-23", 1], ["2022-10-24", 31], ["2022-10-25", 32], ["2022-10-26", 36], ["2022-10-27", 33], ["2022-10-28", 9], ["2022-10-31", 18], ["2022-11-01", 22], ["2022-11-02", 27], ["2022-11-03", 11], ["2022-11-04", 14], ["2022-11-05", 1], ["2022-11-06", 1], ["2022-11-07", 6], ["2022-11-08", 16], ["2022-11-09", 8], ["2022-11-10", 19], ["2022-11-11", 19], ["2022-11-12", 1], ["2022-11-14", 17], ["2022-11-15", 19], ["2022-11-16", 25], ["2022-11-17", 22], ["2022-11-18", 12], ["2022-11-19", 1], ["2022-11-20", 3], ["2022-11-21", 9], ["2022-11-22", 1], ["2022-11-23", 13], ["2022-11-24", 1], ["2022-11-25", 1], ["2022-11-28", 18], ["2022-11-29", 11], ["2022-11-30", 17], ["2022-12-01", 20], ["2022-12-02", 14], ["2022-12-03", 7], ["2022-12-04", 1], ["2022-12-05", 14], ["2022-12-06", 10], ["2022-12-07", 8], ["2022-12-08", 16], ["2022-12-09", 12], ["2022-12-10", 1], ["2022-12-12", 16], ["2022-12-13", 26], ["2022-12-14", 29], ["2022-12-15", 17], ["2022-12-16", 9], ["2022-12-17", 2], ["2022-12-19", 11], ["2022-12-20", 15], ["2022-12-21", 10], ["2022-12-22", 10], ["2022-12-23", 4], ["2022-12-26", 2], ["2022-12-27", 2], ["2022-12-29", 5], ["2022-12-30", 2], ["2023-01-01", 2], ["2023-01-02", 5], ["2023-01-03", 7], ["2023-01-04", 7], ["2023-01-05", 11], ["2023-01-06", 29], ["2023-01-07", 3], ["2023-01-08", 3], ["2023-01-09", 16], ["2023-01-10", 9], ["2023-01-11", 11], ["2023-01-12", 4], ["2023-01-13", 1], ["2023-01-14", 1], ["2023-01-16", 17], ["2023-01-17", 19], ["2023-01-18", 16], ["2023-01-19", 18], ["2023-01-20", 30], ["2023-01-22", 1], ["2023-01-23", 19], ["2023-01-24", 17], ["2023-01-25", 31], ["2023-01-26", 18], ["2023-01-27", 15], ["2023-01-30", 7], ["2023-01-31", 4], ["2023-02-01", 5], ["2023-02-02", 9], ["2023-02-03", 10], ["2023-02-04", 2], ["2023-02-05", 3], ["2023-02-06", 7], ["2023-02-07", 25], ["2023-02-08", 13], ["2023-02-09", 14], ["2023-02-10", 14], ["2023-02-11", 8], ["2023-02-12", 6], ["2023-02-13", 6], ["2023-02-14", 14], ["2023-02-15", 22], ["2023-02-16", 20], ["2023-02-17", 15], ["2023-02-18", 5], ["2023-02-20", 20], ["2023-02-21", 17], ["2023-02-22", 25], ["2023-02-23", 30], ["2023-02-24", 18], ["2023-02-25", 14], ["2023-02-26", 25], ["2023-02-27", 18], ["2023-02-28", 24], ["2023-03-01", 6], ["2023-03-02", 8], ["2023-03-03", 28], ["2023-03-04", 3], ["2023-03-06", 18], ["2023-03-07", 18], ["2023-03-08", 22], ["2023-03-09", 27], ["2023-03-10", 32], ["2023-03-11", 7], ["2023-03-12", 3], ["2023-03-13", 31], ["2023-03-14", 23], ["2023-03-15", 7], ["2023-03-16", 22], ["2023-03-17", 30], ["2023-03-18", 2], ["2023-03-20", 18], ["2023-03-21", 20], ["2023-03-22", 19], ["2023-03-23", 20], ["2023-03-24", 11], ["2023-03-26", 2], ["2023-03-27", 19], ["2023-03-28", 17], ["2023-03-29", 26], ["2023-03-30", 23], ["2023-03-31", 22], ["2023-04-02", 5], ["2023-04-03", 31], ["2023-04-04", 14], ["2023-04-05", 33], ["2023-04-06", 15], ["2023-04-07", 12], ["2023-04-08", 2], ["2023-04-10", 14], ["2023-04-11", 27], ["2023-04-12", 16], ["2023-04-13", 12], ["2023-04-14", 19], ["2023-04-16", 1], ["2023-04-17", 16], ["2023-04-18", 26], ["2023-04-19", 31], ["2023-04-20", 38], ["2023-04-21", 49], ["2023-04-22", 3], ["2023-04-24", 16], ["2023-04-25", 6], ["2023-04-26", 18], ["2023-04-27", 24], ["2023-04-28", 31], ["2023-04-29", 2], ["2023-05-01", 15], ["2023-05-02", 22], ["2023-05-03", 24], ["2023-05-04", 36], ["2023-05-05", 24], ["2023-05-07", 4], ["2023-05-08", 24], ["2023-05-09", 42], ["2023-05-10", 42], ["2023-05-11", 23], ["2023-05-12", 14], ["2023-05-13", 10], ["2023-05-14", 4], ["2023-05-15", 16], ["2023-05-16", 28], ["2023-05-17", 32], ["2023-05-18", 21], ["2023-05-19", 37], ["2023-05-20", 2], ["2023-05-21", 2], ["2023-05-22", 67], ["2023-05-23", 28], ["2023-05-24", 28], ["2023-05-25", 16], ["2023-05-26", 14], ["2023-05-27", 3], ["2023-05-28", 1], ["2023-05-29", 13], ["2023-05-30", 30], ["2023-05-31", 29], ["2023-06-01", 18], ["2023-06-02", 29], ["2023-06-04", 2], ["2023-06-05", 28], ["2023-06-06", 39], ["2023-06-07", 46], ["2023-06-08", 24], ["2023-06-09", 38], ["2023-06-10", 3], ["2023-06-12", 29], ["2023-06-13", 27], ["2023-06-14", 29], ["2023-06-15", 34], ["2023-06-16", 39], ["2023-06-17", 4], ["2023-06-18", 8], ["2023-06-19", 24], ["2023-06-20", 39], ["2023-06-21", 47], ["2023-06-22", 41], ["2023-06-23", 27], ["2023-06-24", 5], ["2023-06-25", 7], ["2023-06-26", 40], ["2023-06-27", 44], ["2023-06-28", 52], ["2023-06-29", 44], ["2023-06-30", 22], ["2023-07-01", 2], ["2023-07-03", 15], ["2023-07-04", 17], ["2023-07-05", 26], ["2023-07-06", 28], ["2023-07-07", 15], ["2023-07-08", 1], ["2023-07-10", 17], ["2023-07-11", 36], ["2023-07-12", 32], ["2023-07-13", 36], ["2023-07-14", 29], ["2023-07-15", 3], ["2023-07-17", 38], ["2023-07-18", 30], ["2023-07-19", 29], ["2023-07-20", 45], ["2023-07-21", 20], ["2023-07-22", 8], ["2023-07-23", 7], ["2023-07-24", 22], ["2023-07-25", 22], ["2023-07-26", 29], ["2023-07-27", 49], ["2023-07-28", 28], ["2023-07-29", 1], ["2023-07-31", 16], ["2023-08-01", 26], ["2023-08-02", 30], ["2023-08-03", 26], ["2023-08-04", 19], ["2023-08-05", 3], ["2023-08-06", 5], ["2023-08-07", 24], ["2023-08-08", 48], ["2023-08-09", 38], ["2023-08-10", 13], ["2023-08-11", 23], ["2023-08-12", 14], ["2023-08-13", 11], ["2023-08-14", 46], ["2023-08-15", 41], ["2023-08-16", 42], ["2023-08-17", 29], ["2023-08-18", 47], ["2023-08-19", 9], ["2023-08-20", 1], ["2023-08-21", 30], ["2023-08-22", 45], ["2023-08-23", 41], ["2023-08-24", 38], ["2023-08-25", 49], ["2023-08-26", 21], ["2023-08-27", 5], ["2023-08-28", 31], ["2023-08-29", 44], ["2023-08-30", 36], ["2023-08-31", 27], ["2023-09-01", 19], ["2023-09-02", 2], ["2023-09-05", 31], ["2023-09-06", 33], ["2023-09-07", 39], ["2023-09-08", 38], ["2023-09-09", 9], ["2023-09-10", 1], ["2023-09-11", 33], ["2023-09-12", 24], ["2023-09-13", 24], ["2023-09-14", 45], ["2023-09-15", 48], ["2023-09-16", 1], ["2023-09-17", 1], ["2023-09-18", 23], ["2023-09-19", 46], ["2023-09-20", 51], ["2023-09-21", 35], ["2023-09-22", 30], ["2023-09-23", 11], ["2023-09-24", 4], ["2023-09-25", 25], ["2023-09-26", 26], ["2023-09-27", 47], ["2023-09-28", 32], ["2023-09-29", 37], ["2023-09-30", 3], ["2023-10-01", 5], ["2023-10-02", 36], ["2023-10-03", 47], ["2023-10-04", 58], ["2023-10-05", 34], ["2023-10-06", 51], ["2023-10-07", 19], ["2023-10-08", 2], ["2023-10-09", 62], ["2023-10-10", 51], ["2023-10-11", 40], ["2023-10-12", 52], ["2023-10-13", 43], ["2023-10-15", 1], ["2023-10-16", 23], ["2023-10-17", 74], ["2023-10-18", 75], ["2023-10-19", 76], ["2023-10-20", 42], ["2023-10-21", 19], ["2023-10-22", 27], ["2023-10-23", 38], ["2023-10-24", 68], ["2023-10-25", 52], ["2023-10-26", 83], ["2023-10-27", 15], ["2023-10-28", 4], ["2023-10-29", 3], ["2023-10-30", 72], ["2023-10-31", 43], ["2023-11-01", 67], ["2023-11-02", 107], ["2023-11-03", 72], ["2023-11-04", 5], ["2023-11-05", 9], ["2023-11-06", 42], ["2023-11-07", 72], ["2023-11-08", 101], ["2023-11-09", 68], ["2023-11-10", 24], ["2023-11-12", 4], ["2023-11-13", 87], ["2023-11-14", 85], ["2023-11-15", 55], ["2023-11-16", 59], ["2023-11-17", 59], ["2023-11-18", 19], ["2023-11-19", 12], ["2023-11-20", 47], ["2023-11-21", 33], ["2023-11-22", 46], ["2023-11-23", 21], ["2023-11-24", 26], ["2023-11-26", 1], ["2023-11-27", 63], ["2023-11-28", 60], ["2023-11-29", 64], ["2023-11-30", 60], ["2023-12-01", 65], ["2023-12-02", 1], ["2023-12-03", 1], ["2023-12-04", 60], ["2023-12-05", 68], ["2023-12-06", 94], ["2023-12-07", 75], ["2023-12-08", 74], ["2023-12-09", 9], ["2023-12-10", 4], ["2023-12-11", 93], ["2023-12-12", 62], ["2023-12-13", 74], ["2023-12-14", 75], ["2023-12-15", 67], ["2023-12-18", 44], ["2023-12-19", 60], ["2023-12-20", 69], ["2023-12-21", 51], ["2023-12-22", 62], ["2023-12-23", 14], ["2023-12-25", 8], ["2023-12-26", 5], ["2023-12-27", 4], ["2023-12-28", 3], ["2023-12-29", 2], ["2023-12-30", 3], ["2023-12-31", 5], ["2024-01-01", 10], ["2024-01-02", 60], ["2024-01-03", 88], ["2024-01-04", 67], ["2024-01-05", 63], ["2024-01-06", 24], ["2024-01-07", 10], ["2024-01-08", 66], ["2024-01-09", 70], ["2024-01-10", 46], ["2024-01-11", 64], ["2024-01-12", 32], ["2024-01-13", 9], ["2024-01-14", 5], ["2024-01-15", 48], ["2024-01-16", 43], ["2024-01-17", 81], ["2024-01-18", 80], ["2024-01-19", 46], ["2024-01-20", 22], ["2024-01-21", 23], ["2024-01-22", 58], ["2024-01-23", 70], ["2024-01-24", 79], ["2024-01-25", 50], ["2024-01-26", 52], ["2024-01-27", 21], ["2024-01-28", 27], ["2024-01-29", 28], ["2024-01-30", 43], ["2024-01-31", 27], ["2024-02-01", 32], ["2024-02-02", 35], ["2024-02-03", 15], ["2024-02-04", 18], ["2024-02-05", 29], ["2024-02-06", 20], ["2024-02-07", 34], ["2024-02-08", 27], ["2024-02-09", 27], ["2024-02-10", 8], ["2024-02-11", 1], ["2024-02-12", 13], ["2024-02-13", 14], ["2024-02-14", 20], ["2024-02-15", 31], ["2024-02-16", 15], ["2024-02-17", 8], ["2024-02-18", 7], ["2024-02-19", 16], ["2024-02-20", 36], ["2024-02-21", 19], ["2024-02-22", 26], ["2024-02-23", 40], ["2024-02-24", 13], ["2024-02-25", 15], ["2024-02-26", 25], ["2024-02-27", 20], ["2024-02-28", 28], ["2024-02-29", 19], ["2024-03-01", 21], ["2024-03-02", 45], ["2024-03-03", 20], ["2024-03-04", 27], ["2024-03-05", 31], ["2024-03-06", 28], ["2024-03-07", 32], ["2024-03-08", 18], ["2024-03-09", 9], ["2024-03-10", 2], ["2024-03-11", 33], ["2024-03-12", 24], ["2024-03-13", 26], ["2024-03-14", 29], ["2024-03-15", 32], ["2024-03-16", 2], ["2024-03-17", 4], ["2024-03-18", 28], ["2024-03-19", 24], ["2024-03-20", 23], ["2024-03-21", 24], ["2024-03-22", 19], ["2024-03-23", 1], ["2024-03-24", 1], ["2024-03-25", 24], ["2024-03-26", 25], ["2024-03-27", 18], ["2024-03-28", 20], ["2024-03-29", 24], ["2024-03-30", 3], ["2024-03-31", 2], ["2024-04-01", 22], ["2024-04-02", 20], ["2024-04-03", 24], ["2024-04-04", 17], ["2024-04-05", 15], ["2024-04-06", 3], ["2024-04-07", 2], ["2024-04-08", 26], ["2024-04-09", 20], ["2024-04-10", 20], ["2024-04-11", 32], ["2024-04-12", 33], ["2024-04-13", 3], ["2024-04-14", 2], ["2024-04-15", 25], ["2024-04-16", 40], ["2024-04-17", 17], ["2024-04-18", 14], ["2024-04-19", 25], ["2024-04-20", 4], ["2024-04-21", 1], ["2024-04-22", 20], ["2024-04-23", 11], ["2024-04-24", 19], ["2024-04-25", 32], ["2024-04-26", 19], ["2024-04-27", 8], ["2024-04-28", 4], ["2024-04-29", 32], ["2024-04-30", 24], ["2024-05-01", 28], ["2024-05-02", 16], ["2024-05-03", 37], ["2024-05-05", 7], ["2024-05-06", 40], ["2024-05-07", 26], ["2024-05-08", 26], ["2024-05-09", 31], ["2024-05-10", 22], ["2024-05-11", 7], ["2024-05-12", 6], ["2024-05-13", 20], ["2024-05-14", 36], ["2024-05-15", 28], ["2024-05-16", 33], ["2024-05-17", 23], ["2024-05-18", 2], ["2024-05-19", 1], ["2024-05-20", 13], ["2024-05-21", 12], ["2024-05-22", 31], ["2024-05-23", 12], ["2024-05-24", 18], ["2024-05-25", 8], ["2024-05-26", 9], ["2024-05-27", 13], ["2024-05-28", 20], ["2024-05-29", 28], ["2024-05-30", 21], ["2024-05-31", 11], ["2024-06-01", 5], ["2024-06-02", 2], ["2024-06-03", 21], ["2024-06-04", 16], ["2024-06-05", 22], ["2024-06-06", 18], ["2024-06-07", 13], ["2024-06-08", 3], ["2024-06-10", 17], ["2024-06-11", 14], ["2024-06-12", 18], ["2024-06-13", 36], ["2024-06-14", 41], ["2024-06-15", 4], ["2024-06-16", 1], ["2024-06-17", 33], ["2024-06-18", 36], ["2024-06-19", 13], ["2024-06-20", 19], ["2024-06-21", 19], ["2024-06-22", 4], ["2024-06-23", 9], ["2024-06-24", 23], ["2024-06-25", 28], ["2024-06-26", 16], ["2024-06-27", 23], ["2024-06-28", 15], ["2024-06-29", 1], ["2024-06-30", 1], ["2024-07-01", 15], ["2024-07-02", 12], ["2024-07-03", 21], ["2024-07-04", 9], ["2024-07-05", 26], ["2024-07-07", 1], ["2024-07-08", 29], ["2024-07-09", 43], ["2024-07-10", 33], ["2024-07-11", 47], ["2024-07-12", 15], ["2024-07-13", 11], ["2024-07-14", 2], ["2024-07-15", 29], ["2024-07-16", 39], ["2024-07-17", 37], ["2024-07-18", 30], ["2024-07-19", 36], ["2024-07-20", 9], ["2024-07-21", 15], ["2024-07-22", 23], ["2024-07-23", 41], ["2024-07-24", 48], ["2024-07-25", 53], ["2024-07-26", 43], ["2024-07-27", 26], ["2024-07-28", 9], ["2024-07-29", 28], ["2024-07-30", 25], ["2024-07-31", 33], ["2024-08-01", 32], ["2024-08-02", 16], ["2024-08-03", 5], ["2024-08-04", 1], ["2024-08-05", 18], ["2024-08-06", 34], ["2024-08-07", 14], ["2024-08-08", 27], ["2024-08-09", 19], ["2024-08-10", 2], ["2024-08-11", 8], ["2024-08-12", 25], ["2024-08-13", 38], ["2024-08-14", 38], ["2024-08-15", 35], ["2024-08-16", 26], ["2024-08-17", 5], ["2024-08-18", 7], ["2024-08-19", 26], ["2024-08-20", 22], ["2026-01-01", 35], ["2026-01-02", 47], ["2026-01-03", 33], ["2026-01-04", 29], ["2026-01-05", 85], ["2026-01-06", 123], ["2026-01-07", 114], ["2026-01-08", 77], ["2026-01-09", 72], ["2026-01-10", 11], ["2026-01-11", 17], ["2026-01-12", 31], ["2026-01-13", 30], ["2026-01-14", 40], ["2026-01-15", 43], ["2026-01-16", 70], ["2026-01-17", 9], ["2026-01-18", 4], ["2026-01-19", 21], ["2026-01-20", 25], ["2026-01-21", 28], ["2026-01-22", 43], ["2026-01-23", 43], ["2026-01-24", 14], ["2026-01-25", 11], ["2026-01-26", 42], ["2026-01-27", 47], ["2026-01-28", 43], ["2026-01-29", 23], ["2026-01-30", 30], ["2026-01-31", 12], ["2026-02-01", 7], ["2026-02-02", 38], ["2026-02-03", 34], ["2026-02-04", 55], ["2026-02-05", 48], ["2026-02-06", 48], ["2026-02-07", 8], ["2026-02-08", 15], ["2026-02-09", 41], ["2026-02-10", 39], ["2026-02-11", 32], ["2026-02-12", 60], ["2026-02-13", 51], ["2026-02-14", 24], ["2026-02-15", 9], ["2026-02-16", 49], ["2026-02-17", 43], ["2026-02-18", 49], ["2026-02-19", 52], ["2026-02-20", 58], ["2026-02-21", 11], ["2026-02-22", 5], ["2026-02-23", 44], ["2026-02-24", 55], ["2026-02-25", 52], ["2026-02-26", 38], ["2026-02-27", 47], ["2026-02-28", 8], ["2026-03-01", 12], ["2026-03-02", 58], ["2026-03-03", 30], ["2026-03-04", 44], ["2026-03-05", 37], ["2026-03-06", 36], ["2026-03-07", 4], ["2026-03-08", 5], ["2026-03-09", 36], ["2026-03-10", 27], ["2026-03-11", 27], ["2026-03-12", 47], ["2026-03-13", 48], ["2026-03-14", 5], ["2026-03-15", 1], ["2026-03-16", 48], ["2026-03-17", 44], ["2026-03-18", 48], ["2026-03-19", 73], ["2026-03-20", 23], ["2026-03-21", 9], ["2026-03-22", 54], ["2026-03-23", 42], ["2026-03-24", 42], ["2026-03-25", 46], ["2026-03-26", 24], ["2026-03-27", 39], ["2026-03-28", 1], ["2026-03-29", 6], ["2026-03-30", 76], ["2026-03-31", 49], ["2026-04-01", 43], ["2026-04-02", 36], ["2026-04-03", 17], ["2026-04-04", 5], ["2026-04-05", 6], ["2026-04-06", 86], ["2026-04-07", 196], ["2026-04-08", 49], ["2026-04-09", 134], ["2026-04-10", 111], ["2026-04-11", 4], ["2026-04-12", 5], ["2026-04-13", 39], ["2026-04-14", 35], ["2026-04-15", 74], ["2026-04-16", 122], ["2026-04-17", 171], ["2026-04-18", 100], ["2026-04-19", 29], ["2026-04-20", 120], ["2026-04-21", 146], ["2026-04-22", 123], ["2026-04-23", 114], ["2026-04-24", 74], ["2026-04-25", 23], ["2026-04-26", 2], ["2026-04-27", 96], ["2026-04-28", 46], ["2026-04-29", 78], ["2026-04-30", 38], ["2026-05-01", 14], ["2026-05-02", 6], ["2026-05-03", 11], ["2026-05-04", 32], ["2026-05-05", 68], ["2026-05-06", 72], ["2026-05-07", 58], ["2026-05-08", 35], ["2026-05-09", 4], ["2026-05-10", 1], ["2026-05-11", 2], ["2026-05-12", 4], ["2026-05-13", 23], ["2026-05-14", 33], ["2026-05-15", 14], ["2026-05-16", 23], ["2026-05-17", 19], ["2026-05-18", 5], ["2026-05-19", 28], ["2026-05-20", 8], ["2026-05-21", 32], ["2026-05-22", 46], ["2026-05-23", 27], ["2026-05-24", 3], ["2026-05-25", 2], ["2026-05-26", 58], ["2026-05-27", 22], ["2026-05-28", 12], ["2026-05-29", 5], ["2026-05-30", 22], ["2026-05-31", 70], ["2026-06-01", 49], ["2026-06-02", 44], ["2026-06-03", 69], ["2026-06-04", 44], ["2026-06-05", 15], ["2026-06-06", 28], ["2026-06-07", 28], ["2026-06-08", 47], ["2026-06-09", 73], ["2026-06-10", 15], ["2026-06-11", 7], ["2026-06-12", 18], ["2026-06-13", 72], ["2026-06-14", 14], ["2026-06-15", 44], ["2026-06-16", 21], ["2026-06-17", 36], ["2026-06-18", 7], ["2026-06-19", 9], ["2026-06-20", 12], ["2026-06-21", 3], ["2026-06-22", 22], ["2026-06-23", 71], ["2026-06-24", 4], ["2026-06-25", 5], ["2026-06-26", 6], ["2026-06-27", 3], ["2026-06-28", 8], ["2026-06-29", 3], ["2026-06-30", 3], ["2026-07-01", 26], ["2026-07-02", 59], ["2026-07-03", 89], ["2026-07-04", 110], ["2026-07-05", 64], ["2026-07-06", 159], ["2026-07-07", 117], ["2026-07-08", 116], ["2026-07-09", 5], ["2026-07-10", 30], ["2026-07-11", 29], ["2026-07-12", 10], ["2026-07-13", 2], ["2026-07-14", 22], ["2026-07-15", 32], ["2026-07-16", 40], ["2026-07-17", 33], ["2026-07-18", 31], ["2026-07-19", 4], ["2026-07-20", 4], ["2026-07-21", 27], ["2026-07-22", 32], ["2026-07-23", 32], ["2026-07-24", 31], ["2026-07-25", 24], ["2026-07-26", 8], ["2026-07-27", 4], ["2026-07-28", 30], ["2026-07-29", 39], ["2026-07-30", 27], ["2026-07-31", 30], ["2026-08-01", 14], ["2026-08-02", 2], ["2026-08-03", 6], ["2026-08-04", 28], ["2026-08-05", 40], ["2026-08-06", 36], ["2026-08-07", 39], ["2026-08-08", 42], ["2026-08-09", 9], ["2026-08-10", 8], ["2026-08-11", 28], ["2026-08-12", 31], ["2026-08-13", 32], ["2026-08-14", 29], ["2026-08-15", 37], ["2026-08-16", 13], ["2026-08-17", 8], ["2026-08-18", 42], ["2026-08-19", 47], ["2026-08-20", 54], ["2026-08-21", 44], ["2026-08-22", 28], ["2026-08-23", 10], ["2026-08-24", 5], ["2026-08-25", 34], ["2026-08-26", 26], ["2026-08-27", 26], ["2026-08-28", 39], ["2026-08-29", 23], ["2026-08-30", 5], ["2026-08-31", 14], ["2026-09-01", 16], ["2026-09-02", 38], ["2026-09-03", 41], ["2026-09-04", 31], ["2026-09-05", 20], ["2026-09-06", 14], ["2026-09-07", 5], ["2026-09-08", 36], ["2026-09-09", 44], ["2026-09-10", 30], ["2026-09-11", 36], ["2026-09-12", 25], ["2026-09-13", 7], ["2026-09-14", 15], ["2026-09-15", 24], ["2026-09-16", 22], ["2026-09-17", 33], ["2026-09-18", 32], ["2026-09-19", 26], ["2026-09-20", 7], ["2026-09-21", 3], ["2026-09-22", 29], ["2026-09-23", 34], ["2026-09-24", 35], ["2026-09-25", 44], ["2026-09-26", 23], ["2026-09-27", 11], ["2026-09-28", 5], ["2026-09-29", 42], ["2026-09-30", 40], ["2026-10-01", 23], ["2026-10-02", 38], ["2026-10-03", 28], ["2026-10-04", 5], ["2026-10-05", 13], ["2026-10-06", 40], ["2026-10-07", 33], ["2026-10-08", 44], ["2026-10-09", 25], ["2026-10-10", 27], ["2026-10-11", 10], ["2026-10-12", 7], ["2026-10-13", 41], ["2026-10-14", 32], ["2026-10-15", 33], ["2026-10-16", 43], ["2026-10-17", 38], ["2026-10-18", 13], ["2026-10-19", 9], ["2026-10-20", 40], ["2026-10-21", 48], ["2026-10-22", 46], ["2026-10-23", 42], ["2026-10-24", 19], ["2026-10-25", 9], ["2026-10-26", 10], ["2026-10-27", 33], ["2026-10-28", 46], ["2026-10-29", 40], ["2026-10-30", 25], ["2026-10-31", 21], ["2026-11-01", 6], ["2026-11-02", 9], ["2026-11-03", 41], ["2026-11-04", 43], ["2026-11-05", 36], ["2026-11-06", 47], ["2026-11-07", 42], ["2026-11-08", 10], ["2026-11-09", 8], ["2026-11-10", 39], ["2026-11-11", 41], ["2026-11-12", 46], ["2026-11-13", 36], ["2026-11-14", 19], ["2026-11-15", 2], ["2026-11-16", 2], ["2026-11-17", 41], ["2026-11-18", 25], ["2026-11-19", 34], ["2026-11-20", 40], ["2026-11-21", 27], ["2026-11-22", 7], ["2026-11-23", 7], ["2026-11-24", 34], ["2026-11-25", 37], ["2026-11-26", 27], ["2026-11-27", 23], ["2026-11-28", 27], ["2026-11-29", 9], ["2026-11-30", 3], ["2026-12-01", 54], ["2026-12-02", 36], ["2026-12-03", 31], ["2026-12-04", 25], ["2026-12-05", 21], ["2026-12-06", 15], ["2026-12-07", 3], ["2026-12-08", 39], ["2026-12-09", 24], ["2026-12-10", 24], ["2026-12-11", 24], ["2026-12-12", 24], ["2026-12-13", 6], ["2026-12-14", 12], ["2026-12-15", 80], ["2026-12-16", 74], ["2026-12-17", 64], ["2026-12-18", 51], ["2026-12-19", 51], ["2026-12-20", 11], ["2026-12-21", 6], ["2026-12-22", 11], ["2026-12-23", 8], ["2026-12-24", 3], ["2026-12-25", 1], ["2026-12-26", 7], ["2026-12-27", 5], ["2026-12-28", 8], ["2026-12-29", 11], ["2026-12-30", 36], ["2026-12-31", 64]];
+const sessionDays = [["2026-05-01", 1], ["2026-05-03", 1], ["2026-05-05", 3], ["2026-05-06", 68], ["2026-05-07", 1], ["2026-05-24", 1], ["2026-05-26", 2], ["2026-05-27", 72], ["2026-05-29", 8], ["2026-05-30", 302], ["2026-05-31", 109], ["2026-06-01", 94], ["2026-06-02", 14], ["2026-06-03", 255], ["2026-06-04", 130], ["2026-06-05", 47], ["2026-06-06", 217], ["2026-06-07", 104], ["2026-06-08", 62], ["2026-06-09", 71], ["2026-06-10", 231], ["2026-06-11", 4], ["2026-06-12", 228], ["2026-06-13", 144], ["2026-06-14", 8], ["2026-06-15", 43], ["2026-06-16", 31], ["2026-06-17", 224], ["2026-06-18", 102], ["2026-06-19", 141], ["2026-06-22", 5], ["2026-06-23", 2], ["2026-07-01", 14], ["2026-07-02", 75], ["2026-07-03", 74], ["2026-07-04", 87], ["2026-07-05", 55], ["2026-07-06", 77], ["2026-07-07", 303], ["2026-07-08", 314], ["2026-07-09", 29]];
+const sessionDayMap = {};
+sessionDays.forEach(([d,c]) => sessionDayMap[d] = c);
+const commitDayMap = {};
+commitDays.forEach(([d,c]) => commitDayMap[d] = c);
+
+// ============= SCROLL PROGRESS =============
+const scrollProgress = document.getElementById('scrollProgress');
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+  scrollProgress.style.width = pct + '%';
+});
+
+// ============= THEME TOGGLE =============
+const themeToggle = document.getElementById('themeToggle');
+themeToggle.addEventListener('click', () => {
+  const cur = document.documentElement.getAttribute('data-theme');
+  const next = cur === 'light' ? null : 'light';
+  if (next) document.documentElement.setAttribute('data-theme', next);
+  else document.documentElement.removeAttribute('data-theme');
+  themeToggle.textContent = next === 'light' ? '\u2600' : '\u263E';
+  try { localStorage.setItem('gaze-theme', next || 'dark'); } catch(e){}
+});
+try {
+  const saved = localStorage.getItem('gaze-theme');
+  if (saved === 'light') { document.documentElement.setAttribute('data-theme','light'); themeToggle.textContent = '\u2600'; }
+} catch(e){}
+
+// ============= HEATMAP =============
+(function() {
+  const grid = document.getElementById('heatmapGrid');
+  const dowEl = document.getElementById('heatmapDow');
+  const monthsEl = document.getElementById('heatmapMonths');
+  const summaryEl = document.getElementById('heatmapSummary');
+
+  // Scope to 2026 — the Claude era, the PWA's actual story
+  const allDates = new Set();
+  commitDays.forEach(([d]) => allDates.add(d));
+  sessionDays.forEach(([d]) => allDates.add(d));
+  const lastDataDate = [...allDates].sort().pop();
+
+  let firstDate = new Date('2026-01-01T00:00:00');
+  let lastDate = new Date(lastDataDate + 'T00:00:00');
+
+  // Align firstDate to Sunday, lastDate to Saturday
+  firstDate.setDate(firstDate.getDate() - firstDate.getDay());
+  lastDate.setDate(lastDate.getDate() + (6 - lastDate.getDay()));
+
+  // DOW labels
+  const dowLabels = ['S', 'M', 'T', 'W', 'T', 'F', 'S'];
+  dowLabels.forEach(l => {
+    const s = document.createElement('span');
+    s.textContent = l;
+    dowEl.appendChild(s);
+  });
+
+  // Build weeks
+  const cols = [];
+  const monthMarkers = [];
+  const cur = new Date(firstDate);
+  let lastMonth = -1;
+  while (cur <= lastDate) {
+    const week = [];
+    for (let i = 0; i < 7; i++) {
+      const ds = cur.toISOString().slice(0, 10);
+      const c = commitDayMap[ds] || 0;
+      const s = sessionDayMap[ds] || 0;
+      week.push({ date: ds, commits: c, sessions: s });
+      if (i === 0) {
+        const m = cur.getMonth();
+        if (m !== lastMonth) {
+          monthMarkers.push({ col: cols.length, label: cur.toLocaleString('en', { month: 'short' }) });
+          lastMonth = m;
+        }
+      }
+      cur.setDate(cur.getDate() + 1);
+    }
+    cols.push(week);
+  }
+
+  // Month labels — positioned at their column offsets, centered with the grid
+  const cellW = 16; // 14px cell + 2px gap
+  monthMarkers.forEach(m => {
+    const span = document.createElement('span');
+    span.textContent = m.label;
+    span.style.position = 'absolute';
+    span.style.left = (m.col * cellW) + 'px';
+    monthsEl.appendChild(span);
+  });
+  monthsEl.style.position = 'relative';
+  monthsEl.style.height = '.8rem';
+  monthsEl.style.marginLeft = '1.5rem';
+
+  // Discrete intensity levels — 4 tiers
+  // Commits: 1-5 = l1, 6-20 = l2, 21-60 = l3, 61+ = l4
+  // Sessions: 1-20 = s1, 21-60 = s2, 61-150 = s3, 151+ = s4
+  function commitLevel(c) { return c > 60 ? 4 : c > 20 ? 3 : c > 5 ? 2 : 1; }
+  function sessionLevel(s) { return s > 150 ? 4 : s > 60 ? 3 : s > 20 ? 2 : 1; }
+
+  let activeDays = 0;
+  let peakDay = { date: '', total: 0 };
+  let peakSessions = { date: '', count: 0 };
+
+  cols.forEach(week => {
+    const col = document.createElement('div');
+    col.className = 'heatmap-col';
+    week.forEach(day => {
+      const cell = document.createElement('div');
+      cell.className = 'heatmap-cell';
+      const hasC = day.commits > 0;
+      const hasS = day.sessions > 0;
+      const total = day.commits + day.sessions;
+
+      if (total > 0) {
+        activeDays++;
+        if (total > peakDay.total) peakDay = { date: day.date, total: total, commits: day.commits, sessions: day.sessions };
+        if (day.sessions > peakSessions.count) peakSessions = { date: day.date, count: day.sessions };
+
+        if (hasC && hasS) {
+          cell.classList.add('both');
+          cell.classList.add('l' + commitLevel(day.commits));
+        } else if (hasC) {
+          cell.classList.add('l' + commitLevel(day.commits));
+        } else {
+          cell.classList.add('s' + sessionLevel(day.sessions));
+        }
+        cell.title = day.date + ': ' + day.commits + ' commit' + (day.commits === 1 ? '' : 's') + ', ' + day.sessions + ' session' + (day.sessions === 1 ? '' : 's');
+      } else {
+        cell.title = day.date + ': quiet';
+      }
+      col.appendChild(cell);
+    });
+    grid.appendChild(col);
+  });
+
+  // Summary
+  const totalDays = Math.round((lastDate - firstDate) / 86400000) + 1;
+  const quietDays = totalDays - activeDays;
+  summaryEl.innerHTML =
+    '<span><b>' + cols.length + '</b> weeks · ' + totalDays + ' days</span>' +
+    '<span><b>' + activeDays + '</b> active · ' + quietDays + ' quiet</span>' +
+    '<span>peak day <b>' + peakDay.date + '</b> (' + peakDay.commits + 'C / ' + peakDay.sessions + 'S)</span>' +
+    '<span>peak sessions <b>' + peakSessions.count + '</b> on ' + peakSessions.date + '</span>';
+})();
+
+// ============= DISTRIBUTION =============
+(function() {
+  const list = document.getElementById('distList');
+  const sorted = [...repos].sort((a, b) => b.commits - a.commits);
+  const top = sorted.slice(0, 30);
+  const maxC = sorted[0].commits;
+  const minC = top[top.length - 1].commits;
+
+  // Log scale: log(1+c) to handle the 24× outlier ratio
+  const logScale = (c) => Math.log(1 + c);
+  const maxLog = logScale(maxC);
+  const minLog = logScale(minC);
+
+  top.forEach((r, i) => {
+    const row = document.createElement('div');
+    row.className = 'dist-row';
+    const pct = ((logScale(r.commits) - minLog) / (maxLog - minLog) * 92 + 8).toFixed(1);
+    const isOutlier = r.commits > maxC * 0.3;
+    const barClass = isOutlier ? 'dist-bar is-outlier' : 'dist-bar';
+    const net = r.insertions - r.deletions;
+    const netStr = net >= 0 ? '+' + net.toLocaleString() : '−' + Math.abs(net).toLocaleString();
+
+    row.innerHTML =
+      '<div class="dist-rank">' + (i + 1) + '</div>' +
+      '<div class="dist-name" title="' + r.name + '">' + r.name + '</div>' +
+      '<div class="dist-bar-wrap"><div class="' + barClass + '" style="width:' + pct + '%"></div></div>' +
+      '<div class="dist-count">' + r.commits.toLocaleString() + '</div>' +
+      '<div class="dist-net">' + netStr + ' lines</div>';
+    list.appendChild(row);
+  });
+})();
+
+// ============= REALMS =============
+const grid = document.getElementById('realmsGrid');
+const realmFiltersEl = document.getElementById('realmFilters');
+
+// Categories
+const categories = {};
+repos.forEach(r => {
+  const cat = r.category || 'other';
+  if (!categories[cat]) categories[cat] = [];
+  categories[cat].push(r);
+});
+
+let activeCategory = null;
+
+// Build filter chips
+Object.keys(categories).sort().forEach(cat => {
+  const btn = document.createElement('button');
+  btn.className = 'realm-filter';
+  btn.textContent = cat + ' (' + categories[cat].length + ')';
+  btn.addEventListener('click', () => {
+    if (activeCategory === cat) { activeCategory = null; btn.classList.remove('active'); }
+    else {
+      document.querySelectorAll('.realm-filter').forEach(b => b.classList.remove('active'));
+      activeCategory = cat;
+      btn.classList.add('active');
+    }
+    renderRealms();
+  });
+  realmFiltersEl.appendChild(btn);
+});
+
+function renderRealms() {
+  grid.innerHTML = '';
+  const filtered = activeCategory ? repos.filter(r => (r.category || 'other') === activeCategory) : repos;
+  filtered.sort((a,b) => b.commits - a.commits).forEach(r => {
+    const card = document.createElement('div');
+    card.className = 'realm-card';
+    card.innerHTML = `
+      <div class="cat-tag">${r.category || 'other'}</div>
+      <div class="name">${r.name}</div>
+      <div class="metric-row"><span class="metric">${r.commits.toLocaleString()}</span><span class="metric-label">commits · +${r.insertions.toLocaleString()}/-${r.deletions.toLocaleString()}</span></div>
+      <div class="desc">${r.desc || ''}</div>
+      <div class="expand-hint">Expand</div>
+      <div class="realm-detail"><div class="realm-detail-inner">
+        <div class="stat-line"><span>Insertions</span><span>+${r.insertions.toLocaleString()}</span></div>
+        <div class="stat-line"><span>Deletions</span><span>-${r.deletions.toLocaleString()}</span></div>
+        <div class="stat-line"><span>Net lines</span><span>${(r.insertions - r.deletions).toLocaleString()}</span></div>
+      </div></div>
+    `;
+    card.addEventListener('click', () => card.classList.toggle('expanded'));
+    grid.appendChild(card);
+  });
+}
+renderRealms();
+
+// ============= FRAGMENTS =============
+const fragList = document.getElementById('fragmentsList');
+const noResults = document.getElementById('noResults');
+const searchInput = document.getElementById('fragSearch');
+const countEl = document.getElementById('fragCount');
+
+// Collect all unique tags
+const allTags = [...new Set(fragments.flatMap(f => f.tags))].sort();
+const tagFiltersEl = document.getElementById('tagFilters');
+let activeTag = null;
+
+allTags.forEach(tag => {
+  const btn = document.createElement('button');
+  btn.className = 'tag-filter';
+  btn.textContent = tag;
+  btn.addEventListener('click', () => {
+    if (activeTag === tag) { activeTag = null; btn.classList.remove('active'); }
+    else {
+      document.querySelectorAll('.tag-filter').forEach(b => b.classList.remove('active'));
+      activeTag = tag;
+      btn.classList.add('active');
+    }
+    renderFragments();
+  });
+  tagFiltersEl.appendChild(btn);
+});
+
+let fragIndex = 0;
+
+function renderFragments() {
+  const q = searchInput.value.toLowerCase().trim();
+  let filtered = fragments;
+  if (q) filtered = filtered.filter(f => f.t.toLowerCase().includes(q));
+  if (activeTag) filtered = filtered.filter(f => f.tags.includes(activeTag));
+
+  countEl.textContent = filtered.length;
+  fragList.innerHTML = '';
+  noResults.style.display = filtered.length === 0 ? 'block' : 'none';
+
+  filtered.forEach((f, i) => {
+    const el = document.createElement('div');
+    el.className = 'fragment';
+    el.dataset.idx = i;
+    let text = f.t;
+    if (q) {
+      const idx = text.toLowerCase().indexOf(q);
+      if (idx >= 0) {
+        text = text.substring(0, idx) + '<mark>' + text.substring(idx, idx + q.length) + '</mark>' + text.substring(idx + q.length);
+      }
+    }
+    const dayLabel = f.d || '';
+    const tagsHtml = f.tags.map(tg => '<span class="frag-tag">' + tg + '</span>').join('');
+    el.innerHTML = text + '<span class="time">' + dayLabel + '</span>' + tagsHtml;
+    fragList.appendChild(el);
+    setTimeout(() => el.classList.add('visible'), i * 40);
+  });
+}
+
+searchInput.addEventListener('input', renderFragments);
+renderFragments();
+
+// ============= SURPRISE ME =============
+const surpriseBtn = document.getElementById('surpriseBtn');
+const surpriseDisplay = document.getElementById('surpriseDisplay');
+surpriseBtn.addEventListener('click', () => {
+  const random = fragments[Math.floor(Math.random() * fragments.length)];
+  surpriseDisplay.textContent = '"' + random.t + '"';
+  surpriseDisplay.classList.remove('show');
+  void surpriseDisplay.offsetWidth;
+  surpriseDisplay.classList.add('show');
+});
+
+// ============= EXPORT =============
+document.getElementById('exportBtn').addEventListener('click', () => {
+  const data = {repos, fragments, commitDays, sessionDays,
+    stats: {totalCommits: 7590, totalInsertions: 8625996, totalDeletions: 3750647,
+            totalRepos: 56, totalSessions: 3753, dateRange: ["2026-04-21","2026-07-09"]}};
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'gaze-data.json';
+  a.click();
+});
+
+// ============= SHARE FRAGMENT (deep-link) =============
+if (location.hash.startsWith('#frag=')) {
+  const fragId = location.hash.slice(6);
+  // Scroll to fragments section and highlight
+  setTimeout(() => {
+    document.getElementById('fragments').scrollIntoView();
+    const fragEl = fragList.querySelector('.fragment');
+    if (fragEl) fragEl.classList.add('highlighted');
+  }, 500);
+}
+
+// ============= KEYBOARD NAV =============
+let kbHighlightIdx = -1;
+document.addEventListener('keydown', (e) => {
+  // Don't intercept if typing in an input
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+    if (e.key === 'Escape') e.target.blur();
+    return;
+  }
+  
+  if (e.key === '/') {
+    e.preventDefault();
+    searchInput.focus();
+  } else if (e.key === 'j' || e.key === 'k') {
+    const frags = fragList.querySelectorAll('.fragment');
+    if (frags.length === 0) return;
+    if (e.key === 'j') kbHighlightIdx = Math.min(kbHighlightIdx + 1, frags.length - 1);
+    else kbHighlightIdx = Math.max(kbHighlightIdx - 1, 0);
+    frags.forEach(f => f.classList.remove('highlighted'));
+    frags[kbHighlightIdx].classList.add('highlighted');
+    frags[kbHighlightIdx].scrollIntoView({behavior:'smooth', block:'center'});
+  } else if (e.key === 'e') {
+    // Expand a random realm
+    const cards = document.querySelectorAll('.realm-card');
+    if (cards.length > 0) {
+      const r = cards[Math.floor(Math.random() * cards.length)];
+      r.classList.toggle('expanded');
+      r.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+});
+
+// ============= AMBIENT AUDIO =============
+let audioCtx = null;
+let dronePlaying = false;
+function startDrone() {
+  if (dronePlaying) return;
+  try {
+    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const osc1 = audioCtx.createOscillator();
+    const osc2 = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc1.frequency.value = 55; // Low A
+    osc2.frequency.value = 82.4; // E
+    osc1.type = 'sine';
+    osc2.type = 'sine';
+    gain.gain.value = 0;
+    gain.gain.linearRampToValueAtTime(0.04, audioCtx.currentTime + 2);
+    osc1.connect(gain); osc2.connect(gain); gain.connect(audioCtx.destination);
+    osc1.start(); osc2.start();
+    dronePlaying = true;
+  } catch(e) {}
+}
+// Start on first interaction
+['click','keydown','touchstart'].forEach(ev => {
+  document.addEventListener(ev, startDrone, {once:true, passive:true});
+});
+
+// ============= COUNT-UP =============
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target, 10);
+  if (el.dataset.done) return;
+  el.dataset.done = '1';
+  const dur = 1800, start = performance.now(), isLarge = target >= 1000;
+  function tick(now) {
+    const t = Math.min((now - start) / dur, 1);
+    const eased = 1 - Math.pow(1 - t, 4);
+    const val = Math.floor(target * eased);
+    el.textContent = isLarge ? val.toLocaleString('en-US') : val.toString();
+    if (t < 1) requestAnimationFrame(tick);
+    else el.textContent = isLarge ? target.toLocaleString('en-US') : target.toString();
+  }
+  requestAnimationFrame(tick);
+}
+
+// ============= REVEAL OBSERVER =============
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      e.target.querySelectorAll('.counter').forEach(animateCounter);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -80px 0px' });
+document.querySelectorAll('.reveal').forEach(el => revealObs.observe(el));
+
+const statGrid = document.querySelector('.stats');
+if (statGrid) {
+  const statObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.counter').forEach((c, i) => setTimeout(() => animateCounter(c), i * 100));
+        statObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  statGrid.observe(statGrid);
+}
+
+// ============= PWA INSTALL PROMPT =============
+let deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  setTimeout(() => {
+    document.getElementById('installPrompt').classList.add('show');
+  }, 3000);
+});
+
+document.getElementById('installBtn').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+  }
+  document.getElementById('installPrompt').classList.remove('show');
+});
+
+document.getElementById('installClose').addEventListener('click', () => {
+  document.getElementById('installPrompt').classList.remove('show');
+});
+
+// ============= PWA =============
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js').catch(() => {}));
+}
+</script>
+</body>
+</html>
