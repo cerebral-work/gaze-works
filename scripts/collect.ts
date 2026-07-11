@@ -265,21 +265,32 @@ function collectFragments(): Fragment[] {
       const content = readFileSync(f, 'utf-8');
       for (const line of content.split('\n')) {
         if (!line.trim()) continue;
-        const obj = JSON.parse(line) as { type?: string; content?: string; timestamp?: string };
-        if (obj.type !== 'user' || !obj.content) continue;
+        const obj = JSON.parse(line) as {
+          type?: string;
+          content?: string | unknown[];
+          message?: { content?: string | Array<{ type?: string; text?: string }> };
+          timestamp?: string;
+        };
+        if (obj.type !== 'user') continue;
 
-        // Extract text content from user messages
-        const text = typeof obj.content === 'string'
-          ? obj.content
-          : Array.isArray(obj.content)
-            ? (obj.content as Array<{ text?: string }>).map(c => c.text ?? '').join(' ')
+        // Claude Code stores user text in message.content, NOT top-level content
+        const rawContent = obj.message?.content ?? obj.content;
+        if (!rawContent) continue;
+
+        const text = typeof rawContent === 'string'
+          ? rawContent
+          : Array.isArray(rawContent)
+            ? (rawContent as Array<{ text?: string }>).map(c => c.text ?? '').join(' ')
             : '';
 
         if (text.length < 10 || text.length > 300) continue;
+        if (text.includes('<command-') || text.startsWith('<')) continue;  // skip XML command wrappers
         if (!FRAGMENT_KEYWORDS.test(text)) continue;
 
         const tags = extractTags(text);
         if (tags.length === 0) continue;
+        // Filter noise: if only "command" tag, require >30 chars to keep
+        if (tags.length === 1 && tags[0] === 'command' && text.length < 30) continue;
 
         const ts = obj.timestamp ?? '';
         const day = ts ? `Day ${Math.floor((new Date(ts).getTime() - new Date('2026-04-21').getTime()) / 86400000) + 1}` : '';
