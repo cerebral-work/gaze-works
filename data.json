@@ -146,10 +146,10 @@
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 55,
-      "insertions": 1369,
+      "commits": 56,
+      "insertions": 1401,
       "deletions": 183,
-      "net": 1186,
+      "net": 1218,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
@@ -299,10 +299,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 15,
-      "insertions": 13989,
-      "deletions": 2154,
-      "net": 11835,
+      "commits": 16,
+      "insertions": 14171,
+      "deletions": 2225,
+      "net": 11946,
       "desc": "",
       "category": "ops"
     },
@@ -8246,7 +8246,7 @@
     ],
     [
       "2026-07-11",
-      160
+      162
     ]
   ],
   "sessionDays": [
@@ -8540,7 +8540,7 @@
     ],
     [
       "2026-07-11",
-      77
+      79
     ]
   ]
 }
