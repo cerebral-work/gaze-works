@@ -45,7 +45,7 @@ body {
 
 /* SCROLL PROGRESS BAR */
 .scroll-progress {
-  position:fixed; top:0; left:0; height:2px; z-index:200;
+  position:fixed; top:0; left:0; height:4px; z-index:200;
   background:linear-gradient(90deg,var(--gold-deep),var(--gold),var(--gold-bright));
   width:0%; transition:width .1s linear;
 }
@@ -71,6 +71,17 @@ nav .links a:hover { color:var(--gold-bright); }
 }
 .theme-toggle:hover { border-color:var(--gold); color:var(--gold); }
 @media (max-width:640px) { nav .links a:not(.theme-toggle) { display:none; } }
+/* FOCUS VISIBLE — canon: 2px solid text outline, 3px offset */
+*:focus-visible { outline:2px solid var(--gold-bright); outline-offset:3px; border-radius:2px; }
+
+/* SECTION NAV — fixed right-edge dots */
+.section-nav { position:fixed; right:1.5rem; top:50%; transform:translateY(-50%); z-index:150; display:flex; flex-direction:column; gap:.8rem; }
+.section-nav a { width:10px; height:10px; border-radius:50%; border:1px solid var(--gold-deep); background:transparent; transition:all .3s; display:block; }
+.section-nav a:hover { border-color:var(--gold-bright); }
+.section-nav a.active { background:var(--gold-bright); border-color:var(--gold-bright); }
+.section-nav a span { position:absolute; right:18px; font-size:.6rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); white-space:nowrap; opacity:0; transition:opacity .3s; pointer-events:none; }
+.section-nav a:hover span { opacity:1; }
+@media (max-width:640px) { .section-nav { display:none; } }
 
 /* HERO */
 .hero {
@@ -163,8 +174,11 @@ section { padding:8rem 2rem; position:relative; }
 .heatmap-cell.both { background:var(--gold); box-shadow:inset 0 0 0 1px var(--rust); }
 .heatmap-cell.both.l3 { background:var(--gold); }
 .heatmap-cell.both.l4 { background:var(--gold-bright); box-shadow:inset 0 0 0 1px var(--rust); }
-.heatmap-months { display:flex; gap:2px; margin-left:1.5rem; margin-bottom:.4rem; font-size:.5rem; color:var(--ink-faint); text-transform:uppercase; justify-content:center; }
-.heatmap-months span { white-space:nowrap; }
+.heatmap-months { display:flex; gap:2px; margin-left:1.5rem; margin-bottom:.4rem; font-size:.5rem; color:var(--ink-faint); text-transform:uppercase; justify-content:center; letter-spacing:.05em; }
+.heatmap-months span { white-space:nowrap; min-width:32px; }
+.dist-controls { max-width:900px; margin:0 auto 1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; }
+.dist-control-group { display:flex; align-items:center; gap:.5rem; }
+.dist-label { font-size:.55rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-faint); flex:none; }
 .heatmap-legend { display:flex; gap:1.5rem; justify-content:center; margin-top:1.5rem; font-size:.65rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ink-dim); flex-wrap:wrap; }
 .heatmap-legend span { display:flex; align-items:center; gap:.4rem; }
 .heatmap-legend .swatch { width:14px; height:14px; border-radius:2px; }
@@ -174,7 +188,6 @@ section { padding:8rem 2rem; position:relative; }
 .heatmap-summary b { color:var(--gold); font-weight:500; }
 
 /* DISTRIBUTION — horizontal ranked list (log scale) */
-/* DISTRIBUTION CONTROLS */
 .dist-controls { max-width:900px; margin:0 auto 1rem; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:.5rem; }
 .dist-sorts { display:flex; gap:.4rem; }
 .dist-sort-btn { background:none; border:1px solid transparent; color:var(--ink-faint); font-size:.65rem; letter-spacing:.08em; text-transform:uppercase; padding:.25rem .6rem; border-radius:2px; cursor:pointer; transition:all .2s; font-family:'Spline Sans',sans-serif; }
@@ -198,20 +211,29 @@ section { padding:8rem 2rem; position:relative; }
 
 /* REALMS — filter chips */
 .realm-filters { max-width:1200px; margin:0 auto 2rem; display:flex; flex-wrap:wrap; gap:.5rem; }
-.realm-filter {
-  font-size:.62rem; letter-spacing:.12em; text-transform:uppercase;
-  padding:.4rem .8rem; border:1px solid var(--line); color:var(--ink-dim);
-  cursor:pointer; transition:all .3s; background:transparent; font-family:inherit; border-radius:2px;
-}
-.realm-filter:hover { border-color:var(--gold-deep); color:var(--gold); }
-.realm-filter.active { border-color:var(--gold); color:var(--gold); background:rgba(200,168,120,.08); }
-
-/* REALMS — expandable cards */
+/* REALMS — expandable category groups */
 .realms-grid {
   max-width:1200px; margin:0 auto;
   display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
   gap:1rem;
 }
+.realm-group { margin-bottom:2rem; }
+.realm-group-header {
+  display:flex; align-items:center; gap:.75rem; cursor:pointer; padding:.75rem 0;
+  border-bottom:1px solid var(--line); transition:border-color .3s;
+}
+.realm-group-header:hover { border-color:var(--gold-deep); }
+.realm-group-header .group-name { font-family:'Fraunces',serif; font-weight:700; font-size:1.1rem; color:var(--ink); }
+.realm-group-header .group-count { font-size:.65rem; letter-spacing:.12em; text-transform:uppercase; color:var(--gold-deep); }
+.realm-group-header .group-arrow { margin-left:auto; font-size:.7rem; color:var(--ink-faint); transition:transform .3s; }
+.realm-group.collapsed .group-arrow { transform:rotate(-90deg); }
+.realm-group.collapsed .realms-grid { display:none; }
+.realm-filter {
+  font-size:.62rem; letter-spacing:.12em; text-transform:uppercase;
+  padding:.4rem .8rem; border:1px solid var(--line); color:var(--ink-dim);
+  cursor:pointer; transition:all .3s; background:transparent; font-family:inherit; border-radius:2px;
+}
+/* REALMS — cards */
 .realm-card {
   background:var(--bg-card); border:1px solid var(--line); padding:1.75rem 1.5rem;
   cursor:pointer; transition:border-color .3s,background .3s;
@@ -267,6 +289,13 @@ section { padding:8rem 2rem; position:relative; }
   position:absolute; right:1rem; top:50%; transform:translateY(-50%);
   font-size:.7rem; letter-spacing:.1em; color:var(--ink-faint); pointer-events:none;
 }
+.search-bar .clear-btn {
+  position:absolute; right:3rem; top:50%; transform:translateY(-50%);
+  background:transparent; border:none; color:var(--ink-faint); font-size:1.1rem;
+  cursor:pointer; display:none; padding:.2rem; line-height:1; border-radius:2px;
+}
+.search-bar .clear-btn.visible { display:block; }
+.search-bar .clear-btn:hover { color:var(--gold); }
 .tag-filters {
   max-width:700px; margin:0 auto 2rem; display:flex; flex-wrap:wrap; gap:.5rem;
 }
@@ -376,7 +405,6 @@ footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; 
 <body>
 <div class="grain"></div>
 <div class="scroll-progress" id="scrollProgress"></div>
-
 <nav>
   <span class="mark">Gaze</span>
   <div class="links">
@@ -384,9 +412,16 @@ footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; 
     <a href="#heatmap">Heatmap</a>
     <a href="#chart">Chart</a>
     <a href="#realms">Realms</a>
-    <a href="#fragments">Fragments</a>
-    <button class="theme-toggle" id="themeToggle" title="Toggle theme">☾</button>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">☾</button>
   </div>
+</nav>
+<nav class="section-nav" id="sectionNav">
+  <a href="#scale"><span>Scale</span></a>
+  <a href="#heatmap"><span>Heatmap</span></a>
+  <a href="#chart"><span>Distribution</span></a>
+  <a href="#timeline"><span>Chronicle</span></a>
+  <a href="#realms"><span>Realms</span></a>
+  <a href="#fragments"><span>Fragments</span></a>
 </nav>
 
 <header class="hero">
@@ -481,13 +516,19 @@ footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; 
   <div class="section-label reveal">The Distribution</div>
   <h2 class="section-title reveal">Commits per <em>repository</em> — the shape of the work.</h2>
   <div class="dist-controls reveal">
-    <div class="dist-sorts" id="distSorts">
-      <button class="dist-sort-btn active" data-sort="commits">Commits</button>
-      <button class="dist-sort-btn" data-sort="net">Net lines</button>
-      <button class="dist-sort-btn" data-sort="insertions">Inserted</button>
-      <button class="dist-sort-btn" data-sort="deletions">Deleted</button>
+    <div class="dist-control-group">
+      <span class="dist-label">Sort by</span>
+      <div class="dist-sorts" id="distSorts">
+        <button class="dist-sort-btn active" data-sort="commits">Commits</button>
+        <button class="dist-sort-btn" data-sort="net">Net lines</button>
+        <button class="dist-sort-btn" data-sort="insertions">Inserted</button>
+        <button class="dist-sort-btn" data-sort="deletions">Deleted</button>
+      </div>
     </div>
-    <div class="dist-filters" id="distFilters"></div>
+    <div class="dist-control-group">
+      <span class="dist-label">Filter</span>
+      <div class="dist-filters" id="distFilters"></div>
+    </div>
   </div>
   <div class="dist-list reveal" id="distList"></div>
 </section>
@@ -529,7 +570,8 @@ footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; 
   <h2 class="section-title reveal">Voices from the <em>session logs</em> — searchable.</h2>
   <div class="search-bar reveal">
     <span class="icon">⌕</span>
-    <input type="text" id="fragSearch" placeholder="Search fragments — try 'token', 'design', 'cluster', 'merge'..." autocomplete="off">
+    <input type="text" id="fragSearch" placeholder="Search fragments — try 'token', 'design', 'cluster', 'merge'..." autocomplete="off" aria-label="Search fragments">
+    <button class="clear-btn" id="fragClear" aria-label="Clear search">×</button>
     <span class="count" id="fragCount"></span>
   </div>
   <div class="tag-filters reveal" id="tagFilters"></div>
@@ -831,54 +873,58 @@ try {
 // ============= REALMS =============
 const grid = document.getElementById('realmsGrid');
 const realmFiltersEl = document.getElementById('realmFilters');
+realmFiltersEl.remove(); // replaced by group headers
 
-// Categories
+// Categories with display order
+const CAT_ORDER = ['core','infra','platform','design','experiment','tooling','docs','other'];
 const categories = {};
 repos.forEach(r => {
   const cat = r.category || 'other';
   if (!categories[cat]) categories[cat] = [];
   categories[cat].push(r);
 });
-
-let activeCategory = null;
-
-// Build filter chips
-Object.keys(categories).sort().forEach(cat => {
-  const btn = document.createElement('button');
-  btn.className = 'realm-filter';
-  btn.textContent = cat + ' (' + categories[cat].length + ')';
-  btn.addEventListener('click', () => {
-    if (activeCategory === cat) { activeCategory = null; btn.classList.remove('active'); }
-    else {
-      document.querySelectorAll('.realm-filter').forEach(b => b.classList.remove('active'));
-      activeCategory = cat;
-      btn.classList.add('active');
-    }
-    renderRealms();
-  });
-  realmFiltersEl.appendChild(btn);
+const sortedCats = Object.keys(categories).sort((a,b) => {
+  const ia = CAT_ORDER.indexOf(a), ib = CAT_ORDER.indexOf(b);
+  return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
 });
 
 function renderRealms() {
   grid.innerHTML = '';
-  const filtered = activeCategory ? repos.filter(r => (r.category || 'other') === activeCategory) : repos;
-  filtered.sort((a,b) => b.commits - a.commits).forEach(r => {
-    const card = document.createElement('div');
-    card.className = 'realm-card';
-    card.innerHTML = `
-      <div class="cat-tag">${r.category || 'other'}</div>
-      <div class="name">${r.name}</div>
-      <div class="metric-row"><span class="metric">${r.commits.toLocaleString()}</span><span class="metric-label">commits · +${r.insertions.toLocaleString()}/-${r.deletions.toLocaleString()}</span></div>
-      <div class="desc">${r.desc || ''}</div>
-      <div class="expand-hint">Expand</div>
-      <div class="realm-detail"><div class="realm-detail-inner">
-        <div class="stat-line"><span>Insertions</span><span>+${r.insertions.toLocaleString()}</span></div>
-        <div class="stat-line"><span>Deletions</span><span>-${r.deletions.toLocaleString()}</span></div>
-        <div class="stat-line"><span>Net lines</span><span>${(r.insertions - r.deletions).toLocaleString()}</span></div>
-      </div></div>
-    `;
-    card.addEventListener('click', () => card.classList.toggle('expanded'));
-    grid.appendChild(card);
+  sortedCats.forEach(cat => {
+    const repos_in = categories[cat].sort((a,b) => b.commits - a.commits);
+    if (repos_in.length === 0) return;
+
+    const group = document.createElement('div');
+    group.className = 'realm-group';
+
+    const header = document.createElement('div');
+    header.className = 'realm-group-header';
+    header.innerHTML = `<span class="group-name">${cat}</span><span class="group-count">${repos_in.length} repos</span><span class="group-arrow">▾</span>`;
+    header.addEventListener('click', () => group.classList.toggle('collapsed'));
+    group.appendChild(header);
+
+    const innerGrid = document.createElement('div');
+    innerGrid.className = 'realms-grid';
+    repos_in.forEach(r => {
+      const card = document.createElement('div');
+      card.className = 'realm-card';
+      card.innerHTML = `
+        <div class="cat-tag">${r.category || 'other'}</div>
+        <div class="name">${r.name}</div>
+        <div class="metric-row"><span class="metric">${r.commits.toLocaleString()}</span><span class="metric-label">commits · +${r.insertions.toLocaleString()}/-${r.deletions.toLocaleString()}</span></div>
+        <div class="desc">${r.desc || ''}</div>
+        <div class="expand-hint">Expand</div>
+        <div class="realm-detail"><div class="realm-detail-inner">
+          <div class="stat-line"><span>Insertions</span><span>+${r.insertions.toLocaleString()}</span></div>
+          <div class="stat-line"><span>Deletions</span><span>-${r.deletions.toLocaleString()}</span></div>
+          <div class="stat-line"><span>Net lines</span><span>${(r.insertions - r.deletions).toLocaleString()}</span></div>
+        </div></div>
+      `;
+      card.addEventListener('click', () => card.classList.toggle('expanded'));
+      innerGrid.appendChild(card);
+    });
+    group.appendChild(innerGrid);
+    grid.appendChild(group);
   });
 }
 renderRealms();
@@ -911,6 +957,9 @@ allTags.forEach(tag => {
 });
 
 let fragIndex = 0;
+let currentFiltered = [];
+const FRAG_BATCH = 15;
+let fragObserver = null;
 
 function renderFragments() {
   const q = searchInput.value.toLowerCase().trim();
@@ -919,26 +968,53 @@ function renderFragments() {
   if (activeTag) filtered = filtered.filter(f => f.tags.includes(activeTag));
 
   countEl.textContent = filtered.length;
+  currentFiltered = filtered;
   fragList.innerHTML = '';
   noResults.style.display = filtered.length === 0 ? 'block' : 'none';
 
-  filtered.forEach((f, i) => {
-    const el = document.createElement('div');
-    el.className = 'fragment';
-    el.dataset.idx = i;
-    let text = f.t;
-    if (q) {
-      const idx = text.toLowerCase().indexOf(q);
-      if (idx >= 0) {
-        text = text.substring(0, idx) + '<mark>' + text.substring(idx, idx + q.length) + '</mark>' + text.substring(idx + q.length);
+  if (fragObserver) fragObserver.disconnect();
+
+  // Render first batch immediately
+  const initial = Math.min(FRAG_BATCH, filtered.length);
+  for (let i = 0; i < initial; i++) renderOneFragment(i, q);
+
+  // Observe a sentinel to load more on scroll
+  if (filtered.length > FRAG_BATCH) {
+    const sentinel = document.createElement('div');
+    sentinel.className = 'frag-sentinel';
+    sentinel.style.height = '1px';
+    fragList.appendChild(sentinel);
+    let nextBatch = initial;
+    fragObserver = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting && nextBatch < currentFiltered.length) {
+        const count = Math.min(FRAG_BATCH, currentFiltered.length - nextBatch);
+        for (let i = 0; i < count; i++) renderOneFragment(nextBatch + i, q);
+        nextBatch += count;
+        // Move sentinel to end
+        fragList.appendChild(sentinel);
       }
+    }, { rootMargin: '200px 0px' });
+    fragObserver.observe(sentinel);
+  }
+}
+
+function renderOneFragment(i, q) {
+  const f = currentFiltered[i];
+  const el = document.createElement('div');
+  el.className = 'fragment';
+  el.dataset.idx = i;
+  let text = f.t;
+  if (q) {
+    const idx = text.toLowerCase().indexOf(q);
+    if (idx >= 0) {
+      text = text.substring(0, idx) + '<mark>' + text.substring(idx, idx + q.length) + '</mark>' + text.substring(idx + q.length);
     }
-    const dayLabel = f.d || '';
-    const tagsHtml = f.tags.map(tg => '<span class="frag-tag">' + tg + '</span>').join('');
-    el.innerHTML = text + '<span class="time">' + dayLabel + '</span>' + tagsHtml;
-    fragList.appendChild(el);
-    setTimeout(() => el.classList.add('visible'), i * 40);
-  });
+  }
+  const dayLabel = f.d || '';
+  const tagsHtml = f.tags.map(tg => '<span class="frag-tag">' + tg + '</span>').join('');
+  el.innerHTML = text + '<span class="time">' + dayLabel + '</span>' + tagsHtml;
+  fragList.appendChild(el);
+  requestAnimationFrame(() => el.classList.add('visible'));
 }
 
 searchInput.addEventListener('input', renderFragments);
@@ -1035,21 +1111,14 @@ function startDrone() {
   document.addEventListener(ev, startDrone, {once:true, passive:true});
 });
 
-// ============= COUNT-UP =============
+// ============= STATIC COUNTERS (fade-in, no count-up) =============
 function animateCounter(el) {
   const target = parseInt(el.dataset.target, 10);
   if (el.dataset.done) return;
   el.dataset.done = '1';
-  const dur = 1800, start = performance.now(), isLarge = target >= 1000;
-  function tick(now) {
-    const t = Math.min((now - start) / dur, 1);
-    const eased = 1 - Math.pow(1 - t, 4);
-    const val = Math.floor(target * eased);
-    el.textContent = isLarge ? val.toLocaleString('en-US') : val.toString();
-    if (t < 1) requestAnimationFrame(tick);
-    else el.textContent = isLarge ? target.toLocaleString('en-US') : target.toString();
-  }
-  requestAnimationFrame(tick);
+  el.textContent = target >= 1000 ? target.toLocaleString('en-US') : target.toString();
+  el.style.opacity = '0';
+  requestAnimationFrame(() => { el.style.transition = 'opacity .8s'; el.style.opacity = '1'; });
 }
 
 // ============= REVEAL OBSERVER =============
@@ -1073,7 +1142,45 @@ if (statGrid) {
       }
     });
   }, { threshold: 0.3 });
-  statGrid.observe(statGrid);
+  statObs.observe(statGrid);
+}
+// ============= SECTION NAV — active dot tracking =============
+const sectionLinks = document.querySelectorAll('.section-nav a');
+const sectionIds = ['scale','heatmap','chart','timeline','realms','fragments'];
+const sectionEls = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+const navObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      sectionLinks.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + id));
+    }
+  });
+}, { rootMargin: '-40% 0px -40% 0px' });
+sectionEls.forEach(el => navObs.observe(el));
+
+// ============= FRAGMENT SEARCH CLEAR BUTTON =============
+const fragClearBtn = document.getElementById('fragClear');
+if (fragClearBtn) {
+  fragClearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    fragClearBtn.classList.remove('visible');
+    renderFragments();
+    searchInput.focus();
+  });
+  searchInput.addEventListener('input', () => {
+    fragClearBtn.classList.toggle('visible', searchInput.value.length > 0);
+  });
+}
+
+// ============= EXPORT FEEDBACK =============
+const exportBtnEl = document.getElementById('exportBtn');
+if (exportBtnEl) {
+  const origExport = exportBtnEl.textContent;
+  exportBtnEl.addEventListener('click', () => {
+    exportBtnEl.textContent = '✓ Downloaded';
+    exportBtnEl.style.color = 'var(--gold-bright)';
+    setTimeout(() => { exportBtnEl.textContent = origExport; exportBtnEl.style.color = ''; }, 2000);
+  });
 }
 
 // ============= PWA INSTALL PROMPT =============
