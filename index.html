@@ -339,8 +339,7 @@ section { padding:8rem 2rem; position:relative; overflow-x:hidden; }
   font-size:1rem; color:var(--ink-dim); line-height:1.6;
   padding:1rem 0; border-bottom:1px solid var(--line);
   opacity:0; transform:translateY(12px);
-  transition:opacity .6s,transform .6s,background .25s;
-  cursor:pointer;
+  transition:opacity .6s,transform .6s;
 }
 .fragment.visible { opacity:1; transform:translateY(0); }
 .fragment::before { content:'› '; color:var(--gold-deep); font-style:normal; }
@@ -356,8 +355,6 @@ section { padding:8rem 2rem; position:relative; overflow-x:hidden; }
 .fragment mark { background:rgba(200,168,120,.2); color:var(--gold-bright); padding:0 .15em; border-radius:2px; }
 .fragment.highlighted { background:rgba(200,168,120,.06); border-radius:4px; }
 .no-results { text-align:center; padding:3rem; color:var(--ink-faint); font-style:italic; display:none; }
-.frag-toast { position:fixed; bottom:2rem; left:50%; transform:translateX(-50%) translateY(20px); background:var(--bg-card); border:1px solid var(--gold-deep); color:var(--gold); padding:.6rem 1.5rem; font-size:.65rem; letter-spacing:.15em; text-transform:uppercase; border-radius:2px; opacity:0; transition:all .3s cubic-bezier(.16,1,.3,1); z-index:200; pointer-events:none; }
-.frag-toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
 
 /* MANIFESTO */
 .manifesto { max-width:700px; margin:0 auto; font-family:'Fraunces',serif; font-weight:300; font-style:italic; font-size:clamp(1.1rem,2.8vw,1.6rem); line-height:1.6; color:var(--ink-dim); }
@@ -638,7 +635,6 @@ footer .seal { font-family:'Fraunces',serif; font-weight:900; font-size:1.5rem; 
   <button id="installBtn">Install</button>
   <button class="close" id="installClose">×</button>
 </div>
-<div class="frag-toast" id="fragToast">Link copied to clipboard</div>
 
 <div class="kbd-hint">
   <kbd>j</kbd>/<kbd>k</kbd> navigate · <kbd>/</kbd> search · <kbd>e</kbd> expand
@@ -822,26 +818,19 @@ try {
   const sortsEl = document.getElementById('distSorts');
   const filtersEl = document.getElementById('distFilters');
 
-  // State — restore from URL params if present
-  const urlParams = new URLSearchParams(location.search);
-  const validSorts = ['commits','net','insertions','deletions'];
-  let sortKey = validSorts.includes(urlParams.get('sort')) ? urlParams.get('sort') : 'commits';
-  const validCats = ['all', ...[...new Set(repos.map(r => r.category))].sort()];
-  let activeFilter = validCats.includes(urlParams.get('cat')) ? urlParams.get('cat') : 'all';
+  // State
+  let sortKey = 'commits';
+  let activeFilter = 'all';
 
   // Build category filter chips from repo data
   const cats = [...new Set(repos.map(r => r.category))].sort();
   const filterChips = [{ key: 'all', label: 'All' }, ...cats.map(c => ({ key: c, label: c }))];
   filterChips.forEach(({ key, label }) => {
     const chip = document.createElement('button');
-    chip.className = 'dist-filter-chip' + (key === activeFilter ? ' active' : '');
+    chip.className = 'dist-filter-chip' + (key === 'all' ? ' active' : '');
     chip.dataset.category = key;
     chip.textContent = label;
     filtersEl.appendChild(chip);
-  });
-  // Sync sort button active state with restored URL param
-  sortsEl.querySelectorAll('.dist-sort-btn').forEach(b => {
-    b.classList.toggle('active', b.dataset.sort === sortKey);
   });
 
   function renderDist() {
@@ -885,15 +874,6 @@ try {
     });
   }
 
-  function syncDistUrl() {
-    const params = new URLSearchParams(location.search);
-    if (sortKey !== 'commits') params.set('sort', sortKey); else params.delete('sort');
-    if (activeFilter !== 'all') params.set('cat', activeFilter); else params.delete('cat');
-    const qs = params.toString();
-    const newUrl = location.pathname + (qs ? '?' + qs : '') + location.hash;
-    history.replaceState(null, '', newUrl);
-  }
-
   // Sort events
   sortsEl.addEventListener('click', (e) => {
     const target = e.target;
@@ -901,11 +881,6 @@ try {
       sortsEl.querySelectorAll('.dist-sort-btn').forEach(b => b.classList.remove('active'));
       target.classList.add('active');
       sortKey = target.dataset.sort || 'commits';
-      // Sync active state with restored sortKey
-      sortsEl.querySelectorAll('.dist-sort-btn').forEach(b => {
-        b.classList.toggle('active', b.dataset.sort === sortKey);
-      });
-      syncDistUrl();
       renderDist();
     }
   });
@@ -917,7 +892,6 @@ try {
       filtersEl.querySelectorAll('.dist-filter-chip').forEach(c => c.classList.remove('active'));
       target.classList.add('active');
       activeFilter = target.dataset.category || 'all';
-      syncDistUrl();
       renderDist();
     }
   });
@@ -1053,25 +1027,11 @@ function renderFragments() {
   }
 }
 
-function fragId(f, i) {
-  // Stable short hash from text: first 6 chars of base36 of char-code sum — deterministic, no collisions on 57 items
-  let h = 0;
-  const s = f.t + '|' + i;
-  for (let j = 0; j < s.length; j++) h = (h * 31 + s.charCodeAt(j)) >>> 0;
-  return 'f' + h.toString(36).slice(-6);
-}
-// Pre-assign IDs to every fragment (by original index, not filtered)
-fragments.forEach((f, i) => { f._id = fragId(f, i); });
-// Build lookup: id → index in full fragments array
-const fragIdMap = {};
-fragments.forEach((f, i) => { fragIdMap[f._id] = i; });
-
 function renderOneFragment(i, q) {
   const f = currentFiltered[i];
   const el = document.createElement('div');
   el.className = 'fragment';
   el.dataset.idx = i;
-  el.dataset.fragId = f._id;
   let text = f.t;
   if (q) {
     const idx = text.toLowerCase().indexOf(q);
@@ -1082,17 +1042,12 @@ function renderOneFragment(i, q) {
   const dayLabel = f.d || '';
   const tagsHtml = f.tags.map(tg => '<span class="frag-tag">' + tg + '</span>').join('');
   el.innerHTML = text + '<span class="time">' + dayLabel + '</span>' + tagsHtml;
-  el.title = 'Click to copy share link';
-  el.addEventListener('click', () => copyFragmentLink(f._id));
   fragList.appendChild(el);
   requestAnimationFrame(() => el.classList.add('visible'));
 }
 
 searchInput.addEventListener('input', renderFragments);
 renderFragments();
-// Trigger deep-link after initial render
-setTimeout(handleFragDeepLink, 100);
-window.addEventListener('hashchange', handleFragDeepLink);
 
 // ============= SURPRISE ME =============
 const surpriseBtn = document.getElementById('surpriseBtn');
@@ -1117,63 +1072,15 @@ document.getElementById('exportBtn').addEventListener('click', () => {
   a.click();
 });
 
-// ============= SHARE FRAGMENT (deep-link + virtualized render) =============
-const fragToast = document.getElementById('fragToast');
-let fragToastTimer = null;
-function showFragToast(msg) {
-  fragToast.textContent = msg;
-  fragToast.classList.add('show');
-  if (fragToastTimer) clearTimeout(fragToastTimer);
-  fragToastTimer = setTimeout(() => fragToast.classList.remove('show'), 2500);
-}
-
-function copyFragmentLink(id) {
-  const url = location.origin + location.pathname + '#frag=' + id;
-  if (navigator.clipboard) {
-    navigator.clipboard.writeText(url).then(() => showFragToast('Link copied — share anywhere'))
-      .catch(() => fallbackCopy(url));
-  } else {
-    fallbackCopy(url);
-  }
-}
-function fallbackCopy(url) {
-  const ta = document.createElement('textarea');
-  ta.value = url; ta.style.position='fixed'; ta.style.left='-9999px';
-  document.body.appendChild(ta); ta.select();
-  try { document.execCommand('copy'); showFragToast('Link copied — share anywhere'); }
-  catch(e) { showFragToast('Copy URL from address bar'); }
-  document.body.removeChild(ta);
-}
-
-// Deep-link handler: find target in full list, render enough batches, scroll + highlight
-let pendingFragId = null;
-function handleFragDeepLink() {
-  if (!location.hash.startsWith('#frag=')) return;
-  const id = location.hash.slice(6);
-  if (!(id in fragIdMap)) return;
-  pendingFragId = id;
-  // Scroll to fragments section first
-  document.getElementById('fragments').scrollIntoView();
-  // Find the fragment in the current filtered list
-  const filteredIdx = currentFiltered.findIndex(f => f._id === id);
-  if (filteredIdx === -1) return;
-  // If the target is beyond what's currently rendered, render up to and including it
-  const rendered = fragList.querySelectorAll('.fragment').length;
-  if (filteredIdx >= rendered) {
-    const q = searchInput.value.toLowerCase().trim();
-    for (let i = rendered; i <= filteredIdx; i++) renderOneFragment(i, q);
-    // Update the observer's nextBatch counter by re-rendering sentinel position
-    // The sentinel observer auto-continues from where we left off
-  }
-  // Now scroll to and highlight the target
+// ============= SHARE FRAGMENT (deep-link) =============
+if (location.hash.startsWith('#frag=')) {
+  const fragId = location.hash.slice(6);
+  // Scroll to fragments section and highlight
   setTimeout(() => {
-    const target = fragList.querySelector('.fragment[data-frag-id="' + id + '"]');
-    if (target) {
-      fragList.querySelectorAll('.fragment').forEach(f => f.classList.remove('highlighted'));
-      target.classList.add('highlighted');
-      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  }, 200);
+    document.getElementById('fragments').scrollIntoView();
+    const fragEl = fragList.querySelector('.fragment');
+    if (fragEl) fragEl.classList.add('highlighted');
+  }, 500);
 }
 
 // ============= KEYBOARD NAV =============
