@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 770,
-      "insertions": 216072,
-      "deletions": 20273,
-      "net": 195799,
+      "commits": 784,
+      "insertions": 220291,
+      "deletions": 20396,
+      "net": 199895,
       "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
       "category": "platform"
     },
@@ -56,10 +56,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 256,
-      "insertions": 116371,
-      "deletions": 24730,
-      "net": 91641,
+      "commits": 272,
+      "insertions": 143245,
+      "deletions": 24566,
+      "net": 118679,
       "desc": "",
       "category": "ops"
     },
@@ -91,20 +91,20 @@
       "category": "design"
     },
     {
-      "name": "cerebral-work/revenant",
-      "commits": 101,
-      "insertions": 22731,
-      "deletions": 9832,
-      "net": 12899,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "vendor/herdr-plus",
       "commits": 90,
       "insertions": 18478,
       "deletions": 8319,
       "net": 10159,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/revenant",
+      "commits": 90,
+      "insertions": 25899,
+      "deletions": 6932,
+      "net": 18967,
       "desc": "",
       "category": "ops"
     },
@@ -137,11 +137,20 @@
     },
     {
       "name": "todie/pact",
-      "commits": 64,
-      "insertions": 40861,
-      "deletions": 10132,
+      "commits": 65,
+      "insertions": 40871,
+      "deletions": 10142,
       "net": 30729,
       "desc": "Pact — contract testing and agreement tracking.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/overflow",
+      "commits": 62,
+      "insertions": 23162,
+      "deletions": 1536,
+      "net": 21626,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -155,10 +164,10 @@
     },
     {
       "name": "cerebral/cerebral-design",
-      "commits": 53,
-      "insertions": 19424,
+      "commits": 54,
+      "insertions": 19425,
       "deletions": 1392,
-      "net": 18032,
+      "net": 18033,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
     },
@@ -200,10 +209,10 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 31,
-      "insertions": 7627,
-      "deletions": 1155,
-      "net": 6472,
+      "commits": 32,
+      "insertions": 7662,
+      "deletions": 1165,
+      "net": 6497,
       "desc": "Repository: todie/agentic",
       "category": "ops"
     },
@@ -226,6 +235,24 @@
       "category": "platform"
     },
     {
+      "name": "ieva",
+      "commits": 25,
+      "insertions": 3071,
+      "deletions": 344,
+      "net": 2727,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "pgt",
+      "commits": 24,
+      "insertions": 10921,
+      "deletions": 1082,
+      "net": 9839,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/reach",
       "commits": 23,
       "insertions": 10866,
@@ -242,6 +269,15 @@
       "net": 53187,
       "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
       "category": "identity"
+    },
+    {
+      "name": "cerebral/works",
+      "commits": 21,
+      "insertions": 14560,
+      "deletions": 2444,
+      "net": 12116,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/nahbro.dev",
@@ -298,15 +334,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/works",
-      "commits": 16,
-      "insertions": 14171,
-      "deletions": 2225,
-      "net": 11946,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/todie.io",
       "commits": 14,
       "insertions": 4117,
@@ -352,6 +379,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/agent-jury",
+      "commits": 12,
+      "insertions": 8352,
+      "deletions": 295,
+      "net": 8057,
+      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
+      "category": "agent"
+    },
+    {
       "name": "cerebral/ml-images",
       "commits": 12,
       "insertions": 749,
@@ -370,20 +406,11 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/agent-jury",
-      "commits": 11,
-      "insertions": 8296,
-      "deletions": 285,
-      "net": 8011,
-      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
-      "category": "agent"
-    },
-    {
       "name": "unsigned/action-runners",
-      "commits": 10,
-      "insertions": 6771,
-      "deletions": 435,
-      "net": 6336,
+      "commits": 11,
+      "insertions": 6814,
+      "deletions": 445,
+      "net": 6369,
       "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
       "category": "infra"
     },
@@ -460,6 +487,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/dr",
+      "commits": 4,
+      "insertions": 5905,
+      "deletions": 148,
+      "net": 5757,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/vibe-explainer",
       "commits": 3,
       "insertions": 4934,
@@ -523,6 +559,15 @@
       "category": "design"
     },
     {
+      "name": "cerebral/enterprise-genie",
+      "commits": 3,
+      "insertions": 542,
+      "deletions": 7,
+      "net": 535,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "aiml-history",
       "commits": 2,
       "insertions": 9061,
@@ -548,6 +593,15 @@
       "net": 5215,
       "desc": "",
       "category": "infra"
+    },
+    {
+      "name": "unsigned/juarez",
+      "commits": 2,
+      "insertions": 542,
+      "deletions": 43,
+      "net": 499,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral/reverie-slack-app",
@@ -592,6 +646,15 @@
       "deletions": 0,
       "net": 1301822,
       "desc": "Signal Desktop fork. Local build and customization.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/blackwall",
+      "commits": 1,
+      "insertions": 391,
+      "deletions": 0,
+      "net": 391,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -7834,7 +7897,7 @@
     ],
     [
       "2026-03-26",
-      46
+      56
     ],
     [
       "2026-03-27",
@@ -7842,11 +7905,11 @@
     ],
     [
       "2026-03-28",
-      37
+      49
     ],
     [
       "2026-03-29",
-      19
+      21
     ],
     [
       "2026-03-30",
@@ -7866,7 +7929,7 @@
     ],
     [
       "2026-04-03",
-      134
+      127
     ],
     [
       "2026-04-04",
@@ -8094,7 +8157,7 @@
     ],
     [
       "2026-06-03",
-      107
+      106
     ],
     [
       "2026-06-04",
@@ -8106,7 +8169,7 @@
     ],
     [
       "2026-06-06",
-      63
+      57
     ],
     [
       "2026-06-07",
@@ -8226,7 +8289,7 @@
     ],
     [
       "2026-07-06",
-      179
+      177
     ],
     [
       "2026-07-07",
@@ -8238,7 +8301,7 @@
     ],
     [
       "2026-07-09",
-      170
+      168
     ],
     [
       "2026-07-10",
@@ -8246,7 +8309,11 @@
     ],
     [
       "2026-07-11",
-      162
+      261
+    ],
+    [
+      "2026-07-12",
+      45
     ]
   ],
   "sessionDays": [
@@ -8540,7 +8607,11 @@
     ],
     [
       "2026-07-11",
-      79
+      88
+    ],
+    [
+      "2026-07-12",
+      1
     ]
   ]
 }
