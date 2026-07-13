@@ -19,11 +19,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/reverie-r0",
-      "commits": 1323,
-      "insertions": 374848,
-      "deletions": 75038,
-      "net": 299810,
+      "name": "cerebral/attention-router-wt",
+      "commits": 1330,
+      "insertions": 375875,
+      "deletions": 75763,
+      "net": 300112,
       "desc": "",
       "category": "agent"
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 784,
-      "insertions": 220291,
-      "deletions": 20396,
-      "net": 199895,
+      "commits": 826,
+      "insertions": 224933,
+      "deletions": 24595,
+      "net": 200338,
       "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
       "category": "platform"
     },
@@ -56,10 +56,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 272,
-      "insertions": 143245,
-      "deletions": 24566,
-      "net": 118679,
+      "commits": 277,
+      "insertions": 158143,
+      "deletions": 33596,
+      "net": 124547,
       "desc": "",
       "category": "ops"
     },
@@ -91,20 +91,20 @@
       "category": "design"
     },
     {
+      "name": "cerebral-work/revenant",
+      "commits": 96,
+      "insertions": 27275,
+      "deletions": 7099,
+      "net": 20176,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/herdr-plus",
       "commits": 90,
       "insertions": 18478,
       "deletions": 8319,
       "net": 10159,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral-work/revenant",
-      "commits": 90,
-      "insertions": 25899,
-      "deletions": 6932,
-      "net": 18967,
       "desc": "",
       "category": "ops"
     },
@@ -115,6 +115,15 @@
       "deletions": 4186,
       "net": 29074,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/overflow",
+      "commits": 78,
+      "insertions": 25599,
+      "deletions": 2284,
+      "net": 23315,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -145,20 +154,20 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/overflow",
-      "commits": 62,
-      "insertions": 23162,
-      "deletions": 1536,
-      "net": 21626,
-      "desc": "",
-      "category": "ops"
+      "name": "unsigned/gg",
+      "commits": 61,
+      "insertions": 9712,
+      "deletions": 1294,
+      "net": 8418,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 56,
-      "insertions": 1401,
+      "commits": 57,
+      "insertions": 1458,
       "deletions": 183,
-      "net": 1218,
+      "net": 1275,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
@@ -170,15 +179,6 @@
       "net": 18033,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
-    },
-    {
-      "name": "unsigned/gg",
-      "commits": 51,
-      "insertions": 8523,
-      "deletions": 1279,
-      "net": 7244,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
     },
     {
       "name": "cerebral/voicenotes",
@@ -235,20 +235,20 @@
       "category": "platform"
     },
     {
+      "name": "pgt",
+      "commits": 27,
+      "insertions": 15270,
+      "deletions": 1376,
+      "net": 13894,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "ieva",
       "commits": 25,
       "insertions": 3071,
       "deletions": 344,
       "net": 2727,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "pgt",
-      "commits": 24,
-      "insertions": 10921,
-      "deletions": 1082,
-      "net": 9839,
       "desc": "",
       "category": "ops"
     },
@@ -262,6 +262,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 23,
+      "insertions": 14703,
+      "deletions": 2506,
+      "net": 12197,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "identity",
       "commits": 21,
       "insertions": 53290,
@@ -269,15 +278,6 @@
       "net": 53187,
       "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
       "category": "identity"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 21,
-      "insertions": 14560,
-      "deletions": 2444,
-      "net": 12116,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "todie/nahbro.dev",
@@ -415,6 +415,15 @@
       "category": "infra"
     },
     {
+      "name": "unsigned/blackwall",
+      "commits": 11,
+      "insertions": 7595,
+      "deletions": 84,
+      "net": 7511,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/files-portal",
       "commits": 10,
       "insertions": 10820,
@@ -433,6 +442,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/dc",
+      "commits": 9,
+      "insertions": 1886,
+      "deletions": 66,
+      "net": 1820,
+      "desc": "",
+      "category": "infra"
+    },
+    {
       "name": "todie/honeypot.vip",
       "commits": 6,
       "insertions": 2077,
@@ -440,15 +458,6 @@
       "net": 741,
       "desc": "honeypot.vip — security research domain.",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/dc",
-      "commits": 6,
-      "insertions": 1880,
-      "deletions": 60,
-      "net": 1820,
-      "desc": "",
-      "category": "infra"
     },
     {
       "name": "cerebral/cortex",
@@ -484,6 +493,15 @@
       "deletions": 1,
       "net": 383,
       "desc": "URI snapshot tool. Capture and compare web resources.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/escapement",
+      "commits": 4,
+      "insertions": 1836,
+      "deletions": 34,
+      "net": 1802,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -523,15 +541,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/escapement",
-      "commits": 3,
-      "insertions": 1834,
-      "deletions": 32,
-      "net": 1802,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/metal-foundry",
       "commits": 3,
       "insertions": 129,
@@ -557,15 +566,6 @@
       "net": 691,
       "desc": "Reverie demonstration and example projects.",
       "category": "design"
-    },
-    {
-      "name": "cerebral/enterprise-genie",
-      "commits": 3,
-      "insertions": 542,
-      "deletions": 7,
-      "net": 535,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "aiml-history",
@@ -600,6 +600,15 @@
       "insertions": 542,
       "deletions": 43,
       "net": 499,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/enterprise-genie",
+      "commits": 2,
+      "insertions": 536,
+      "deletions": 1,
+      "net": 535,
       "desc": "",
       "category": "ops"
     },
@@ -649,11 +658,11 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/blackwall",
+      "name": "unsigned/moshi-cli",
       "commits": 1,
-      "insertions": 391,
+      "insertions": 1595,
       "deletions": 0,
-      "net": 391,
+      "net": 1595,
       "desc": "",
       "category": "ops"
     },
@@ -672,6 +681,15 @@
       "insertions": 774,
       "deletions": 0,
       "net": 774,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/artifacts",
+      "commits": 1,
+      "insertions": 1159,
+      "deletions": 0,
+      "net": 1159,
       "desc": "",
       "category": "ops"
     }
@@ -8217,7 +8235,7 @@
     ],
     [
       "2026-06-18",
-      15
+      14
     ],
     [
       "2026-06-19",
@@ -8229,11 +8247,11 @@
     ],
     [
       "2026-06-21",
-      7
+      6
     ],
     [
       "2026-06-22",
-      29
+      28
     ],
     [
       "2026-06-23",
@@ -8281,7 +8299,7 @@
     ],
     [
       "2026-07-04",
-      148
+      147
     ],
     [
       "2026-07-05",
@@ -8301,7 +8319,7 @@
     ],
     [
       "2026-07-09",
-      168
+      166
     ],
     [
       "2026-07-10",
@@ -8309,11 +8327,15 @@
     ],
     [
       "2026-07-11",
-      261
+      258
     ],
     [
       "2026-07-12",
-      45
+      81
+    ],
+    [
+      "2026-07-13",
+      80
     ]
   ],
   "sessionDays": [
@@ -8611,7 +8633,11 @@
     ],
     [
       "2026-07-12",
-      1
+      6
+    ],
+    [
+      "2026-07-13",
+      123
     ]
   ]
 }
