@@ -1,0 +1,10 @@
+{
+  "project": "gaze",
+  "projectId": "ba609544-5f58-4c9c-9d78-ba5d1cc20a45",
+  "note": "One-way mirror repo -> claude.ai design project (created 2026-07-11, handoff from the GAZE v2 session). index.template.html is the design surface (index.html is generated from it + data.json); data.json is content, not design, and is deliberately not mirrored. Run /design-sync after merging changes to these files.",
+  "files": [
+    { "src": "index.template.html", "dest": "index.template.html" },
+    { "src": "icon.svg", "dest": "icon.svg" },
+    { "src": "manifest.json", "dest": "manifest.json" }
+  ]
+}
