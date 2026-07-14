@@ -20,12 +20,21 @@
     },
     {
       "name": "cerebral/attention-router-wt",
-      "commits": 1330,
-      "insertions": 375875,
-      "deletions": 75763,
-      "net": 300112,
+      "commits": 1337,
+      "insertions": 385877,
+      "deletions": 75900,
+      "net": 309977,
       "desc": "",
       "category": "agent"
+    },
+    {
+      "name": "unsigned/paas",
+      "commits": 967,
+      "insertions": 258395,
+      "deletions": 35046,
+      "net": 223349,
+      "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
+      "category": "platform"
     },
     {
       "name": "vendor/rtk",
@@ -35,15 +44,6 @@
       "net": 129273,
       "desc": "Rust Token Killer — CLI proxy saving 60-90% tokens on dev operations.",
       "category": "vendor"
-    },
-    {
-      "name": "unsigned/paas",
-      "commits": 826,
-      "insertions": 224933,
-      "deletions": 24595,
-      "net": 200338,
-      "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
-      "category": "platform"
     },
     {
       "name": "vendor/claude-hud",
@@ -56,10 +56,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 277,
-      "insertions": 158143,
-      "deletions": 33596,
-      "net": 124547,
+      "commits": 302,
+      "insertions": 170794,
+      "deletions": 33895,
+      "net": 136899,
       "desc": "",
       "category": "ops"
     },
@@ -109,6 +109,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/overflow",
+      "commits": 82,
+      "insertions": 27065,
+      "deletions": 2738,
+      "net": 24327,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/explainers",
       "commits": 81,
       "insertions": 33260,
@@ -118,13 +127,13 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/overflow",
-      "commits": 78,
-      "insertions": 25599,
-      "deletions": 2284,
-      "net": 23315,
-      "desc": "",
-      "category": "ops"
+      "name": "unsigned/gg",
+      "commits": 72,
+      "insertions": 10250,
+      "deletions": 1379,
+      "net": 8871,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
     },
     {
       "name": "vendor/claude-esp",
@@ -137,10 +146,10 @@
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 67,
-      "insertions": 13506,
+      "commits": 68,
+      "insertions": 13605,
       "deletions": 1848,
-      "net": 11658,
+      "net": 11757,
       "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
       "category": "agent"
     },
@@ -154,13 +163,13 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/gg",
-      "commits": 61,
-      "insertions": 9712,
-      "deletions": 1294,
-      "net": 8418,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
+      "name": "cerebral/cerebral-design",
+      "commits": 58,
+      "insertions": 20400,
+      "deletions": 1416,
+      "net": 18984,
+      "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
+      "category": "design"
     },
     {
       "name": "cerebral/tailnet",
@@ -172,20 +181,11 @@
       "category": "infra"
     },
     {
-      "name": "cerebral/cerebral-design",
-      "commits": 54,
-      "insertions": 19425,
-      "deletions": 1392,
-      "net": 18033,
-      "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
-      "category": "design"
-    },
-    {
       "name": "cerebral/voicenotes",
-      "commits": 43,
-      "insertions": 5379,
-      "deletions": 254,
-      "net": 5125,
+      "commits": 44,
+      "insertions": 5693,
+      "deletions": 262,
+      "net": 5431,
       "desc": "Voice notes PWA. Audio recording and transcription on Cloudflare.",
       "category": "ops"
     },
@@ -199,6 +199,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/unsigned-control-panel",
+      "commits": 37,
+      "insertions": 11184,
+      "deletions": 798,
+      "net": 10386,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "usewire",
       "commits": 36,
       "insertions": 22246,
@@ -209,10 +218,10 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 32,
-      "insertions": 7662,
-      "deletions": 1165,
-      "net": 6497,
+      "commits": 34,
+      "insertions": 9326,
+      "deletions": 1184,
+      "net": 8142,
       "desc": "Repository: todie/agentic",
       "category": "ops"
     },
@@ -224,6 +233,15 @@
       "net": 13957,
       "desc": "Archived Rust daemon. Predecessor to current tooling.",
       "category": "archive"
+    },
+    {
+      "name": "unsigned/unsigned-onboard",
+      "commits": 29,
+      "insertions": 13372,
+      "deletions": 4180,
+      "net": 9192,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral/openpanel",
@@ -253,21 +271,21 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 24,
+      "insertions": 14829,
+      "deletions": 2606,
+      "net": 12223,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/reach",
       "commits": 23,
       "insertions": 10866,
       "deletions": 1096,
       "net": 9770,
       "desc": "Reach — outreach and connection management.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 23,
-      "insertions": 14703,
-      "deletions": 2506,
-      "net": 12197,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -287,6 +305,15 @@
       "net": 3033,
       "desc": "nahbro.dev — personal domain and experiments.",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/action-runners",
+      "commits": 20,
+      "insertions": 7357,
+      "deletions": 477,
+      "net": 6880,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
     },
     {
       "name": "templates/node",
@@ -323,6 +350,15 @@
       "net": 1092,
       "desc": "Terraform project template. Standard module structure.",
       "category": "templates"
+    },
+    {
+      "name": "unsigned/blackwall",
+      "commits": 17,
+      "insertions": 12287,
+      "deletions": 441,
+      "net": 11846,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "mission-control",
@@ -388,15 +424,6 @@
       "category": "agent"
     },
     {
-      "name": "cerebral/ml-images",
-      "commits": 12,
-      "insertions": 749,
-      "deletions": 212,
-      "net": 537,
-      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
-      "category": "infra"
-    },
-    {
       "name": "templates/python",
       "commits": 11,
       "insertions": 610,
@@ -406,22 +433,22 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/action-runners",
+      "name": "unsigned/dc",
       "commits": 11,
-      "insertions": 6814,
-      "deletions": 445,
-      "net": 6369,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "insertions": 1898,
+      "deletions": 70,
+      "net": 1828,
+      "desc": "",
       "category": "infra"
     },
     {
-      "name": "unsigned/blackwall",
+      "name": "cerebral/ml-images",
       "commits": 11,
-      "insertions": 7595,
-      "deletions": 84,
-      "net": 7511,
-      "desc": "",
-      "category": "ops"
+      "insertions": 837,
+      "deletions": 178,
+      "net": 659,
+      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
+      "category": "infra"
     },
     {
       "name": "cerebral/files-portal",
@@ -442,13 +469,13 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/dc",
-      "commits": 9,
-      "insertions": 1886,
-      "deletions": 66,
-      "net": 1820,
+      "name": "ai-atlas",
+      "commits": 7,
+      "insertions": 16297,
+      "deletions": 2056,
+      "net": 14241,
       "desc": "",
-      "category": "infra"
+      "category": "ops"
     },
     {
       "name": "todie/honeypot.vip",
@@ -501,6 +528,15 @@
       "insertions": 1836,
       "deletions": 34,
       "net": 1802,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/juarez",
+      "commits": 4,
+      "insertions": 723,
+      "deletions": 53,
+      "net": 670,
       "desc": "",
       "category": "ops"
     },
@@ -568,15 +604,6 @@
       "category": "design"
     },
     {
-      "name": "aiml-history",
-      "commits": 2,
-      "insertions": 9061,
-      "deletions": 1,
-      "net": 9060,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/todie-daemon",
       "commits": 2,
       "insertions": 3841,
@@ -595,11 +622,11 @@
       "category": "infra"
     },
     {
-      "name": "unsigned/juarez",
+      "name": "unsigned/moshi-cli",
       "commits": 2,
-      "insertions": 542,
-      "deletions": 43,
-      "net": 499,
+      "insertions": 1759,
+      "deletions": 20,
+      "net": 1739,
       "desc": "",
       "category": "ops"
     },
@@ -609,6 +636,15 @@
       "insertions": 536,
       "deletions": 1,
       "net": 535,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/artifacts",
+      "commits": 2,
+      "insertions": 131165,
+      "deletions": 6,
+      "net": 131159,
       "desc": "",
       "category": "ops"
     },
@@ -658,15 +694,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/moshi-cli",
-      "commits": 1,
-      "insertions": 1595,
-      "deletions": 0,
-      "net": 1595,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "noelane-portal",
       "commits": 1,
       "insertions": 1566,
@@ -681,15 +708,6 @@
       "insertions": 774,
       "deletions": 0,
       "net": 774,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/artifacts",
-      "commits": 1,
-      "insertions": 1159,
-      "deletions": 0,
-      "net": 1159,
       "desc": "",
       "category": "ops"
     }
@@ -7899,7 +7917,7 @@
     ],
     [
       "2026-03-22",
-      60
+      62
     ],
     [
       "2026-03-23",
@@ -8167,7 +8185,7 @@
     ],
     [
       "2026-06-01",
-      54
+      56
     ],
     [
       "2026-06-02",
@@ -8175,7 +8193,7 @@
     ],
     [
       "2026-06-03",
-      106
+      116
     ],
     [
       "2026-06-04",
@@ -8195,11 +8213,11 @@
     ],
     [
       "2026-06-08",
-      67
+      75
     ],
     [
       "2026-06-09",
-      107
+      109
     ],
     [
       "2026-06-10",
@@ -8255,7 +8273,7 @@
     ],
     [
       "2026-06-23",
-      81
+      93
     ],
     [
       "2026-06-24",
@@ -8287,31 +8305,31 @@
     ],
     [
       "2026-07-01",
-      36
+      44
     ],
     [
       "2026-07-02",
-      77
+      79
     ],
     [
       "2026-07-03",
-      97
+      109
     ],
     [
       "2026-07-04",
-      147
+      157
     ],
     [
       "2026-07-05",
-      101
+      103
     ],
     [
       "2026-07-06",
-      177
+      207
     ],
     [
       "2026-07-07",
-      146
+      150
     ],
     [
       "2026-07-08",
@@ -8319,11 +8337,11 @@
     ],
     [
       "2026-07-09",
-      166
+      185
     ],
     [
       "2026-07-10",
-      62
+      64
     ],
     [
       "2026-07-11",
@@ -8331,11 +8349,15 @@
     ],
     [
       "2026-07-12",
-      81
+      75
     ],
     [
       "2026-07-13",
-      80
+      242
+    ],
+    [
+      "2026-07-14",
+      7
     ]
   ],
   "sessionDays": [
@@ -8637,7 +8659,11 @@
     ],
     [
       "2026-07-13",
-      123
+      278
+    ],
+    [
+      "2026-07-14",
+      29
     ]
   ]
 }
