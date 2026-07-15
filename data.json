@@ -29,10 +29,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 967,
-      "insertions": 258395,
-      "deletions": 35046,
-      "net": 223349,
+      "commits": 971,
+      "insertions": 258624,
+      "deletions": 35057,
+      "net": 223567,
       "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
       "category": "platform"
     },
@@ -56,10 +56,19 @@
     },
     {
       "name": "terrarium",
-      "commits": 302,
-      "insertions": 170794,
+      "commits": 303,
+      "insertions": 174277,
       "deletions": 33895,
-      "net": 136899,
+      "net": 140382,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/overflow",
+      "commits": 284,
+      "insertions": 41095,
+      "deletions": 6191,
+      "net": 34904,
       "desc": "",
       "category": "ops"
     },
@@ -105,15 +114,6 @@
       "insertions": 18478,
       "deletions": 8319,
       "net": 10159,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/overflow",
-      "commits": 82,
-      "insertions": 27065,
-      "deletions": 2738,
-      "net": 24327,
       "desc": "",
       "category": "ops"
     },
@@ -179,6 +179,15 @@
       "net": 1275,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
+    },
+    {
+      "name": "unsigned/blackwall",
+      "commits": 48,
+      "insertions": 15307,
+      "deletions": 1029,
+      "net": 14278,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral/voicenotes",
@@ -272,10 +281,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 24,
-      "insertions": 14829,
-      "deletions": 2606,
-      "net": 12223,
+      "commits": 25,
+      "insertions": 14993,
+      "deletions": 2744,
+      "net": 12249,
       "desc": "",
       "category": "ops"
     },
@@ -298,6 +307,15 @@
       "category": "identity"
     },
     {
+      "name": "unsigned/action-runners",
+      "commits": 21,
+      "insertions": 7382,
+      "deletions": 495,
+      "net": 6887,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
+    },
+    {
       "name": "todie/nahbro.dev",
       "commits": 20,
       "insertions": 3729,
@@ -305,15 +323,6 @@
       "net": 3033,
       "desc": "nahbro.dev — personal domain and experiments.",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 20,
-      "insertions": 7357,
-      "deletions": 477,
-      "net": 6880,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "templates/node",
@@ -350,15 +359,6 @@
       "net": 1092,
       "desc": "Terraform project template. Standard module structure.",
       "category": "templates"
-    },
-    {
-      "name": "unsigned/blackwall",
-      "commits": 17,
-      "insertions": 12287,
-      "deletions": 441,
-      "net": 11846,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "mission-control",
@@ -435,9 +435,9 @@
     {
       "name": "unsigned/dc",
       "commits": 11,
-      "insertions": 1898,
-      "deletions": 70,
-      "net": 1828,
+      "insertions": 2010,
+      "deletions": 69,
+      "net": 1941,
       "desc": "",
       "category": "infra"
     },
@@ -656,6 +656,24 @@
       "net": 2232,
       "desc": "Reverie Slack app. Memory access from Slack.",
       "category": "agent"
+    },
+    {
+      "name": "catalogue",
+      "commits": 1,
+      "insertions": 5949,
+      "deletions": 0,
+      "net": 5949,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "augh",
+      "commits": 1,
+      "insertions": 612,
+      "deletions": 0,
+      "net": 612,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/attention-router",
@@ -1147,6 +1165,13 @@
       "tags": [
         "fire",
         "infra"
+      ]
+    },
+    {
+      "t": "no the glyphs are still shit bubs",
+      "d": "Day 85",
+      "tags": [
+        "fire"
       ]
     }
   ],
@@ -8341,7 +8366,7 @@
     ],
     [
       "2026-07-10",
-      64
+      63
     ],
     [
       "2026-07-11",
@@ -8353,11 +8378,15 @@
     ],
     [
       "2026-07-13",
-      242
+      241
     ],
     [
       "2026-07-14",
-      7
+      182
+    ],
+    [
+      "2026-07-15",
+      69
     ]
   ],
   "sessionDays": [
@@ -8663,7 +8692,7 @@
     ],
     [
       "2026-07-14",
-      29
+      51
     ]
   ]
 }
