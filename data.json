@@ -20,19 +20,19 @@
     },
     {
       "name": "cerebral/attention-router-wt",
-      "commits": 1337,
-      "insertions": 385877,
-      "deletions": 75900,
-      "net": 309977,
+      "commits": 1348,
+      "insertions": 391553,
+      "deletions": 75821,
+      "net": 315732,
       "desc": "",
       "category": "agent"
     },
     {
       "name": "unsigned/paas",
-      "commits": 971,
-      "insertions": 258624,
-      "deletions": 35057,
-      "net": 223567,
+      "commits": 1055,
+      "insertions": 264175,
+      "deletions": 36515,
+      "net": 227660,
       "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
       "category": "platform"
     },
@@ -46,6 +46,15 @@
       "category": "vendor"
     },
     {
+      "name": "unsigned/overflow",
+      "commits": 451,
+      "insertions": 45426,
+      "deletions": 6811,
+      "net": 38615,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-hud",
       "commits": 390,
       "insertions": 52410,
@@ -56,19 +65,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 303,
-      "insertions": 174277,
-      "deletions": 33895,
-      "net": 140382,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/overflow",
-      "commits": 284,
-      "insertions": 41095,
-      "deletions": 6191,
-      "net": 34904,
+      "commits": 310,
+      "insertions": 178455,
+      "deletions": 33901,
+      "net": 144554,
       "desc": "",
       "category": "ops"
     },
@@ -83,10 +83,10 @@
     },
     {
       "name": "todie/dotfiles",
-      "commits": 179,
-      "insertions": 41410,
+      "commits": 180,
+      "insertions": 41517,
       "deletions": 10392,
-      "net": 31018,
+      "net": 31125,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
@@ -101,10 +101,10 @@
     },
     {
       "name": "cerebral-work/revenant",
-      "commits": 96,
-      "insertions": 27275,
+      "commits": 97,
+      "insertions": 27284,
       "deletions": 7099,
-      "net": 20176,
+      "net": 20185,
       "desc": "",
       "category": "ops"
     },
@@ -271,6 +271,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 27,
+      "insertions": 15158,
+      "deletions": 2793,
+      "net": 12365,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "ieva",
       "commits": 25,
       "insertions": 3071,
@@ -280,22 +289,22 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/works",
-      "commits": 25,
-      "insertions": 14993,
-      "deletions": 2744,
-      "net": 12249,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/reach",
-      "commits": 23,
-      "insertions": 10866,
-      "deletions": 1096,
+      "commits": 24,
+      "insertions": 10869,
+      "deletions": 1099,
       "net": 9770,
       "desc": "Reach — outreach and connection management.",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/action-runners",
+      "commits": 24,
+      "insertions": 7408,
+      "deletions": 499,
+      "net": 6909,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
     },
     {
       "name": "identity",
@@ -307,15 +316,6 @@
       "category": "identity"
     },
     {
-      "name": "unsigned/action-runners",
-      "commits": 21,
-      "insertions": 7382,
-      "deletions": 495,
-      "net": 6887,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
-    },
-    {
       "name": "todie/nahbro.dev",
       "commits": 20,
       "insertions": 3729,
@@ -323,6 +323,15 @@
       "net": 3033,
       "desc": "nahbro.dev — personal domain and experiments.",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/dc",
+      "commits": 20,
+      "insertions": 9838,
+      "deletions": 432,
+      "net": 9406,
+      "desc": "",
+      "category": "infra"
     },
     {
       "name": "templates/node",
@@ -388,6 +397,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/ml-images",
+      "commits": 14,
+      "insertions": 1092,
+      "deletions": 227,
+      "net": 865,
+      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
+      "category": "infra"
+    },
+    {
       "name": "todie/ghost-blog",
       "commits": 13,
       "insertions": 10382,
@@ -433,24 +451,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/dc",
-      "commits": 11,
-      "insertions": 2010,
-      "deletions": 69,
-      "net": 1941,
-      "desc": "",
-      "category": "infra"
-    },
-    {
-      "name": "cerebral/ml-images",
-      "commits": 11,
-      "insertions": 837,
-      "deletions": 178,
-      "net": 659,
-      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
-      "category": "infra"
-    },
-    {
       "name": "cerebral/files-portal",
       "commits": 10,
       "insertions": 10820,
@@ -466,6 +466,15 @@
       "deletions": 112,
       "net": 4860,
       "desc": "Claude relay — request proxying and routing for Claude API.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/gh-token-mint",
+      "commits": 9,
+      "insertions": 2613,
+      "deletions": 115,
+      "net": 2498,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -595,6 +604,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/executive",
+      "commits": 3,
+      "insertions": 994,
+      "deletions": 14,
+      "net": 980,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/reverie-demos",
       "commits": 3,
       "insertions": 757,
@@ -602,6 +620,24 @@
       "net": 691,
       "desc": "Reverie demonstration and example projects.",
       "category": "design"
+    },
+    {
+      "name": "cerebral/reverie-slack-app",
+      "commits": 3,
+      "insertions": 2891,
+      "deletions": 28,
+      "net": 2863,
+      "desc": "Reverie Slack app. Memory access from Slack.",
+      "category": "agent"
+    },
+    {
+      "name": "augh",
+      "commits": 2,
+      "insertions": 1925,
+      "deletions": 157,
+      "net": 1768,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/todie-daemon",
@@ -649,29 +685,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/reverie-slack-app",
-      "commits": 2,
-      "insertions": 2236,
-      "deletions": 4,
-      "net": 2232,
-      "desc": "Reverie Slack app. Memory access from Slack.",
-      "category": "agent"
-    },
-    {
       "name": "catalogue",
       "commits": 1,
       "insertions": 5949,
       "deletions": 0,
       "net": 5949,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "augh",
-      "commits": 1,
-      "insertions": 612,
-      "deletions": 0,
-      "net": 612,
       "desc": "",
       "category": "ops"
     },
@@ -709,6 +727,15 @@
       "deletions": 0,
       "net": 1301822,
       "desc": "Signal Desktop fork. Local build and customization.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/reverie-slack",
+      "commits": 1,
+      "insertions": 3114,
+      "deletions": 0,
+      "net": 3114,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -1172,6 +1199,22 @@
       "d": "Day 85",
       "tags": [
         "fire"
+      ]
+    },
+    {
+      "t": "closing movie sidebar, switching back to vultr decommision validate the module host mappings  and  prepare pre-flight on decommission",
+      "d": "Day 87",
+      "tags": [
+        "command",
+        "infra"
+      ]
+    },
+    {
+      "t": "build a project for VKE decommission",
+      "d": "Day 87",
+      "tags": [
+        "command",
+        "infra"
       ]
     }
   ],
@@ -8266,7 +8309,7 @@
     ],
     [
       "2026-06-15",
-      67
+      65
     ],
     [
       "2026-06-16",
@@ -8370,7 +8413,7 @@
     ],
     [
       "2026-07-11",
-      258
+      255
     ],
     [
       "2026-07-12",
@@ -8378,15 +8421,19 @@
     ],
     [
       "2026-07-13",
-      241
+      292
     ],
     [
       "2026-07-14",
-      182
+      185
     ],
     [
       "2026-07-15",
-      69
+      287
+    ],
+    [
+      "2026-07-16",
+      37
     ]
   ],
   "sessionDays": [
