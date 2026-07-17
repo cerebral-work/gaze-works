@@ -20,19 +20,19 @@
     },
     {
       "name": "cerebral/attention-router-wt",
-      "commits": 1348,
-      "insertions": 391553,
-      "deletions": 75821,
-      "net": 315732,
+      "commits": 1354,
+      "insertions": 398469,
+      "deletions": 75945,
+      "net": 322524,
       "desc": "",
       "category": "agent"
     },
     {
       "name": "unsigned/paas",
-      "commits": 1055,
-      "insertions": 264175,
-      "deletions": 36515,
-      "net": 227660,
+      "commits": 1075,
+      "insertions": 265007,
+      "deletions": 36692,
+      "net": 228315,
       "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
       "category": "platform"
     },
@@ -65,10 +65,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 310,
-      "insertions": 178455,
-      "deletions": 33901,
-      "net": 144554,
+      "commits": 313,
+      "insertions": 181767,
+      "deletions": 37385,
+      "net": 144382,
       "desc": "",
       "category": "ops"
     },
@@ -79,6 +79,15 @@
       "deletions": 6253,
       "net": 13398,
       "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/lizard",
+      "commits": 191,
+      "insertions": 114178,
+      "deletions": 32549,
+      "net": 81629,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -101,7 +110,7 @@
     },
     {
       "name": "cerebral-work/revenant",
-      "commits": 97,
+      "commits": 98,
       "insertions": 27284,
       "deletions": 7099,
       "net": 20185,
@@ -182,10 +191,10 @@
     },
     {
       "name": "unsigned/blackwall",
-      "commits": 48,
-      "insertions": 15307,
-      "deletions": 1029,
-      "net": 14278,
+      "commits": 55,
+      "insertions": 17239,
+      "deletions": 1086,
+      "net": 16153,
       "desc": "",
       "category": "ops"
     },
@@ -208,6 +217,15 @@
       "category": "ops"
     },
     {
+      "name": "todie/agentic",
+      "commits": 37,
+      "insertions": 9641,
+      "deletions": 1186,
+      "net": 8455,
+      "desc": "Repository: todie/agentic",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/unsigned-control-panel",
       "commits": 37,
       "insertions": 11184,
@@ -223,15 +241,6 @@
       "deletions": 9271,
       "net": 12975,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "todie/agentic",
-      "commits": 34,
-      "insertions": 9326,
-      "deletions": 1184,
-      "net": 8142,
-      "desc": "Repository: todie/agentic",
       "category": "ops"
     },
     {
@@ -262,20 +271,20 @@
       "category": "platform"
     },
     {
+      "name": "cerebral/works",
+      "commits": 28,
+      "insertions": 15297,
+      "deletions": 2885,
+      "net": 12412,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "pgt",
       "commits": 27,
       "insertions": 15270,
       "deletions": 1376,
       "net": 13894,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 27,
-      "insertions": 15158,
-      "deletions": 2793,
-      "net": 12365,
       "desc": "",
       "category": "ops"
     },
@@ -289,6 +298,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/action-runners",
+      "commits": 25,
+      "insertions": 7410,
+      "deletions": 500,
+      "net": 6910,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
+    },
+    {
       "name": "todie/reach",
       "commits": 24,
       "insertions": 10869,
@@ -296,15 +314,6 @@
       "net": 9770,
       "desc": "Reach — outreach and connection management.",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 24,
-      "insertions": 7408,
-      "deletions": 499,
-      "net": 6909,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "identity",
@@ -327,9 +336,9 @@
     {
       "name": "unsigned/dc",
       "commits": 20,
-      "insertions": 9838,
-      "deletions": 432,
-      "net": 9406,
+      "insertions": 6486,
+      "deletions": 182,
+      "net": 6304,
       "desc": "",
       "category": "infra"
     },
@@ -379,6 +388,15 @@
       "category": "ops"
     },
     {
+      "name": "cadastre",
+      "commits": 16,
+      "insertions": 12419,
+      "deletions": 1028,
+      "net": 11391,
+      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
+      "category": "ops"
+    },
+    {
       "name": "todie/todie.io",
       "commits": 14,
       "insertions": 4117,
@@ -394,6 +412,15 @@
       "deletions": 2168,
       "net": 2506,
       "desc": "Aaron Bisla's website. Personal portfolio.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/reverie-slack",
+      "commits": 14,
+      "insertions": 4855,
+      "deletions": 237,
+      "net": 4618,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -421,15 +448,6 @@
       "deletions": 658,
       "net": 7518,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cadastre",
-      "commits": 13,
-      "insertions": 6095,
-      "deletions": 72,
-      "net": 6023,
-      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
       "category": "ops"
     },
     {
@@ -521,6 +539,15 @@
       "net": 3190,
       "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
       "category": "infra"
+    },
+    {
+      "name": "cerebral/reverie-slack-app",
+      "commits": 5,
+      "insertions": 2899,
+      "deletions": 28,
+      "net": 2871,
+      "desc": "Reverie Slack app. Memory access from Slack.",
+      "category": "agent"
     },
     {
       "name": "todie/uri-snapshot",
@@ -622,15 +649,6 @@
       "category": "design"
     },
     {
-      "name": "cerebral/reverie-slack-app",
-      "commits": 3,
-      "insertions": 2891,
-      "deletions": 28,
-      "net": 2863,
-      "desc": "Reverie Slack app. Memory access from Slack.",
-      "category": "agent"
-    },
-    {
       "name": "augh",
       "commits": 2,
       "insertions": 1925,
@@ -730,11 +748,20 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/reverie-slack",
+      "name": "unsigned/lizard",
       "commits": 1,
-      "insertions": 3114,
+      "insertions": 3307,
       "deletions": 0,
-      "net": 3114,
+      "net": 3307,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/sd-packer",
+      "commits": 1,
+      "insertions": 266,
+      "deletions": 0,
+      "net": 266,
       "desc": "",
       "category": "ops"
     },
@@ -8301,7 +8328,7 @@
     ],
     [
       "2026-06-13",
-      80
+      92
     ],
     [
       "2026-06-14",
@@ -8309,15 +8336,15 @@
     ],
     [
       "2026-06-15",
-      65
+      78
     ],
     [
       "2026-06-16",
-      46
+      55
     ],
     [
       "2026-06-17",
-      41
+      49
     ],
     [
       "2026-06-18",
@@ -8381,59 +8408,63 @@
     ],
     [
       "2026-07-03",
-      109
+      111
     ],
     [
       "2026-07-04",
-      157
+      192
     ],
     [
       "2026-07-05",
-      103
+      112
     ],
     [
       "2026-07-06",
-      207
+      251
     ],
     [
       "2026-07-07",
-      150
-    ],
-    [
-      "2026-07-08",
       158
     ],
     [
+      "2026-07-08",
+      170
+    ],
+    [
       "2026-07-09",
-      185
+      188
     ],
     [
       "2026-07-10",
-      63
+      65
     ],
     [
       "2026-07-11",
-      255
+      263
     ],
     [
       "2026-07-12",
-      75
+      81
     ],
     [
       "2026-07-13",
-      292
+      302
     ],
     [
       "2026-07-14",
-      185
+      187
     ],
     [
       "2026-07-15",
-      287
+      282
     ],
     [
       "2026-07-16",
-      37
+      109
+    ],
+    [
+      "2026-07-17",
+      3
     ]
   ],
   "sessionDays": [
@@ -8740,6 +8771,14 @@
     [
       "2026-07-14",
       51
+    ],
+    [
+      "2026-07-16",
+      3
+    ],
+    [
+      "2026-07-17",
+      11
     ]
   ]
 }
