@@ -29,21 +29,21 @@
     },
     {
       "name": "cerebral/attention-router-wt",
-      "commits": 1395,
-      "insertions": 440821,
-      "deletions": 79621,
-      "net": 361200,
+      "commits": 1377,
+      "insertions": 422464,
+      "deletions": 78764,
+      "net": 343700,
       "desc": "",
       "category": "agent"
     },
     {
-      "name": "unsigned/paas",
-      "commits": 1125,
-      "insertions": 272493,
-      "deletions": 37406,
-      "net": 235087,
-      "desc": "The Kubernetes platform. ArgoCD fleets, LiteLLM gateway, KEDA, onboard, Kyverno, etcd-backup.",
-      "category": "platform"
+      "name": "unsigned/paas-bw",
+      "commits": 1206,
+      "insertions": 277703,
+      "deletions": 40381,
+      "net": 237322,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "vendor/rtk",
@@ -56,10 +56,10 @@
     },
     {
       "name": "unsigned/overflow",
-      "commits": 451,
-      "insertions": 45426,
+      "commits": 453,
+      "insertions": 45536,
       "deletions": 6811,
-      "net": 38615,
+      "net": 38725,
       "desc": "",
       "category": "ops"
     },
@@ -74,10 +74,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 313,
-      "insertions": 181767,
-      "deletions": 37385,
-      "net": 144382,
+      "commits": 314,
+      "insertions": 181774,
+      "deletions": 37390,
+      "net": 144384,
       "desc": "",
       "category": "ops"
     },
@@ -127,6 +127,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/blackwall",
+      "commits": 91,
+      "insertions": 26940,
+      "deletions": 2316,
+      "net": 24624,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/herdr-plus",
       "commits": 90,
       "insertions": 18478,
@@ -146,10 +155,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 72,
-      "insertions": 10250,
+      "commits": 74,
+      "insertions": 10424,
       "deletions": 1379,
-      "net": 8871,
+      "net": 9045,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -161,15 +170,6 @@
       "net": 6026,
       "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
       "category": "vendor"
-    },
-    {
-      "name": "unsigned/blackwall",
-      "commits": 68,
-      "insertions": 17594,
-      "deletions": 1182,
-      "net": 16412,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/linearctl",
@@ -187,6 +187,15 @@
       "deletions": 10142,
       "net": 30729,
       "desc": "Pact — contract testing and agreement tracking.",
+      "category": "ops"
+    },
+    {
+      "name": "todie/agentic",
+      "commits": 59,
+      "insertions": 12334,
+      "deletions": 1667,
+      "net": 10667,
+      "desc": "Repository: todie/agentic",
       "category": "ops"
     },
     {
@@ -226,15 +235,6 @@
       "category": "ops"
     },
     {
-      "name": "todie/agentic",
-      "commits": 40,
-      "insertions": 9951,
-      "deletions": 1190,
-      "net": 8761,
-      "desc": "Repository: todie/agentic",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/unsigned-control-panel",
       "commits": 37,
       "insertions": 11184,
@@ -262,20 +262,20 @@
       "category": "archive"
     },
     {
+      "name": "cerebral/works",
+      "commits": 30,
+      "insertions": 15860,
+      "deletions": 3339,
+      "net": 12521,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/unsigned-onboard",
       "commits": 29,
       "insertions": 13372,
       "deletions": 4180,
       "net": 9192,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 29,
-      "insertions": 15425,
-      "deletions": 2974,
-      "net": 12451,
       "desc": "",
       "category": "ops"
     },
@@ -298,6 +298,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/dc",
+      "commits": 27,
+      "insertions": 6941,
+      "deletions": 1783,
+      "net": 5158,
+      "desc": "",
+      "category": "infra"
+    },
+    {
       "name": "ieva",
       "commits": 25,
       "insertions": 3071,
@@ -307,12 +316,12 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/dc",
+      "name": "unsigned/action-runners",
       "commits": 25,
-      "insertions": 6939,
-      "deletions": 1781,
-      "net": 5158,
-      "desc": "",
+      "insertions": 7025,
+      "deletions": 317,
+      "net": 6708,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
       "category": "infra"
     },
     {
@@ -323,15 +332,6 @@
       "net": 9770,
       "desc": "Reach — outreach and connection management.",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 23,
-      "insertions": 7042,
-      "deletions": 342,
-      "net": 6700,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "identity",
@@ -433,6 +433,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cicatrix",
+      "commits": 14,
+      "insertions": 8423,
+      "deletions": 246,
+      "net": 8177,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
       "name": "cerebral/ml-images",
       "commits": 14,
       "insertions": 1092,
@@ -514,6 +523,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/os",
+      "commits": 9,
+      "insertions": 4065,
+      "deletions": 33,
+      "net": 4032,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/escapement",
       "commits": 7,
       "insertions": 2059,
@@ -538,6 +556,15 @@
       "deletions": 1336,
       "net": 741,
       "desc": "honeypot.vip — security research domain.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/metal-foundry",
+      "commits": 6,
+      "insertions": 342,
+      "deletions": 2,
+      "net": 340,
+      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
       "category": "ops"
     },
     {
@@ -568,13 +595,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cicatrix",
+      "name": "cerebral-work/os",
       "commits": 5,
-      "insertions": 3237,
-      "deletions": 47,
-      "net": 3190,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
+      "insertions": 3651,
+      "deletions": 21,
+      "net": 3630,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/uri-snapshot",
@@ -628,15 +655,6 @@
       "deletions": 56,
       "net": 872,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/metal-foundry",
-      "commits": 3,
-      "insertions": 129,
-      "deletions": 2,
-      "net": 127,
-      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
       "category": "ops"
     },
     {
@@ -708,6 +726,15 @@
       "insertions": 1759,
       "deletions": 20,
       "net": 1739,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/waker",
+      "commits": 2,
+      "insertions": 926,
+      "deletions": 5,
+      "net": 921,
       "desc": "",
       "category": "ops"
     },
@@ -8354,7 +8381,7 @@
     ],
     [
       "2026-06-04",
-      232
+      231
     ],
     [
       "2026-06-05",
@@ -8398,7 +8425,7 @@
     ],
     [
       "2026-06-15",
-      309
+      304
     ],
     [
       "2026-06-16",
@@ -8406,15 +8433,15 @@
     ],
     [
       "2026-06-17",
-      210
+      209
     ],
     [
       "2026-06-18",
-      229
+      228
     ],
     [
       "2026-06-19",
-      226
+      225
     ],
     [
       "2026-06-20",
@@ -8422,15 +8449,15 @@
     ],
     [
       "2026-06-21",
-      135
+      133
     ],
     [
       "2026-06-22",
-      159
+      157
     ],
     [
       "2026-06-23",
-      218
+      222
     ],
     [
       "2026-06-24",
@@ -8462,11 +8489,11 @@
     ],
     [
       "2026-07-01",
-      333
+      331
     ],
     [
       "2026-07-02",
-      373
+      371
     ],
     [
       "2026-07-03",
@@ -8478,15 +8505,15 @@
     ],
     [
       "2026-07-05",
-      308
+      306
     ],
     [
       "2026-07-06",
-      323
+      324
     ],
     [
       "2026-07-07",
-      167
+      164
     ],
     [
       "2026-07-08",
@@ -8494,7 +8521,7 @@
     ],
     [
       "2026-07-09",
-      310
+      308
     ],
     [
       "2026-07-10",
@@ -8502,15 +8529,15 @@
     ],
     [
       "2026-07-11",
-      455
+      454
     ],
     [
       "2026-07-12",
-      124
+      122
     ],
     [
       "2026-07-13",
-      353
+      350
     ],
     [
       "2026-07-14",
@@ -8518,19 +8545,23 @@
     ],
     [
       "2026-07-15",
-      413
+      419
     ],
     [
       "2026-07-16",
-      332
+      325
     ],
     [
       "2026-07-17",
-      318
+      307
     ],
     [
       "2026-07-18",
-      80
+      259
+    ],
+    [
+      "2026-07-19",
+      1
     ]
   ],
   "sessionDays": [
@@ -8848,7 +8879,7 @@
     ],
     [
       "2026-07-18",
-      47
+      106
     ]
   ]
 }
