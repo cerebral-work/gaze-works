@@ -20,28 +20,28 @@
     },
     {
       "name": "rina",
-      "commits": 1579,
-      "insertions": 527647,
-      "deletions": 200594,
-      "net": 327053,
+      "commits": 1585,
+      "insertions": 527907,
+      "deletions": 200694,
+      "net": 327213,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/attention-router-wt",
-      "commits": 1377,
-      "insertions": 422464,
-      "deletions": 78764,
-      "net": 343700,
+      "commits": 1385,
+      "insertions": 424398,
+      "deletions": 78866,
+      "net": 345532,
       "desc": "",
       "category": "agent"
     },
     {
       "name": "unsigned/paas-bw",
-      "commits": 1206,
-      "insertions": 277703,
-      "deletions": 40381,
-      "net": 237322,
+      "commits": 1227,
+      "insertions": 282403,
+      "deletions": 50044,
+      "net": 232359,
       "desc": "",
       "category": "ops"
     },
@@ -74,10 +74,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 314,
-      "insertions": 181774,
+      "commits": 315,
+      "insertions": 181880,
       "deletions": 37390,
-      "net": 144384,
+      "net": 144490,
       "desc": "",
       "category": "ops"
     },
@@ -128,10 +128,10 @@
     },
     {
       "name": "unsigned/blackwall",
-      "commits": 91,
-      "insertions": 26940,
-      "deletions": 2316,
-      "net": 24624,
+      "commits": 97,
+      "insertions": 32986,
+      "deletions": 2386,
+      "net": 30600,
       "desc": "",
       "category": "ops"
     },
@@ -155,10 +155,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 74,
-      "insertions": 10424,
+      "commits": 75,
+      "insertions": 10866,
       "deletions": 1379,
-      "net": 9045,
+      "net": 9487,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -235,6 +235,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/os",
+      "commits": 39,
+      "insertions": 19432,
+      "deletions": 217,
+      "net": 19215,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/unsigned-control-panel",
       "commits": 37,
       "insertions": 11184,
@@ -262,20 +271,20 @@
       "category": "archive"
     },
     {
-      "name": "cerebral/works",
-      "commits": 30,
-      "insertions": 15860,
-      "deletions": 3339,
-      "net": 12521,
+      "name": "unsigned/unsigned-onboard",
+      "commits": 31,
+      "insertions": 13943,
+      "deletions": 4186,
+      "net": 9757,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/unsigned-onboard",
-      "commits": 29,
-      "insertions": 13372,
-      "deletions": 4180,
-      "net": 9192,
+      "name": "cerebral/works",
+      "commits": 31,
+      "insertions": 15993,
+      "deletions": 3441,
+      "net": 12552,
       "desc": "",
       "category": "ops"
     },
@@ -595,15 +604,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/os",
-      "commits": 5,
-      "insertions": 3651,
-      "deletions": 21,
-      "net": 3630,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/uri-snapshot",
       "commits": 4,
       "insertions": 384,
@@ -627,6 +627,15 @@
       "insertions": 5905,
       "deletions": 148,
       "net": 5757,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/crm",
+      "commits": 4,
+      "insertions": 996,
+      "deletions": 22,
+      "net": 974,
       "desc": "",
       "category": "ops"
     },
@@ -748,6 +757,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/film",
+      "commits": 2,
+      "insertions": 1094,
+      "deletions": 3,
+      "net": 1091,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/artifacts",
       "commits": 2,
       "insertions": 131165,
@@ -825,6 +843,24 @@
       "insertions": 1566,
       "deletions": 0,
       "net": 1566,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/about-worker",
+      "commits": 1,
+      "insertions": 948,
+      "deletions": 0,
+      "net": 948,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/ops-bigboard",
+      "commits": 1,
+      "insertions": 1111,
+      "deletions": 0,
+      "net": 1111,
       "desc": "",
       "category": "ops"
     },
@@ -1311,6 +1347,14 @@
       "d": "Day 89",
       "tags": [
         "reflective"
+      ]
+    },
+    {
+      "t": "there's a godmode attio token",
+      "d": "Day 90",
+      "tags": [
+        "command",
+        "infra"
       ]
     }
   ],
@@ -8473,7 +8517,7 @@
     ],
     [
       "2026-06-27",
-      222
+      224
     ],
     [
       "2026-06-28",
@@ -8509,7 +8553,7 @@
     ],
     [
       "2026-07-06",
-      324
+      325
     ],
     [
       "2026-07-07",
@@ -8553,14 +8597,18 @@
     ],
     [
       "2026-07-17",
-      307
+      304
     ],
     [
       "2026-07-18",
-      259
+      258
     ],
     [
       "2026-07-19",
+      89
+    ],
+    [
+      "2026-07-20",
       1
     ]
   ],
@@ -8880,6 +8928,14 @@
     [
       "2026-07-18",
       106
+    ],
+    [
+      "2026-07-19",
+      68
+    ],
+    [
+      "2026-07-20",
+      3
     ]
   ]
 }
