@@ -262,6 +262,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 32,
+      "insertions": 16098,
+      "deletions": 3490,
+      "net": 12608,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "_archive/todie-daemon-rs",
       "commits": 31,
       "insertions": 14590,
@@ -276,15 +285,6 @@
       "insertions": 13943,
       "deletions": 4186,
       "net": 9757,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 31,
-      "insertions": 15993,
-      "deletions": 3441,
-      "net": 12552,
       "desc": "",
       "category": "ops"
     },
@@ -676,6 +676,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/ops-bigboard",
+      "commits": 3,
+      "insertions": 2424,
+      "deletions": 80,
+      "net": 2344,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/executive",
       "commits": 3,
       "insertions": 994,
@@ -852,15 +861,6 @@
       "insertions": 948,
       "deletions": 0,
       "net": 948,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/ops-bigboard",
-      "commits": 1,
-      "insertions": 1111,
-      "deletions": 0,
-      "net": 1111,
       "desc": "",
       "category": "ops"
     },
@@ -8609,7 +8609,11 @@
     ],
     [
       "2026-07-20",
-      1
+      2
+    ],
+    [
+      "2026-07-21",
+      2
     ]
   ],
   "sessionDays": [
