@@ -29,19 +29,19 @@
     },
     {
       "name": "cerebral/attention-router-wt",
-      "commits": 1385,
-      "insertions": 424398,
-      "deletions": 78866,
-      "net": 345532,
+      "commits": 1392,
+      "insertions": 426170,
+      "deletions": 78998,
+      "net": 347172,
       "desc": "",
       "category": "agent"
     },
     {
       "name": "unsigned/paas-bw",
-      "commits": 1227,
-      "insertions": 282403,
-      "deletions": 50044,
-      "net": 232359,
+      "commits": 1260,
+      "insertions": 283955,
+      "deletions": 50612,
+      "net": 233343,
       "desc": "",
       "category": "ops"
     },
@@ -101,10 +101,10 @@
     },
     {
       "name": "todie/dotfiles",
-      "commits": 180,
-      "insertions": 41517,
-      "deletions": 10392,
-      "net": 31125,
+      "commits": 181,
+      "insertions": 41520,
+      "deletions": 10465,
+      "net": 31055,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
@@ -118,20 +118,20 @@
       "category": "design"
     },
     {
-      "name": "cerebral-work/revenant",
-      "commits": 98,
-      "insertions": 27284,
-      "deletions": 7099,
-      "net": 20185,
+      "name": "unsigned/blackwall",
+      "commits": 104,
+      "insertions": 36422,
+      "deletions": 5466,
+      "net": 30956,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/blackwall",
-      "commits": 97,
-      "insertions": 32986,
-      "deletions": 2386,
-      "net": 30600,
+      "name": "cerebral-work/revenant-sec-p31",
+      "commits": 99,
+      "insertions": 27305,
+      "deletions": 7099,
+      "net": 20206,
       "desc": "",
       "category": "ops"
     },
@@ -154,6 +154,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/linearctl",
+      "commits": 79,
+      "insertions": 15558,
+      "deletions": 1874,
+      "net": 13684,
+      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
+      "category": "agent"
+    },
+    {
       "name": "unsigned/gg",
       "commits": 75,
       "insertions": 10866,
@@ -170,15 +179,6 @@
       "net": 6026,
       "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
       "category": "vendor"
-    },
-    {
-      "name": "cerebral/linearctl",
-      "commits": 68,
-      "insertions": 13605,
-      "deletions": 1848,
-      "net": 11757,
-      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
-      "category": "agent"
     },
     {
       "name": "todie/pact",
@@ -263,10 +263,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 32,
-      "insertions": 16098,
-      "deletions": 3490,
-      "net": 12608,
+      "commits": 33,
+      "insertions": 16123,
+      "deletions": 3511,
+      "net": 12612,
       "desc": "",
       "category": "ops"
     },
@@ -532,6 +532,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/ops-bigboard",
+      "commits": 9,
+      "insertions": 2775,
+      "deletions": 188,
+      "net": 2587,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/os",
       "commits": 9,
       "insertions": 4065,
@@ -559,6 +568,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex",
+      "commits": 7,
+      "insertions": 2671,
+      "deletions": 194,
+      "net": 2477,
+      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
+      "category": "agent"
+    },
+    {
       "name": "todie/honeypot.vip",
       "commits": 6,
       "insertions": 2077,
@@ -584,15 +602,6 @@
       "net": 17737,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/cortex",
-      "commits": 6,
-      "insertions": 2489,
-      "deletions": 194,
-      "net": 2295,
-      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
-      "category": "agent"
     },
     {
       "name": "todie/claude-session-manager",
@@ -667,21 +676,21 @@
       "category": "ops"
     },
     {
+      "name": "vesperan",
+      "commits": 3,
+      "insertions": 41527,
+      "deletions": 11,
+      "net": 41516,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "bench",
       "commits": 3,
       "insertions": 6557,
       "deletions": 0,
       "net": 6557,
       "desc": "bench.unsigned.gg. Inspect-ai harness, promptfoo merge gate, frontier leaderboard.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/ops-bigboard",
-      "commits": 3,
-      "insertions": 2424,
-      "deletions": 80,
-      "net": 2344,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -8581,7 +8590,7 @@
     ],
     [
       "2026-07-13",
-      350
+      351
     ],
     [
       "2026-07-14",
@@ -8593,27 +8602,31 @@
     ],
     [
       "2026-07-16",
-      325
+      328
     ],
     [
       "2026-07-17",
-      304
+      300
     ],
     [
       "2026-07-18",
-      258
+      260
     ],
     [
       "2026-07-19",
-      89
+      84
     ],
     [
       "2026-07-20",
-      2
+      16
     ],
     [
       "2026-07-21",
-      2
+      44
+    ],
+    [
+      "2026-07-22",
+      18
     ]
   ],
   "sessionDays": [
@@ -8940,6 +8953,10 @@
     [
       "2026-07-20",
       3
+    ],
+    [
+      "2026-07-21",
+      23
     ]
   ]
 }
