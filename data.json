@@ -37,13 +37,13 @@
       "category": "agent"
     },
     {
-      "name": "unsigned/paas-bw",
-      "commits": 1260,
-      "insertions": 283955,
-      "deletions": 50612,
-      "net": 233343,
+      "name": "unsigned/paas",
+      "commits": 1300,
+      "insertions": 293737,
+      "deletions": 52443,
+      "net": 241294,
       "desc": "",
-      "category": "ops"
+      "category": "platform"
     },
     {
       "name": "vendor/rtk",
@@ -119,10 +119,10 @@
     },
     {
       "name": "unsigned/blackwall",
-      "commits": 104,
-      "insertions": 36422,
-      "deletions": 5466,
-      "net": 30956,
+      "commits": 132,
+      "insertions": 53257,
+      "deletions": 6100,
+      "net": 47157,
       "desc": "",
       "category": "ops"
     },
@@ -134,6 +134,15 @@
       "net": 20206,
       "desc": "",
       "category": "ops"
+    },
+    {
+      "name": "cerebral/linearctl",
+      "commits": 98,
+      "insertions": 19983,
+      "deletions": 1956,
+      "net": 18027,
+      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
+      "category": "agent"
     },
     {
       "name": "vendor/herdr-plus",
@@ -152,15 +161,6 @@
       "net": 29074,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/linearctl",
-      "commits": 79,
-      "insertions": 15558,
-      "deletions": 1874,
-      "net": 13684,
-      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
-      "category": "agent"
     },
     {
       "name": "unsigned/gg",
@@ -191,10 +191,10 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 59,
-      "insertions": 12334,
-      "deletions": 1667,
-      "net": 10667,
+      "commits": 62,
+      "insertions": 12382,
+      "deletions": 1706,
+      "net": 10676,
       "desc": "Repository: todie/agentic",
       "category": "ops"
     },
@@ -263,10 +263,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 33,
-      "insertions": 16123,
-      "deletions": 3511,
-      "net": 12612,
+      "commits": 34,
+      "insertions": 16203,
+      "deletions": 3574,
+      "net": 12629,
       "desc": "",
       "category": "ops"
     },
@@ -287,6 +287,15 @@
       "net": 9757,
       "desc": "",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/action-runners",
+      "commits": 29,
+      "insertions": 7148,
+      "deletions": 339,
+      "net": 6809,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
     },
     {
       "name": "cerebral/openpanel",
@@ -323,15 +332,6 @@
       "net": 2727,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 25,
-      "insertions": 7025,
-      "deletions": 317,
-      "net": 6708,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "todie/reach",
@@ -402,6 +402,15 @@
       "insertions": 5251,
       "deletions": 237,
       "net": 5014,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/meridian",
+      "commits": 17,
+      "insertions": 3562,
+      "deletions": 343,
+      "net": 3219,
       "desc": "",
       "category": "ops"
     },
@@ -528,15 +537,6 @@
       "insertions": 2613,
       "deletions": 115,
       "net": 2498,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/ops-bigboard",
-      "commits": 9,
-      "insertions": 2775,
-      "deletions": 188,
-      "net": 2587,
       "desc": "",
       "category": "ops"
     },
@@ -8582,7 +8582,7 @@
     ],
     [
       "2026-07-11",
-      454
+      453
     ],
     [
       "2026-07-12",
@@ -8598,7 +8598,7 @@
     ],
     [
       "2026-07-15",
-      419
+      420
     ],
     [
       "2026-07-16",
@@ -8606,7 +8606,7 @@
     ],
     [
       "2026-07-17",
-      300
+      297
     ],
     [
       "2026-07-18",
@@ -8618,15 +8618,19 @@
     ],
     [
       "2026-07-20",
-      16
+      14
     ],
     [
       "2026-07-21",
-      44
+      38
     ],
     [
       "2026-07-22",
-      18
+      82
+    ],
+    [
+      "2026-07-23",
+      50
     ]
   ],
   "sessionDays": [
@@ -8957,6 +8961,10 @@
     [
       "2026-07-21",
       23
+    ],
+    [
+      "2026-07-23",
+      22
     ]
   ]
 }
