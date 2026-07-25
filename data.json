@@ -2,48 +2,48 @@
   "repos": [
     {
       "name": "cerebral/dreamcode",
-      "commits": 37530,
-      "insertions": 4957728,
+      "commits": 37531,
+      "insertions": 4957729,
       "deletions": 3331267,
-      "net": 1626461,
+      "net": 1626462,
       "desc": "The living-terminal theme bundle. 37,529 commits — design snapshots auto-generated from the brand canon pipeline.",
       "category": "design"
     },
     {
       "name": "unsigned/omp",
-      "commits": 20765,
-      "insertions": 5063670,
+      "commits": 20766,
+      "insertions": 5063671,
       "deletions": 2402275,
-      "net": 2661395,
+      "net": 2661396,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "rina",
-      "commits": 1585,
-      "insertions": 527907,
-      "deletions": 200694,
-      "net": 327213,
+      "commits": 1587,
+      "insertions": 528238,
+      "deletions": 200749,
+      "net": 327489,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "cerebral/attention-router-wt",
-      "commits": 1392,
-      "insertions": 426170,
-      "deletions": 78998,
-      "net": 347172,
+      "name": "cerebral/reverie",
+      "commits": 1405,
+      "insertions": 429786,
+      "deletions": 79038,
+      "net": 350748,
       "desc": "",
       "category": "agent"
     },
     {
-      "name": "unsigned/paas-w3",
-      "commits": 1320,
-      "insertions": 295325,
-      "deletions": 52914,
-      "net": 242411,
+      "name": "unsigned/paas",
+      "commits": 1357,
+      "insertions": 298154,
+      "deletions": 52933,
+      "net": 245221,
       "desc": "",
-      "category": "ops"
+      "category": "platform"
     },
     {
       "name": "vendor/rtk",
@@ -56,10 +56,10 @@
     },
     {
       "name": "cerebral/biomni",
-      "commits": 487,
-      "insertions": 123005,
+      "commits": 488,
+      "insertions": 123012,
       "deletions": 49032,
-      "net": 73973,
+      "net": 73980,
       "desc": "",
       "category": "ops"
     },
@@ -83,10 +83,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 315,
-      "insertions": 181880,
+      "commits": 317,
+      "insertions": 181932,
       "deletions": 37390,
-      "net": 144490,
+      "net": 144542,
       "desc": "",
       "category": "ops"
     },
@@ -101,10 +101,10 @@
     },
     {
       "name": "cerebral/lizard",
-      "commits": 191,
-      "insertions": 114178,
+      "commits": 192,
+      "insertions": 114179,
       "deletions": 32549,
-      "net": 81629,
+      "net": 81630,
       "desc": "",
       "category": "ops"
     },
@@ -119,21 +119,30 @@
     },
     {
       "name": "cerebral/site",
-      "commits": 168,
-      "insertions": 16427,
-      "deletions": 11010,
-      "net": 5417,
+      "commits": 170,
+      "insertions": 25618,
+      "deletions": 11054,
+      "net": 14564,
       "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
       "category": "design"
     },
     {
       "name": "unsigned/blackwall",
-      "commits": 137,
-      "insertions": 57562,
-      "deletions": 6193,
-      "net": 51369,
+      "commits": 163,
+      "insertions": 60422,
+      "deletions": 6404,
+      "net": 54018,
       "desc": "",
       "category": "ops"
+    },
+    {
+      "name": "cerebral/linearctl",
+      "commits": 131,
+      "insertions": 25933,
+      "deletions": 2152,
+      "net": 23781,
+      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
+      "category": "agent"
     },
     {
       "name": "cerebral-work/revenant-sec-p31",
@@ -143,15 +152,6 @@
       "net": 20206,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/linearctl",
-      "commits": 98,
-      "insertions": 19983,
-      "deletions": 1956,
-      "net": 18027,
-      "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
-      "category": "agent"
     },
     {
       "name": "vendor/herdr-plus",
@@ -164,10 +164,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 82,
-      "insertions": 11840,
-      "deletions": 1423,
-      "net": 10417,
+      "commits": 85,
+      "insertions": 12665,
+      "deletions": 1432,
+      "net": 11233,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -190,6 +190,15 @@
       "category": "vendor"
     },
     {
+      "name": "cerebral/os",
+      "commits": 67,
+      "insertions": 29512,
+      "deletions": 529,
+      "net": 28983,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/pact",
       "commits": 65,
       "insertions": 40871,
@@ -200,38 +209,47 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 62,
-      "insertions": 12382,
-      "deletions": 1706,
-      "net": 10676,
+      "commits": 63,
+      "insertions": 12433,
+      "deletions": 1715,
+      "net": 10718,
       "desc": "Repository: todie/agentic",
       "category": "ops"
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 59,
-      "insertions": 1502,
+      "commits": 60,
+      "insertions": 1503,
       "deletions": 291,
-      "net": 1211,
+      "net": 1212,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
     {
       "name": "cerebral/cerebral-design",
-      "commits": 58,
-      "insertions": 20400,
+      "commits": 59,
+      "insertions": 20401,
       "deletions": 1416,
-      "net": 18984,
+      "net": 18985,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
     },
     {
       "name": "cerebral/voicenotes",
-      "commits": 48,
-      "insertions": 5815,
+      "commits": 49,
+      "insertions": 5816,
       "deletions": 268,
-      "net": 5547,
+      "net": 5548,
       "desc": "Voice notes PWA. Audio recording and transcription on Cloudflare.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/os",
+      "commits": 44,
+      "insertions": 21762,
+      "deletions": 238,
+      "net": 21524,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -244,13 +262,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/os",
-      "commits": 39,
-      "insertions": 19432,
-      "deletions": 217,
-      "net": 19215,
-      "desc": "",
-      "category": "ops"
+      "name": "unsigned/action-runners",
+      "commits": 40,
+      "insertions": 7274,
+      "deletions": 449,
+      "net": 6825,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
     },
     {
       "name": "unsigned/unsigned-control-panel",
@@ -262,6 +280,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 37,
+      "insertions": 16411,
+      "deletions": 3760,
+      "net": 12651,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "usewire",
       "commits": 36,
       "insertions": 22246,
@@ -269,24 +296,6 @@
       "net": 12975,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 35,
-      "insertions": 16265,
-      "deletions": 3628,
-      "net": 12637,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 33,
-      "insertions": 7203,
-      "deletions": 391,
-      "net": 6812,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "_archive/todie-daemon-rs",
@@ -308,10 +317,10 @@
     },
     {
       "name": "cerebral/openpanel",
-      "commits": 28,
-      "insertions": 23449,
+      "commits": 29,
+      "insertions": 23450,
       "deletions": 808,
-      "net": 22641,
+      "net": 22642,
       "desc": "OpenPanel integration. Analytics and event tracking for the cerebral estate.",
       "category": "platform"
     },
@@ -334,11 +343,29 @@
       "category": "infra"
     },
     {
+      "name": "unsigned/lizard",
+      "commits": 26,
+      "insertions": 4900,
+      "deletions": 219,
+      "net": 4681,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "ieva",
       "commits": 25,
       "insertions": 3071,
       "deletions": 344,
       "net": 2727,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/escapement",
+      "commits": 25,
+      "insertions": 15883,
+      "deletions": 86,
+      "net": 15797,
       "desc": "",
       "category": "ops"
     },
@@ -367,6 +394,15 @@
       "deletions": 696,
       "net": 3033,
       "desc": "nahbro.dev — personal domain and experiments.",
+      "category": "ops"
+    },
+    {
+      "name": "mission-control",
+      "commits": 20,
+      "insertions": 3158,
+      "deletions": 248,
+      "net": 2910,
+      "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.",
       "category": "ops"
     },
     {
@@ -424,12 +460,12 @@
       "category": "ops"
     },
     {
-      "name": "mission-control",
+      "name": "cerebral/physomni",
       "commits": 17,
-      "insertions": 3074,
-      "deletions": 247,
-      "net": 2827,
-      "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.",
+      "insertions": 24552,
+      "deletions": 214,
+      "net": 24338,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -440,6 +476,24 @@
       "net": 11391,
       "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/waker",
+      "commits": 15,
+      "insertions": 1570,
+      "deletions": 38,
+      "net": 1532,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/cicatrix",
+      "commits": 15,
+      "insertions": 8424,
+      "deletions": 246,
+      "net": 8178,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
     },
     {
       "name": "todie/todie.io",
@@ -458,15 +512,6 @@
       "net": 2506,
       "desc": "Aaron Bisla's website. Personal portfolio.",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/cicatrix",
-      "commits": 14,
-      "insertions": 8423,
-      "deletions": 246,
-      "net": 8177,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
     },
     {
       "name": "cerebral/ml-images",
@@ -497,10 +542,10 @@
     },
     {
       "name": "unsigned/agent-jury",
-      "commits": 12,
-      "insertions": 8352,
+      "commits": 13,
+      "insertions": 8353,
       "deletions": 295,
-      "net": 8057,
+      "net": 8058,
       "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
       "category": "agent"
     },
@@ -515,20 +560,29 @@
     },
     {
       "name": "cerebral/files-portal",
-      "commits": 10,
-      "insertions": 10820,
+      "commits": 11,
+      "insertions": 10821,
       "deletions": 1879,
-      "net": 8941,
+      "net": 8942,
       "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
       "category": "platform"
     },
     {
       "name": "cerebral/reverie-slack-app",
-      "commits": 10,
-      "insertions": 3154,
+      "commits": 11,
+      "insertions": 3155,
       "deletions": 43,
-      "net": 3111,
+      "net": 3112,
       "desc": "Reverie Slack app. Memory access from Slack.",
+      "category": "agent"
+    },
+    {
+      "name": "cerebral/cortex",
+      "commits": 11,
+      "insertions": 3385,
+      "deletions": 194,
+      "net": 3191,
+      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
       "category": "agent"
     },
     {
@@ -550,24 +604,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/os",
-      "commits": 9,
-      "insertions": 4065,
-      "deletions": 33,
-      "net": 4032,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/escapement",
-      "commits": 7,
-      "insertions": 2059,
-      "deletions": 34,
-      "net": 2025,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "ai-atlas",
       "commits": 7,
       "insertions": 16297,
@@ -577,13 +613,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cortex",
+      "name": "cerebral/llms",
       "commits": 7,
-      "insertions": 2671,
-      "deletions": 194,
-      "net": 2477,
-      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
-      "category": "agent"
+      "insertions": 18375,
+      "deletions": 637,
+      "net": 17738,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/honeypot.vip",
@@ -604,21 +640,30 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/llms",
-      "commits": 6,
-      "insertions": 18374,
-      "deletions": 637,
-      "net": 17737,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/claude-session-manager",
       "commits": 5,
       "insertions": 1926,
       "deletions": 213,
       "net": 1713,
       "desc": "Claude Code session management and persistence.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/juarez",
+      "commits": 5,
+      "insertions": 724,
+      "deletions": 53,
+      "net": 671,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/crm",
+      "commits": 5,
+      "insertions": 997,
+      "deletions": 22,
+      "net": 975,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -631,15 +676,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/juarez",
-      "commits": 4,
-      "insertions": 723,
-      "deletions": 53,
-      "net": 670,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/dr",
       "commits": 4,
       "insertions": 5905,
@@ -649,11 +685,29 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/crm",
+      "name": "cerebral/executive",
       "commits": 4,
-      "insertions": 996,
-      "deletions": 22,
-      "net": 974,
+      "insertions": 995,
+      "deletions": 14,
+      "net": 981,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/reverie-demos",
+      "commits": 4,
+      "insertions": 758,
+      "deletions": 66,
+      "net": 692,
+      "desc": "Reverie demonstration and example projects.",
+      "category": "design"
+    },
+    {
+      "name": "cerebral/incubate-gamiapp",
+      "commits": 4,
+      "insertions": 248,
+      "deletions": 7,
+      "net": 241,
       "desc": "",
       "category": "ops"
     },
@@ -694,6 +748,24 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/k8s-audit",
+      "commits": 3,
+      "insertions": 5440,
+      "deletions": 224,
+      "net": 5216,
+      "desc": "",
+      "category": "infra"
+    },
+    {
+      "name": "unsigned/moshi-cli",
+      "commits": 3,
+      "insertions": 1760,
+      "deletions": 20,
+      "net": 1740,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "bench",
       "commits": 3,
       "insertions": 6557,
@@ -703,29 +775,20 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/executive",
+      "name": "cerebral/enterprise-genie",
       "commits": 3,
-      "insertions": 994,
-      "deletions": 14,
-      "net": 980,
+      "insertions": 537,
+      "deletions": 1,
+      "net": 536,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "cerebral/reverie-demos",
+      "name": "cerebral/film",
       "commits": 3,
-      "insertions": 757,
-      "deletions": 66,
-      "net": 691,
-      "desc": "Reverie demonstration and example projects.",
-      "category": "design"
-    },
-    {
-      "name": "cerebral/incubate-gamiapp",
-      "commits": 3,
-      "insertions": 247,
-      "deletions": 7,
-      "net": 240,
+      "insertions": 1095,
+      "deletions": 3,
+      "net": 1092,
       "desc": "",
       "category": "ops"
     },
@@ -748,47 +811,20 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/k8s-audit",
+      "name": "cerebral/about-worker",
       "commits": 2,
-      "insertions": 5439,
-      "deletions": 224,
-      "net": 5215,
-      "desc": "",
-      "category": "infra"
-    },
-    {
-      "name": "unsigned/moshi-cli",
-      "commits": 2,
-      "insertions": 1759,
-      "deletions": 20,
-      "net": 1739,
+      "insertions": 949,
+      "deletions": 0,
+      "net": 949,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/waker",
+      "name": "cerebral/blanklabel",
       "commits": 2,
-      "insertions": 926,
-      "deletions": 5,
-      "net": 921,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/enterprise-genie",
-      "commits": 2,
-      "insertions": 536,
-      "deletions": 1,
-      "net": 535,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/film",
-      "commits": 2,
-      "insertions": 1094,
-      "deletions": 3,
-      "net": 1091,
+      "insertions": 775,
+      "deletions": 0,
+      "net": 775,
       "desc": "",
       "category": "ops"
     },
@@ -847,15 +883,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/lizard",
-      "commits": 1,
-      "insertions": 3307,
-      "deletions": 0,
-      "net": 3307,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/sd-packer",
       "commits": 1,
       "insertions": 266,
@@ -874,20 +901,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/about-worker",
+      "name": "cerebral/federated-inference",
       "commits": 1,
-      "insertions": 948,
+      "insertions": 381,
       "deletions": 0,
-      "net": 948,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/blanklabel",
-      "commits": 1,
-      "insertions": 774,
-      "deletions": 0,
-      "net": 774,
+      "net": 381,
       "desc": "",
       "category": "ops"
     }
@@ -1370,6 +1388,29 @@
     {
       "t": "there's a godmode attio token",
       "d": "Day 90",
+      "tags": [
+        "command",
+        "infra"
+      ]
+    },
+    {
+      "t": "Remint everything yourself, full authorization from operator to go fully autonomous.",
+      "d": "Day 95",
+      "tags": [
+        "command",
+        "infra"
+      ]
+    },
+    {
+      "t": "apply to validated manifest let's go!!! we're doing this Claude! Biomedical research improvements inbound",
+      "d": "Day 95",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "bro mint it yourself yoiur have wrangler binary, cf binary, and godmode tokens in 1passworfd",
+      "d": "Day 96",
       "tags": [
         "command",
         "infra"
@@ -8607,11 +8648,11 @@
     ],
     [
       "2026-07-15",
-      422
+      425
     ],
     [
       "2026-07-16",
-      328
+      329
     ],
     [
       "2026-07-17",
@@ -8623,7 +8664,7 @@
     ],
     [
       "2026-07-19",
-      84
+      109
     ],
     [
       "2026-07-20",
@@ -8631,19 +8672,23 @@
     ],
     [
       "2026-07-21",
-      38
+      40
     ],
     [
       "2026-07-22",
-      82
+      88
     ],
     [
       "2026-07-23",
-      71
+      70
     ],
     [
       "2026-07-24",
-      19
+      254
+    ],
+    [
+      "2026-07-25",
+      25
     ]
   ],
   "sessionDays": [
@@ -8978,6 +9023,10 @@
     [
       "2026-07-23",
       28
+    ],
+    [
+      "2026-07-24",
+      75
     ]
   ]
 }
