@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1357,
-      "insertions": 298154,
-      "deletions": 52933,
-      "net": 245221,
+      "commits": 1374,
+      "insertions": 297997,
+      "deletions": 53440,
+      "net": 244557,
       "desc": "",
       "category": "platform"
     },
@@ -83,10 +83,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 317,
-      "insertions": 181932,
-      "deletions": 37390,
-      "net": 144542,
+      "commits": 321,
+      "insertions": 183052,
+      "deletions": 37391,
+      "net": 145661,
       "desc": "",
       "category": "ops"
     },
@@ -137,12 +137,21 @@
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 131,
-      "insertions": 25933,
-      "deletions": 2152,
-      "net": 23781,
+      "commits": 141,
+      "insertions": 28355,
+      "deletions": 2344,
+      "net": 26011,
       "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
       "category": "agent"
+    },
+    {
+      "name": "cerebral/os",
+      "commits": 106,
+      "insertions": 40510,
+      "deletions": 4989,
+      "net": 35521,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral-work/revenant-sec-p31",
@@ -181,6 +190,15 @@
       "category": "ops"
     },
     {
+      "name": "todie/agentic",
+      "commits": 69,
+      "insertions": 12951,
+      "deletions": 1767,
+      "net": 11184,
+      "desc": "Repository: todie/agentic",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-esp",
       "commits": 68,
       "insertions": 6938,
@@ -190,30 +208,12 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/os",
-      "commits": 67,
-      "insertions": 29512,
-      "deletions": 529,
-      "net": 28983,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/pact",
       "commits": 65,
       "insertions": 40871,
       "deletions": 10142,
       "net": 30729,
       "desc": "Pact — contract testing and agreement tracking.",
-      "category": "ops"
-    },
-    {
-      "name": "todie/agentic",
-      "commits": 63,
-      "insertions": 12433,
-      "deletions": 1715,
-      "net": 10718,
-      "desc": "Repository: todie/agentic",
       "category": "ops"
     },
     {
@@ -271,20 +271,20 @@
       "category": "infra"
     },
     {
+      "name": "cerebral/works",
+      "commits": 38,
+      "insertions": 16704,
+      "deletions": 4004,
+      "net": 12700,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/unsigned-control-panel",
       "commits": 37,
       "insertions": 11184,
       "deletions": 798,
       "net": 10386,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 37,
-      "insertions": 16411,
-      "deletions": 3760,
-      "net": 12651,
       "desc": "",
       "category": "ops"
     },
@@ -334,6 +334,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/escapement",
+      "commits": 27,
+      "insertions": 15898,
+      "deletions": 89,
+      "net": 15809,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/dc",
       "commits": 27,
       "insertions": 6941,
@@ -357,15 +366,6 @@
       "insertions": 3071,
       "deletions": 344,
       "net": 2727,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/escapement",
-      "commits": 25,
-      "insertions": 15883,
-      "deletions": 86,
-      "net": 15797,
       "desc": "",
       "category": "ops"
     },
@@ -394,6 +394,15 @@
       "deletions": 696,
       "net": 3033,
       "desc": "nahbro.dev — personal domain and experiments.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/waker",
+      "commits": 20,
+      "insertions": 2182,
+      "deletions": 76,
+      "net": 2106,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -431,6 +440,15 @@
       "net": 4390,
       "desc": "beepboopd — a small daemon experiment.",
       "category": "vendor"
+    },
+    {
+      "name": "unsigned/metal-foundry",
+      "commits": 18,
+      "insertions": 683,
+      "deletions": 15,
+      "net": 668,
+      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
+      "category": "ops"
     },
     {
       "name": "templates/terraform",
@@ -475,15 +493,6 @@
       "deletions": 1028,
       "net": 11391,
       "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/waker",
-      "commits": 15,
-      "insertions": 1570,
-      "deletions": 38,
-      "net": 1532,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -628,15 +637,6 @@
       "deletions": 1336,
       "net": 741,
       "desc": "honeypot.vip — security research domain.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/metal-foundry",
-      "commits": 6,
-      "insertions": 342,
-      "deletions": 2,
-      "net": 340,
-      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
       "category": "ops"
     },
     {
@@ -8644,7 +8644,7 @@
     ],
     [
       "2026-07-14",
-      471
+      472
     ],
     [
       "2026-07-15",
@@ -8660,7 +8660,7 @@
     ],
     [
       "2026-07-18",
-      260
+      259
     ],
     [
       "2026-07-19",
@@ -8676,11 +8676,11 @@
     ],
     [
       "2026-07-22",
-      88
+      86
     ],
     [
       "2026-07-23",
-      70
+      65
     ],
     [
       "2026-07-24",
@@ -8688,7 +8688,11 @@
     ],
     [
       "2026-07-25",
-      25
+      112
+    ],
+    [
+      "2026-07-26",
+      16
     ]
   ],
   "sessionDays": [
@@ -9027,6 +9031,10 @@
     [
       "2026-07-24",
       75
+    ],
+    [
+      "2026-07-25",
+      13
     ]
   ]
 }
