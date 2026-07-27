@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1374,
-      "insertions": 297997,
-      "deletions": 53440,
-      "net": 244557,
+      "commits": 1378,
+      "insertions": 299337,
+      "deletions": 53623,
+      "net": 245714,
       "desc": "",
       "category": "platform"
     },
@@ -100,6 +100,24 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/site",
+      "commits": 223,
+      "insertions": 36919,
+      "deletions": 12258,
+      "net": 24661,
+      "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
+      "category": "design"
+    },
+    {
+      "name": "unsigned/gg",
+      "commits": 209,
+      "insertions": 49953,
+      "deletions": 8845,
+      "net": 41108,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
+    },
+    {
       "name": "cerebral/lizard",
       "commits": 192,
       "insertions": 114179,
@@ -118,20 +136,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/site",
-      "commits": 170,
-      "insertions": 25618,
-      "deletions": 11054,
-      "net": 14564,
-      "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
-      "category": "design"
-    },
-    {
       "name": "unsigned/blackwall",
-      "commits": 163,
-      "insertions": 60422,
-      "deletions": 6404,
-      "net": 54018,
+      "commits": 171,
+      "insertions": 62896,
+      "deletions": 6616,
+      "net": 56280,
       "desc": "",
       "category": "ops"
     },
@@ -146,10 +155,10 @@
     },
     {
       "name": "cerebral/os",
-      "commits": 106,
-      "insertions": 40510,
-      "deletions": 4989,
-      "net": 35521,
+      "commits": 120,
+      "insertions": 42734,
+      "deletions": 5206,
+      "net": 37528,
       "desc": "",
       "category": "ops"
     },
@@ -170,15 +179,6 @@
       "net": 10159,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/gg",
-      "commits": 85,
-      "insertions": 12665,
-      "deletions": 1432,
-      "net": 11233,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
     },
     {
       "name": "todie/explainers",
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 38,
-      "insertions": 16704,
-      "deletions": 4004,
-      "net": 12700,
+      "commits": 39,
+      "insertions": 16786,
+      "deletions": 4078,
+      "net": 12708,
       "desc": "",
       "category": "ops"
     },
@@ -366,6 +366,15 @@
       "insertions": 3071,
       "deletions": 344,
       "net": 2727,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "er-terminal",
+      "commits": 25,
+      "insertions": 8814,
+      "deletions": 408,
+      "net": 8406,
       "desc": "",
       "category": "ops"
     },
@@ -640,6 +649,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/about-worker",
+      "commits": 6,
+      "insertions": 1035,
+      "deletions": 44,
+      "net": 991,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/claude-session-manager",
       "commits": 5,
       "insertions": 1926,
@@ -808,15 +826,6 @@
       "deletions": 90,
       "net": 3751,
       "desc": "Early daemon prototype. superseded by reverie.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/about-worker",
-      "commits": 2,
-      "insertions": 949,
-      "deletions": 0,
-      "net": 949,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -8188,7 +8197,7 @@
     ],
     [
       "2026-03-22",
-      108
+      109
     ],
     [
       "2026-03-23",
@@ -8472,7 +8481,7 @@
     ],
     [
       "2026-06-01",
-      150
+      151
     ],
     [
       "2026-06-02",
@@ -8480,7 +8489,7 @@
     ],
     [
       "2026-06-03",
-      218
+      223
     ],
     [
       "2026-06-04",
@@ -8500,11 +8509,11 @@
     ],
     [
       "2026-06-08",
-      338
+      342
     ],
     [
       "2026-06-09",
-      237
+      238
     ],
     [
       "2026-06-10",
@@ -8560,7 +8569,7 @@
     ],
     [
       "2026-06-23",
-      222
+      228
     ],
     [
       "2026-06-24",
@@ -8592,107 +8601,111 @@
     ],
     [
       "2026-07-01",
-      331
+      335
     ],
     [
       "2026-07-02",
-      371
+      372
     ],
     [
       "2026-07-03",
-      225
+      231
     ],
     [
       "2026-07-04",
-      285
+      290
     ],
     [
       "2026-07-05",
-      306
+      307
     ],
     [
       "2026-07-06",
-      325
+      340
     ],
     [
       "2026-07-07",
-      164
+      166
     ],
     [
       "2026-07-08",
-      266
+      278
     ],
     [
       "2026-07-09",
-      308
+      323
     ],
     [
       "2026-07-10",
-      197
+      203
     ],
     [
       "2026-07-11",
-      453
+      456
     ],
     [
       "2026-07-12",
-      122
+      125
     ],
     [
       "2026-07-13",
-      351
+      358
     ],
     [
       "2026-07-14",
-      472
+      475
     ],
     [
       "2026-07-15",
-      425
+      435
     ],
     [
       "2026-07-16",
-      329
+      349
     ],
     [
       "2026-07-17",
-      297
+      305
     ],
     [
       "2026-07-18",
-      259
+      263
     ],
     [
       "2026-07-19",
-      109
+      111
     ],
     [
       "2026-07-20",
-      13
+      8
     ],
     [
       "2026-07-21",
-      40
+      43
     ],
     [
       "2026-07-22",
-      86
+      87
     ],
     [
       "2026-07-23",
-      65
+      66
     ],
     [
       "2026-07-24",
-      254
+      259
     ],
     [
       "2026-07-25",
-      112
+      115
     ],
     [
       "2026-07-26",
-      16
+      87
+    ],
+    [
+      "2026-07-27",
+      9
     ]
   ],
   "sessionDays": [
@@ -9034,6 +9047,10 @@
     ],
     [
       "2026-07-25",
+      13
+    ],
+    [
+      "2026-07-26",
       13
     ]
   ]
