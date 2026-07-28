@@ -2,10 +2,10 @@
   "repos": [
     {
       "name": "cerebral/dreamcode",
-      "commits": 37531,
-      "insertions": 4957729,
-      "deletions": 3331267,
-      "net": 1626462,
+      "commits": 37532,
+      "insertions": 4957740,
+      "deletions": 3331268,
+      "net": 1626472,
       "desc": "The living-terminal theme bundle. 37,529 commits — design snapshots auto-generated from the brand canon pipeline.",
       "category": "design"
     },
@@ -29,19 +29,19 @@
     },
     {
       "name": "cerebral/reverie",
-      "commits": 1405,
-      "insertions": 429786,
-      "deletions": 79038,
-      "net": 350748,
+      "commits": 1407,
+      "insertions": 430325,
+      "deletions": 79065,
+      "net": 351260,
       "desc": "",
       "category": "agent"
     },
     {
       "name": "unsigned/paas",
-      "commits": 1378,
-      "insertions": 299337,
-      "deletions": 53623,
-      "net": 245714,
+      "commits": 1399,
+      "insertions": 299979,
+      "deletions": 53804,
+      "net": 246175,
       "desc": "",
       "category": "platform"
     },
@@ -56,10 +56,10 @@
     },
     {
       "name": "cerebral/biomni",
-      "commits": 488,
-      "insertions": 123012,
+      "commits": 489,
+      "insertions": 123057,
       "deletions": 49032,
-      "net": 73980,
+      "net": 74025,
       "desc": "",
       "category": "ops"
     },
@@ -83,10 +83,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 321,
-      "insertions": 183052,
+      "commits": 323,
+      "insertions": 184245,
       "deletions": 37391,
-      "net": 145661,
+      "net": 146854,
       "desc": "",
       "category": "ops"
     },
@@ -110,10 +110,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 209,
-      "insertions": 49953,
-      "deletions": 8845,
-      "net": 41108,
+      "commits": 212,
+      "insertions": 50227,
+      "deletions": 9046,
+      "net": 41181,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -128,10 +128,10 @@
     },
     {
       "name": "todie/dotfiles",
-      "commits": 181,
-      "insertions": 41520,
-      "deletions": 10465,
-      "net": 31055,
+      "commits": 189,
+      "insertions": 41923,
+      "deletions": 10781,
+      "net": 31142,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
@@ -146,28 +146,28 @@
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 141,
-      "insertions": 28355,
+      "commits": 142,
+      "insertions": 28408,
       "deletions": 2344,
-      "net": 26011,
+      "net": 26064,
       "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
       "category": "agent"
     },
     {
       "name": "cerebral/os",
-      "commits": 120,
-      "insertions": 42734,
-      "deletions": 5206,
-      "net": 37528,
+      "commits": 129,
+      "insertions": 44743,
+      "deletions": 9049,
+      "net": 35694,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral-work/revenant-sec-p31",
-      "commits": 99,
-      "insertions": 27305,
-      "deletions": 7099,
-      "net": 20206,
+      "commits": 118,
+      "insertions": 30655,
+      "deletions": 7378,
+      "net": 23277,
       "desc": "",
       "category": "ops"
     },
@@ -191,10 +191,10 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 69,
-      "insertions": 12951,
+      "commits": 70,
+      "insertions": 13074,
       "deletions": 1767,
-      "net": 11184,
+      "net": 11307,
       "desc": "Repository: todie/agentic",
       "category": "ops"
     },
@@ -208,6 +208,15 @@
       "category": "vendor"
     },
     {
+      "name": "cerebral/tailnet",
+      "commits": 67,
+      "insertions": 1757,
+      "deletions": 310,
+      "net": 1447,
+      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
+      "category": "infra"
+    },
+    {
       "name": "todie/pact",
       "commits": 65,
       "insertions": 40871,
@@ -217,29 +226,29 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/tailnet",
-      "commits": 60,
-      "insertions": 1503,
-      "deletions": 291,
-      "net": 1212,
-      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
-      "category": "infra"
-    },
-    {
       "name": "cerebral/cerebral-design",
-      "commits": 59,
-      "insertions": 20401,
+      "commits": 60,
+      "insertions": 20462,
       "deletions": 1416,
-      "net": 18985,
+      "net": 19046,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
     },
     {
+      "name": "unsigned/action-runners",
+      "commits": 51,
+      "insertions": 7877,
+      "deletions": 504,
+      "net": 7373,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
+    },
+    {
       "name": "cerebral/voicenotes",
-      "commits": 49,
-      "insertions": 5816,
-      "deletions": 268,
-      "net": 5548,
+      "commits": 50,
+      "insertions": 11949,
+      "deletions": 269,
+      "net": 11680,
       "desc": "Voice notes PWA. Audio recording and transcription on Cloudflare.",
       "category": "ops"
     },
@@ -262,29 +271,20 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/action-runners",
-      "commits": 40,
-      "insertions": 7274,
-      "deletions": 449,
-      "net": 6825,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
-    },
-    {
       "name": "cerebral/works",
-      "commits": 39,
-      "insertions": 16786,
-      "deletions": 4078,
-      "net": 12708,
+      "commits": 41,
+      "insertions": 16958,
+      "deletions": 4156,
+      "net": 12802,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/unsigned-control-panel",
-      "commits": 37,
-      "insertions": 11184,
-      "deletions": 798,
-      "net": 10386,
+      "commits": 38,
+      "insertions": 11628,
+      "deletions": 815,
+      "net": 10813,
       "desc": "",
       "category": "ops"
     },
@@ -298,20 +298,29 @@
       "category": "ops"
     },
     {
+      "name": "er-terminal",
+      "commits": 35,
+      "insertions": 9929,
+      "deletions": 540,
+      "net": 9389,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "_archive/todie-daemon-rs",
-      "commits": 31,
-      "insertions": 14590,
+      "commits": 32,
+      "insertions": 14665,
       "deletions": 633,
-      "net": 13957,
+      "net": 14032,
       "desc": "Archived Rust daemon. Predecessor to current tooling.",
       "category": "archive"
     },
     {
       "name": "unsigned/unsigned-onboard",
-      "commits": 31,
-      "insertions": 13943,
+      "commits": 32,
+      "insertions": 13944,
       "deletions": 4186,
-      "net": 9757,
+      "net": 9758,
       "desc": "",
       "category": "ops"
     },
@@ -352,6 +361,15 @@
       "category": "infra"
     },
     {
+      "name": "cerebral/meridian",
+      "commits": 27,
+      "insertions": 6272,
+      "deletions": 468,
+      "net": 5804,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/lizard",
       "commits": 26,
       "insertions": 4900,
@@ -370,21 +388,21 @@
       "category": "ops"
     },
     {
-      "name": "er-terminal",
-      "commits": 25,
-      "insertions": 8814,
-      "deletions": 408,
-      "net": 8406,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/reach",
       "commits": 24,
       "insertions": 10869,
       "deletions": 1099,
       "net": 9770,
       "desc": "Reach — outreach and connection management.",
+      "category": "ops"
+    },
+    {
+      "name": "todie/nahbro.dev",
+      "commits": 21,
+      "insertions": 3761,
+      "deletions": 696,
+      "net": 3065,
+      "desc": "nahbro.dev — personal domain and experiments.",
       "category": "ops"
     },
     {
@@ -395,15 +413,6 @@
       "net": 53187,
       "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
       "category": "identity"
-    },
-    {
-      "name": "todie/nahbro.dev",
-      "commits": 20,
-      "insertions": 3729,
-      "deletions": 696,
-      "net": 3033,
-      "desc": "nahbro.dev — personal domain and experiments.",
-      "category": "ops"
     },
     {
       "name": "unsigned/waker",
@@ -433,6 +442,15 @@
       "category": "templates"
     },
     {
+      "name": "unsigned/metal-foundry",
+      "commits": 19,
+      "insertions": 684,
+      "deletions": 15,
+      "net": 669,
+      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
+      "category": "ops"
+    },
+    {
       "name": "templates/rust",
       "commits": 18,
       "insertions": 750,
@@ -451,15 +469,6 @@
       "category": "vendor"
     },
     {
-      "name": "unsigned/metal-foundry",
-      "commits": 18,
-      "insertions": 683,
-      "deletions": 15,
-      "net": 668,
-      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
-      "category": "ops"
-    },
-    {
       "name": "templates/terraform",
       "commits": 17,
       "insertions": 1207,
@@ -474,15 +483,6 @@
       "insertions": 5251,
       "deletions": 237,
       "net": 5014,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/meridian",
-      "commits": 17,
-      "insertions": 3562,
-      "deletions": 343,
-      "net": 3219,
       "desc": "",
       "category": "ops"
     },
@@ -514,6 +514,24 @@
       "category": "infra"
     },
     {
+      "name": "cerebral/ml-images",
+      "commits": 15,
+      "insertions": 1093,
+      "deletions": 227,
+      "net": 866,
+      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
+      "category": "infra"
+    },
+    {
+      "name": "todie/todie-assistant",
+      "commits": 14,
+      "insertions": 8473,
+      "deletions": 798,
+      "net": 7675,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/todie.io",
       "commits": 14,
       "insertions": 4117,
@@ -532,13 +550,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/ml-images",
+      "name": "unsigned/agent-jury",
       "commits": 14,
-      "insertions": 1092,
-      "deletions": 227,
-      "net": 865,
-      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
-      "category": "infra"
+      "insertions": 8604,
+      "deletions": 295,
+      "net": 8309,
+      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
+      "category": "agent"
     },
     {
       "name": "todie/ghost-blog",
@@ -550,21 +568,21 @@
       "category": "ops"
     },
     {
-      "name": "todie/todie-assistant",
-      "commits": 13,
-      "insertions": 8176,
-      "deletions": 658,
-      "net": 7518,
-      "desc": "",
-      "category": "ops"
+      "name": "cerebral/files-portal",
+      "commits": 12,
+      "insertions": 10949,
+      "deletions": 1883,
+      "net": 9066,
+      "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
+      "category": "platform"
     },
     {
-      "name": "unsigned/agent-jury",
-      "commits": 13,
-      "insertions": 8353,
-      "deletions": 295,
-      "net": 8058,
-      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
+      "name": "cerebral/cortex",
+      "commits": 12,
+      "insertions": 6539,
+      "deletions": 199,
+      "net": 6340,
+      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
       "category": "agent"
     },
     {
@@ -577,15 +595,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/files-portal",
-      "commits": 11,
-      "insertions": 10821,
-      "deletions": 1879,
-      "net": 8942,
-      "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
-      "category": "platform"
-    },
-    {
       "name": "cerebral/reverie-slack-app",
       "commits": 11,
       "insertions": 3155,
@@ -595,20 +604,11 @@
       "category": "agent"
     },
     {
-      "name": "cerebral/cortex",
-      "commits": 11,
-      "insertions": 3385,
-      "deletions": 194,
-      "net": 3191,
-      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
-      "category": "agent"
-    },
-    {
       "name": "vendor/claude-relay",
-      "commits": 9,
-      "insertions": 4972,
+      "commits": 10,
+      "insertions": 5014,
       "deletions": 112,
-      "net": 4860,
+      "net": 4902,
       "desc": "Claude relay — request proxying and routing for Claude API.",
       "category": "ops"
     },
@@ -619,6 +619,15 @@
       "deletions": 115,
       "net": 2498,
       "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "todie/honeypot.vip",
+      "commits": 7,
+      "insertions": 2097,
+      "deletions": 1336,
+      "net": 761,
+      "desc": "honeypot.vip — security research domain.",
       "category": "ops"
     },
     {
@@ -637,15 +646,6 @@
       "deletions": 637,
       "net": 17738,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "todie/honeypot.vip",
-      "commits": 6,
-      "insertions": 2077,
-      "deletions": 1336,
-      "net": 741,
-      "desc": "honeypot.vip — security research domain.",
       "category": "ops"
     },
     {
@@ -676,6 +676,24 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/dr",
+      "commits": 5,
+      "insertions": 5906,
+      "deletions": 148,
+      "net": 5758,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/incubate-gamiapp",
+      "commits": 5,
+      "insertions": 297,
+      "deletions": 7,
+      "net": 290,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/crm",
       "commits": 5,
       "insertions": 997,
@@ -691,15 +709,6 @@
       "deletions": 1,
       "net": 383,
       "desc": "URI snapshot tool. Capture and compare web resources.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/dr",
-      "commits": 4,
-      "insertions": 5905,
-      "deletions": 148,
-      "net": 5757,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -719,15 +728,6 @@
       "net": 692,
       "desc": "Reverie demonstration and example projects.",
       "category": "design"
-    },
-    {
-      "name": "cerebral/incubate-gamiapp",
-      "commits": 4,
-      "insertions": 248,
-      "deletions": 7,
-      "net": 241,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "todie/vibe-explainer",
@@ -811,12 +811,30 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/artifacts",
+      "commits": 3,
+      "insertions": 132629,
+      "deletions": 238,
+      "net": 132391,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "augh",
       "commits": 2,
       "insertions": 1925,
       "deletions": 157,
       "net": 1768,
       "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "todie/claude-code",
+      "commits": 2,
+      "insertions": 513631,
+      "deletions": 2,
+      "net": 513629,
+      "desc": "Claude Code configuration and custom rules.",
       "category": "ops"
     },
     {
@@ -829,20 +847,20 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/sd-packer",
+      "commits": 2,
+      "insertions": 164065,
+      "deletions": 0,
+      "net": 164065,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/blanklabel",
       "commits": 2,
       "insertions": 775,
       "deletions": 0,
       "net": 775,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/artifacts",
-      "commits": 2,
-      "insertions": 131165,
-      "deletions": 6,
-      "net": 131159,
       "desc": "",
       "category": "ops"
     },
@@ -856,21 +874,21 @@
       "category": "ops"
     },
     {
+      "name": "todie/memd",
+      "commits": 1,
+      "insertions": 1900,
+      "deletions": 0,
+      "net": 1900,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/attention-router",
       "commits": 1,
       "insertions": 215,
       "deletions": 0,
       "net": 215,
       "desc": "Attention router — focus management experiments.",
-      "category": "ops"
-    },
-    {
-      "name": "todie/claude-code",
-      "commits": 1,
-      "insertions": 513517,
-      "deletions": 0,
-      "net": 513517,
-      "desc": "Claude Code configuration and custom rules.",
       "category": "ops"
     },
     {
@@ -892,15 +910,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/sd-packer",
-      "commits": 1,
-      "insertions": 266,
-      "deletions": 0,
-      "net": 266,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "noelane-portal",
       "commits": 1,
       "insertions": 1566,
@@ -908,6 +917,15 @@
       "net": 1566,
       "desc": "",
       "category": "ops"
+    },
+    {
+      "name": "cerebral/many-realms",
+      "commits": 1,
+      "insertions": 1751,
+      "deletions": 0,
+      "net": 1751,
+      "desc": "",
+      "category": "infra"
     },
     {
       "name": "cerebral/federated-inference",
@@ -8657,7 +8675,7 @@
     ],
     [
       "2026-07-15",
-      435
+      438
     ],
     [
       "2026-07-16",
@@ -8693,7 +8711,7 @@
     ],
     [
       "2026-07-24",
-      259
+      260
     ],
     [
       "2026-07-25",
@@ -8701,11 +8719,15 @@
     ],
     [
       "2026-07-26",
-      87
+      86
     ],
     [
       "2026-07-27",
-      9
+      63
+    ],
+    [
+      "2026-07-28",
+      72
     ]
   ],
   "sessionDays": [
@@ -9052,6 +9074,14 @@
     [
       "2026-07-26",
       13
+    ],
+    [
+      "2026-07-27",
+      11
+    ],
+    [
+      "2026-07-28",
+      7
     ]
   ]
 }
