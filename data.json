@@ -29,19 +29,19 @@
     },
     {
       "name": "cerebral/reverie",
-      "commits": 1407,
-      "insertions": 430325,
-      "deletions": 79065,
-      "net": 351260,
+      "commits": 1421,
+      "insertions": 431532,
+      "deletions": 79860,
+      "net": 351672,
       "desc": "",
       "category": "agent"
     },
     {
       "name": "unsigned/paas",
-      "commits": 1399,
-      "insertions": 299979,
-      "deletions": 53804,
-      "net": 246175,
+      "commits": 1413,
+      "insertions": 300962,
+      "deletions": 53828,
+      "net": 247134,
       "desc": "",
       "category": "platform"
     },
@@ -91,6 +91,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/site",
+      "commits": 237,
+      "insertions": 37667,
+      "deletions": 12271,
+      "net": 25396,
+      "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
+      "category": "design"
+    },
+    {
       "name": "todie/heretic",
       "commits": 235,
       "insertions": 19651,
@@ -100,20 +109,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/site",
-      "commits": 223,
-      "insertions": 36919,
-      "deletions": 12258,
-      "net": 24661,
-      "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
-      "category": "design"
-    },
-    {
       "name": "unsigned/gg",
-      "commits": 212,
-      "insertions": 50227,
-      "deletions": 9046,
-      "net": 41181,
+      "commits": 220,
+      "insertions": 54397,
+      "deletions": 9152,
+      "net": 45245,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -137,37 +137,46 @@
     },
     {
       "name": "unsigned/blackwall",
-      "commits": 171,
-      "insertions": 62896,
-      "deletions": 6616,
-      "net": 56280,
+      "commits": 180,
+      "insertions": 63979,
+      "deletions": 6673,
+      "net": 57306,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 142,
-      "insertions": 28408,
-      "deletions": 2344,
-      "net": 26064,
+      "commits": 176,
+      "insertions": 39593,
+      "deletions": 2547,
+      "net": 37046,
       "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
       "category": "agent"
     },
     {
-      "name": "cerebral/os",
-      "commits": 129,
-      "insertions": 44743,
-      "deletions": 9049,
-      "net": 35694,
+      "name": "unsigned/soma-os",
+      "commits": 149,
+      "insertions": 50298,
+      "deletions": 9089,
+      "net": 41209,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "cerebral-work/revenant-sec-p31",
+      "name": "cerebral/revenant",
       "commits": 118,
       "insertions": 30655,
       "deletions": 7378,
       "net": 23277,
+      "desc": "",
+      "category": "infra"
+    },
+    {
+      "name": "revenant",
+      "commits": 104,
+      "insertions": 52772,
+      "deletions": 8163,
+      "net": 44609,
       "desc": "",
       "category": "ops"
     },
@@ -191,10 +200,10 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 70,
-      "insertions": 13074,
-      "deletions": 1767,
-      "net": 11307,
+      "commits": 80,
+      "insertions": 20123,
+      "deletions": 1802,
+      "net": 18321,
       "desc": "Repository: todie/agentic",
       "category": "ops"
     },
@@ -253,15 +262,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/os",
-      "commits": 44,
-      "insertions": 21762,
-      "deletions": 238,
-      "net": 21524,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/mcp-honeypot",
       "commits": 42,
       "insertions": 17582,
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 41,
-      "insertions": 16958,
-      "deletions": 4156,
-      "net": 12802,
+      "commits": 42,
+      "insertions": 17199,
+      "deletions": 4367,
+      "net": 12832,
       "desc": "",
       "category": "ops"
     },
@@ -303,6 +303,15 @@
       "insertions": 9929,
       "deletions": 540,
       "net": 9389,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/escapement",
+      "commits": 33,
+      "insertions": 16448,
+      "deletions": 96,
+      "net": 16352,
       "desc": "",
       "category": "ops"
     },
@@ -339,15 +348,6 @@
       "insertions": 15270,
       "deletions": 1376,
       "net": 13894,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/escapement",
-      "commits": 27,
-      "insertions": 15898,
-      "deletions": 89,
-      "net": 15809,
       "desc": "",
       "category": "ops"
     },
@@ -424,6 +424,15 @@
       "category": "ops"
     },
     {
+      "name": "github-app",
+      "commits": 20,
+      "insertions": 13161,
+      "deletions": 331,
+      "net": 12830,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "mission-control",
       "commits": 20,
       "insertions": 3158,
@@ -478,7 +487,7 @@
       "category": "templates"
     },
     {
-      "name": "cerebral-work/reverie-slack",
+      "name": "cerebral/reverie-slack",
       "commits": 17,
       "insertions": 5251,
       "deletions": 237,
@@ -613,7 +622,7 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/gh-token-mint",
+      "name": "cerebral/gh-token-mint",
       "commits": 9,
       "insertions": 2613,
       "deletions": 115,
@@ -739,24 +748,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/dealroom",
-      "commits": 3,
-      "insertions": 10012,
-      "deletions": 595,
-      "net": 9417,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral-work/cf-pwa-template",
-      "commits": 3,
-      "insertions": 928,
-      "deletions": 56,
-      "net": 872,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "vesperan",
       "commits": 3,
       "insertions": 41527,
@@ -793,6 +784,24 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/gami-vst",
+      "commits": 3,
+      "insertions": 1325,
+      "deletions": 34,
+      "net": 1291,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/dealroom",
+      "commits": 3,
+      "insertions": 10012,
+      "deletions": 595,
+      "net": 9417,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/enterprise-genie",
       "commits": 3,
       "insertions": 537,
@@ -816,6 +825,15 @@
       "insertions": 132629,
       "deletions": 238,
       "net": 132391,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/cf-pwa-template",
+      "commits": 3,
+      "insertions": 928,
+      "deletions": 56,
+      "net": 872,
       "desc": "",
       "category": "ops"
     },
@@ -852,6 +870,15 @@
       "insertions": 164065,
       "deletions": 0,
       "net": 164065,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/vst-template",
+      "commits": 2,
+      "insertions": 716,
+      "deletions": 0,
+      "net": 716,
       "desc": "",
       "category": "ops"
     },
@@ -8255,11 +8282,11 @@
     ],
     [
       "2026-04-01",
-      189
+      194
     ],
     [
       "2026-04-02",
-      120
+      130
     ],
     [
       "2026-04-03",
@@ -8267,7 +8294,7 @@
     ],
     [
       "2026-04-04",
-      80
+      81
     ],
     [
       "2026-04-05",
@@ -8279,7 +8306,7 @@
     ],
     [
       "2026-04-07",
-      266
+      272
     ],
     [
       "2026-04-08",
@@ -8503,11 +8530,11 @@
     ],
     [
       "2026-06-02",
-      234
+      239
     ],
     [
       "2026-06-03",
-      223
+      252
     ],
     [
       "2026-06-04",
@@ -8519,11 +8546,11 @@
     ],
     [
       "2026-06-06",
-      238
+      246
     ],
     [
       "2026-06-07",
-      207
+      215
     ],
     [
       "2026-06-08",
@@ -8643,15 +8670,15 @@
     ],
     [
       "2026-07-07",
-      166
+      167
     ],
     [
       "2026-07-08",
-      278
+      284
     ],
     [
       "2026-07-09",
-      323
+      324
     ],
     [
       "2026-07-10",
@@ -8659,7 +8686,7 @@
     ],
     [
       "2026-07-11",
-      456
+      464
     ],
     [
       "2026-07-12",
@@ -8667,15 +8694,15 @@
     ],
     [
       "2026-07-13",
-      358
+      360
     ],
     [
       "2026-07-14",
-      475
+      476
     ],
     [
       "2026-07-15",
-      438
+      440
     ],
     [
       "2026-07-16",
@@ -8683,15 +8710,15 @@
     ],
     [
       "2026-07-17",
-      305
+      306
     ],
     [
       "2026-07-18",
-      263
+      252
     ],
     [
       "2026-07-19",
-      111
+      84
     ],
     [
       "2026-07-20",
@@ -8711,23 +8738,27 @@
     ],
     [
       "2026-07-24",
-      260
+      262
     ],
     [
       "2026-07-25",
-      115
+      116
     ],
     [
       "2026-07-26",
-      86
+      92
     ],
     [
       "2026-07-27",
-      63
+      81
     ],
     [
       "2026-07-28",
-      72
+      202
+    ],
+    [
+      "2026-07-29",
+      2
     ]
   ],
   "sessionDays": [
