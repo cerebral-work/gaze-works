@@ -28,22 +28,22 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/reverie",
-      "commits": 1421,
-      "insertions": 431532,
-      "deletions": 79860,
-      "net": 351672,
-      "desc": "",
-      "category": "agent"
-    },
-    {
       "name": "unsigned/paas",
-      "commits": 1413,
-      "insertions": 300962,
-      "deletions": 53828,
-      "net": 247134,
+      "commits": 1432,
+      "insertions": 304170,
+      "deletions": 53984,
+      "net": 250186,
       "desc": "",
       "category": "platform"
+    },
+    {
+      "name": "cerebral/reverie",
+      "commits": 1423,
+      "insertions": 431568,
+      "deletions": 79861,
+      "net": 351707,
+      "desc": "",
+      "category": "agent"
     },
     {
       "name": "vendor/rtk",
@@ -100,6 +100,15 @@
       "category": "design"
     },
     {
+      "name": "unsigned/gg",
+      "commits": 236,
+      "insertions": 56854,
+      "deletions": 9253,
+      "net": 47601,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
+    },
+    {
       "name": "todie/heretic",
       "commits": 235,
       "insertions": 19651,
@@ -107,15 +116,6 @@
       "net": 13398,
       "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/gg",
-      "commits": 220,
-      "insertions": 54397,
-      "deletions": 9152,
-      "net": 45245,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
     },
     {
       "name": "cerebral/lizard",
@@ -137,28 +137,28 @@
     },
     {
       "name": "unsigned/blackwall",
-      "commits": 180,
-      "insertions": 63979,
-      "deletions": 6673,
-      "net": 57306,
+      "commits": 183,
+      "insertions": 64151,
+      "deletions": 6675,
+      "net": 57476,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 176,
-      "insertions": 39593,
-      "deletions": 2547,
-      "net": 37046,
+      "commits": 178,
+      "insertions": 44044,
+      "deletions": 4705,
+      "net": 39339,
       "desc": "Linear CLI tool. File, update, and manage Linear tickets from the terminal.",
       "category": "agent"
     },
     {
       "name": "unsigned/soma-os",
-      "commits": 149,
-      "insertions": 50298,
-      "deletions": 9089,
-      "net": 41209,
+      "commits": 168,
+      "insertions": 99594,
+      "deletions": 9258,
+      "net": 90336,
       "desc": "",
       "category": "ops"
     },
@@ -173,10 +173,10 @@
     },
     {
       "name": "revenant",
-      "commits": 104,
-      "insertions": 52772,
+      "commits": 105,
+      "insertions": 52819,
       "deletions": 8163,
-      "net": 44609,
+      "net": 44656,
       "desc": "",
       "category": "ops"
     },
@@ -190,21 +190,21 @@
       "category": "ops"
     },
     {
+      "name": "todie/agentic",
+      "commits": 88,
+      "insertions": 20875,
+      "deletions": 2038,
+      "net": 18837,
+      "desc": "Repository: todie/agentic",
+      "category": "ops"
+    },
+    {
       "name": "todie/explainers",
       "commits": 81,
       "insertions": 33260,
       "deletions": 4186,
       "net": 29074,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
-      "category": "ops"
-    },
-    {
-      "name": "todie/agentic",
-      "commits": 80,
-      "insertions": 20123,
-      "deletions": 1802,
-      "net": 18321,
-      "desc": "Repository: todie/agentic",
       "category": "ops"
     },
     {
@@ -262,21 +262,21 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 43,
+      "insertions": 17336,
+      "deletions": 4473,
+      "net": 12863,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/mcp-honeypot",
       "commits": 42,
       "insertions": 17582,
       "deletions": 729,
       "net": 16853,
       "desc": "MCP honeypot — security research and deception tooling.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 42,
-      "insertions": 17199,
-      "deletions": 4367,
-      "net": 12832,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -294,6 +294,15 @@
       "insertions": 22246,
       "deletions": 9271,
       "net": 12975,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/unsigned-onboard",
+      "commits": 35,
+      "insertions": 14936,
+      "deletions": 4204,
+      "net": 10732,
       "desc": "",
       "category": "ops"
     },
@@ -323,15 +332,6 @@
       "net": 14032,
       "desc": "Archived Rust daemon. Predecessor to current tooling.",
       "category": "archive"
-    },
-    {
-      "name": "unsigned/unsigned-onboard",
-      "commits": 32,
-      "insertions": 13944,
-      "deletions": 4186,
-      "net": 9758,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/openpanel",
@@ -577,6 +577,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex",
+      "commits": 13,
+      "insertions": 7385,
+      "deletions": 210,
+      "net": 7175,
+      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
+      "category": "agent"
+    },
+    {
       "name": "cerebral/files-portal",
       "commits": 12,
       "insertions": 10949,
@@ -584,15 +593,6 @@
       "net": 9066,
       "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
       "category": "platform"
-    },
-    {
-      "name": "cerebral/cortex",
-      "commits": 12,
-      "insertions": 6539,
-      "deletions": 199,
-      "net": 6340,
-      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
-      "category": "agent"
     },
     {
       "name": "templates/python",
@@ -8534,15 +8534,15 @@
     ],
     [
       "2026-06-03",
-      252
+      259
     ],
     [
       "2026-06-04",
-      231
+      243
     ],
     [
       "2026-06-05",
-      161
+      162
     ],
     [
       "2026-06-06",
@@ -8646,11 +8646,11 @@
     ],
     [
       "2026-07-01",
-      335
+      338
     ],
     [
       "2026-07-02",
-      372
+      373
     ],
     [
       "2026-07-03",
@@ -8666,7 +8666,7 @@
     ],
     [
       "2026-07-06",
-      340
+      341
     ],
     [
       "2026-07-07",
@@ -8678,7 +8678,7 @@
     ],
     [
       "2026-07-09",
-      324
+      331
     ],
     [
       "2026-07-10",
@@ -8686,7 +8686,7 @@
     ],
     [
       "2026-07-11",
-      464
+      487
     ],
     [
       "2026-07-12",
@@ -8694,7 +8694,7 @@
     ],
     [
       "2026-07-13",
-      360
+      359
     ],
     [
       "2026-07-14",
@@ -8702,11 +8702,11 @@
     ],
     [
       "2026-07-15",
-      440
+      441
     ],
     [
       "2026-07-16",
-      349
+      350
     ],
     [
       "2026-07-17",
@@ -8730,35 +8730,39 @@
     ],
     [
       "2026-07-22",
-      87
+      72
     ],
     [
       "2026-07-23",
-      66
+      62
     ],
     [
       "2026-07-24",
-      262
+      247
     ],
     [
       "2026-07-25",
-      116
+      110
     ],
     [
       "2026-07-26",
-      92
+      88
     ],
     [
       "2026-07-27",
-      81
+      77
     ],
     [
       "2026-07-28",
-      202
+      193
     ],
     [
       "2026-07-29",
-      2
+      57
+    ],
+    [
+      "2026-07-30",
+      21
     ]
   ],
   "sessionDays": [
@@ -9016,7 +9020,7 @@
     ],
     [
       "2026-07-02",
-      54
+      51
     ],
     [
       "2026-07-03",
@@ -9064,7 +9068,7 @@
     ],
     [
       "2026-07-14",
-      51
+      41
     ],
     [
       "2026-07-16",
@@ -9072,15 +9076,15 @@
     ],
     [
       "2026-07-17",
-      114
+      103
     ],
     [
       "2026-07-18",
-      106
+      66
     ],
     [
       "2026-07-19",
-      68
+      43
     ],
     [
       "2026-07-20",
@@ -9088,11 +9092,11 @@
     ],
     [
       "2026-07-21",
-      23
+      4
     ],
     [
       "2026-07-23",
-      28
+      21
     ],
     [
       "2026-07-24",
@@ -9104,7 +9108,7 @@
     ],
     [
       "2026-07-26",
-      13
+      6
     ],
     [
       "2026-07-27",
