@@ -29,19 +29,19 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1432,
-      "insertions": 304170,
-      "deletions": 53984,
-      "net": 250186,
+      "commits": 1440,
+      "insertions": 304324,
+      "deletions": 54030,
+      "net": 250294,
       "desc": "",
       "category": "platform"
     },
     {
       "name": "cerebral/reverie",
-      "commits": 1423,
-      "insertions": 431568,
-      "deletions": 79861,
-      "net": 351707,
+      "commits": 1427,
+      "insertions": 439594,
+      "deletions": 79996,
+      "net": 359598,
       "desc": "",
       "category": "agent"
     },
@@ -91,6 +91,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/gg",
+      "commits": 242,
+      "insertions": 59272,
+      "deletions": 9282,
+      "net": 49990,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
+    },
+    {
       "name": "cerebral/site",
       "commits": 237,
       "insertions": 37667,
@@ -100,15 +109,6 @@
       "category": "design"
     },
     {
-      "name": "unsigned/gg",
-      "commits": 236,
-      "insertions": 56854,
-      "deletions": 9253,
-      "net": 47601,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
-    },
-    {
       "name": "todie/heretic",
       "commits": 235,
       "insertions": 19651,
@@ -116,6 +116,15 @@
       "net": 13398,
       "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.",
       "category": "ops"
+    },
+    {
+      "name": "cerebral/revenant",
+      "commits": 203,
+      "insertions": 54775,
+      "deletions": 9386,
+      "net": 45389,
+      "desc": "",
+      "category": "infra"
     },
     {
       "name": "cerebral/lizard",
@@ -163,21 +172,21 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/revenant",
-      "commits": 118,
-      "insertions": 30655,
-      "deletions": 7378,
-      "net": 23277,
+      "name": "revenant",
+      "commits": 112,
+      "insertions": 53294,
+      "deletions": 8196,
+      "net": 45098,
       "desc": "",
-      "category": "infra"
+      "category": "ops"
     },
     {
-      "name": "revenant",
-      "commits": 105,
-      "insertions": 52819,
-      "deletions": 8163,
-      "net": 44656,
-      "desc": "",
+      "name": "todie/agentic",
+      "commits": 93,
+      "insertions": 20284,
+      "deletions": 4340,
+      "net": 15944,
+      "desc": "Repository: todie/agentic",
       "category": "ops"
     },
     {
@@ -187,15 +196,6 @@
       "deletions": 8319,
       "net": 10159,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "todie/agentic",
-      "commits": 88,
-      "insertions": 20875,
-      "deletions": 2038,
-      "net": 18837,
-      "desc": "Repository: todie/agentic",
       "category": "ops"
     },
     {
@@ -244,15 +244,6 @@
       "category": "design"
     },
     {
-      "name": "unsigned/action-runners",
-      "commits": 51,
-      "insertions": 7877,
-      "deletions": 504,
-      "net": 7373,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
-    },
-    {
       "name": "cerebral/voicenotes",
       "commits": 50,
       "insertions": 11949,
@@ -262,11 +253,20 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/action-runners",
+      "commits": 48,
+      "insertions": 7852,
+      "deletions": 552,
+      "net": 7300,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
+    },
+    {
       "name": "cerebral/works",
-      "commits": 43,
-      "insertions": 17336,
-      "deletions": 4473,
-      "net": 12863,
+      "commits": 44,
+      "insertions": 17442,
+      "deletions": 4575,
+      "net": 12867,
       "desc": "",
       "category": "ops"
     },
@@ -631,6 +631,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/revenue",
+      "commits": 8,
+      "insertions": 1057,
+      "deletions": 22,
+      "net": 1035,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/honeypot.vip",
       "commits": 7,
       "insertions": 2097,
@@ -960,6 +969,15 @@
       "insertions": 381,
       "deletions": 0,
       "net": 381,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/fugu-inference",
+      "commits": 1,
+      "insertions": 200,
+      "deletions": 0,
+      "net": 200,
       "desc": "",
       "category": "ops"
     }
@@ -8658,27 +8676,27 @@
     ],
     [
       "2026-07-04",
-      290
+      292
     ],
     [
       "2026-07-05",
-      307
+      309
     ],
     [
       "2026-07-06",
-      341
+      345
     ],
     [
       "2026-07-07",
-      167
+      172
     ],
     [
       "2026-07-08",
-      284
+      291
     ],
     [
       "2026-07-09",
-      331
+      334
     ],
     [
       "2026-07-10",
@@ -8686,7 +8704,7 @@
     ],
     [
       "2026-07-11",
-      487
+      484
     ],
     [
       "2026-07-12",
@@ -8694,7 +8712,7 @@
     ],
     [
       "2026-07-13",
-      359
+      361
     ],
     [
       "2026-07-14",
@@ -8714,19 +8732,19 @@
     ],
     [
       "2026-07-18",
-      252
+      273
     ],
     [
       "2026-07-19",
-      84
+      87
     ],
     [
       "2026-07-20",
-      8
+      5
     ],
     [
       "2026-07-21",
-      43
+      41
     ],
     [
       "2026-07-22",
@@ -8734,35 +8752,39 @@
     ],
     [
       "2026-07-23",
-      62
+      63
     ],
     [
       "2026-07-24",
-      247
+      244
     ],
     [
       "2026-07-25",
-      110
+      115
     ],
     [
       "2026-07-26",
-      88
+      89
     ],
     [
       "2026-07-27",
-      77
+      84
     ],
     [
       "2026-07-28",
-      193
+      195
     ],
     [
       "2026-07-29",
-      57
+      65
     ],
     [
       "2026-07-30",
-      21
+      53
+    ],
+    [
+      "2026-07-31",
+      28
     ]
   ],
   "sessionDays": [
