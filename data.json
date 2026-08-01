@@ -29,10 +29,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1440,
-      "insertions": 304324,
-      "deletions": 54030,
-      "net": 250294,
+      "commits": 1475,
+      "insertions": 310592,
+      "deletions": 59469,
+      "net": 251123,
       "desc": "",
       "category": "platform"
     },
@@ -92,10 +92,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 242,
-      "insertions": 59272,
-      "deletions": 9282,
-      "net": 49990,
+      "commits": 246,
+      "insertions": 61986,
+      "deletions": 9349,
+      "net": 52637,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -208,6 +208,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/tailnet",
+      "commits": 76,
+      "insertions": 1940,
+      "deletions": 353,
+      "net": 1587,
+      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
+      "category": "infra"
+    },
+    {
       "name": "vendor/claude-esp",
       "commits": 68,
       "insertions": 6938,
@@ -215,15 +224,6 @@
       "net": 6026,
       "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
       "category": "vendor"
-    },
-    {
-      "name": "cerebral/tailnet",
-      "commits": 67,
-      "insertions": 1757,
-      "deletions": 310,
-      "net": 1447,
-      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
-      "category": "infra"
     },
     {
       "name": "todie/pact",
@@ -263,10 +263,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 44,
-      "insertions": 17442,
-      "deletions": 4575,
-      "net": 12867,
+      "commits": 45,
+      "insertions": 17537,
+      "deletions": 4648,
+      "net": 12889,
       "desc": "",
       "category": "ops"
     },
@@ -8776,7 +8776,7 @@
     ],
     [
       "2026-07-29",
-      65
+      66
     ],
     [
       "2026-07-30",
@@ -8784,7 +8784,11 @@
     ],
     [
       "2026-07-31",
-      28
+      62
+    ],
+    [
+      "2026-08-01",
+      14
     ]
   ],
   "sessionDays": [
@@ -9139,6 +9143,14 @@
     [
       "2026-07-28",
       7
+    ],
+    [
+      "2026-07-31",
+      1
+    ],
+    [
+      "2026-08-01",
+      2
     ]
   ]
 }
