@@ -29,10 +29,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1475,
-      "insertions": 310592,
-      "deletions": 59469,
-      "net": 251123,
+      "commits": 1535,
+      "insertions": 315409,
+      "deletions": 60185,
+      "net": 255224,
       "desc": "",
       "category": "platform"
     },
@@ -92,10 +92,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 246,
-      "insertions": 61986,
-      "deletions": 9349,
-      "net": 52637,
+      "commits": 251,
+      "insertions": 61974,
+      "deletions": 9373,
+      "net": 52601,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -146,10 +146,10 @@
     },
     {
       "name": "unsigned/blackwall",
-      "commits": 183,
-      "insertions": 64151,
+      "commits": 184,
+      "insertions": 64473,
       "deletions": 6675,
-      "net": 57476,
+      "net": 57798,
       "desc": "",
       "category": "ops"
     },
@@ -173,10 +173,10 @@
     },
     {
       "name": "revenant",
-      "commits": 112,
-      "insertions": 53294,
-      "deletions": 8196,
-      "net": 45098,
+      "commits": 114,
+      "insertions": 53382,
+      "deletions": 8279,
+      "net": 45103,
       "desc": "",
       "category": "ops"
     },
@@ -235,6 +235,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex",
+      "commits": 65,
+      "insertions": 29408,
+      "deletions": 379,
+      "net": 29029,
+      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
+      "category": "agent"
+    },
+    {
       "name": "cerebral/cerebral-design",
       "commits": 60,
       "insertions": 20462,
@@ -263,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 45,
-      "insertions": 17537,
-      "deletions": 4648,
-      "net": 12889,
+      "commits": 46,
+      "insertions": 17575,
+      "deletions": 4674,
+      "net": 12901,
       "desc": "",
       "category": "ops"
     },
@@ -577,15 +586,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cortex",
-      "commits": 13,
-      "insertions": 7385,
-      "deletions": 210,
-      "net": 7175,
-      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
-      "category": "agent"
-    },
-    {
       "name": "cerebral/files-portal",
       "commits": 12,
       "insertions": 10949,
@@ -892,6 +892,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/scouse",
+      "commits": 2,
+      "insertions": 437,
+      "deletions": 13,
+      "net": 424,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/blanklabel",
       "commits": 2,
       "insertions": 775,
@@ -1176,6 +1185,13 @@
       "d": "Day -23",
       "tags": [
         "reflective"
+      ]
+    },
+    {
+      "t": "that's fine fuck it that node is problematic anyways",
+      "d": "Day 103",
+      "tags": [
+        "fire"
       ]
     },
     {
@@ -8768,15 +8784,15 @@
     ],
     [
       "2026-07-27",
-      84
+      91
     ],
     [
       "2026-07-28",
-      195
+      197
     ],
     [
       "2026-07-29",
-      66
+      65
     ],
     [
       "2026-07-30",
@@ -8788,7 +8804,11 @@
     ],
     [
       "2026-08-01",
-      14
+      73
+    ],
+    [
+      "2026-08-02",
+      56
     ]
   ],
   "sessionDays": [
@@ -9150,7 +9170,11 @@
     ],
     [
       "2026-08-01",
-      2
+      36
+    ],
+    [
+      "2026-08-02",
+      8
     ]
   ]
 }
