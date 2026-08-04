@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1406,
-      "insertions": 304010,
-      "deletions": 58572,
-      "net": 245438,
+      "commits": 1420,
+      "insertions": 305578,
+      "deletions": 58676,
+      "net": 246902,
       "desc": "",
       "category": "platform"
     },
@@ -127,21 +127,21 @@
       "category": "infra"
     },
     {
+      "name": "todie/dotfiles",
+      "commits": 195,
+      "insertions": 42972,
+      "deletions": 12974,
+      "net": 29998,
+      "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/lizard",
       "commits": 192,
       "insertions": 114179,
       "deletions": 32549,
       "net": 81630,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "todie/dotfiles",
-      "commits": 189,
-      "insertions": 41923,
-      "deletions": 10781,
-      "net": 31142,
-      "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
     {
@@ -190,6 +190,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/tailnet",
+      "commits": 93,
+      "insertions": 2471,
+      "deletions": 482,
+      "net": 1989,
+      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
+      "category": "infra"
+    },
+    {
       "name": "vendor/herdr-plus",
       "commits": 90,
       "insertions": 18478,
@@ -215,15 +224,6 @@
       "net": 29074,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/tailnet",
-      "commits": 76,
-      "insertions": 1940,
-      "deletions": 353,
-      "net": 1587,
-      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
-      "category": "infra"
     },
     {
       "name": "vendor/claude-esp",
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 47,
-      "insertions": 17636,
-      "deletions": 4711,
-      "net": 12925,
+      "commits": 48,
+      "insertions": 17698,
+      "deletions": 4766,
+      "net": 12932,
       "desc": "",
       "category": "ops"
     },
@@ -952,6 +952,24 @@
       "deletions": 0,
       "net": 1301822,
       "desc": "Signal Desktop fork. Local build and customization.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/dotfiles",
+      "commits": 1,
+      "insertions": 2489,
+      "deletions": 0,
+      "net": 2489,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/dotfiles",
+      "commits": 1,
+      "insertions": 2472,
+      "deletions": 0,
+      "net": 2472,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -8751,7 +8769,7 @@
     ],
     [
       "2026-07-17",
-      303
+      302
     ],
     [
       "2026-07-18",
@@ -8775,7 +8793,7 @@
     ],
     [
       "2026-07-23",
-      55
+      54
     ],
     [
       "2026-07-24",
@@ -8791,7 +8809,7 @@
     ],
     [
       "2026-07-27",
-      91
+      96
     ],
     [
       "2026-07-28",
@@ -8803,7 +8821,7 @@
     ],
     [
       "2026-07-30",
-      53
+      56
     ],
     [
       "2026-07-31",
@@ -8816,6 +8834,14 @@
     [
       "2026-08-02",
       89
+    ],
+    [
+      "2026-08-03",
+      26
+    ],
+    [
+      "2026-08-04",
+      8
     ]
   ],
   "sessionDays": [
@@ -9182,6 +9208,10 @@
     [
       "2026-08-02",
       13
+    ],
+    [
+      "2026-08-03",
+      4
     ]
   ]
 }
