@@ -28,22 +28,22 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/paas",
-      "commits": 1464,
-      "insertions": 310607,
-      "deletions": 60478,
-      "net": 250129,
-      "desc": "",
-      "category": "platform"
-    },
-    {
       "name": "cerebral/reverie",
       "commits": 1450,
-      "insertions": 441405,
-      "deletions": 80286,
-      "net": 361119,
+      "insertions": 441638,
+      "deletions": 80747,
+      "net": 360891,
       "desc": "",
       "category": "agent"
+    },
+    {
+      "name": "unsigned/paas",
+      "commits": 1433,
+      "insertions": 310203,
+      "deletions": 52266,
+      "net": 257937,
+      "desc": "",
+      "category": "platform"
     },
     {
       "name": "vendor/rtk",
@@ -137,10 +137,10 @@
     },
     {
       "name": "todie/dotfiles",
-      "commits": 196,
-      "insertions": 43001,
-      "deletions": 12976,
-      "net": 30025,
+      "commits": 199,
+      "insertions": 43093,
+      "deletions": 12998,
+      "net": 30095,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
@@ -173,28 +173,28 @@
     },
     {
       "name": "revenant",
-      "commits": 116,
-      "insertions": 53442,
-      "deletions": 8286,
-      "net": 45156,
+      "commits": 122,
+      "insertions": 55343,
+      "deletions": 8369,
+      "net": 46974,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 107,
-      "insertions": 5594,
-      "deletions": 1214,
-      "net": 4380,
+      "commits": 111,
+      "insertions": 6177,
+      "deletions": 1295,
+      "net": 4882,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
     {
       "name": "todie/agentic",
-      "commits": 93,
-      "insertions": 19865,
+      "commits": 94,
+      "insertions": 20236,
       "deletions": 4360,
-      "net": 15505,
+      "net": 15876,
       "desc": "Repository: todie/agentic",
       "category": "ops"
     },
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 49,
-      "insertions": 17761,
-      "deletions": 4799,
-      "net": 12962,
+      "commits": 50,
+      "insertions": 17929,
+      "deletions": 4955,
+      "net": 12974,
       "desc": "",
       "category": "ops"
     },
@@ -8745,7 +8745,7 @@
     ],
     [
       "2026-07-11",
-      469
+      468
     ],
     [
       "2026-07-12",
@@ -8753,7 +8753,7 @@
     ],
     [
       "2026-07-13",
-      333
+      299
     ],
     [
       "2026-07-14",
@@ -8765,15 +8765,15 @@
     ],
     [
       "2026-07-16",
-      348
+      347
     ],
     [
       "2026-07-17",
-      301
+      299
     ],
     [
       "2026-07-18",
-      242
+      238
     ],
     [
       "2026-07-19",
@@ -8785,11 +8785,11 @@
     ],
     [
       "2026-07-21",
-      36
+      35
     ],
     [
       "2026-07-22",
-      69
+      67
     ],
     [
       "2026-07-23",
@@ -8797,7 +8797,7 @@
     ],
     [
       "2026-07-24",
-      242
+      240
     ],
     [
       "2026-07-25",
@@ -8809,19 +8809,19 @@
     ],
     [
       "2026-07-27",
-      85
+      78
     ],
     [
       "2026-07-28",
-      219
+      216
     ],
     [
       "2026-07-29",
-      73
+      70
     ],
     [
       "2026-07-30",
-      70
+      66
     ],
     [
       "2026-07-31",
@@ -8837,15 +8837,19 @@
     ],
     [
       "2026-08-03",
-      34
+      32
     ],
     [
       "2026-08-04",
-      166
+      158
     ],
     [
       "2026-08-05",
-      13
+      57
+    ],
+    [
+      "2026-08-06",
+      14
     ]
   ],
   "sessionDays": [
@@ -9223,7 +9227,7 @@
     ],
     [
       "2026-08-05",
-      6
+      39
     ]
   ]
 }
