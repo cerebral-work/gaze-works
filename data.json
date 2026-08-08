@@ -28,6 +28,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/paas",
+      "commits": 1500,
+      "insertions": 313706,
+      "deletions": 56342,
+      "net": 257364,
+      "desc": "",
+      "category": "platform"
+    },
+    {
       "name": "unsigned/herdr",
       "commits": 1470,
       "insertions": 1026667,
@@ -38,21 +47,12 @@
     },
     {
       "name": "cerebral/reverie",
-      "commits": 1456,
-      "insertions": 442854,
-      "deletions": 81132,
-      "net": 361722,
+      "commits": 1459,
+      "insertions": 443543,
+      "deletions": 81158,
+      "net": 362385,
       "desc": "",
       "category": "agent"
-    },
-    {
-      "name": "unsigned/paas",
-      "commits": 1455,
-      "insertions": 311456,
-      "deletions": 53339,
-      "net": 258117,
-      "desc": "",
-      "category": "platform"
     },
     {
       "name": "vendor/rtk",
@@ -101,10 +101,10 @@
     },
     {
       "name": "cerebral/site",
-      "commits": 257,
-      "insertions": 38015,
-      "deletions": 12297,
-      "net": 25718,
+      "commits": 277,
+      "insertions": 38059,
+      "deletions": 12322,
+      "net": 25737,
       "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
       "category": "design"
     },
@@ -118,21 +118,21 @@
       "category": "platform"
     },
     {
+      "name": "unsigned/soma-os",
+      "commits": 246,
+      "insertions": 162963,
+      "deletions": 11104,
+      "net": 151859,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/heretic",
       "commits": 235,
       "insertions": 19651,
       "deletions": 6253,
       "net": 13398,
       "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-os-wt-domain",
-      "commits": 228,
-      "insertions": 158752,
-      "deletions": 9573,
-      "net": 149179,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -163,20 +163,20 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/linearctl",
+      "commits": 190,
+      "insertions": 44964,
+      "deletions": 4745,
+      "net": 40219,
+      "desc": "",
+      "category": "agent"
+    },
+    {
       "name": "unsigned/blackwall",
       "commits": 189,
       "insertions": 64404,
       "deletions": 6705,
       "net": 57699,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/linearctl-ops975-wt",
-      "commits": 180,
-      "insertions": 44863,
-      "deletions": 4705,
-      "net": 40158,
       "desc": "",
       "category": "ops"
     },
@@ -191,20 +191,20 @@
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 114,
-      "insertions": 6198,
-      "deletions": 1305,
-      "net": 4893,
+      "commits": 119,
+      "insertions": 6325,
+      "deletions": 1363,
+      "net": 4962,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
     {
-      "name": "todie/agentic",
-      "commits": 98,
-      "insertions": 20254,
-      "deletions": 4365,
-      "net": 15889,
-      "desc": "Repository: todie/agentic",
+      "name": "todie/agentic-hooks-collision",
+      "commits": 103,
+      "insertions": 20754,
+      "deletions": 4825,
+      "net": 15929,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 51,
-      "insertions": 17983,
-      "deletions": 5005,
-      "net": 12978,
+      "commits": 52,
+      "insertions": 18200,
+      "deletions": 5194,
+      "net": 13006,
       "desc": "",
       "category": "ops"
     },
@@ -361,6 +361,15 @@
       "category": "archive"
     },
     {
+      "name": "unsigned/dc",
+      "commits": 32,
+      "insertions": 8679,
+      "deletions": 2175,
+      "net": 6504,
+      "desc": "",
+      "category": "infra"
+    },
+    {
       "name": "unsigned/waker-license-wt",
       "commits": 31,
       "insertions": 2924,
@@ -386,15 +395,6 @@
       "net": 13894,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/dc",
-      "commits": 27,
-      "insertions": 6941,
-      "deletions": 1783,
-      "net": 5158,
-      "desc": "",
-      "category": "infra"
     },
     {
       "name": "cerebral/meridian",
@@ -503,6 +503,15 @@
       "net": 4390,
       "desc": "beepboopd — a small daemon experiment.",
       "category": "vendor"
+    },
+    {
+      "name": "cerebral/about-worker",
+      "commits": 18,
+      "insertions": 1106,
+      "deletions": 57,
+      "net": 1049,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "templates/terraform",
@@ -640,6 +649,15 @@
       "category": "ops"
     },
     {
+      "name": "vesperan",
+      "commits": 8,
+      "insertions": 61934,
+      "deletions": 24,
+      "net": 61910,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/revenue",
       "commits": 8,
       "insertions": 1057,
@@ -676,30 +694,12 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/about-worker",
-      "commits": 6,
-      "insertions": 1035,
-      "deletions": 44,
-      "net": 991,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "todie/claude-session-manager",
       "commits": 5,
       "insertions": 1926,
       "deletions": 213,
       "net": 1713,
       "desc": "Claude Code session management and persistence.",
-      "category": "ops"
-    },
-    {
-      "name": "vesperan",
-      "commits": 5,
-      "insertions": 56995,
-      "deletions": 16,
-      "net": 56979,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -8825,7 +8825,7 @@
     ],
     [
       "2026-07-27",
-      83
+      85
     ],
     [
       "2026-07-28",
@@ -8837,7 +8837,7 @@
     ],
     [
       "2026-07-30",
-      83
+      84
     ],
     [
       "2026-07-31",
@@ -8861,15 +8861,19 @@
     ],
     [
       "2026-08-05",
-      71
+      74
     ],
     [
       "2026-08-06",
-      77
+      79
     ],
     [
       "2026-08-07",
-      24
+      131
+    ],
+    [
+      "2026-08-08",
+      12
     ]
   ],
   "sessionDays": [
@@ -9255,7 +9259,11 @@
     ],
     [
       "2026-08-07",
-      6
+      364
+    ],
+    [
+      "2026-08-08",
+      109
     ]
   ]
 }
