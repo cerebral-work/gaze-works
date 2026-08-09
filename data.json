@@ -29,10 +29,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1500,
-      "insertions": 313706,
-      "deletions": 56342,
-      "net": 257364,
+      "commits": 1506,
+      "insertions": 314143,
+      "deletions": 56362,
+      "net": 257781,
       "desc": "",
       "category": "platform"
     },
@@ -46,13 +46,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/reverie",
-      "commits": 1459,
-      "insertions": 443543,
-      "deletions": 81158,
-      "net": 362385,
+      "name": "cerebral/reverie-1464-fix",
+      "commits": 1461,
+      "insertions": 443842,
+      "deletions": 81202,
+      "net": 362640,
       "desc": "",
-      "category": "agent"
+      "category": "ops"
     },
     {
       "name": "vendor/rtk",
@@ -119,10 +119,10 @@
     },
     {
       "name": "unsigned/soma-os",
-      "commits": 246,
-      "insertions": 162963,
+      "commits": 247,
+      "insertions": 162968,
       "deletions": 11104,
-      "net": 151859,
+      "net": 151864,
       "desc": "",
       "category": "ops"
     },
@@ -181,6 +181,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/tailnet",
+      "commits": 121,
+      "insertions": 6365,
+      "deletions": 1363,
+      "net": 5002,
+      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
+      "category": "infra"
+    },
+    {
       "name": "revenant",
       "commits": 119,
       "insertions": 54507,
@@ -190,20 +199,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/tailnet",
-      "commits": 119,
-      "insertions": 6325,
-      "deletions": 1363,
-      "net": 4962,
-      "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
-      "category": "infra"
-    },
-    {
-      "name": "todie/agentic-hooks-collision",
-      "commits": 103,
-      "insertions": 20754,
-      "deletions": 4825,
-      "net": 15929,
+      "name": "todie/agentic",
+      "commits": 111,
+      "insertions": 20822,
+      "deletions": 4882,
+      "net": 15940,
       "desc": "",
       "category": "ops"
     },
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 52,
-      "insertions": 18200,
-      "deletions": 5194,
-      "net": 13006,
+      "commits": 53,
+      "insertions": 18293,
+      "deletions": 5279,
+      "net": 13014,
       "desc": "",
       "category": "ops"
     },
@@ -316,6 +316,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/dc",
+      "commits": 36,
+      "insertions": 8788,
+      "deletions": 2218,
+      "net": 6570,
+      "desc": "",
+      "category": "infra"
+    },
+    {
       "name": "unsigned/unsigned-onboard",
       "commits": 35,
       "insertions": 14936,
@@ -335,10 +344,10 @@
     },
     {
       "name": "unsigned/escapement",
-      "commits": 34,
-      "insertions": 16635,
-      "deletions": 101,
-      "net": 16534,
+      "commits": 33,
+      "insertions": 16455,
+      "deletions": 407,
+      "net": 16048,
       "desc": "",
       "category": "ops"
     },
@@ -359,15 +368,6 @@
       "net": 14032,
       "desc": "Archived Rust daemon. Predecessor to current tooling.",
       "category": "archive"
-    },
-    {
-      "name": "unsigned/dc",
-      "commits": 32,
-      "insertions": 8679,
-      "deletions": 2175,
-      "net": 6504,
-      "desc": "",
-      "category": "infra"
     },
     {
       "name": "unsigned/waker-license-wt",
@@ -8761,7 +8761,7 @@
     ],
     [
       "2026-07-11",
-      470
+      469
     ],
     [
       "2026-07-12",
@@ -8773,11 +8773,11 @@
     ],
     [
       "2026-07-14",
-      489
+      488
     ],
     [
       "2026-07-15",
-      445
+      444
     ],
     [
       "2026-07-16",
@@ -8817,7 +8817,7 @@
     ],
     [
       "2026-07-25",
-      125
+      124
     ],
     [
       "2026-07-26",
@@ -8845,7 +8845,7 @@
     ],
     [
       "2026-08-01",
-      81
+      80
     ],
     [
       "2026-08-02",
@@ -8873,7 +8873,7 @@
     ],
     [
       "2026-08-08",
-      12
+      40
     ]
   ],
   "sessionDays": [
@@ -9263,7 +9263,7 @@
     ],
     [
       "2026-08-08",
-      109
+      123
     ]
   ]
 }
