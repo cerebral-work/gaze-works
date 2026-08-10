@@ -29,12 +29,21 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1506,
-      "insertions": 314143,
-      "deletions": 56362,
-      "net": 257781,
+      "commits": 1516,
+      "insertions": 315327,
+      "deletions": 56422,
+      "net": 258905,
       "desc": "",
       "category": "platform"
+    },
+    {
+      "name": "cerebral/reverie-a2passive",
+      "commits": 1473,
+      "insertions": 443964,
+      "deletions": 81247,
+      "net": 362717,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "unsigned/herdr",
@@ -42,15 +51,6 @@
       "insertions": 1026667,
       "deletions": 186276,
       "net": 840391,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/reverie-1464-fix",
-      "commits": 1461,
-      "insertions": 443842,
-      "deletions": 81202,
-      "net": 362640,
       "desc": "",
       "category": "ops"
     },
@@ -101,12 +101,21 @@
     },
     {
       "name": "cerebral/site",
-      "commits": 277,
-      "insertions": 38059,
-      "deletions": 12322,
-      "net": 25737,
+      "commits": 292,
+      "insertions": 38982,
+      "deletions": 12556,
+      "net": 26426,
       "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
       "category": "design"
+    },
+    {
+      "name": "unsigned/soma-os",
+      "commits": 255,
+      "insertions": 177498,
+      "deletions": 11352,
+      "net": 166146,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "unsigned/gg",
@@ -116,15 +125,6 @@
       "net": 52601,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
-    },
-    {
-      "name": "unsigned/soma-os",
-      "commits": 247,
-      "insertions": 162968,
-      "deletions": 11104,
-      "net": 151864,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "todie/heretic",
@@ -182,9 +182,9 @@
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 121,
-      "insertions": 6365,
-      "deletions": 1363,
+      "commits": 122,
+      "insertions": 6364,
+      "deletions": 1362,
       "net": 5002,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
@@ -200,7 +200,7 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 111,
+      "commits": 113,
       "insertions": 20822,
       "deletions": 4882,
       "net": 15940,
@@ -272,9 +272,9 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 53,
-      "insertions": 18293,
-      "deletions": 5279,
+      "commits": 54,
+      "insertions": 18347,
+      "deletions": 5333,
       "net": 13014,
       "desc": "",
       "category": "ops"
@@ -325,6 +325,15 @@
       "category": "infra"
     },
     {
+      "name": "unsigned/escapement",
+      "commits": 35,
+      "insertions": 16461,
+      "deletions": 408,
+      "net": 16053,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/unsigned-onboard",
       "commits": 35,
       "insertions": 14936,
@@ -339,15 +348,6 @@
       "insertions": 9929,
       "deletions": 540,
       "net": 9389,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/escapement",
-      "commits": 33,
-      "insertions": 16455,
-      "deletions": 407,
-      "net": 16048,
       "desc": "",
       "category": "ops"
     },
@@ -460,6 +460,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/about-worker",
+      "commits": 20,
+      "insertions": 1114,
+      "deletions": 1026,
+      "net": 88,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "mission-control",
       "commits": 20,
       "insertions": 3158,
@@ -503,15 +512,6 @@
       "net": 4390,
       "desc": "beepboopd — a small daemon experiment.",
       "category": "vendor"
-    },
-    {
-      "name": "cerebral/about-worker",
-      "commits": 18,
-      "insertions": 1106,
-      "deletions": 57,
-      "net": 1049,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "templates/terraform",
@@ -8781,7 +8781,7 @@
     ],
     [
       "2026-07-16",
-      364
+      361
     ],
     [
       "2026-07-17",
@@ -8873,7 +8873,15 @@
     ],
     [
       "2026-08-08",
-      40
+      48
+    ],
+    [
+      "2026-08-09",
+      35
+    ],
+    [
+      "2026-08-10",
+      13
     ]
   ],
   "sessionDays": [
@@ -9264,6 +9272,14 @@
     [
       "2026-08-08",
       123
+    ],
+    [
+      "2026-08-09",
+      3
+    ],
+    [
+      "2026-08-10",
+      2
     ]
   ]
 }
