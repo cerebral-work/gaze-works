@@ -29,21 +29,21 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1516,
-      "insertions": 315327,
-      "deletions": 56422,
-      "net": 258905,
+      "commits": 1527,
+      "insertions": 315453,
+      "deletions": 56453,
+      "net": 259000,
       "desc": "",
       "category": "platform"
     },
     {
-      "name": "cerebral/reverie-a2passive",
-      "commits": 1473,
-      "insertions": 443964,
-      "deletions": 81247,
-      "net": 362717,
+      "name": "cerebral/reverie",
+      "commits": 1479,
+      "insertions": 444491,
+      "deletions": 81285,
+      "net": 363206,
       "desc": "",
-      "category": "ops"
+      "category": "agent"
     },
     {
       "name": "unsigned/herdr",
@@ -101,10 +101,10 @@
     },
     {
       "name": "cerebral/site",
-      "commits": 292,
-      "insertions": 38982,
-      "deletions": 12556,
-      "net": 26426,
+      "commits": 310,
+      "insertions": 39124,
+      "deletions": 12569,
+      "net": 26555,
       "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
       "category": "design"
     },
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 54,
-      "insertions": 18347,
-      "deletions": 5333,
-      "net": 13014,
+      "commits": 55,
+      "insertions": 18419,
+      "deletions": 5389,
+      "net": 13030,
       "desc": "",
       "category": "ops"
     },
@@ -8881,7 +8881,7 @@
     ],
     [
       "2026-08-10",
-      13
+      49
     ]
   ],
   "sessionDays": [
