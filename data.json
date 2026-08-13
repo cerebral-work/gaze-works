@@ -29,21 +29,21 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1527,
-      "insertions": 315453,
-      "deletions": 56453,
-      "net": 259000,
+      "commits": 1542,
+      "insertions": 315991,
+      "deletions": 56659,
+      "net": 259332,
       "desc": "",
       "category": "platform"
     },
     {
-      "name": "cerebral/reverie",
-      "commits": 1479,
-      "insertions": 444491,
-      "deletions": 81285,
-      "net": 363206,
+      "name": "cerebral/reverie-backfill-prov",
+      "commits": 1484,
+      "insertions": 445452,
+      "deletions": 81373,
+      "net": 364079,
       "desc": "",
-      "category": "agent"
+      "category": "ops"
     },
     {
       "name": "unsigned/herdr",
@@ -101,19 +101,19 @@
     },
     {
       "name": "cerebral/site",
-      "commits": 310,
-      "insertions": 39124,
-      "deletions": 12569,
-      "net": 26555,
+      "commits": 316,
+      "insertions": 39283,
+      "deletions": 12614,
+      "net": 26669,
       "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
       "category": "design"
     },
     {
-      "name": "unsigned/soma-os",
-      "commits": 255,
-      "insertions": 177498,
-      "deletions": 11352,
-      "net": 166146,
+      "name": "unsigned/soma-os-wt-pullsecret",
+      "commits": 259,
+      "insertions": 177536,
+      "deletions": 11358,
+      "net": 166178,
       "desc": "",
       "category": "ops"
     },
@@ -262,6 +262,15 @@
       "category": "agent"
     },
     {
+      "name": "cerebral/works",
+      "commits": 56,
+      "insertions": 18440,
+      "deletions": 5410,
+      "net": 13030,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/action-runners",
       "commits": 55,
       "insertions": 9221,
@@ -271,15 +280,6 @@
       "category": "infra"
     },
     {
-      "name": "cerebral/works",
-      "commits": 55,
-      "insertions": 18419,
-      "deletions": 5389,
-      "net": 13030,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/voicenotes",
       "commits": 50,
       "insertions": 11949,
@@ -287,6 +287,15 @@
       "net": 11680,
       "desc": "Voice notes PWA. Audio recording and transcription on Cloudflare.",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/dc",
+      "commits": 43,
+      "insertions": 8954,
+      "deletions": 2252,
+      "net": 6702,
+      "desc": "",
+      "category": "infra"
     },
     {
       "name": "todie/mcp-honeypot",
@@ -314,15 +323,6 @@
       "net": 12975,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/dc",
-      "commits": 36,
-      "insertions": 8788,
-      "deletions": 2218,
-      "net": 6570,
-      "desc": "",
-      "category": "infra"
     },
     {
       "name": "unsigned/escapement",
@@ -8877,11 +8877,19 @@
     ],
     [
       "2026-08-09",
-      35
+      36
     ],
     [
       "2026-08-10",
-      49
+      61
+    ],
+    [
+      "2026-08-11",
+      20
+    ],
+    [
+      "2026-08-12",
+      5
     ]
   ],
   "sessionDays": [
@@ -9280,6 +9288,10 @@
     [
       "2026-08-10",
       2
+    ],
+    [
+      "2026-08-11",
+      1
     ]
   ]
 }
