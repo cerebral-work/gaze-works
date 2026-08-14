@@ -29,19 +29,19 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1542,
-      "insertions": 315991,
-      "deletions": 56659,
-      "net": 259332,
+      "commits": 1578,
+      "insertions": 318508,
+      "deletions": 57530,
+      "net": 260978,
       "desc": "",
       "category": "platform"
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 1484,
-      "insertions": 445452,
-      "deletions": 81373,
-      "net": 364079,
+      "commits": 1503,
+      "insertions": 464453,
+      "deletions": 81742,
+      "net": 382711,
       "desc": "",
       "category": "ops"
     },
@@ -101,28 +101,28 @@
     },
     {
       "name": "cerebral/site",
-      "commits": 316,
-      "insertions": 39283,
-      "deletions": 12614,
-      "net": 26669,
+      "commits": 323,
+      "insertions": 39662,
+      "deletions": 12648,
+      "net": 27014,
       "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
       "category": "design"
     },
     {
-      "name": "unsigned/soma-os-wt-pullsecret",
-      "commits": 259,
-      "insertions": 177536,
-      "deletions": 11358,
-      "net": 166178,
+      "name": "unsigned/soma-os",
+      "commits": 285,
+      "insertions": 179358,
+      "deletions": 11583,
+      "net": 167775,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/gg",
-      "commits": 251,
-      "insertions": 61974,
-      "deletions": 9373,
-      "net": 52601,
+      "commits": 252,
+      "insertions": 61984,
+      "deletions": 9381,
+      "net": 52603,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -254,19 +254,19 @@
     },
     {
       "name": "cerebral/cortex",
-      "commits": 59,
-      "insertions": 28104,
+      "commits": 60,
+      "insertions": 28190,
       "deletions": 607,
-      "net": 27497,
+      "net": 27583,
       "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
       "category": "agent"
     },
     {
       "name": "cerebral/works",
-      "commits": 56,
-      "insertions": 18440,
-      "deletions": 5410,
-      "net": 13030,
+      "commits": 57,
+      "insertions": 18494,
+      "deletions": 5452,
+      "net": 13042,
       "desc": "",
       "category": "ops"
     },
@@ -764,6 +764,15 @@
       "net": 692,
       "desc": "Reverie demonstration and example projects.",
       "category": "design"
+    },
+    {
+      "name": "cerebral/soma-brief-worker",
+      "commits": 4,
+      "insertions": 1950,
+      "deletions": 14,
+      "net": 1936,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/vibe-explainer",
@@ -8877,11 +8886,11 @@
     ],
     [
       "2026-08-09",
-      36
+      35
     ],
     [
       "2026-08-10",
-      61
+      57
     ],
     [
       "2026-08-11",
@@ -8889,7 +8898,15 @@
     ],
     [
       "2026-08-12",
-      5
+      28
+    ],
+    [
+      "2026-08-13",
+      61
+    ],
+    [
+      "2026-08-14",
+      16
     ]
   ],
   "sessionDays": [
@@ -9292,6 +9309,10 @@
     [
       "2026-08-11",
       1
+    ],
+    [
+      "2026-08-13",
+      6
     ]
   ]
 }
