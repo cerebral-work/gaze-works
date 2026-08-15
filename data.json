@@ -19,6 +19,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/paas",
+      "commits": 1588,
+      "insertions": 318714,
+      "deletions": 57650,
+      "net": 261064,
+      "desc": "",
+      "category": "platform"
+    },
+    {
       "name": "rina",
       "commits": 1587,
       "insertions": 528238,
@@ -28,20 +37,11 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/paas",
-      "commits": 1578,
-      "insertions": 318508,
-      "deletions": 57530,
-      "net": 260978,
-      "desc": "",
-      "category": "platform"
-    },
-    {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 1503,
-      "insertions": 464453,
-      "deletions": 81742,
-      "net": 382711,
+      "commits": 1522,
+      "insertions": 465922,
+      "deletions": 81993,
+      "net": 383929,
       "desc": "",
       "category": "ops"
     },
@@ -92,21 +92,21 @@
     },
     {
       "name": "terrarium",
-      "commits": 327,
-      "insertions": 184508,
-      "deletions": 37437,
-      "net": 147071,
+      "commits": 334,
+      "insertions": 184469,
+      "deletions": 37453,
+      "net": 147016,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "cerebral/site",
-      "commits": 323,
-      "insertions": 39662,
-      "deletions": 12648,
-      "net": 27014,
-      "desc": "Cerebral site. Design-sync manifest, PR detector, brand pipeline front door.",
-      "category": "design"
+      "name": "cerebral/site-titles-wt",
+      "commits": 326,
+      "insertions": 40168,
+      "deletions": 12657,
+      "net": 27511,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "unsigned/soma-os",
@@ -119,10 +119,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 252,
-      "insertions": 61984,
-      "deletions": 9381,
-      "net": 52603,
+      "commits": 254,
+      "insertions": 62076,
+      "deletions": 9407,
+      "net": 52669,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -136,13 +136,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/revenant-cfblog-wt",
-      "commits": 208,
-      "insertions": 56339,
-      "deletions": 9393,
-      "net": 46946,
+      "name": "cerebral/revenant",
+      "commits": 224,
+      "insertions": 57169,
+      "deletions": 9414,
+      "net": 47755,
       "desc": "",
-      "category": "ops"
+      "category": "infra"
     },
     {
       "name": "todie/dotfiles",
@@ -181,6 +181,15 @@
       "category": "ops"
     },
     {
+      "name": "todie/agentic",
+      "commits": 144,
+      "insertions": 22077,
+      "deletions": 4998,
+      "net": 17079,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/tailnet",
       "commits": 122,
       "insertions": 6364,
@@ -195,15 +204,6 @@
       "insertions": 54507,
       "deletions": 8322,
       "net": 46185,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "todie/agentic",
-      "commits": 113,
-      "insertions": 20822,
-      "deletions": 4882,
-      "net": 15940,
       "desc": "",
       "category": "ops"
     },
@@ -224,6 +224,15 @@
       "net": 29074,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
       "category": "ops"
+    },
+    {
+      "name": "cerebral/cortex",
+      "commits": 77,
+      "insertions": 30545,
+      "deletions": 837,
+      "net": 29708,
+      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
+      "category": "agent"
     },
     {
       "name": "vendor/claude-esp",
@@ -253,20 +262,20 @@
       "category": "design"
     },
     {
-      "name": "cerebral/cortex",
-      "commits": 60,
-      "insertions": 28190,
-      "deletions": 607,
-      "net": 27583,
-      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
-      "category": "agent"
+      "name": "cerebral/works",
+      "commits": 58,
+      "insertions": 18549,
+      "deletions": 5486,
+      "net": 13063,
+      "desc": "",
+      "category": "ops"
     },
     {
-      "name": "cerebral/works",
+      "name": "goudetmarc/nephele",
       "commits": 57,
-      "insertions": 18494,
-      "deletions": 5452,
-      "net": 13042,
+      "insertions": 9399,
+      "deletions": 1036,
+      "net": 8363,
       "desc": "",
       "category": "ops"
     },
@@ -640,6 +649,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/revenue-apollo-wt",
+      "commits": 10,
+      "insertions": 1517,
+      "deletions": 144,
+      "net": 1373,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/gh-token-mint",
       "commits": 9,
       "insertions": 2613,
@@ -654,15 +672,6 @@
       "insertions": 61934,
       "deletions": 24,
       "net": 61910,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/revenue",
-      "commits": 8,
-      "insertions": 1057,
-      "deletions": 22,
-      "net": 1035,
       "desc": "",
       "category": "ops"
     },
@@ -8778,7 +8787,7 @@
     ],
     [
       "2026-07-13",
-      312
+      311
     ],
     [
       "2026-07-14",
@@ -8798,7 +8807,7 @@
     ],
     [
       "2026-07-18",
-      251
+      250
     ],
     [
       "2026-07-19",
@@ -8826,7 +8835,7 @@
     ],
     [
       "2026-07-25",
-      124
+      134
     ],
     [
       "2026-07-26",
@@ -8838,7 +8847,7 @@
     ],
     [
       "2026-07-28",
-      225
+      235
     ],
     [
       "2026-07-29",
@@ -8846,11 +8855,11 @@
     ],
     [
       "2026-07-30",
-      84
+      90
     ],
     [
       "2026-07-31",
-      71
+      90
     ],
     [
       "2026-08-01",
@@ -8866,11 +8875,11 @@
     ],
     [
       "2026-08-04",
-      179
+      182
     ],
     [
       "2026-08-05",
-      74
+      76
     ],
     [
       "2026-08-06",
@@ -8878,7 +8887,7 @@
     ],
     [
       "2026-08-07",
-      131
+      137
     ],
     [
       "2026-08-08",
@@ -8886,7 +8895,7 @@
     ],
     [
       "2026-08-09",
-      35
+      36
     ],
     [
       "2026-08-10",
@@ -8894,19 +8903,23 @@
     ],
     [
       "2026-08-11",
-      20
+      21
     ],
     [
       "2026-08-12",
-      28
+      35
     ],
     [
       "2026-08-13",
-      61
+      64
     ],
     [
       "2026-08-14",
-      16
+      112
+    ],
+    [
+      "2026-08-15",
+      3
     ]
   ],
   "sessionDays": [
@@ -9313,6 +9326,10 @@
     [
       "2026-08-13",
       6
+    ],
+    [
+      "2026-08-14",
+      20
     ]
   ]
 }
