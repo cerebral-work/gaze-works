@@ -20,10 +20,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1588,
-      "insertions": 318714,
-      "deletions": 57650,
-      "net": 261064,
+      "commits": 1590,
+      "insertions": 318770,
+      "deletions": 57651,
+      "net": 261119,
       "desc": "",
       "category": "platform"
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 1522,
-      "insertions": 465922,
-      "deletions": 81993,
-      "net": 383929,
+      "commits": 1528,
+      "insertions": 466397,
+      "deletions": 82112,
+      "net": 384285,
       "desc": "",
       "category": "ops"
     },
@@ -92,28 +92,28 @@
     },
     {
       "name": "terrarium",
-      "commits": 334,
-      "insertions": 184469,
-      "deletions": 37453,
-      "net": 147016,
+      "commits": 336,
+      "insertions": 184630,
+      "deletions": 37584,
+      "net": 147046,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/site-titles-wt",
-      "commits": 326,
-      "insertions": 40168,
-      "deletions": 12657,
+      "commits": 328,
+      "insertions": 40177,
+      "deletions": 12666,
       "net": 27511,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/soma-os",
-      "commits": 285,
-      "insertions": 179358,
-      "deletions": 11583,
-      "net": 167775,
+      "commits": 287,
+      "insertions": 179410,
+      "deletions": 11614,
+      "net": 167796,
       "desc": "",
       "category": "ops"
     },
@@ -182,10 +182,10 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 144,
-      "insertions": 22077,
-      "deletions": 4998,
-      "net": 17079,
+      "commits": 153,
+      "insertions": 22535,
+      "deletions": 5332,
+      "net": 17203,
       "desc": "",
       "category": "ops"
     },
@@ -208,6 +208,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex-cer2051",
+      "commits": 91,
+      "insertions": 33649,
+      "deletions": 962,
+      "net": 32687,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/herdr-plus",
       "commits": 90,
       "insertions": 18478,
@@ -224,15 +233,6 @@
       "net": 29074,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/cortex",
-      "commits": 77,
-      "insertions": 30545,
-      "deletions": 837,
-      "net": 29708,
-      "desc": "Cortex — the cognitive coordination layer for the agent mesh.",
-      "category": "agent"
     },
     {
       "name": "vendor/claude-esp",
@@ -263,10 +263,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 58,
-      "insertions": 18549,
-      "deletions": 5486,
-      "net": 13063,
+      "commits": 59,
+      "insertions": 18646,
+      "deletions": 5566,
+      "net": 13080,
       "desc": "",
       "category": "ops"
     },
@@ -8683,7 +8683,7 @@
     ],
     [
       "2026-06-17",
-      210
+      209
     ],
     [
       "2026-06-18",
@@ -8915,11 +8915,15 @@
     ],
     [
       "2026-08-14",
-      112
+      110
     ],
     [
       "2026-08-15",
-      3
+      38
+    ],
+    [
+      "2026-08-16",
+      6
     ]
   ],
   "sessionDays": [
@@ -9330,6 +9334,14 @@
     [
       "2026-08-14",
       20
+    ],
+    [
+      "2026-08-15",
+      5
+    ],
+    [
+      "2026-08-16",
+      1
     ]
   ]
 }
