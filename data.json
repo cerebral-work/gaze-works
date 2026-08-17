@@ -20,10 +20,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1590,
-      "insertions": 318770,
-      "deletions": 57651,
-      "net": 261119,
+      "commits": 1630,
+      "insertions": 319507,
+      "deletions": 57774,
+      "net": 261733,
       "desc": "",
       "category": "platform"
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 1528,
-      "insertions": 466397,
-      "deletions": 82112,
-      "net": 384285,
+      "commits": 1547,
+      "insertions": 469240,
+      "deletions": 83257,
+      "net": 385983,
       "desc": "",
       "category": "ops"
     },
@@ -92,10 +92,19 @@
     },
     {
       "name": "terrarium",
-      "commits": 336,
-      "insertions": 184630,
-      "deletions": 37584,
-      "net": 147046,
+      "commits": 367,
+      "insertions": 186171,
+      "deletions": 38611,
+      "net": 147560,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/soma-os-wt-dockerfix",
+      "commits": 332,
+      "insertions": 183394,
+      "deletions": 12440,
+      "net": 170954,
       "desc": "",
       "category": "ops"
     },
@@ -109,22 +118,22 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/soma-os",
-      "commits": 287,
-      "insertions": 179410,
-      "deletions": 11614,
-      "net": 167796,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/gg",
-      "commits": 254,
-      "insertions": 62076,
-      "deletions": 9407,
-      "net": 52669,
+      "commits": 263,
+      "insertions": 63815,
+      "deletions": 9488,
+      "net": 54327,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
+    },
+    {
+      "name": "cerebral/revenant",
+      "commits": 258,
+      "insertions": 61085,
+      "deletions": 9572,
+      "net": 51513,
+      "desc": "",
+      "category": "infra"
     },
     {
       "name": "todie/heretic",
@@ -136,13 +145,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/revenant",
-      "commits": 224,
-      "insertions": 57169,
-      "deletions": 9414,
-      "net": 47755,
+      "name": "cerebral/linearctl",
+      "commits": 201,
+      "insertions": 46570,
+      "deletions": 5423,
+      "net": 41147,
       "desc": "",
-      "category": "infra"
+      "category": "agent"
     },
     {
       "name": "todie/dotfiles",
@@ -163,15 +172,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/linearctl",
-      "commits": 190,
-      "insertions": 44964,
-      "deletions": 4745,
-      "net": 40219,
-      "desc": "",
-      "category": "agent"
-    },
-    {
       "name": "unsigned/blackwall",
       "commits": 189,
       "insertions": 64404,
@@ -182,10 +182,10 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 153,
-      "insertions": 22535,
-      "deletions": 5332,
-      "net": 17203,
+      "commits": 164,
+      "insertions": 22447,
+      "deletions": 5255,
+      "net": 17192,
       "desc": "",
       "category": "ops"
     },
@@ -208,13 +208,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cortex-cer2051",
-      "commits": 91,
-      "insertions": 33649,
-      "deletions": 962,
-      "net": 32687,
+      "name": "cerebral/cortex",
+      "commits": 94,
+      "insertions": 33682,
+      "deletions": 963,
+      "net": 32719,
       "desc": "",
-      "category": "ops"
+      "category": "agent"
     },
     {
       "name": "vendor/herdr-plus",
@@ -263,10 +263,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 59,
-      "insertions": 18646,
-      "deletions": 5566,
-      "net": 13080,
+      "commits": 60,
+      "insertions": 18700,
+      "deletions": 5608,
+      "net": 13092,
       "desc": "",
       "category": "ops"
     },
@@ -281,10 +281,10 @@
     },
     {
       "name": "unsigned/action-runners",
-      "commits": 55,
-      "insertions": 9221,
-      "deletions": 571,
-      "net": 8650,
+      "commits": 56,
+      "insertions": 9281,
+      "deletions": 583,
+      "net": 8698,
       "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
       "category": "infra"
     },
@@ -505,6 +505,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cicatrix",
+      "commits": 19,
+      "insertions": 9049,
+      "deletions": 258,
+      "net": 8791,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
       "name": "templates/rust",
       "commits": 18,
       "insertions": 750,
@@ -530,15 +539,6 @@
       "net": 1092,
       "desc": "Terraform project template. Standard module structure.",
       "category": "templates"
-    },
-    {
-      "name": "cerebral/cicatrix",
-      "commits": 17,
-      "insertions": 8814,
-      "deletions": 246,
-      "net": 8568,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
     },
     {
       "name": "cerebral/reverie-slack",
@@ -8911,7 +8911,7 @@
     ],
     [
       "2026-08-13",
-      64
+      63
     ],
     [
       "2026-08-14",
@@ -8919,11 +8919,15 @@
     ],
     [
       "2026-08-15",
-      38
+      34
     ],
     [
       "2026-08-16",
-      6
+      213
+    ],
+    [
+      "2026-08-17",
+      5
     ]
   ],
   "sessionDays": [
@@ -9341,7 +9345,7 @@
     ],
     [
       "2026-08-16",
-      1
+      47
     ]
   ]
 }
