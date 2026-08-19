@@ -20,19 +20,19 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2646,
-      "insertions": 736041,
-      "deletions": 108105,
-      "net": 627936,
+      "commits": 2654,
+      "insertions": 736219,
+      "deletions": 108271,
+      "net": 627948,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/paas",
-      "commits": 1649,
-      "insertions": 320368,
-      "deletions": 57887,
-      "net": 262481,
+      "commits": 1661,
+      "insertions": 322241,
+      "deletions": 57911,
+      "net": 264330,
       "desc": "",
       "category": "platform"
     },
@@ -101,10 +101,10 @@
     },
     {
       "name": "unsigned/soma-os-wt-dockerfix",
-      "commits": 356,
-      "insertions": 184995,
-      "deletions": 12746,
-      "net": 172249,
+      "commits": 360,
+      "insertions": 185300,
+      "deletions": 12755,
+      "net": 172545,
       "desc": "",
       "category": "ops"
     },
@@ -118,6 +118,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/revenant",
+      "commits": 266,
+      "insertions": 61277,
+      "deletions": 9585,
+      "net": 51692,
+      "desc": "",
+      "category": "infra"
+    },
+    {
       "name": "unsigned/gg",
       "commits": 263,
       "insertions": 63815,
@@ -125,15 +134,6 @@
       "net": 54327,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
-    },
-    {
-      "name": "cerebral/revenant",
-      "commits": 261,
-      "insertions": 61163,
-      "deletions": 9573,
-      "net": 51590,
-      "desc": "",
-      "category": "infra"
     },
     {
       "name": "todie/heretic",
@@ -190,6 +190,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex-stale",
+      "commits": 144,
+      "insertions": 35143,
+      "deletions": 1798,
+      "net": 33345,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/tailnet",
       "commits": 122,
       "insertions": 6364,
@@ -204,15 +213,6 @@
       "insertions": 54507,
       "deletions": 8322,
       "net": 46185,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/cortex-stale",
-      "commits": 102,
-      "insertions": 33757,
-      "deletions": 1635,
-      "net": 32122,
       "desc": "",
       "category": "ops"
     },
@@ -235,6 +235,15 @@
       "category": "ops"
     },
     {
+      "name": "todie/pact",
+      "commits": 73,
+      "insertions": 41526,
+      "deletions": 10447,
+      "net": 31079,
+      "desc": "Pact — contract testing and agreement tracking.",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-esp",
       "commits": 68,
       "insertions": 6938,
@@ -244,20 +253,11 @@
       "category": "vendor"
     },
     {
-      "name": "todie/pact",
-      "commits": 65,
-      "insertions": 40871,
-      "deletions": 10142,
-      "net": 30729,
-      "desc": "Pact — contract testing and agreement tracking.",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/works",
-      "commits": 61,
-      "insertions": 18778,
-      "deletions": 5682,
-      "net": 13096,
+      "commits": 62,
+      "insertions": 18976,
+      "deletions": 5847,
+      "net": 13129,
       "desc": "",
       "category": "ops"
     },
@@ -433,6 +433,15 @@
       "category": "infra"
     },
     {
+      "name": "cerebral/cicatrix",
+      "commits": 26,
+      "insertions": 9329,
+      "deletions": 288,
+      "net": 9041,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
       "name": "ieva",
       "commits": 25,
       "insertions": 3071,
@@ -469,6 +478,15 @@
       "category": "identity"
     },
     {
+      "name": "vesperan",
+      "commits": 20,
+      "insertions": 63938,
+      "deletions": 272,
+      "net": 63666,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "github-app",
       "commits": 20,
       "insertions": 13161,
@@ -485,15 +503,6 @@
       "net": 88,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/cicatrix",
-      "commits": 20,
-      "insertions": 9075,
-      "deletions": 273,
-      "net": 8802,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
     },
     {
       "name": "mission-control",
@@ -548,6 +557,15 @@
       "net": 1092,
       "desc": "Terraform project template. Standard module structure.",
       "category": "templates"
+    },
+    {
+      "name": "zerodays/zerodays",
+      "commits": 17,
+      "insertions": 117839,
+      "deletions": 967,
+      "net": 116872,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral/reverie-slack",
@@ -640,6 +658,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/revenue-apollo-wt",
+      "commits": 11,
+      "insertions": 1887,
+      "deletions": 146,
+      "net": 1741,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/reverie-slack-app",
       "commits": 11,
       "insertions": 3155,
@@ -658,38 +685,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/revenue-apollo-wt",
-      "commits": 10,
-      "insertions": 1517,
-      "deletions": 144,
-      "net": 1373,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/gh-token-mint",
       "commits": 9,
       "insertions": 2613,
       "deletions": 115,
       "net": 2498,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "vesperan",
-      "commits": 8,
-      "insertions": 61934,
-      "deletions": 24,
-      "net": 61910,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "zerodays/zerodays",
-      "commits": 8,
-      "insertions": 117476,
-      "deletions": 56,
-      "net": 117420,
       "desc": "",
       "category": "ops"
     },
@@ -8776,7 +8776,7 @@
     ],
     [
       "2026-07-04",
-      312
+      311
     ],
     [
       "2026-07-05",
@@ -8784,7 +8784,7 @@
     ],
     [
       "2026-07-06",
-      369
+      367
     ],
     [
       "2026-07-07",
@@ -8800,7 +8800,7 @@
     ],
     [
       "2026-07-10",
-      201
+      199
     ],
     [
       "2026-07-11",
@@ -8812,7 +8812,7 @@
     ],
     [
       "2026-07-13",
-      321
+      329
     ],
     [
       "2026-07-14",
@@ -8820,7 +8820,7 @@
     ],
     [
       "2026-07-15",
-      446
+      448
     ],
     [
       "2026-07-16",
@@ -8840,7 +8840,7 @@
     ],
     [
       "2026-07-20",
-      14
+      16
     ],
     [
       "2026-07-21",
@@ -8952,11 +8952,15 @@
     ],
     [
       "2026-08-17",
-      78
+      77
     ],
     [
       "2026-08-18",
-      8
+      82
+    ],
+    [
+      "2026-08-19",
+      28
     ]
   ],
   "sessionDays": [
@@ -9379,6 +9383,10 @@
     [
       "2026-08-17",
       11
+    ],
+    [
+      "2026-08-18",
+      2
     ]
   ]
 }
