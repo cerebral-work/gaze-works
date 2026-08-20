@@ -20,19 +20,19 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2654,
-      "insertions": 736219,
-      "deletions": 108271,
-      "net": 627948,
+      "commits": 2659,
+      "insertions": 736571,
+      "deletions": 108279,
+      "net": 628292,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/paas",
-      "commits": 1661,
-      "insertions": 322241,
-      "deletions": 57911,
-      "net": 264330,
+      "commits": 1672,
+      "insertions": 321460,
+      "deletions": 57622,
+      "net": 263838,
       "desc": "",
       "category": "platform"
     },
@@ -82,6 +82,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/soma-os-wt-dockerfix",
+      "commits": 428,
+      "insertions": 194508,
+      "deletions": 9563,
+      "net": 184945,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-hud",
       "commits": 390,
       "insertions": 52410,
@@ -100,29 +109,20 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/soma-os-wt-dockerfix",
-      "commits": 360,
-      "insertions": 185300,
-      "deletions": 12755,
-      "net": 172545,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/site-titles-wt",
-      "commits": 328,
+      "name": "cerebral/site",
+      "commits": 329,
       "insertions": 40177,
       "deletions": 12666,
       "net": 27511,
       "desc": "",
-      "category": "ops"
+      "category": "design"
     },
     {
       "name": "cerebral/revenant",
-      "commits": 266,
-      "insertions": 61277,
-      "deletions": 9585,
-      "net": 51692,
+      "commits": 272,
+      "insertions": 61374,
+      "deletions": 9591,
+      "net": 51783,
       "desc": "",
       "category": "infra"
     },
@@ -142,6 +142,15 @@
       "deletions": 6253,
       "net": 13398,
       "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.",
+      "category": "ops"
+    },
+    {
+      "name": "revenant-forgejo",
+      "commits": 205,
+      "insertions": 46417,
+      "deletions": 7865,
+      "net": 38552,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -181,20 +190,29 @@
       "category": "ops"
     },
     {
-      "name": "todie/agentic-vilicus-ref",
-      "commits": 167,
-      "insertions": 22481,
-      "deletions": 5261,
-      "net": 17220,
+      "name": "todie/agentic-wt-parity",
+      "commits": 176,
+      "insertions": 22781,
+      "deletions": 5514,
+      "net": 17267,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/cortex-stale",
-      "commits": 144,
-      "insertions": 35143,
-      "deletions": 1798,
-      "net": 33345,
+      "commits": 152,
+      "insertions": 36688,
+      "deletions": 1845,
+      "net": 34843,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "revenant",
+      "commits": 127,
+      "insertions": 55203,
+      "deletions": 8615,
+      "net": 46588,
       "desc": "",
       "category": "ops"
     },
@@ -206,15 +224,6 @@
       "net": 5002,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
-    },
-    {
-      "name": "revenant",
-      "commits": 119,
-      "insertions": 54507,
-      "deletions": 8322,
-      "net": 46185,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "vendor/herdr-plus",
@@ -254,12 +263,21 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 62,
-      "insertions": 18976,
-      "deletions": 5847,
-      "net": 13129,
+      "commits": 63,
+      "insertions": 19074,
+      "deletions": 5937,
+      "net": 13137,
       "desc": "",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/action-runners",
+      "commits": 62,
+      "insertions": 9545,
+      "deletions": 588,
+      "net": 8957,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
     },
     {
       "name": "cerebral/cerebral-design",
@@ -272,21 +290,12 @@
     },
     {
       "name": "goudetmarc/nephele",
-      "commits": 57,
-      "insertions": 9399,
+      "commits": 58,
+      "insertions": 10268,
       "deletions": 1036,
-      "net": 8363,
+      "net": 9232,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 56,
-      "insertions": 9281,
-      "deletions": 583,
-      "net": 8698,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "cerebral/voicenotes",
@@ -406,6 +415,15 @@
       "category": "platform"
     },
     {
+      "name": "cerebral/cicatrix",
+      "commits": 29,
+      "insertions": 9768,
+      "deletions": 327,
+      "net": 9441,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
       "name": "pgt",
       "commits": 27,
       "insertions": 15270,
@@ -433,15 +451,6 @@
       "category": "infra"
     },
     {
-      "name": "cerebral/cicatrix",
-      "commits": 26,
-      "insertions": 9329,
-      "deletions": 288,
-      "net": 9041,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
-    },
-    {
       "name": "ieva",
       "commits": 25,
       "insertions": 3071,
@@ -457,6 +466,24 @@
       "deletions": 1099,
       "net": 9770,
       "desc": "Reach — outreach and connection management.",
+      "category": "ops"
+    },
+    {
+      "name": "cadastre",
+      "commits": 23,
+      "insertions": 15489,
+      "deletions": 2586,
+      "net": 12903,
+      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
+      "category": "ops"
+    },
+    {
+      "name": "vesperan",
+      "commits": 22,
+      "insertions": 63938,
+      "deletions": 272,
+      "net": 63666,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -476,15 +503,6 @@
       "net": 53187,
       "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
       "category": "identity"
-    },
-    {
-      "name": "vesperan",
-      "commits": 20,
-      "insertions": 63938,
-      "deletions": 272,
-      "net": 63666,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "github-app",
@@ -550,6 +568,15 @@
       "category": "vendor"
     },
     {
+      "name": "zerodays/zerodays",
+      "commits": 18,
+      "insertions": 117839,
+      "deletions": 967,
+      "net": 116872,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "templates/terraform",
       "commits": 17,
       "insertions": 1207,
@@ -557,15 +584,6 @@
       "net": 1092,
       "desc": "Terraform project template. Standard module structure.",
       "category": "templates"
-    },
-    {
-      "name": "zerodays/zerodays",
-      "commits": 17,
-      "insertions": 117839,
-      "deletions": 967,
-      "net": 116872,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/reverie-slack",
@@ -586,12 +604,12 @@
       "category": "ops"
     },
     {
-      "name": "cadastre",
-      "commits": 16,
-      "insertions": 12419,
-      "deletions": 1028,
-      "net": 11391,
-      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
+      "name": "unsigned/soma-design",
+      "commits": 15,
+      "insertions": 3956,
+      "deletions": 118,
+      "net": 3838,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -640,6 +658,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/revenue-apollo-wt",
+      "commits": 12,
+      "insertions": 1887,
+      "deletions": 146,
+      "net": 1741,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/files-portal",
       "commits": 12,
       "insertions": 10949,
@@ -655,15 +682,6 @@
       "deletions": 36,
       "net": 574,
       "desc": "Python project template. Standard scaffolding.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/revenue-apollo-wt",
-      "commits": 11,
-      "insertions": 1887,
-      "deletions": 146,
-      "net": 1741,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -8400,11 +8418,11 @@
     ],
     [
       "2026-04-01",
-      201
+      206
     ],
     [
       "2026-04-02",
-      139
+      149
     ],
     [
       "2026-04-03",
@@ -8412,7 +8430,7 @@
     ],
     [
       "2026-04-04",
-      86
+      87
     ],
     [
       "2026-04-05",
@@ -8424,7 +8442,7 @@
     ],
     [
       "2026-04-07",
-      332
+      338
     ],
     [
       "2026-04-08",
@@ -8648,11 +8666,11 @@
     ],
     [
       "2026-06-02",
-      272
+      277
     ],
     [
       "2026-06-03",
-      304
+      333
     ],
     [
       "2026-06-04",
@@ -8664,15 +8682,15 @@
     ],
     [
       "2026-06-06",
-      259
+      273
     ],
     [
       "2026-06-07",
-      240
+      252
     ],
     [
       "2026-06-08",
-      364
+      365
     ],
     [
       "2026-06-09",
@@ -8704,7 +8722,7 @@
     ],
     [
       "2026-06-16",
-      192
+      193
     ],
     [
       "2026-06-17",
@@ -8796,7 +8814,7 @@
     ],
     [
       "2026-07-09",
-      339
+      340
     ],
     [
       "2026-07-10",
@@ -8804,7 +8822,7 @@
     ],
     [
       "2026-07-11",
-      476
+      481
     ],
     [
       "2026-07-12",
@@ -8812,7 +8830,7 @@
     ],
     [
       "2026-07-13",
-      329
+      335
     ],
     [
       "2026-07-14",
@@ -8820,11 +8838,11 @@
     ],
     [
       "2026-07-15",
-      448
+      451
     ],
     [
       "2026-07-16",
-      366
+      364
     ],
     [
       "2026-07-17",
@@ -8852,11 +8870,11 @@
     ],
     [
       "2026-07-23",
-      59
+      60
     ],
     [
       "2026-07-24",
-      263
+      265
     ],
     [
       "2026-07-25",
@@ -8868,11 +8886,11 @@
     ],
     [
       "2026-07-27",
-      93
+      98
     ],
     [
       "2026-07-28",
-      238
+      249
     ],
     [
       "2026-07-29",
@@ -8884,15 +8902,15 @@
     ],
     [
       "2026-07-31",
-      90
+      112
     ],
     [
       "2026-08-01",
-      80
+      78
     ],
     [
       "2026-08-02",
-      78
+      79
     ],
     [
       "2026-08-03",
@@ -8900,15 +8918,15 @@
     ],
     [
       "2026-08-04",
-      182
+      186
     ],
     [
       "2026-08-05",
-      88
+      83
     ],
     [
       "2026-08-06",
-      86
+      85
     ],
     [
       "2026-08-07",
@@ -8924,7 +8942,7 @@
     ],
     [
       "2026-08-10",
-      58
+      56
     ],
     [
       "2026-08-11",
@@ -8932,7 +8950,7 @@
     ],
     [
       "2026-08-12",
-      40
+      41
     ],
     [
       "2026-08-13",
@@ -8940,7 +8958,7 @@
     ],
     [
       "2026-08-14",
-      110
+      128
     ],
     [
       "2026-08-15",
@@ -8948,19 +8966,23 @@
     ],
     [
       "2026-08-16",
-      217
+      252
     ],
     [
       "2026-08-17",
-      77
+      80
     ],
     [
       "2026-08-18",
-      82
+      90
     ],
     [
       "2026-08-19",
-      28
+      173
+    ],
+    [
+      "2026-08-20",
+      15
     ]
   ],
   "sessionDays": [
@@ -9387,6 +9409,10 @@
     [
       "2026-08-18",
       2
+    ],
+    [
+      "2026-08-20",
+      1
     ]
   ]
 }
