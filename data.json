@@ -2,65 +2,83 @@
   "repos": [
     {
       "name": "cerebral/dreamcode",
-      "commits": 37532,
-      "insertions": 4957740,
-      "deletions": 3331268,
-      "net": 1626472,
+      "commits": 38843,
+      "insertions": 5263033,
+      "deletions": 3488365,
+      "net": 1774668,
       "desc": "The living-terminal theme bundle. 37,529 commits — design snapshots auto-generated from the brand canon pipeline.",
       "category": "design"
     },
     {
       "name": "unsigned/omp",
-      "commits": 20766,
-      "insertions": 5063671,
-      "deletions": 2402275,
-      "net": 2661396,
+      "commits": 25706,
+      "insertions": 8572289,
+      "deletions": 3251815,
+      "net": 5320474,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2659,
-      "insertions": 736571,
-      "deletions": 108279,
-      "net": 628292,
+      "commits": 2676,
+      "insertions": 738786,
+      "deletions": 108452,
+      "net": 630334,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "todie/claude-code",
+      "commits": 2365,
+      "insertions": 946735,
+      "deletions": 72916,
+      "net": 873819,
+      "desc": "Claude Code configuration and custom rules.",
+      "category": "ops"
+    },
+    {
+      "name": "vendor/rtk",
+      "commits": 1777,
+      "insertions": 249127,
+      "deletions": 70355,
+      "net": 178772,
+      "desc": "Rust Token Killer — CLI proxy saving 60-90% tokens on dev operations.",
+      "category": "vendor"
+    },
+    {
+      "name": "unsigned/herdr",
+      "commits": 1701,
+      "insertions": 1107024,
+      "deletions": 213185,
+      "net": 893839,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/paas",
-      "commits": 1672,
-      "insertions": 321460,
-      "deletions": 57622,
-      "net": 263838,
+      "commits": 1691,
+      "insertions": 321809,
+      "deletions": 57698,
+      "net": 264111,
       "desc": "",
       "category": "platform"
     },
     {
       "name": "rina",
-      "commits": 1592,
-      "insertions": 529495,
-      "deletions": 201022,
-      "net": 328473,
+      "commits": 1594,
+      "insertions": 528098,
+      "deletions": 201103,
+      "net": 326995,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/herdr",
-      "commits": 1470,
-      "insertions": 1026667,
-      "deletions": 186276,
-      "net": 840391,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "vendor/rtk",
-      "commits": 904,
-      "insertions": 170477,
-      "deletions": 41204,
-      "net": 129273,
-      "desc": "Rust Token Killer — CLI proxy saving 60-90% tokens on dev operations.",
+      "name": "vendor/claude-hud",
+      "commits": 845,
+      "insertions": 91853,
+      "deletions": 43470,
+      "net": 48383,
+      "desc": "Claude HUD — heads-up display for Claude Code sessions.",
       "category": "vendor"
     },
     {
@@ -83,101 +101,101 @@
     },
     {
       "name": "unsigned/soma-os-wt-dockerfix",
-      "commits": 428,
-      "insertions": 194508,
-      "deletions": 9563,
-      "net": 184945,
+      "commits": 462,
+      "insertions": 198361,
+      "deletions": 9917,
+      "net": 188444,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "vendor/claude-hud",
-      "commits": 390,
-      "insertions": 52410,
-      "deletions": 34289,
-      "net": 18121,
-      "desc": "Claude HUD — heads-up display for Claude Code sessions.",
-      "category": "vendor"
+      "name": "cerebral/revenant",
+      "commits": 383,
+      "insertions": 69267,
+      "deletions": 13437,
+      "net": 55830,
+      "desc": "",
+      "category": "infra"
     },
     {
       "name": "terrarium",
-      "commits": 372,
-      "insertions": 186393,
-      "deletions": 38612,
-      "net": 147781,
+      "commits": 380,
+      "insertions": 211888,
+      "deletions": 38768,
+      "net": 173120,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/site",
-      "commits": 329,
-      "insertions": 40177,
-      "deletions": 12666,
-      "net": 27511,
+      "commits": 331,
+      "insertions": 40408,
+      "deletions": 12679,
+      "net": 27729,
       "desc": "",
       "category": "design"
     },
     {
-      "name": "cerebral/revenant",
-      "commits": 272,
-      "insertions": 61374,
-      "deletions": 9591,
-      "net": 51783,
-      "desc": "",
-      "category": "infra"
-    },
-    {
       "name": "unsigned/gg",
-      "commits": 263,
-      "insertions": 63815,
-      "deletions": 9488,
-      "net": 54327,
+      "commits": 290,
+      "insertions": 71710,
+      "deletions": 9796,
+      "net": 61914,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
     {
       "name": "todie/heretic",
-      "commits": 235,
-      "insertions": 19651,
-      "deletions": 6253,
-      "net": 13398,
+      "commits": 256,
+      "insertions": 21746,
+      "deletions": 7107,
+      "net": 14639,
       "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.",
       "category": "ops"
     },
     {
       "name": "revenant-forgejo",
-      "commits": 205,
-      "insertions": 46417,
-      "deletions": 7865,
-      "net": 38552,
+      "commits": 210,
+      "insertions": 46628,
+      "deletions": 7869,
+      "net": 38759,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 201,
-      "insertions": 46570,
-      "deletions": 5423,
-      "net": 41147,
+      "commits": 202,
+      "insertions": 46695,
+      "deletions": 5425,
+      "net": 41270,
       "desc": "",
       "category": "agent"
     },
     {
       "name": "todie/dotfiles",
-      "commits": 199,
-      "insertions": 43093,
-      "deletions": 12998,
-      "net": 30095,
+      "commits": 200,
+      "insertions": 43236,
+      "deletions": 12999,
+      "net": 30237,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
     {
       "name": "cerebral/lizard",
-      "commits": 192,
-      "insertions": 114179,
+      "commits": 193,
+      "insertions": 114501,
       "deletions": 32549,
-      "net": 81630,
+      "net": 81952,
       "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "todie/explainers",
+      "commits": 191,
+      "insertions": 33440,
+      "deletions": 4285,
+      "net": 29155,
+      "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
       "category": "ops"
     },
     {
@@ -190,30 +208,48 @@
       "category": "ops"
     },
     {
-      "name": "todie/agentic-wt-parity",
-      "commits": 176,
-      "insertions": 22781,
-      "deletions": 5514,
-      "net": 17267,
+      "name": "todie/agentic",
+      "commits": 179,
+      "insertions": 22850,
+      "deletions": 5572,
+      "net": 17278,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/agentic",
+      "commits": 178,
+      "insertions": 22850,
+      "deletions": 5572,
+      "net": 17278,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/cortex-stale",
-      "commits": 152,
-      "insertions": 36688,
-      "deletions": 1845,
-      "net": 34843,
+      "commits": 158,
+      "insertions": 37267,
+      "deletions": 1945,
+      "net": 35322,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "revenant",
-      "commits": 127,
-      "insertions": 55203,
-      "deletions": 8615,
-      "net": 46588,
+      "commits": 135,
+      "insertions": 55143,
+      "deletions": 20966,
+      "net": 34177,
       "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "vendor/claude-relay",
+      "commits": 128,
+      "insertions": 81669,
+      "deletions": 7430,
+      "net": 74239,
+      "desc": "Claude relay — request proxying and routing for Claude API.",
       "category": "ops"
     },
     {
@@ -226,22 +262,31 @@
       "category": "infra"
     },
     {
-      "name": "vendor/herdr-plus",
-      "commits": 90,
-      "insertions": 18478,
-      "deletions": 8319,
-      "net": 10159,
+      "name": "ieva",
+      "commits": 106,
+      "insertions": 19941,
+      "deletions": 1558,
+      "net": 18383,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "todie/explainers",
-      "commits": 81,
-      "insertions": 33260,
-      "deletions": 4186,
-      "net": 29074,
-      "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
+      "name": "vendor/herdr-plus",
+      "commits": 102,
+      "insertions": 19467,
+      "deletions": 8450,
+      "net": 11017,
+      "desc": "",
       "category": "ops"
+    },
+    {
+      "name": "vendor/claude-esp",
+      "commits": 93,
+      "insertions": 9927,
+      "deletions": 1366,
+      "net": 8561,
+      "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
+      "category": "vendor"
     },
     {
       "name": "todie/pact",
@@ -253,38 +298,29 @@
       "category": "ops"
     },
     {
-      "name": "vendor/claude-esp",
-      "commits": 68,
-      "insertions": 6938,
-      "deletions": 912,
-      "net": 6026,
-      "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
-      "category": "vendor"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 63,
-      "insertions": 19074,
-      "deletions": 5937,
-      "net": 13137,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/action-runners",
-      "commits": 62,
-      "insertions": 9545,
-      "deletions": 588,
-      "net": 8957,
+      "commits": 72,
+      "insertions": 9912,
+      "deletions": 595,
+      "net": 9317,
       "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
       "category": "infra"
     },
     {
+      "name": "cerebral/works",
+      "commits": 64,
+      "insertions": 19312,
+      "deletions": 6072,
+      "net": 13240,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/cerebral-design",
-      "commits": 60,
-      "insertions": 20462,
+      "commits": 63,
+      "insertions": 20850,
       "deletions": 1416,
-      "net": 19046,
+      "net": 19434,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
     },
@@ -298,12 +334,30 @@
       "category": "ops"
     },
     {
+      "name": "er-terminal",
+      "commits": 56,
+      "insertions": 12842,
+      "deletions": 1119,
+      "net": 11723,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/voicenotes",
       "commits": 50,
       "insertions": 11949,
       "deletions": 269,
       "net": 11680,
       "desc": "Voice notes PWA. Audio recording and transcription on Cloudflare.",
+      "category": "ops"
+    },
+    {
+      "name": "todie/mcp-honeypot",
+      "commits": 48,
+      "insertions": 18026,
+      "deletions": 736,
+      "net": 17290,
+      "desc": "MCP honeypot — security research and deception tooling.",
       "category": "ops"
     },
     {
@@ -325,20 +379,29 @@
       "category": "infra"
     },
     {
-      "name": "todie/mcp-honeypot",
-      "commits": 42,
-      "insertions": 17582,
-      "deletions": 729,
-      "net": 16853,
-      "desc": "MCP honeypot — security research and deception tooling.",
+      "name": "zerodays/zerodays",
+      "commits": 43,
+      "insertions": 118716,
+      "deletions": 1273,
+      "net": 117443,
+      "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/unsigned-control-panel",
+      "commits": 41,
+      "insertions": 11839,
+      "deletions": 816,
+      "net": 11023,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/unsigned-onboard",
       "commits": 38,
-      "insertions": 11628,
-      "deletions": 815,
-      "net": 10813,
+      "insertions": 15414,
+      "deletions": 4204,
+      "net": 11210,
       "desc": "",
       "category": "ops"
     },
@@ -353,28 +416,10 @@
     },
     {
       "name": "unsigned/escapement",
-      "commits": 35,
-      "insertions": 16461,
-      "deletions": 408,
-      "net": 16053,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/unsigned-onboard",
-      "commits": 35,
-      "insertions": 14936,
-      "deletions": 4204,
-      "net": 10732,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "er-terminal",
-      "commits": 35,
-      "insertions": 9929,
-      "deletions": 540,
-      "net": 9389,
+      "commits": 36,
+      "insertions": 16483,
+      "deletions": 412,
+      "net": 16071,
       "desc": "",
       "category": "ops"
     },
@@ -384,6 +429,24 @@
       "insertions": 5872,
       "deletions": 321,
       "net": 5551,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/soma-design",
+      "commits": 33,
+      "insertions": 6241,
+      "deletions": 423,
+      "net": 5818,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "pgt",
+      "commits": 32,
+      "insertions": 21320,
+      "deletions": 2995,
+      "net": 18325,
       "desc": "",
       "category": "ops"
     },
@@ -424,48 +487,93 @@
       "category": "infra"
     },
     {
-      "name": "pgt",
-      "commits": 27,
-      "insertions": 15270,
-      "deletions": 1376,
-      "net": 13894,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/meridian",
-      "commits": 27,
-      "insertions": 6272,
+      "commits": 28,
+      "insertions": 6594,
       "deletions": 468,
-      "net": 5804,
+      "net": 6126,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/ml-images",
-      "commits": 27,
-      "insertions": 1507,
-      "deletions": 291,
+      "commits": 28,
+      "insertions": 1509,
+      "deletions": 293,
       "net": 1216,
       "desc": "Hardened LiteLLM image + kaniko build pipeline.",
       "category": "infra"
     },
     {
-      "name": "ieva",
-      "commits": 25,
-      "insertions": 3071,
-      "deletions": 344,
-      "net": 2727,
-      "desc": "",
+      "name": "todie/reach",
+      "commits": 27,
+      "insertions": 17251,
+      "deletions": 1131,
+      "net": 16120,
+      "desc": "Reach — outreach and connection management.",
       "category": "ops"
     },
     {
-      "name": "todie/reach",
-      "commits": 24,
-      "insertions": 10869,
-      "deletions": 1099,
-      "net": 9770,
-      "desc": "Reach — outreach and connection management.",
+      "name": "identity",
+      "commits": 27,
+      "insertions": 53706,
+      "deletions": 106,
+      "net": 53600,
+      "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
+      "category": "identity"
+    },
+    {
+      "name": "templates/terraform",
+      "commits": 26,
+      "insertions": 1712,
+      "deletions": 150,
+      "net": 1562,
+      "desc": "Terraform project template. Standard module structure.",
+      "category": "templates"
+    },
+    {
+      "name": "mission-control",
+      "commits": 26,
+      "insertions": 3592,
+      "deletions": 251,
+      "net": 3341,
+      "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.",
+      "category": "ops"
+    },
+    {
+      "name": "todie/nahbro.dev",
+      "commits": 25,
+      "insertions": 3872,
+      "deletions": 697,
+      "net": 3175,
+      "desc": "nahbro.dev — personal domain and experiments.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/metal-foundry",
+      "commits": 25,
+      "insertions": 1278,
+      "deletions": 19,
+      "net": 1259,
+      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
+      "category": "ops"
+    },
+    {
+      "name": "templates/node",
+      "commits": 23,
+      "insertions": 802,
+      "deletions": 50,
+      "net": 752,
+      "desc": "Node.js project template. Standard scaffolding.",
+      "category": "templates"
+    },
+    {
+      "name": "vesperan",
+      "commits": 23,
+      "insertions": 63938,
+      "deletions": 272,
+      "net": 63666,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -478,40 +586,22 @@
       "category": "ops"
     },
     {
-      "name": "vesperan",
-      "commits": 22,
-      "insertions": 63938,
-      "deletions": 272,
-      "net": 63666,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "todie/nahbro.dev",
-      "commits": 21,
-      "insertions": 3761,
-      "deletions": 696,
-      "net": 3065,
-      "desc": "nahbro.dev — personal domain and experiments.",
-      "category": "ops"
-    },
-    {
-      "name": "identity",
-      "commits": 21,
-      "insertions": 53290,
-      "deletions": 103,
-      "net": 53187,
-      "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
-      "category": "identity"
-    },
-    {
-      "name": "github-app",
+      "name": "templates/rust",
       "commits": 20,
-      "insertions": 13161,
-      "deletions": 331,
-      "net": 12830,
-      "desc": "",
-      "category": "ops"
+      "insertions": 860,
+      "deletions": 77,
+      "net": 783,
+      "desc": "Rust project template. Standard scaffolding.",
+      "category": "templates"
+    },
+    {
+      "name": "unsigned/agent-jury",
+      "commits": 20,
+      "insertions": 8941,
+      "deletions": 321,
+      "net": 8620,
+      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
+      "category": "agent"
     },
     {
       "name": "cerebral/about-worker",
@@ -523,67 +613,22 @@
       "category": "ops"
     },
     {
-      "name": "mission-control",
-      "commits": 20,
-      "insertions": 3158,
-      "deletions": 248,
-      "net": 2910,
-      "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.",
-      "category": "ops"
-    },
-    {
-      "name": "templates/node",
-      "commits": 19,
-      "insertions": 668,
-      "deletions": 50,
-      "net": 618,
-      "desc": "Node.js project template. Standard scaffolding.",
-      "category": "templates"
-    },
-    {
-      "name": "unsigned/metal-foundry",
-      "commits": 19,
-      "insertions": 684,
-      "deletions": 15,
-      "net": 669,
-      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
-      "category": "ops"
-    },
-    {
-      "name": "templates/rust",
-      "commits": 18,
-      "insertions": 750,
-      "deletions": 77,
-      "net": 673,
-      "desc": "Rust project template. Standard scaffolding.",
-      "category": "templates"
-    },
-    {
       "name": "vendor/beepboopd",
-      "commits": 18,
-      "insertions": 5626,
-      "deletions": 1236,
-      "net": 4390,
+      "commits": 19,
+      "insertions": 5735,
+      "deletions": 1244,
+      "net": 4491,
       "desc": "beepboopd — a small daemon experiment.",
       "category": "vendor"
     },
     {
-      "name": "zerodays/zerodays",
-      "commits": 18,
-      "insertions": 117839,
-      "deletions": 967,
-      "net": 116872,
+      "name": "cerebral/revenue-apollo-wt",
+      "commits": 17,
+      "insertions": 1919,
+      "deletions": 162,
+      "net": 1757,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "templates/terraform",
-      "commits": 17,
-      "insertions": 1207,
-      "deletions": 115,
-      "net": 1092,
-      "desc": "Terraform project template. Standard module structure.",
-      "category": "templates"
     },
     {
       "name": "cerebral/reverie-slack",
@@ -595,22 +640,31 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/physomni",
-      "commits": 17,
-      "insertions": 24552,
-      "deletions": 214,
-      "net": 24338,
-      "desc": "",
+      "name": "todie/todie.io",
+      "commits": 16,
+      "insertions": 4227,
+      "deletions": 276,
+      "net": 3951,
+      "desc": "todie.io — personal domain and blog.",
       "category": "ops"
     },
     {
-      "name": "unsigned/soma-design",
+      "name": "todie/ghost-blog",
       "commits": 15,
-      "insertions": 3956,
-      "deletions": 118,
-      "net": 3838,
-      "desc": "",
+      "insertions": 10492,
+      "deletions": 0,
+      "net": 10492,
+      "desc": "Ghost blog deployment. Content publishing pipeline.",
       "category": "ops"
+    },
+    {
+      "name": "cerebral/files-portal",
+      "commits": 15,
+      "insertions": 11381,
+      "deletions": 1883,
+      "net": 9498,
+      "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
+      "category": "platform"
     },
     {
       "name": "todie/todie-assistant",
@@ -622,65 +676,29 @@
       "category": "ops"
     },
     {
-      "name": "todie/todie.io",
-      "commits": 14,
-      "insertions": 4117,
-      "deletions": 276,
-      "net": 3841,
-      "desc": "todie.io — personal domain and blog.",
-      "category": "ops"
-    },
-    {
       "name": "todie/aaronbisla.com",
       "commits": 14,
-      "insertions": 4674,
-      "deletions": 2168,
-      "net": 2506,
+      "insertions": 4345,
+      "deletions": 2130,
+      "net": 2215,
       "desc": "Aaron Bisla's website. Personal portfolio.",
       "category": "ops"
     },
     {
-      "name": "unsigned/agent-jury",
+      "name": "unsigned/juarez",
       "commits": 14,
-      "insertions": 8604,
-      "deletions": 295,
-      "net": 8309,
-      "desc": "Adversarial review pipeline. Judge trait, gateway/Anthropic backends, ChatEval.",
-      "category": "agent"
-    },
-    {
-      "name": "todie/ghost-blog",
-      "commits": 13,
-      "insertions": 10382,
-      "deletions": 0,
-      "net": 10382,
-      "desc": "Ghost blog deployment. Content publishing pipeline.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/revenue-apollo-wt",
-      "commits": 12,
-      "insertions": 1887,
-      "deletions": 146,
-      "net": 1741,
+      "insertions": 1600,
+      "deletions": 57,
+      "net": 1543,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "cerebral/files-portal",
-      "commits": 12,
-      "insertions": 10949,
-      "deletions": 1883,
-      "net": 9066,
-      "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
-      "category": "platform"
-    },
-    {
       "name": "templates/python",
-      "commits": 11,
-      "insertions": 610,
+      "commits": 13,
+      "insertions": 721,
       "deletions": 36,
-      "net": 574,
+      "net": 685,
       "desc": "Python project template. Standard scaffolding.",
       "category": "ops"
     },
@@ -694,12 +712,39 @@
       "category": "agent"
     },
     {
-      "name": "vendor/claude-relay",
+      "name": "todie/honeypot.vip",
       "commits": 10,
-      "insertions": 5014,
-      "deletions": 112,
-      "net": 4902,
-      "desc": "Claude relay — request proxying and routing for Claude API.",
+      "insertions": 2520,
+      "deletions": 1336,
+      "net": 1184,
+      "desc": "honeypot.vip — security research domain.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/k8s-audit",
+      "commits": 10,
+      "insertions": 5881,
+      "deletions": 228,
+      "net": 5653,
+      "desc": "",
+      "category": "infra"
+    },
+    {
+      "name": "unsigned/dr",
+      "commits": 10,
+      "insertions": 6285,
+      "deletions": 151,
+      "net": 6134,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "ai-atlas",
+      "commits": 9,
+      "insertions": 16507,
+      "deletions": 2056,
+      "net": 14451,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -712,20 +757,11 @@
       "category": "ops"
     },
     {
-      "name": "todie/honeypot.vip",
+      "name": "unsigned/moshi-cli",
       "commits": 7,
-      "insertions": 2097,
-      "deletions": 1336,
-      "net": 761,
-      "desc": "honeypot.vip — security research domain.",
-      "category": "ops"
-    },
-    {
-      "name": "ai-atlas",
-      "commits": 7,
-      "insertions": 16297,
-      "deletions": 2056,
-      "net": 14241,
+      "insertions": 2048,
+      "deletions": 21,
+      "net": 2027,
       "desc": "",
       "category": "ops"
     },
@@ -739,6 +775,42 @@
       "category": "ops"
     },
     {
+      "name": "todie/uri-snapshot",
+      "commits": 6,
+      "insertions": 494,
+      "deletions": 1,
+      "net": 493,
+      "desc": "URI snapshot tool. Capture and compare web resources.",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/dealroom",
+      "commits": 6,
+      "insertions": 10508,
+      "deletions": 595,
+      "net": 9913,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "todie/todie-daemon",
+      "commits": 5,
+      "insertions": 4046,
+      "deletions": 90,
+      "net": 3956,
+      "desc": "Early daemon prototype. superseded by reverie.",
+      "category": "ops"
+    },
+    {
+      "name": "todie/vibe-explainer",
+      "commits": 5,
+      "insertions": 5108,
+      "deletions": 261,
+      "net": 4847,
+      "desc": "Vibe explainer — interactive technical explainers.",
+      "category": "ops"
+    },
+    {
       "name": "todie/claude-session-manager",
       "commits": 5,
       "insertions": 1926,
@@ -748,20 +820,11 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/juarez",
+      "name": "cerebral/enterprise-genie",
       "commits": 5,
-      "insertions": 724,
-      "deletions": 53,
-      "net": 671,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/dr",
-      "commits": 5,
-      "insertions": 5906,
-      "deletions": 148,
-      "net": 5758,
+      "insertions": 711,
+      "deletions": 1,
+      "net": 710,
       "desc": "",
       "category": "ops"
     },
@@ -775,6 +838,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cf-pwa-template",
+      "commits": 5,
+      "insertions": 1102,
+      "deletions": 56,
+      "net": 1046,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/crm",
       "commits": 5,
       "insertions": 997,
@@ -784,12 +856,12 @@
       "category": "ops"
     },
     {
-      "name": "todie/uri-snapshot",
+      "name": "bench",
       "commits": 4,
-      "insertions": 384,
-      "deletions": 1,
-      "net": 383,
-      "desc": "URI snapshot tool. Capture and compare web resources.",
+      "insertions": 3986,
+      "deletions": 0,
+      "net": 3986,
+      "desc": "bench.unsigned.gg. Inspect-ai harness, promptfoo merge gate, frontier leaderboard.",
       "category": "ops"
     },
     {
@@ -811,6 +883,15 @@
       "category": "design"
     },
     {
+      "name": "cerebral/gami-vst",
+      "commits": 4,
+      "insertions": 1647,
+      "deletions": 34,
+      "net": 1613,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/soma-brief-worker",
       "commits": 4,
       "insertions": 1950,
@@ -820,74 +901,47 @@
       "category": "ops"
     },
     {
-      "name": "todie/vibe-explainer",
-      "commits": 3,
-      "insertions": 4934,
-      "deletions": 261,
-      "net": 4673,
-      "desc": "Vibe explainer — interactive technical explainers.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/k8s-audit",
-      "commits": 3,
-      "insertions": 5440,
-      "deletions": 224,
-      "net": 5216,
-      "desc": "",
-      "category": "infra"
-    },
-    {
-      "name": "unsigned/moshi-cli",
-      "commits": 3,
-      "insertions": 1760,
-      "deletions": 20,
-      "net": 1740,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "bench",
-      "commits": 3,
-      "insertions": 6557,
+      "name": "cerebral/blanklabel",
+      "commits": 4,
+      "insertions": 949,
       "deletions": 0,
-      "net": 6557,
-      "desc": "bench.unsigned.gg. Inspect-ai harness, promptfoo merge gate, frontier leaderboard.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/gami-vst",
-      "commits": 3,
-      "insertions": 1325,
-      "deletions": 34,
-      "net": 1291,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/dealroom",
-      "commits": 3,
-      "insertions": 10012,
-      "deletions": 595,
-      "net": 9417,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/enterprise-genie",
-      "commits": 3,
-      "insertions": 537,
-      "deletions": 1,
-      "net": 536,
+      "net": 949,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/film",
-      "commits": 3,
-      "insertions": 1095,
+      "commits": 4,
+      "insertions": 1417,
       "deletions": 3,
-      "net": 1092,
+      "net": 1414,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "todie/attention-router",
+      "commits": 3,
+      "insertions": 425,
+      "deletions": 0,
+      "net": 425,
+      "desc": "Attention router — focus management experiments.",
+      "category": "ops"
+    },
+    {
+      "name": "todie/expression-manifold",
+      "commits": 3,
+      "insertions": 286,
+      "deletions": 0,
+      "net": 286,
+      "desc": "Expression manifold — creative coding experiments.",
+      "category": "ops"
+    },
+    {
+      "name": "todie/linear-github-sync",
+      "commits": 3,
+      "insertions": 105,
+      "deletions": 0,
+      "net": 105,
       "desc": "",
       "category": "ops"
     },
@@ -901,15 +955,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cf-pwa-template",
-      "commits": 3,
-      "insertions": 928,
-      "deletions": 56,
-      "net": 872,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "augh",
       "commits": 2,
       "insertions": 1925,
@@ -919,21 +964,12 @@
       "category": "ops"
     },
     {
-      "name": "todie/claude-code",
+      "name": "todie/Signal-Desktop",
       "commits": 2,
-      "insertions": 513631,
-      "deletions": 2,
-      "net": 513629,
-      "desc": "Claude Code configuration and custom rules.",
-      "category": "ops"
-    },
-    {
-      "name": "todie/todie-daemon",
-      "commits": 2,
-      "insertions": 3841,
-      "deletions": 90,
-      "net": 3751,
-      "desc": "Early daemon prototype. superseded by reverie.",
+      "insertions": 1301877,
+      "deletions": 0,
+      "net": 1301877,
+      "desc": "Signal Desktop fork. Local build and customization.",
       "category": "ops"
     },
     {
@@ -964,11 +1000,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/blanklabel",
+      "name": "cerebral/physomni",
       "commits": 2,
-      "insertions": 775,
-      "deletions": 0,
-      "net": 775,
+      "insertions": 12311,
+      "deletions": 45,
+      "net": 12266,
       "desc": "",
       "category": "ops"
     },
@@ -988,33 +1024,6 @@
       "deletions": 0,
       "net": 1900,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "todie/attention-router",
-      "commits": 1,
-      "insertions": 215,
-      "deletions": 0,
-      "net": 215,
-      "desc": "Attention router — focus management experiments.",
-      "category": "ops"
-    },
-    {
-      "name": "todie/expression-manifold",
-      "commits": 1,
-      "insertions": 76,
-      "deletions": 0,
-      "net": 76,
-      "desc": "Expression manifold — creative coding experiments.",
-      "category": "ops"
-    },
-    {
-      "name": "todie/Signal-Desktop",
-      "commits": 1,
-      "insertions": 1301822,
-      "deletions": 0,
-      "net": 1301822,
-      "desc": "Signal Desktop fork. Local build and customization.",
       "category": "ops"
     },
     {
@@ -8242,11 +8251,11 @@
     ],
     [
       "2026-02-16",
-      212
+      211
     ],
     [
       "2026-02-17",
-      88
+      87
     ],
     [
       "2026-02-18",
@@ -8262,15 +8271,15 @@
     ],
     [
       "2026-02-21",
-      94
+      92
     ],
     [
       "2026-02-22",
-      145
+      144
     ],
     [
       "2026-02-23",
-      108
+      107
     ],
     [
       "2026-02-24",
@@ -8286,7 +8295,7 @@
     ],
     [
       "2026-02-27",
-      110
+      111
     ],
     [
       "2026-02-28",
@@ -8298,7 +8307,7 @@
     ],
     [
       "2026-03-02",
-      81
+      75
     ],
     [
       "2026-03-03",
@@ -8310,35 +8319,35 @@
     ],
     [
       "2026-03-05",
-      137
+      111
     ],
     [
       "2026-03-06",
-      125
+      97
     ],
     [
       "2026-03-07",
-      31
+      27
     ],
     [
       "2026-03-08",
-      79
+      72
     ],
     [
       "2026-03-09",
-      102
+      92
     ],
     [
       "2026-03-10",
-      143
+      122
     ],
     [
       "2026-03-11",
-      93
+      89
     ],
     [
       "2026-03-12",
-      75
+      77
     ],
     [
       "2026-03-13",
@@ -8346,7 +8355,7 @@
     ],
     [
       "2026-03-14",
-      93
+      94
     ],
     [
       "2026-03-15",
@@ -8370,7 +8379,7 @@
     ],
     [
       "2026-03-20",
-      90
+      89
     ],
     [
       "2026-03-21",
@@ -8386,603 +8395,607 @@
     ],
     [
       "2026-03-24",
-      63
+      77
     ],
     [
       "2026-03-25",
-      72
+      73
     ],
     [
       "2026-03-26",
-      154
-    ],
-    [
-      "2026-03-27",
-      82
-    ],
-    [
-      "2026-03-28",
-      105
-    ],
-    [
-      "2026-03-29",
-      51
-    ],
-    [
-      "2026-03-30",
-      138
-    ],
-    [
-      "2026-03-31",
-      125
-    ],
-    [
-      "2026-04-01",
-      206
-    ],
-    [
-      "2026-04-02",
-      149
-    ],
-    [
-      "2026-04-03",
-      150
-    ],
-    [
-      "2026-04-04",
-      87
-    ],
-    [
-      "2026-04-05",
-      104
-    ],
-    [
-      "2026-04-06",
-      220
-    ],
-    [
-      "2026-04-07",
-      338
-    ],
-    [
-      "2026-04-08",
-      219
-    ],
-    [
-      "2026-04-09",
-      267
-    ],
-    [
-      "2026-04-10",
-      240
-    ],
-    [
-      "2026-04-11",
-      83
-    ],
-    [
-      "2026-04-12",
-      35
-    ],
-    [
-      "2026-04-13",
-      162
-    ],
-    [
-      "2026-04-14",
-      80
-    ],
-    [
-      "2026-04-15",
-      121
-    ],
-    [
-      "2026-04-16",
-      184
-    ],
-    [
-      "2026-04-17",
-      303
-    ],
-    [
-      "2026-04-18",
-      214
-    ],
-    [
-      "2026-04-19",
-      82
-    ],
-    [
-      "2026-04-20",
-      141
-    ],
-    [
-      "2026-04-21",
-      182
-    ],
-    [
-      "2026-04-22",
-      135
-    ],
-    [
-      "2026-04-23",
-      162
-    ],
-    [
-      "2026-04-24",
-      319
-    ],
-    [
-      "2026-04-25",
-      93
-    ],
-    [
-      "2026-04-26",
-      258
-    ],
-    [
-      "2026-04-27",
-      153
-    ],
-    [
-      "2026-04-28",
-      83
-    ],
-    [
-      "2026-04-29",
       155
     ],
     [
-      "2026-04-30",
-      221
+      "2026-03-27",
+      84
     ],
     [
-      "2026-05-01",
-      70
+      "2026-03-28",
+      127
     ],
     [
-      "2026-05-02",
-      110
-    ],
-    [
-      "2026-05-03",
-      114
-    ],
-    [
-      "2026-05-04",
-      86
-    ],
-    [
-      "2026-05-05",
-      85
-    ],
-    [
-      "2026-05-06",
-      238
-    ],
-    [
-      "2026-05-07",
-      137
-    ],
-    [
-      "2026-05-08",
-      101
-    ],
-    [
-      "2026-05-09",
-      173
-    ],
-    [
-      "2026-05-10",
-      116
-    ],
-    [
-      "2026-05-11",
-      90
-    ],
-    [
-      "2026-05-12",
-      245
-    ],
-    [
-      "2026-05-13",
-      216
-    ],
-    [
-      "2026-05-14",
-      139
-    ],
-    [
-      "2026-05-15",
-      421
-    ],
-    [
-      "2026-05-16",
-      117
-    ],
-    [
-      "2026-05-17",
-      202
-    ],
-    [
-      "2026-05-18",
-      30
-    ],
-    [
-      "2026-05-19",
-      182
-    ],
-    [
-      "2026-05-20",
+      "2026-03-29",
       71
     ],
     [
-      "2026-05-21",
-      113
+      "2026-03-30",
+      191
     ],
     [
-      "2026-05-22",
-      134
+      "2026-03-31",
+      279
     ],
     [
-      "2026-05-23",
-      65
-    ],
-    [
-      "2026-05-24",
-      24
-    ],
-    [
-      "2026-05-25",
-      150
-    ],
-    [
-      "2026-05-26",
-      161
-    ],
-    [
-      "2026-05-27",
-      197
-    ],
-    [
-      "2026-05-28",
-      87
-    ],
-    [
-      "2026-05-29",
-      87
-    ],
-    [
-      "2026-05-30",
-      178
-    ],
-    [
-      "2026-05-31",
-      286
-    ],
-    [
-      "2026-06-01",
-      185
-    ],
-    [
-      "2026-06-02",
-      277
-    ],
-    [
-      "2026-06-03",
-      333
-    ],
-    [
-      "2026-06-04",
-      264
-    ],
-    [
-      "2026-06-05",
-      170
-    ],
-    [
-      "2026-06-06",
-      273
-    ],
-    [
-      "2026-06-07",
-      252
-    ],
-    [
-      "2026-06-08",
-      365
-    ],
-    [
-      "2026-06-09",
-      273
-    ],
-    [
-      "2026-06-10",
-      346
-    ],
-    [
-      "2026-06-11",
-      181
-    ],
-    [
-      "2026-06-12",
-      330
-    ],
-    [
-      "2026-06-13",
-      256
-    ],
-    [
-      "2026-06-14",
-      333
-    ],
-    [
-      "2026-06-15",
-      339
-    ],
-    [
-      "2026-06-16",
-      193
-    ],
-    [
-      "2026-06-17",
-      222
-    ],
-    [
-      "2026-06-18",
-      242
-    ],
-    [
-      "2026-06-19",
-      237
-    ],
-    [
-      "2026-06-20",
-      169
-    ],
-    [
-      "2026-06-21",
-      141
-    ],
-    [
-      "2026-06-22",
-      181
-    ],
-    [
-      "2026-06-23",
-      258
-    ],
-    [
-      "2026-06-24",
-      135
-    ],
-    [
-      "2026-06-25",
-      182
-    ],
-    [
-      "2026-06-26",
-      219
-    ],
-    [
-      "2026-06-27",
-      226
-    ],
-    [
-      "2026-06-28",
-      202
-    ],
-    [
-      "2026-06-29",
-      113
-    ],
-    [
-      "2026-06-30",
-      195
-    ],
-    [
-      "2026-07-01",
-      346
-    ],
-    [
-      "2026-07-02",
-      401
-    ],
-    [
-      "2026-07-03",
-      245
-    ],
-    [
-      "2026-07-04",
-      311
-    ],
-    [
-      "2026-07-05",
-      325
-    ],
-    [
-      "2026-07-06",
-      367
-    ],
-    [
-      "2026-07-07",
-      195
-    ],
-    [
-      "2026-07-08",
-      308
-    ],
-    [
-      "2026-07-09",
-      340
-    ],
-    [
-      "2026-07-10",
-      199
-    ],
-    [
-      "2026-07-11",
-      481
-    ],
-    [
-      "2026-07-12",
-      131
-    ],
-    [
-      "2026-07-13",
-      335
-    ],
-    [
-      "2026-07-14",
+      "2026-04-01",
       493
     ],
     [
-      "2026-07-15",
-      451
+      "2026-04-02",
+      225
     ],
     [
-      "2026-07-16",
-      364
+      "2026-04-03",
+      216
     ],
     [
-      "2026-07-17",
-      314
+      "2026-04-04",
+      239
     ],
     [
-      "2026-07-18",
-      273
+      "2026-04-05",
+      155
     ],
     [
-      "2026-07-19",
-      94
+      "2026-04-06",
+      255
     ],
     [
-      "2026-07-20",
-      16
+      "2026-04-07",
+      388
     ],
     [
-      "2026-07-21",
-      56
+      "2026-04-08",
+      285
     ],
     [
-      "2026-07-22",
-      81
+      "2026-04-09",
+      315
     ],
     [
-      "2026-07-23",
-      60
+      "2026-04-10",
+      292
     ],
     [
-      "2026-07-24",
-      265
+      "2026-04-11",
+      108
     ],
     [
-      "2026-07-25",
-      136
+      "2026-04-12",
+      87
     ],
     [
-      "2026-07-26",
-      105
+      "2026-04-13",
+      197
     ],
     [
-      "2026-07-27",
+      "2026-04-14",
+      92
+    ],
+    [
+      "2026-04-15",
+      129
+    ],
+    [
+      "2026-04-16",
+      217
+    ],
+    [
+      "2026-04-17",
+      329
+    ],
+    [
+      "2026-04-18",
+      264
+    ],
+    [
+      "2026-04-19",
+      92
+    ],
+    [
+      "2026-04-20",
+      207
+    ],
+    [
+      "2026-04-21",
+      236
+    ],
+    [
+      "2026-04-22",
+      274
+    ],
+    [
+      "2026-04-23",
+      271
+    ],
+    [
+      "2026-04-24",
+      341
+    ],
+    [
+      "2026-04-25",
+      106
+    ],
+    [
+      "2026-04-26",
+      290
+    ],
+    [
+      "2026-04-27",
+      194
+    ],
+    [
+      "2026-04-28",
       98
     ],
     [
-      "2026-07-28",
-      249
+      "2026-04-29",
+      237
     ],
     [
-      "2026-07-29",
-      88
+      "2026-04-30",
+      326
     ],
     [
-      "2026-07-30",
+      "2026-05-01",
       91
     ],
     [
+      "2026-05-02",
+      116
+    ],
+    [
+      "2026-05-03",
+      135
+    ],
+    [
+      "2026-05-04",
+      133
+    ],
+    [
+      "2026-05-05",
+      150
+    ],
+    [
+      "2026-05-06",
+      299
+    ],
+    [
+      "2026-05-07",
+      180
+    ],
+    [
+      "2026-05-08",
+      149
+    ],
+    [
+      "2026-05-09",
+      184
+    ],
+    [
+      "2026-05-10",
+      131
+    ],
+    [
+      "2026-05-11",
+      161
+    ],
+    [
+      "2026-05-12",
+      286
+    ],
+    [
+      "2026-05-13",
+      260
+    ],
+    [
+      "2026-05-14",
+      251
+    ],
+    [
+      "2026-05-15",
+      585
+    ],
+    [
+      "2026-05-16",
+      126
+    ],
+    [
+      "2026-05-17",
+      216
+    ],
+    [
+      "2026-05-18",
+      57
+    ],
+    [
+      "2026-05-19",
+      241
+    ],
+    [
+      "2026-05-20",
+      148
+    ],
+    [
+      "2026-05-21",
+      205
+    ],
+    [
+      "2026-05-22",
+      191
+    ],
+    [
+      "2026-05-23",
+      77
+    ],
+    [
+      "2026-05-24",
+      71
+    ],
+    [
+      "2026-05-25",
+      282
+    ],
+    [
+      "2026-05-26",
+      268
+    ],
+    [
+      "2026-05-27",
+      295
+    ],
+    [
+      "2026-05-28",
+      160
+    ],
+    [
+      "2026-05-29",
+      153
+    ],
+    [
+      "2026-05-30",
+      183
+    ],
+    [
+      "2026-05-31",
+      305
+    ],
+    [
+      "2026-06-01",
+      245
+    ],
+    [
+      "2026-06-02",
+      316
+    ],
+    [
+      "2026-06-03",
+      425
+    ],
+    [
+      "2026-06-04",
+      329
+    ],
+    [
+      "2026-06-05",
+      324
+    ],
+    [
+      "2026-06-06",
+      296
+    ],
+    [
+      "2026-06-07",
+      266
+    ],
+    [
+      "2026-06-08",
+      417
+    ],
+    [
+      "2026-06-09",
+      326
+    ],
+    [
+      "2026-06-10",
+      376
+    ],
+    [
+      "2026-06-11",
+      218
+    ],
+    [
+      "2026-06-12",
+      355
+    ],
+    [
+      "2026-06-13",
+      266
+    ],
+    [
+      "2026-06-14",
+      343
+    ],
+    [
+      "2026-06-15",
+      393
+    ],
+    [
+      "2026-06-16",
+      244
+    ],
+    [
+      "2026-06-17",
+      266
+    ],
+    [
+      "2026-06-18",
+      289
+    ],
+    [
+      "2026-06-19",
+      282
+    ],
+    [
+      "2026-06-20",
+      180
+    ],
+    [
+      "2026-06-21",
+      157
+    ],
+    [
+      "2026-06-22",
+      225
+    ],
+    [
+      "2026-06-23",
+      290
+    ],
+    [
+      "2026-06-24",
+      176
+    ],
+    [
+      "2026-06-25",
+      209
+    ],
+    [
+      "2026-06-26",
+      263
+    ],
+    [
+      "2026-06-27",
+      250
+    ],
+    [
+      "2026-06-28",
+      221
+    ],
+    [
+      "2026-06-29",
+      167
+    ],
+    [
+      "2026-06-30",
+      234
+    ],
+    [
+      "2026-07-01",
+      397
+    ],
+    [
+      "2026-07-02",
+      465
+    ],
+    [
+      "2026-07-03",
+      278
+    ],
+    [
+      "2026-07-04",
+      320
+    ],
+    [
+      "2026-07-05",
+      334
+    ],
+    [
+      "2026-07-06",
+      405
+    ],
+    [
+      "2026-07-07",
+      212
+    ],
+    [
+      "2026-07-08",
+      343
+    ],
+    [
+      "2026-07-09",
+      371
+    ],
+    [
+      "2026-07-10",
+      214
+    ],
+    [
+      "2026-07-11",
+      491
+    ],
+    [
+      "2026-07-12",
+      152
+    ],
+    [
+      "2026-07-13",
+      391
+    ],
+    [
+      "2026-07-14",
+      518
+    ],
+    [
+      "2026-07-15",
+      567
+    ],
+    [
+      "2026-07-16",
+      408
+    ],
+    [
+      "2026-07-17",
+      327
+    ],
+    [
+      "2026-07-18",
+      499
+    ],
+    [
+      "2026-07-19",
+      118
+    ],
+    [
+      "2026-07-20",
+      87
+    ],
+    [
+      "2026-07-21",
+      146
+    ],
+    [
+      "2026-07-22",
+      315
+    ],
+    [
+      "2026-07-23",
+      367
+    ],
+    [
+      "2026-07-24",
+      451
+    ],
+    [
+      "2026-07-25",
+      266
+    ],
+    [
+      "2026-07-26",
+      285
+    ],
+    [
+      "2026-07-27",
+      351
+    ],
+    [
+      "2026-07-28",
+      525
+    ],
+    [
+      "2026-07-29",
+      263
+    ],
+    [
+      "2026-07-30",
+      301
+    ],
+    [
       "2026-07-31",
-      112
+      282
     ],
     [
       "2026-08-01",
-      78
+      244
     ],
     [
       "2026-08-02",
-      79
+      223
     ],
     [
       "2026-08-03",
-      53
+      212
     ],
     [
       "2026-08-04",
-      186
+      316
     ],
     [
       "2026-08-05",
-      83
+      283
     ],
     [
       "2026-08-06",
-      85
+      152
     ],
     [
       "2026-08-07",
-      140
+      308
     ],
     [
       "2026-08-08",
-      48
+      170
     ],
     [
       "2026-08-09",
-      36
+      158
     ],
     [
       "2026-08-10",
-      56
+      127
     ],
     [
       "2026-08-11",
-      21
+      216
     ],
     [
       "2026-08-12",
-      41
+      180
     ],
     [
       "2026-08-13",
-      63
+      306
     ],
     [
       "2026-08-14",
-      128
+      402
     ],
     [
       "2026-08-15",
-      34
+      101
     ],
     [
       "2026-08-16",
-      252
+      465
     ],
     [
       "2026-08-17",
-      80
+      155
     ],
     [
       "2026-08-18",
-      90
+      161
     ],
     [
       "2026-08-19",
-      173
+      422
     ],
     [
       "2026-08-20",
-      15
+      250
+    ],
+    [
+      "2026-08-21",
+      26
     ]
   ],
   "sessionDays": [
@@ -9412,7 +9425,7 @@
     ],
     [
       "2026-08-20",
-      1
+      2
     ]
   ]
 }
