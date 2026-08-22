@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2676,
-      "insertions": 738786,
-      "deletions": 108452,
-      "net": 630334,
+      "commits": 2691,
+      "insertions": 741423,
+      "deletions": 108736,
+      "net": 632687,
       "desc": "",
       "category": "ops"
     },
@@ -56,10 +56,10 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1691,
-      "insertions": 321809,
-      "deletions": 57698,
-      "net": 264111,
+      "commits": 1693,
+      "insertions": 321818,
+      "deletions": 57700,
+      "net": 264118,
       "desc": "",
       "category": "platform"
     },
@@ -82,6 +82,15 @@
       "category": "vendor"
     },
     {
+      "name": "unsigned/soma-os-wt-dockerfix",
+      "commits": 493,
+      "insertions": 203564,
+      "deletions": 14349,
+      "net": 189215,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/biomni",
       "commits": 489,
       "insertions": 123057,
@@ -100,15 +109,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/soma-os-wt-dockerfix",
-      "commits": 462,
-      "insertions": 198361,
-      "deletions": 9917,
-      "net": 188444,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/revenant",
       "commits": 383,
       "insertions": 69267,
@@ -119,28 +119,28 @@
     },
     {
       "name": "terrarium",
-      "commits": 380,
-      "insertions": 211888,
-      "deletions": 38768,
-      "net": 173120,
+      "commits": 381,
+      "insertions": 211902,
+      "deletions": 38772,
+      "net": 173130,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/site",
-      "commits": 331,
-      "insertions": 40408,
-      "deletions": 12679,
-      "net": 27729,
+      "commits": 333,
+      "insertions": 40474,
+      "deletions": 12707,
+      "net": 27767,
       "desc": "",
       "category": "design"
     },
     {
       "name": "unsigned/gg",
-      "commits": 290,
-      "insertions": 71710,
+      "commits": 292,
+      "insertions": 71711,
       "deletions": 9796,
-      "net": 61914,
+      "net": 61915,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -155,10 +155,10 @@
     },
     {
       "name": "revenant-forgejo",
-      "commits": 210,
-      "insertions": 46628,
-      "deletions": 7869,
-      "net": 38759,
+      "commits": 216,
+      "insertions": 47555,
+      "deletions": 7881,
+      "net": 39674,
       "desc": "",
       "category": "ops"
     },
@@ -227,10 +227,10 @@
     },
     {
       "name": "cerebral/cortex-stale",
-      "commits": 158,
-      "insertions": 37267,
-      "deletions": 1945,
-      "net": 35322,
+      "commits": 173,
+      "insertions": 38743,
+      "deletions": 2102,
+      "net": 36641,
       "desc": "",
       "category": "ops"
     },
@@ -289,6 +289,15 @@
       "category": "vendor"
     },
     {
+      "name": "zerodays/zerodays",
+      "commits": 83,
+      "insertions": 126051,
+      "deletions": 2022,
+      "net": 124029,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/pact",
       "commits": 73,
       "insertions": 41526,
@@ -308,10 +317,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 64,
-      "insertions": 19312,
-      "deletions": 6072,
-      "net": 13240,
+      "commits": 65,
+      "insertions": 19961,
+      "deletions": 6708,
+      "net": 13253,
       "desc": "",
       "category": "ops"
     },
@@ -352,6 +361,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/soma-design",
+      "commits": 49,
+      "insertions": 6968,
+      "deletions": 478,
+      "net": 6490,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/mcp-honeypot",
       "commits": 48,
       "insertions": 18026,
@@ -377,15 +395,6 @@
       "net": 6702,
       "desc": "",
       "category": "infra"
-    },
-    {
-      "name": "zerodays/zerodays",
-      "commits": 43,
-      "insertions": 118716,
-      "deletions": 1273,
-      "net": 117443,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "unsigned/unsigned-control-panel",
@@ -429,15 +438,6 @@
       "insertions": 5872,
       "deletions": 321,
       "net": 5551,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-design",
-      "commits": 33,
-      "insertions": 6241,
-      "deletions": 423,
-      "net": 5818,
       "desc": "",
       "category": "ops"
     },
@@ -1041,6 +1041,15 @@
       "insertions": 2472,
       "deletions": 0,
       "net": 2472,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/cyboflow",
+      "commits": 1,
+      "insertions": 713969,
+      "deletions": 0,
+      "net": 713969,
       "desc": "",
       "category": "ops"
     },
@@ -8899,7 +8908,7 @@
     ],
     [
       "2026-07-28",
-      525
+      528
     ],
     [
       "2026-07-29",
@@ -8975,11 +8984,11 @@
     ],
     [
       "2026-08-16",
-      465
+      466
     ],
     [
       "2026-08-17",
-      155
+      158
     ],
     [
       "2026-08-18",
@@ -8987,15 +8996,19 @@
     ],
     [
       "2026-08-19",
-      422
+      423
     ],
     [
       "2026-08-20",
-      250
+      247
     ],
     [
       "2026-08-21",
-      26
+      146
+    ],
+    [
+      "2026-08-22",
+      7
     ]
   ],
   "sessionDays": [
@@ -9426,6 +9439,10 @@
     [
       "2026-08-20",
       2
+    ],
+    [
+      "2026-08-21",
+      6
     ]
   ]
 }
