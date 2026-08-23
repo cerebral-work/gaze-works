@@ -56,16 +56,16 @@
     },
     {
       "name": "unsigned/paas",
-      "commits": 1693,
-      "insertions": 321818,
-      "deletions": 57700,
-      "net": 264118,
+      "commits": 1698,
+      "insertions": 321836,
+      "deletions": 57702,
+      "net": 264134,
       "desc": "",
       "category": "platform"
     },
     {
       "name": "rina",
-      "commits": 1594,
+      "commits": 1597,
       "insertions": 528098,
       "deletions": 201103,
       "net": 326995,
@@ -83,10 +83,10 @@
     },
     {
       "name": "unsigned/soma-os-wt-dockerfix",
-      "commits": 493,
-      "insertions": 203564,
-      "deletions": 14349,
-      "net": 189215,
+      "commits": 506,
+      "insertions": 204487,
+      "deletions": 14377,
+      "net": 190110,
       "desc": "",
       "category": "ops"
     },
@@ -109,6 +109,15 @@
       "category": "ops"
     },
     {
+      "name": "terrarium",
+      "commits": 384,
+      "insertions": 215898,
+      "deletions": 39409,
+      "net": 176489,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/revenant",
       "commits": 383,
       "insertions": 69267,
@@ -116,15 +125,6 @@
       "net": 55830,
       "desc": "",
       "category": "infra"
-    },
-    {
-      "name": "terrarium",
-      "commits": 381,
-      "insertions": 211902,
-      "deletions": 38772,
-      "net": 173130,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/site",
@@ -137,10 +137,10 @@
     },
     {
       "name": "unsigned/gg",
-      "commits": 292,
-      "insertions": 71711,
-      "deletions": 9796,
-      "net": 61915,
+      "commits": 294,
+      "insertions": 71750,
+      "deletions": 9812,
+      "net": 61938,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
@@ -155,10 +155,10 @@
     },
     {
       "name": "revenant-forgejo",
-      "commits": 216,
-      "insertions": 47555,
-      "deletions": 7881,
-      "net": 39674,
+      "commits": 222,
+      "insertions": 47642,
+      "deletions": 7885,
+      "net": 39757,
       "desc": "",
       "category": "ops"
     },
@@ -209,10 +209,19 @@
     },
     {
       "name": "todie/agentic",
-      "commits": 179,
-      "insertions": 22850,
-      "deletions": 5572,
-      "net": 17278,
+      "commits": 185,
+      "insertions": 23186,
+      "deletions": 5849,
+      "net": 17337,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/cortex-guard",
+      "commits": 180,
+      "insertions": 39411,
+      "deletions": 2129,
+      "net": 37282,
       "desc": "",
       "category": "ops"
     },
@@ -222,15 +231,6 @@
       "insertions": 22850,
       "deletions": 5572,
       "net": 17278,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/cortex-stale",
-      "commits": 173,
-      "insertions": 38743,
-      "deletions": 2102,
-      "net": 36641,
       "desc": "",
       "category": "ops"
     },
@@ -280,6 +280,15 @@
       "category": "ops"
     },
     {
+      "name": "zerodays/zerodays",
+      "commits": 98,
+      "insertions": 126668,
+      "deletions": 7362,
+      "net": 119306,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-esp",
       "commits": 93,
       "insertions": 9927,
@@ -287,15 +296,6 @@
       "net": 8561,
       "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
       "category": "vendor"
-    },
-    {
-      "name": "zerodays/zerodays",
-      "commits": 83,
-      "insertions": 126051,
-      "deletions": 2022,
-      "net": 124029,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "todie/pact",
@@ -317,10 +317,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 65,
-      "insertions": 19961,
-      "deletions": 6708,
-      "net": 13253,
+      "commits": 66,
+      "insertions": 20045,
+      "deletions": 6775,
+      "net": 13270,
       "desc": "",
       "category": "ops"
     },
@@ -8964,11 +8964,11 @@
     ],
     [
       "2026-08-11",
-      216
+      217
     ],
     [
       "2026-08-12",
-      180
+      181
     ],
     [
       "2026-08-13",
@@ -9000,15 +9000,19 @@
     ],
     [
       "2026-08-20",
-      247
+      245
     ],
     [
       "2026-08-21",
-      146
+      145
     ],
     [
       "2026-08-22",
-      7
+      50
+    ],
+    [
+      "2026-08-23",
+      19
     ]
   ],
   "sessionDays": [
@@ -9443,6 +9447,10 @@
     [
       "2026-08-21",
       6
+    ],
+    [
+      "2026-08-23",
+      3
     ]
   ]
 }
