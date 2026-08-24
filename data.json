@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2691,
-      "insertions": 741423,
-      "deletions": 108736,
-      "net": 632687,
+      "commits": 2696,
+      "insertions": 744746,
+      "deletions": 109511,
+      "net": 635235,
       "desc": "",
       "category": "ops"
     },
@@ -46,6 +46,15 @@
       "category": "vendor"
     },
     {
+      "name": "unsigned/paas",
+      "commits": 1726,
+      "insertions": 332595,
+      "deletions": 57976,
+      "net": 274619,
+      "desc": "",
+      "category": "platform"
+    },
+    {
       "name": "unsigned/herdr",
       "commits": 1701,
       "insertions": 1107024,
@@ -55,20 +64,11 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/paas",
-      "commits": 1698,
-      "insertions": 321836,
-      "deletions": 57702,
-      "net": 264134,
-      "desc": "",
-      "category": "platform"
-    },
-    {
       "name": "rina",
-      "commits": 1597,
-      "insertions": 528098,
+      "commits": 1598,
+      "insertions": 528102,
       "deletions": 201103,
-      "net": 326995,
+      "net": 326999,
       "desc": "",
       "category": "ops"
     },
@@ -82,11 +82,11 @@
       "category": "vendor"
     },
     {
-      "name": "unsigned/soma-os-wt-dockerfix",
-      "commits": 506,
-      "insertions": 204487,
-      "deletions": 14377,
-      "net": 190110,
+      "name": "unsigned/soma-os-wt-escdock",
+      "commits": 523,
+      "insertions": 206469,
+      "deletions": 14623,
+      "net": 191846,
       "desc": "",
       "category": "ops"
     },
@@ -110,10 +110,10 @@
     },
     {
       "name": "terrarium",
-      "commits": 384,
-      "insertions": 215898,
+      "commits": 387,
+      "insertions": 216122,
       "deletions": 39409,
-      "net": 176489,
+      "net": 176713,
       "desc": "",
       "category": "ops"
     },
@@ -164,10 +164,10 @@
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 202,
-      "insertions": 46695,
+      "commits": 203,
+      "insertions": 46840,
       "deletions": 5425,
-      "net": 41270,
+      "net": 41415,
       "desc": "",
       "category": "agent"
     },
@@ -208,20 +208,11 @@
       "category": "ops"
     },
     {
-      "name": "todie/agentic",
-      "commits": 185,
-      "insertions": 23186,
-      "deletions": 5849,
-      "net": 17337,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/cortex-guard",
-      "commits": 180,
-      "insertions": 39411,
-      "deletions": 2129,
-      "net": 37282,
+      "commits": 186,
+      "insertions": 39832,
+      "deletions": 2169,
+      "net": 37663,
       "desc": "",
       "category": "ops"
     },
@@ -235,7 +226,7 @@
       "category": "ops"
     },
     {
-      "name": "revenant",
+      "name": "cerebral/vilicus",
       "commits": 135,
       "insertions": 55143,
       "deletions": 20966,
@@ -271,20 +262,20 @@
       "category": "ops"
     },
     {
+      "name": "zerodays/zerodays",
+      "commits": 104,
+      "insertions": 126773,
+      "deletions": 7407,
+      "net": 119366,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/herdr-plus",
       "commits": 102,
       "insertions": 19467,
       "deletions": 8450,
       "net": 11017,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "zerodays/zerodays",
-      "commits": 98,
-      "insertions": 126668,
-      "deletions": 7362,
-      "net": 119306,
       "desc": "",
       "category": "ops"
     },
@@ -317,10 +308,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 66,
-      "insertions": 20045,
-      "deletions": 6775,
-      "net": 13270,
+      "commits": 67,
+      "insertions": 20113,
+      "deletions": 6835,
+      "net": 13278,
       "desc": "",
       "category": "ops"
     },
@@ -469,6 +460,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cicatrix",
+      "commits": 31,
+      "insertions": 9768,
+      "deletions": 327,
+      "net": 9441,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
       "name": "cerebral/openpanel",
       "commits": 29,
       "insertions": 23450,
@@ -476,15 +476,6 @@
       "net": 22642,
       "desc": "OpenPanel integration. Analytics and event tracking for the cerebral estate.",
       "category": "platform"
-    },
-    {
-      "name": "cerebral/cicatrix",
-      "commits": 29,
-      "insertions": 9768,
-      "deletions": 327,
-      "net": 9441,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
     },
     {
       "name": "cerebral/meridian",
@@ -8812,27 +8803,27 @@
     ],
     [
       "2026-07-04",
-      320
+      318
     ],
     [
       "2026-07-05",
-      334
+      331
     ],
     [
       "2026-07-06",
-      405
+      400
     ],
     [
       "2026-07-07",
-      212
+      207
     ],
     [
       "2026-07-08",
-      343
+      336
     ],
     [
       "2026-07-09",
-      371
+      366
     ],
     [
       "2026-07-10",
@@ -8848,7 +8839,7 @@
     ],
     [
       "2026-07-13",
-      391
+      389
     ],
     [
       "2026-07-14",
@@ -8860,7 +8851,7 @@
     ],
     [
       "2026-07-16",
-      408
+      404
     ],
     [
       "2026-07-17",
@@ -8868,7 +8859,7 @@
     ],
     [
       "2026-07-18",
-      499
+      478
     ],
     [
       "2026-07-19",
@@ -8888,39 +8879,39 @@
     ],
     [
       "2026-07-23",
-      367
+      365
     ],
     [
       "2026-07-24",
-      451
+      450
     ],
     [
       "2026-07-25",
-      266
+      261
     ],
     [
       "2026-07-26",
-      285
+      284
     ],
     [
       "2026-07-27",
-      351
+      348
     ],
     [
       "2026-07-28",
-      528
+      521
     ],
     [
       "2026-07-29",
-      263
+      261
     ],
     [
       "2026-07-30",
-      301
+      294
     ],
     [
       "2026-07-31",
-      282
+      280
     ],
     [
       "2026-08-01",
@@ -8936,7 +8927,7 @@
     ],
     [
       "2026-08-04",
-      316
+      310
     ],
     [
       "2026-08-05",
@@ -8944,23 +8935,23 @@
     ],
     [
       "2026-08-06",
-      152
+      149
     ],
     [
       "2026-08-07",
-      308
+      301
     ],
     [
       "2026-08-08",
-      170
-    ],
-    [
-      "2026-08-09",
       158
     ],
     [
+      "2026-08-09",
+      157
+    ],
+    [
       "2026-08-10",
-      127
+      126
     ],
     [
       "2026-08-11",
@@ -8968,51 +8959,55 @@
     ],
     [
       "2026-08-12",
-      181
+      177
     ],
     [
       "2026-08-13",
-      306
+      303
     ],
     [
       "2026-08-14",
-      402
+      380
     ],
     [
       "2026-08-15",
-      101
+      95
     ],
     [
       "2026-08-16",
-      466
+      451
     ],
     [
       "2026-08-17",
-      158
+      157
     ],
     [
       "2026-08-18",
-      161
+      160
     ],
     [
       "2026-08-19",
-      423
+      413
     ],
     [
       "2026-08-20",
-      245
+      244
     ],
     [
       "2026-08-21",
-      145
+      142
     ],
     [
       "2026-08-22",
-      50
+      49
     ],
     [
       "2026-08-23",
-      19
+      69
+    ],
+    [
+      "2026-08-24",
+      16
     ]
   ],
   "sessionDays": [
@@ -9450,7 +9445,11 @@
     ],
     [
       "2026-08-23",
-      3
+      6
+    ],
+    [
+      "2026-08-24",
+      7
     ]
   ]
 }
