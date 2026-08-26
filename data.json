@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2701,
-      "insertions": 745713,
-      "deletions": 109654,
-      "net": 636059,
+      "commits": 2702,
+      "insertions": 745756,
+      "deletions": 109684,
+      "net": 636072,
       "desc": "",
       "category": "ops"
     },
@@ -47,10 +47,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 1742,
-      "insertions": 342201,
-      "deletions": 58069,
-      "net": 284132,
+      "commits": 1775,
+      "insertions": 343765,
+      "deletions": 58154,
+      "net": 285611,
       "desc": "",
       "category": "ops"
     },
@@ -82,11 +82,20 @@
       "category": "vendor"
     },
     {
-      "name": "unsigned/soma-os-wt-escdock",
-      "commits": 567,
-      "insertions": 209860,
-      "deletions": 15403,
-      "net": 194457,
+      "name": "unsigned/soma-os",
+      "commits": 706,
+      "insertions": 235614,
+      "deletions": 18095,
+      "net": 217519,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/soma-os-lane-domain",
+      "commits": 704,
+      "insertions": 235519,
+      "deletions": 18086,
+      "net": 217433,
       "desc": "",
       "category": "ops"
     },
@@ -109,6 +118,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/revenant",
+      "commits": 406,
+      "insertions": 70622,
+      "deletions": 13558,
+      "net": 57064,
+      "desc": "",
+      "category": "infra"
+    },
+    {
       "name": "terrarium",
       "commits": 392,
       "insertions": 216153,
@@ -116,15 +134,6 @@
       "net": 176737,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "cerebral/revenant",
-      "commits": 383,
-      "insertions": 69267,
-      "deletions": 13437,
-      "net": 55830,
-      "desc": "",
-      "category": "infra"
     },
     {
       "name": "cerebral/site",
@@ -181,6 +190,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex-plugin",
+      "commits": 198,
+      "insertions": 41052,
+      "deletions": 2253,
+      "net": 38799,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/lizard",
       "commits": 193,
       "insertions": 114501,
@@ -196,15 +214,6 @@
       "deletions": 4285,
       "net": 29155,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/cortex-guard",
-      "commits": 190,
-      "insertions": 40743,
-      "deletions": 2182,
-      "net": 38561,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -227,10 +236,10 @@
     },
     {
       "name": "zerodays/zerodays",
-      "commits": 140,
-      "insertions": 133320,
-      "deletions": 8338,
-      "net": 124982,
+      "commits": 159,
+      "insertions": 136071,
+      "deletions": 9406,
+      "net": 126665,
       "desc": "",
       "category": "ops"
     },
@@ -308,10 +317,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 68,
-      "insertions": 20215,
-      "deletions": 6938,
-      "net": 13277,
+      "commits": 69,
+      "insertions": 20300,
+      "deletions": 7010,
+      "net": 13290,
       "desc": "",
       "category": "ops"
     },
@@ -343,21 +352,21 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/soma-design",
+      "commits": 52,
+      "insertions": 7102,
+      "deletions": 479,
+      "net": 6623,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/voicenotes",
       "commits": 50,
       "insertions": 11949,
       "deletions": 269,
       "net": 11680,
       "desc": "Voice notes PWA. Audio recording and transcription on Cloudflare.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-design",
-      "commits": 49,
-      "insertions": 6968,
-      "deletions": 478,
-      "net": 6490,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -964,6 +973,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/delta-gateway",
+      "commits": 2,
+      "insertions": 971,
+      "deletions": 0,
+      "net": 971,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/sd-packer",
       "commits": 2,
       "insertions": 164065,
@@ -1032,15 +1050,6 @@
       "insertions": 2472,
       "deletions": 0,
       "net": 2472,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/delta-gateway",
-      "commits": 1,
-      "insertions": 929,
-      "deletions": 0,
-      "net": 929,
       "desc": "",
       "category": "ops"
     },
@@ -8868,11 +8877,11 @@
     ],
     [
       "2026-07-18",
-      478
+      489
     ],
     [
       "2026-07-19",
-      118
+      145
     ],
     [
       "2026-07-20",
@@ -8892,15 +8901,15 @@
     ],
     [
       "2026-07-24",
-      450
+      471
     ],
     [
       "2026-07-25",
-      261
+      298
     ],
     [
       "2026-07-26",
-      284
+      308
     ],
     [
       "2026-07-27",
@@ -8908,15 +8917,15 @@
     ],
     [
       "2026-07-28",
-      521
+      562
     ],
     [
       "2026-07-29",
-      261
+      287
     ],
     [
       "2026-07-30",
-      294
+      306
     ],
     [
       "2026-07-31",
@@ -8936,7 +8945,7 @@
     ],
     [
       "2026-08-04",
-      310
+      327
     ],
     [
       "2026-08-05",
@@ -8948,7 +8957,7 @@
     ],
     [
       "2026-08-07",
-      301
+      332
     ],
     [
       "2026-08-08",
@@ -8956,7 +8965,7 @@
     ],
     [
       "2026-08-09",
-      157
+      165
     ],
     [
       "2026-08-10",
@@ -8964,7 +8973,7 @@
     ],
     [
       "2026-08-11",
-      217
+      220
     ],
     [
       "2026-08-12",
@@ -8972,7 +8981,7 @@
     ],
     [
       "2026-08-13",
-      303
+      329
     ],
     [
       "2026-08-14",
@@ -8980,47 +8989,51 @@
     ],
     [
       "2026-08-15",
-      95
+      97
     ],
     [
       "2026-08-16",
-      451
+      496
     ],
     [
       "2026-08-17",
-      157
+      178
     ],
     [
       "2026-08-18",
-      160
+      161
     ],
     [
       "2026-08-19",
-      413
+      481
     ],
     [
       "2026-08-20",
-      244
+      280
     ],
     [
       "2026-08-21",
-      142
+      179
     ],
     [
       "2026-08-22",
-      49
+      64
     ],
     [
       "2026-08-23",
-      69
+      83
     ],
     [
       "2026-08-24",
-      123
+      176
     ],
     [
       "2026-08-25",
-      12
+      359
+    ],
+    [
+      "2026-08-26",
+      9
     ]
   ],
   "sessionDays": [
@@ -9463,6 +9476,14 @@
     [
       "2026-08-24",
       10
+    ],
+    [
+      "2026-08-25",
+      5
+    ],
+    [
+      "2026-08-26",
+      1
     ]
   ]
 }
