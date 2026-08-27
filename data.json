@@ -37,6 +37,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/paas-wt-pin012",
+      "commits": 1778,
+      "insertions": 343882,
+      "deletions": 58164,
+      "net": 285718,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/rtk",
       "commits": 1777,
       "insertions": 249127,
@@ -44,15 +53,6 @@
       "net": 178772,
       "desc": "Rust Token Killer — CLI proxy saving 60-90% tokens on dev operations.",
       "category": "vendor"
-    },
-    {
-      "name": "unsigned/paas-wt-pin012",
-      "commits": 1775,
-      "insertions": 343765,
-      "deletions": 58154,
-      "net": 285611,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "unsigned/herdr",
@@ -82,20 +82,11 @@
       "category": "vendor"
     },
     {
-      "name": "unsigned/soma-os",
-      "commits": 706,
-      "insertions": 235614,
-      "deletions": 18095,
-      "net": 217519,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-os-lane-domain",
-      "commits": 704,
-      "insertions": 235519,
-      "deletions": 18086,
-      "net": 217433,
+      "name": "unsigned/soma-os-lane-reflex-doccomment",
+      "commits": 724,
+      "insertions": 236934,
+      "deletions": 18247,
+      "net": 218687,
       "desc": "",
       "category": "ops"
     },
@@ -217,20 +208,20 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/agentic",
+      "commits": 191,
+      "insertions": 23045,
+      "deletions": 5647,
+      "net": 17398,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/blackwall",
       "commits": 186,
       "insertions": 64232,
       "deletions": 6703,
       "net": 57529,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/agentic",
-      "commits": 178,
-      "insertions": 22850,
-      "deletions": 5572,
-      "net": 17278,
       "desc": "",
       "category": "ops"
     },
@@ -317,10 +308,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 69,
-      "insertions": 20300,
-      "deletions": 7010,
-      "net": 13290,
+      "commits": 70,
+      "insertions": 20405,
+      "deletions": 7094,
+      "net": 13311,
       "desc": "",
       "category": "ops"
     },
@@ -8877,11 +8868,11 @@
     ],
     [
       "2026-07-18",
-      489
+      478
     ],
     [
       "2026-07-19",
-      145
+      118
     ],
     [
       "2026-07-20",
@@ -8901,15 +8892,15 @@
     ],
     [
       "2026-07-24",
-      471
+      450
     ],
     [
       "2026-07-25",
-      298
+      261
     ],
     [
       "2026-07-26",
-      308
+      284
     ],
     [
       "2026-07-27",
@@ -8917,15 +8908,15 @@
     ],
     [
       "2026-07-28",
-      562
+      521
     ],
     [
       "2026-07-29",
-      287
+      261
     ],
     [
       "2026-07-30",
-      306
+      294
     ],
     [
       "2026-07-31",
@@ -8945,7 +8936,7 @@
     ],
     [
       "2026-08-04",
-      327
+      310
     ],
     [
       "2026-08-05",
@@ -8957,7 +8948,7 @@
     ],
     [
       "2026-08-07",
-      332
+      301
     ],
     [
       "2026-08-08",
@@ -8965,7 +8956,7 @@
     ],
     [
       "2026-08-09",
-      165
+      157
     ],
     [
       "2026-08-10",
@@ -8973,7 +8964,7 @@
     ],
     [
       "2026-08-11",
-      220
+      217
     ],
     [
       "2026-08-12",
@@ -8981,7 +8972,7 @@
     ],
     [
       "2026-08-13",
-      329
+      303
     ],
     [
       "2026-08-14",
@@ -8989,51 +8980,51 @@
     ],
     [
       "2026-08-15",
-      97
+      95
     ],
     [
       "2026-08-16",
-      496
+      451
     ],
     [
       "2026-08-17",
-      178
+      157
     ],
     [
       "2026-08-18",
-      161
+      158
     ],
     [
       "2026-08-19",
-      481
+      413
     ],
     [
       "2026-08-20",
-      280
+      250
     ],
     [
       "2026-08-21",
-      179
+      147
     ],
     [
       "2026-08-22",
-      64
+      53
     ],
     [
       "2026-08-23",
-      83
+      80
     ],
     [
       "2026-08-24",
-      176
+      129
     ],
     [
       "2026-08-25",
-      359
+      209
     ],
     [
       "2026-08-26",
-      9
+      36
     ]
   ],
   "sessionDays": [
