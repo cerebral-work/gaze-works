@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 1778,
-      "insertions": 343882,
-      "deletions": 58164,
-      "net": 285718,
+      "commits": 1782,
+      "insertions": 344650,
+      "deletions": 58249,
+      "net": 286401,
       "desc": "",
       "category": "ops"
     },
@@ -83,10 +83,10 @@
     },
     {
       "name": "unsigned/soma-os-lane-reflex-doccomment",
-      "commits": 724,
-      "insertions": 236934,
-      "deletions": 18247,
-      "net": 218687,
+      "commits": 735,
+      "insertions": 237539,
+      "deletions": 18325,
+      "net": 219214,
       "desc": "",
       "category": "ops"
     },
@@ -308,10 +308,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 72,
-      "insertions": 20472,
-      "deletions": 7166,
-      "net": 13306,
+      "commits": 73,
+      "insertions": 20486,
+      "deletions": 7176,
+      "net": 13310,
       "desc": "",
       "category": "ops"
     },
@@ -9000,7 +9000,7 @@
     ],
     [
       "2026-08-20",
-      250
+      252
     ],
     [
       "2026-08-21",
@@ -9024,7 +9024,7 @@
     ],
     [
       "2026-08-26",
-      36
+      35
     ],
     [
       "2026-08-27",
@@ -9033,6 +9033,10 @@
     [
       "2026-08-28",
       2
+    ],
+    [
+      "2026-08-29",
+      15
     ]
   ],
   "sessionDays": [
