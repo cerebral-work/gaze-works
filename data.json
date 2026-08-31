@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2704,
-      "insertions": 745965,
-      "deletions": 109684,
-      "net": 636281,
+      "commits": 2736,
+      "insertions": 793091,
+      "deletions": 111731,
+      "net": 681360,
       "desc": "",
       "category": "ops"
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 1782,
-      "insertions": 344650,
-      "deletions": 58249,
-      "net": 286401,
+      "commits": 1786,
+      "insertions": 344655,
+      "deletions": 58252,
+      "net": 286403,
       "desc": "",
       "category": "ops"
     },
@@ -298,21 +298,21 @@
       "category": "infra"
     },
     {
+      "name": "cerebral/works",
+      "commits": 74,
+      "insertions": 20506,
+      "deletions": 7192,
+      "net": 13314,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/pact",
       "commits": 73,
       "insertions": 41526,
       "deletions": 10447,
       "net": 31079,
       "desc": "Pact — contract testing and agreement tracking.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 73,
-      "insertions": 20486,
-      "deletions": 7176,
-      "net": 13310,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -8968,7 +8968,7 @@
     ],
     [
       "2026-08-12",
-      177
+      178
     ],
     [
       "2026-08-13",
@@ -8984,11 +8984,11 @@
     ],
     [
       "2026-08-16",
-      451
+      452
     ],
     [
       "2026-08-17",
-      157
+      158
     ],
     [
       "2026-08-18",
@@ -9000,7 +9000,7 @@
     ],
     [
       "2026-08-20",
-      252
+      251
     ],
     [
       "2026-08-21",
@@ -9016,7 +9016,7 @@
     ],
     [
       "2026-08-24",
-      129
+      126
     ],
     [
       "2026-08-25",
@@ -9024,7 +9024,7 @@
     ],
     [
       "2026-08-26",
-      35
+      34
     ],
     [
       "2026-08-27",
@@ -9037,6 +9037,14 @@
     [
       "2026-08-29",
       15
+    ],
+    [
+      "2026-08-30",
+      36
+    ],
+    [
+      "2026-08-31",
+      3
     ]
   ],
   "sessionDays": [
