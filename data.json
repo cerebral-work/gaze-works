@@ -289,6 +289,15 @@
       "category": "vendor"
     },
     {
+      "name": "cerebral/works",
+      "commits": 79,
+      "insertions": 20602,
+      "deletions": 7264,
+      "net": 13338,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/action-runners",
       "commits": 78,
       "insertions": 10226,
@@ -296,15 +305,6 @@
       "net": 9621,
       "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
       "category": "infra"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 78,
-      "insertions": 20587,
-      "deletions": 7253,
-      "net": 13334,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "todie/pact",
@@ -9060,7 +9060,7 @@
     ],
     [
       "2026-09-04",
-      1
+      2
     ]
   ],
   "sessionDays": [
