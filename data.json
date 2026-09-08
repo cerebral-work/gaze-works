@@ -21,8 +21,8 @@
     {
       "name": "cerebral/reverie-backfill-prov",
       "commits": 2765,
-      "insertions": 793967,
-      "deletions": 111850,
+      "insertions": 793973,
+      "deletions": 111856,
       "net": 682117,
       "desc": "",
       "category": "ops"
@@ -83,10 +83,10 @@
     },
     {
       "name": "unsigned/soma-os-lane-reflex-doccomment",
-      "commits": 735,
-      "insertions": 237539,
-      "deletions": 18325,
-      "net": 219214,
+      "commits": 789,
+      "insertions": 256810,
+      "deletions": 182727,
+      "net": 74083,
       "desc": "",
       "category": "ops"
     },
@@ -290,10 +290,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 81,
-      "insertions": 20733,
-      "deletions": 7387,
-      "net": 13346,
+      "commits": 82,
+      "insertions": 20833,
+      "deletions": 7496,
+      "net": 13337,
       "desc": "",
       "category": "ops"
     },
@@ -9015,7 +9015,7 @@
     ],
     [
       "2026-08-26",
-      34
+      35
     ],
     [
       "2026-08-27",
@@ -9023,23 +9023,23 @@
     ],
     [
       "2026-08-28",
-      2
+      9
     ],
     [
       "2026-08-29",
-      15
+      30
     ],
     [
       "2026-08-30",
-      34
+      40
     ],
     [
       "2026-08-31",
-      19
+      18
     ],
     [
       "2026-09-01",
-      9
+      17
     ],
     [
       "2026-09-02",
@@ -9047,7 +9047,7 @@
     ],
     [
       "2026-09-03",
-      20
+      18
     ],
     [
       "2026-09-04",
@@ -9060,6 +9060,14 @@
     [
       "2026-09-06",
       12
+    ],
+    [
+      "2026-09-07",
+      7
+    ],
+    [
+      "2026-09-08",
+      14
     ]
   ],
   "sessionDays": [
