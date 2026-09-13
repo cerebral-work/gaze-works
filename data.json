@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2853,
-      "insertions": 808883,
-      "deletions": 113307,
-      "net": 695576,
+      "commits": 2857,
+      "insertions": 809073,
+      "deletions": 113322,
+      "net": 695751,
       "desc": "",
       "category": "ops"
     },
@@ -290,10 +290,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 83,
-      "insertions": 20860,
-      "deletions": 7515,
-      "net": 13345,
+      "commits": 84,
+      "insertions": 20895,
+      "deletions": 7534,
+      "net": 13361,
       "desc": "",
       "category": "ops"
     },
@@ -9083,7 +9083,11 @@
     ],
     [
       "2026-09-12",
-      10
+      14
+    ],
+    [
+      "2026-09-13",
+      1
     ]
   ],
   "sessionDays": [
