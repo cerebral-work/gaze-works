@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2857,
-      "insertions": 809073,
-      "deletions": 113322,
-      "net": 695751,
+      "commits": 2859,
+      "insertions": 809098,
+      "deletions": 113340,
+      "net": 695758,
       "desc": "",
       "category": "ops"
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 1849,
-      "insertions": 347024,
-      "deletions": 58554,
-      "net": 288470,
+      "commits": 1870,
+      "insertions": 347449,
+      "deletions": 59033,
+      "net": 288416,
       "desc": "",
       "category": "ops"
     },
@@ -83,10 +83,10 @@
     },
     {
       "name": "unsigned/soma-os-lane-reflex-doccomment",
-      "commits": 789,
-      "insertions": 256810,
-      "deletions": 182727,
-      "net": 74083,
+      "commits": 790,
+      "insertions": 257661,
+      "deletions": 182790,
+      "net": 74871,
       "desc": "",
       "category": "ops"
     },
@@ -290,9 +290,9 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 85,
-      "insertions": 20910,
-      "deletions": 7545,
+      "commits": 86,
+      "insertions": 20922,
+      "deletions": 7557,
       "net": 13365,
       "desc": "",
       "category": "ops"
@@ -987,6 +987,15 @@
       "insertions": 437,
       "deletions": 13,
       "net": 424,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/slurm-cygnus",
+      "commits": 2,
+      "insertions": 5502,
+      "deletions": 19,
+      "net": 5483,
       "desc": "",
       "category": "ops"
     },
@@ -9011,7 +9020,7 @@
     ],
     [
       "2026-08-25",
-      209
+      208
     ],
     [
       "2026-08-26",
@@ -9063,11 +9072,11 @@
     ],
     [
       "2026-09-07",
-      10
+      9
     ],
     [
       "2026-09-08",
-      31
+      30
     ],
     [
       "2026-09-09",
@@ -9075,7 +9084,7 @@
     ],
     [
       "2026-09-10",
-      13
+      12
     ],
     [
       "2026-09-11",
@@ -9087,7 +9096,15 @@
     ],
     [
       "2026-09-13",
-      12
+      16
+    ],
+    [
+      "2026-09-14",
+      22
+    ],
+    [
+      "2026-09-15",
+      5
     ]
   ],
   "sessionDays": [
@@ -9538,6 +9555,10 @@
     [
       "2026-08-26",
       1
+    ],
+    [
+      "2026-09-15",
+      3
     ]
   ]
 }
