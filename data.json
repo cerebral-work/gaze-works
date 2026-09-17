@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2864,
-      "insertions": 809348,
-      "deletions": 113368,
-      "net": 695980,
+      "commits": 2878,
+      "insertions": 811418,
+      "deletions": 113458,
+      "net": 697960,
       "desc": "",
       "category": "ops"
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 1879,
-      "insertions": 348937,
-      "deletions": 59089,
-      "net": 289848,
+      "commits": 1890,
+      "insertions": 349717,
+      "deletions": 59291,
+      "net": 290426,
       "desc": "",
       "category": "ops"
     },
@@ -55,20 +55,20 @@
       "category": "vendor"
     },
     {
+      "name": "rina",
+      "commits": 1723,
+      "insertions": 585088,
+      "deletions": 213627,
+      "net": 371461,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/herdr",
       "commits": 1701,
       "insertions": 1107024,
       "deletions": 213185,
       "net": 893839,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "rina",
-      "commits": 1598,
-      "insertions": 528102,
-      "deletions": 201103,
-      "net": 326999,
       "desc": "",
       "category": "ops"
     },
@@ -83,10 +83,10 @@
     },
     {
       "name": "unsigned/soma-os-lane-reflex-doccomment",
-      "commits": 813,
-      "insertions": 263655,
-      "deletions": 182949,
-      "net": 80706,
+      "commits": 815,
+      "insertions": 264126,
+      "deletions": 182973,
+      "net": 81153,
       "desc": "",
       "category": "ops"
     },
@@ -290,10 +290,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 87,
-      "insertions": 20966,
-      "deletions": 7580,
-      "net": 13386,
+      "commits": 88,
+      "insertions": 20992,
+      "deletions": 7602,
+      "net": 13390,
       "desc": "",
       "category": "ops"
     },
@@ -8844,7 +8844,7 @@
     ],
     [
       "2026-07-12",
-      152
+      153
     ],
     [
       "2026-07-13",
@@ -8940,7 +8940,7 @@
     ],
     [
       "2026-08-05",
-      283
+      282
     ],
     [
       "2026-08-06",
@@ -9048,23 +9048,23 @@
     ],
     [
       "2026-09-01",
-      22
+      54
     ],
     [
       "2026-09-02",
-      1
+      29
     ],
     [
       "2026-09-03",
-      17
+      44
     ],
     [
       "2026-09-04",
-      3
+      19
     ],
     [
       "2026-09-05",
-      6
+      10
     ],
     [
       "2026-09-06",
@@ -9072,11 +9072,11 @@
     ],
     [
       "2026-09-07",
-      9
+      20
     ],
     [
       "2026-09-08",
-      30
+      33
     ],
     [
       "2026-09-09",
@@ -9084,11 +9084,11 @@
     ],
     [
       "2026-09-10",
-      12
+      14
     ],
     [
       "2026-09-11",
-      20
+      21
     ],
     [
       "2026-09-12",
@@ -9096,7 +9096,7 @@
     ],
     [
       "2026-09-13",
-      15
+      16
     ],
     [
       "2026-09-14",
@@ -9104,10 +9104,14 @@
     ],
     [
       "2026-09-15",
-      38
+      40
     ],
     [
       "2026-09-16",
+      26
+    ],
+    [
+      "2026-09-17",
       2
     ]
   ],
@@ -9563,6 +9567,14 @@
     [
       "2026-09-15",
       3
+    ],
+    [
+      "2026-09-16",
+      1
+    ],
+    [
+      "2026-09-17",
+      1
     ]
   ]
 }
