@@ -20,10 +20,10 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2914,
-      "insertions": 816900,
-      "deletions": 113956,
-      "net": 702944,
+      "commits": 2928,
+      "insertions": 819922,
+      "deletions": 114175,
+      "net": 705747,
       "desc": "",
       "category": "ops"
     },
@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 2024,
-      "insertions": 589308,
-      "deletions": 61641,
-      "net": 527667,
+      "commits": 2047,
+      "insertions": 589721,
+      "deletions": 61744,
+      "net": 527977,
       "desc": "",
       "category": "ops"
     },
@@ -289,6 +289,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 94,
+      "insertions": 21482,
+      "deletions": 8043,
+      "net": 13439,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-esp",
       "commits": 93,
       "insertions": 9927,
@@ -296,15 +305,6 @@
       "net": 8561,
       "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
       "category": "vendor"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 93,
-      "insertions": 21467,
-      "deletions": 8028,
-      "net": 13439,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "unsigned/action-runners",
@@ -1319,6 +1319,20 @@
     {
       "t": "yeah let's go over these and put them in drive under cerebral private",
       "d": "Day 119",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "ok let's go with 1600 rpm",
+      "d": "Day 155",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "let's go over CAP theorem one last time",
+      "d": "Day 155",
       "tags": [
         "fire"
       ]
@@ -9081,7 +9095,7 @@
     ],
     [
       "2026-09-07",
-      20
+      19
     ],
     [
       "2026-09-08",
@@ -9129,7 +9143,7 @@
     ],
     [
       "2026-09-19",
-      25
+      24
     ],
     [
       "2026-09-20",
@@ -9137,7 +9151,15 @@
     ],
     [
       "2026-09-21",
-      25
+      36
+    ],
+    [
+      "2026-09-22",
+      28
+    ],
+    [
+      "2026-09-23",
+      1
     ]
   ],
   "sessionDays": [
@@ -9612,6 +9634,10 @@
     [
       "2026-09-20",
       3
+    ],
+    [
+      "2026-09-22",
+      1
     ]
   ]
 }
