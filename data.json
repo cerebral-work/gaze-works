@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 2047,
-      "insertions": 589721,
-      "deletions": 61744,
-      "net": 527977,
+      "commits": 2057,
+      "insertions": 590246,
+      "deletions": 62098,
+      "net": 528148,
       "desc": "",
       "category": "ops"
     },
@@ -73,6 +73,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/soma-os-lane-reflex-doccomment",
+      "commits": 903,
+      "insertions": 284248,
+      "deletions": 196542,
+      "net": 87706,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-hud",
       "commits": 845,
       "insertions": 91853,
@@ -80,15 +89,6 @@
       "net": 48383,
       "desc": "Claude HUD — heads-up display for Claude Code sessions.",
       "category": "vendor"
-    },
-    {
-      "name": "unsigned/soma-os-lane-reflex-doccomment",
-      "commits": 815,
-      "insertions": 264126,
-      "deletions": 182973,
-      "net": 81153,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/biomni",
@@ -290,10 +290,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 94,
-      "insertions": 21482,
-      "deletions": 8043,
-      "net": 13439,
+      "commits": 95,
+      "insertions": 21532,
+      "deletions": 8067,
+      "net": 13465,
       "desc": "",
       "category": "ops"
     },
@@ -1333,6 +1333,13 @@
     {
       "t": "let's go over CAP theorem one last time",
       "d": "Day 155",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "land all the waves and let's go over soma canon again to update it now what it's had time to cook",
+      "d": "Day 156",
       "tags": [
         "fire"
       ]
@@ -8891,7 +8898,7 @@
     ],
     [
       "2026-07-18",
-      478
+      480
     ],
     [
       "2026-07-19",
@@ -8915,23 +8922,23 @@
     ],
     [
       "2026-07-24",
-      450
+      470
     ],
     [
       "2026-07-25",
-      261
+      267
     ],
     [
       "2026-07-26",
-      284
+      289
     ],
     [
       "2026-07-27",
-      351
+      355
     ],
     [
       "2026-07-28",
-      525
+      529
     ],
     [
       "2026-07-29",
@@ -8959,7 +8966,7 @@
     ],
     [
       "2026-08-04",
-      310
+      322
     ],
     [
       "2026-08-05",
@@ -9011,7 +9018,7 @@
     ],
     [
       "2026-08-17",
-      158
+      160
     ],
     [
       "2026-08-18",
@@ -9027,11 +9034,11 @@
     ],
     [
       "2026-08-21",
-      153
+      158
     ],
     [
       "2026-08-22",
-      53
+      56
     ],
     [
       "2026-08-23",
@@ -9039,11 +9046,11 @@
     ],
     [
       "2026-08-24",
-      126
+      127
     ],
     [
       "2026-08-25",
-      209
+      224
     ],
     [
       "2026-08-26",
@@ -9099,7 +9106,7 @@
     ],
     [
       "2026-09-08",
-      33
+      35
     ],
     [
       "2026-09-09",
@@ -9155,10 +9162,14 @@
     ],
     [
       "2026-09-22",
-      28
+      31
     ],
     [
       "2026-09-23",
+      15
+    ],
+    [
+      "2026-09-24",
       1
     ]
   ],
@@ -9638,6 +9649,10 @@
     [
       "2026-09-22",
       1
+    ],
+    [
+      "2026-09-23",
+      5
     ]
   ]
 }
