@@ -38,10 +38,10 @@
     },
     {
       "name": "unsigned/paas-wt-pin012",
-      "commits": 2057,
-      "insertions": 590246,
-      "deletions": 62098,
-      "net": 528148,
+      "commits": 2073,
+      "insertions": 590727,
+      "deletions": 62135,
+      "net": 528592,
       "desc": "",
       "category": "ops"
     },
@@ -74,10 +74,10 @@
     },
     {
       "name": "unsigned/soma-os-lane-reflex-doccomment",
-      "commits": 903,
-      "insertions": 284248,
-      "deletions": 196542,
-      "net": 87706,
+      "commits": 905,
+      "insertions": 284286,
+      "deletions": 196551,
+      "net": 87735,
       "desc": "",
       "category": "ops"
     },
@@ -290,10 +290,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 95,
-      "insertions": 21532,
-      "deletions": 8067,
-      "net": 13465,
+      "commits": 96,
+      "insertions": 21582,
+      "deletions": 8102,
+      "net": 13480,
       "desc": "",
       "category": "ops"
     },
@@ -325,6 +325,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/slurm-cygnus",
+      "commits": 66,
+      "insertions": 9051,
+      "deletions": 154,
+      "net": 8897,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/cerebral-design",
       "commits": 63,
       "insertions": 20850,
@@ -332,15 +341,6 @@
       "net": 19434,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
-    },
-    {
-      "name": "cerebral/slurm-cygnus",
-      "commits": 60,
-      "insertions": 8991,
-      "deletions": 143,
-      "net": 8848,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "goudetmarc/nephele",
@@ -9150,7 +9150,7 @@
     ],
     [
       "2026-09-19",
-      24
+      27
     ],
     [
       "2026-09-20",
@@ -9166,11 +9166,11 @@
     ],
     [
       "2026-09-23",
-      15
+      14
     ],
     [
       "2026-09-24",
-      1
+      24
     ]
   ],
   "sessionDays": [
