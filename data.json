@@ -37,13 +37,13 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/paas-wt-pin012",
-      "commits": 2074,
-      "insertions": 590732,
-      "deletions": 62135,
-      "net": 528597,
+      "name": "unsigned/paas",
+      "commits": 2099,
+      "insertions": 562213,
+      "deletions": 61736,
+      "net": 500477,
       "desc": "",
-      "category": "ops"
+      "category": "platform"
     },
     {
       "name": "vendor/rtk",
@@ -74,10 +74,10 @@
     },
     {
       "name": "unsigned/soma-os-lane-reflex-doccomment",
-      "commits": 905,
-      "insertions": 284286,
-      "deletions": 196551,
-      "net": 87735,
+      "commits": 920,
+      "insertions": 286521,
+      "deletions": 197195,
+      "net": 89326,
       "desc": "",
       "category": "ops"
     },
@@ -89,6 +89,15 @@
       "net": 48383,
       "desc": "Claude HUD — heads-up display for Claude Code sessions.",
       "category": "vendor"
+    },
+    {
+      "name": "zerodays/zerodays",
+      "commits": 514,
+      "insertions": 229085,
+      "deletions": 22173,
+      "net": 206912,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral/biomni",
@@ -154,6 +163,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex-cer2220-b2",
+      "commits": 241,
+      "insertions": 48609,
+      "deletions": 2835,
+      "net": 45774,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "revenant-forgejo",
       "commits": 222,
       "insertions": 47642,
@@ -178,15 +196,6 @@
       "deletions": 12999,
       "net": 30237,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/cortex-plugin",
-      "commits": 198,
-      "insertions": 41052,
-      "deletions": 2253,
-      "net": 38799,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -222,15 +231,6 @@
       "insertions": 64232,
       "deletions": 6703,
       "net": 57529,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "zerodays/zerodays",
-      "commits": 159,
-      "insertions": 136071,
-      "deletions": 9406,
-      "net": 126665,
       "desc": "",
       "category": "ops"
     },
@@ -290,12 +290,21 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 97,
-      "insertions": 21608,
-      "deletions": 8128,
-      "net": 13480,
+      "commits": 98,
+      "insertions": 21620,
+      "deletions": 8136,
+      "net": 13484,
       "desc": "",
       "category": "ops"
+    },
+    {
+      "name": "unsigned/action-runners",
+      "commits": 95,
+      "insertions": 10472,
+      "deletions": 671,
+      "net": 9801,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
     },
     {
       "name": "vendor/claude-esp",
@@ -305,15 +314,6 @@
       "net": 8561,
       "desc": "Claude ESP — extra-sensory perception layer for Claude Code.",
       "category": "vendor"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 80,
-      "insertions": 10370,
-      "deletions": 632,
-      "net": 9738,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "todie/pact",
@@ -326,10 +326,10 @@
     },
     {
       "name": "cerebral/slurm-cygnus",
-      "commits": 66,
-      "insertions": 9051,
-      "deletions": 154,
-      "net": 8897,
+      "commits": 68,
+      "insertions": 9059,
+      "deletions": 161,
+      "net": 8898,
       "desc": "",
       "category": "ops"
     },
@@ -362,10 +362,10 @@
     },
     {
       "name": "unsigned/soma-design",
-      "commits": 52,
-      "insertions": 7102,
+      "commits": 53,
+      "insertions": 7150,
       "deletions": 479,
-      "net": 6623,
+      "net": 6671,
       "desc": "",
       "category": "ops"
     },
@@ -8426,7 +8426,7 @@
     ],
     [
       "2026-03-22",
-      109
+      108
     ],
     [
       "2026-03-23",
@@ -8710,7 +8710,7 @@
     ],
     [
       "2026-06-01",
-      245
+      244
     ],
     [
       "2026-06-02",
@@ -8718,7 +8718,7 @@
     ],
     [
       "2026-06-03",
-      425
+      420
     ],
     [
       "2026-06-04",
@@ -8738,11 +8738,11 @@
     ],
     [
       "2026-06-08",
-      417
+      413
     ],
     [
       "2026-06-09",
-      326
+      325
     ],
     [
       "2026-06-10",
@@ -8798,7 +8798,7 @@
     ],
     [
       "2026-06-23",
-      290
+      284
     ],
     [
       "2026-06-24",
@@ -8830,31 +8830,31 @@
     ],
     [
       "2026-07-01",
-      397
+      393
     ],
     [
       "2026-07-02",
-      465
+      464
     ],
     [
       "2026-07-03",
-      278
+      272
     ],
     [
       "2026-07-04",
-      318
+      313
     ],
     [
       "2026-07-05",
-      331
+      330
     ],
     [
       "2026-07-06",
-      400
+      385
     ],
     [
       "2026-07-07",
-      207
+      205
     ],
     [
       "2026-07-08",
@@ -8862,15 +8862,15 @@
     ],
     [
       "2026-07-09",
-      336
+      325
     ],
     [
       "2026-07-10",
-      210
+      206
     ],
     [
       "2026-07-11",
-      515
+      506
     ],
     [
       "2026-07-12",
@@ -8878,7 +8878,7 @@
     ],
     [
       "2026-07-13",
-      415
+      396
     ],
     [
       "2026-07-14",
@@ -8890,7 +8890,7 @@
     ],
     [
       "2026-07-16",
-      404
+      401
     ],
     [
       "2026-07-17",
@@ -8918,7 +8918,7 @@
     ],
     [
       "2026-07-23",
-      365
+      364
     ],
     [
       "2026-07-24",
@@ -8966,7 +8966,7 @@
     ],
     [
       "2026-08-04",
-      322
+      318
     ],
     [
       "2026-08-05",
@@ -9014,7 +9014,7 @@
     ],
     [
       "2026-08-16",
-      452
+      451
     ],
     [
       "2026-08-17",
@@ -9042,7 +9042,7 @@
     ],
     [
       "2026-08-23",
-      81
+      78
     ],
     [
       "2026-08-24",
@@ -9050,11 +9050,11 @@
     ],
     [
       "2026-08-25",
-      224
+      230
     ],
     [
       "2026-08-26",
-      35
+      40
     ],
     [
       "2026-08-27",
@@ -9062,27 +9062,27 @@
     ],
     [
       "2026-08-28",
-      11
+      35
     ],
     [
       "2026-08-29",
-      33
+      32
     ],
     [
       "2026-08-30",
-      40
+      52
     ],
     [
       "2026-08-31",
-      18
+      30
     ],
     [
       "2026-09-01",
-      54
+      93
     ],
     [
       "2026-09-02",
-      29
+      39
     ],
     [
       "2026-09-03",
@@ -9090,7 +9090,7 @@
     ],
     [
       "2026-09-04",
-      19
+      25
     ],
     [
       "2026-09-05",
@@ -9098,27 +9098,27 @@
     ],
     [
       "2026-09-06",
-      12
+      15
     ],
     [
       "2026-09-07",
-      19
+      53
     ],
     [
       "2026-09-08",
-      35
+      59
     ],
     [
       "2026-09-09",
-      41
+      43
     ],
     [
       "2026-09-10",
-      16
+      19
     ],
     [
       "2026-09-11",
-      21
+      48
     ],
     [
       "2026-09-12",
@@ -9126,7 +9126,7 @@
     ],
     [
       "2026-09-13",
-      16
+      25
     ],
     [
       "2026-09-14",
@@ -9134,15 +9134,15 @@
     ],
     [
       "2026-09-15",
-      61
+      72
     ],
     [
       "2026-09-16",
-      25
+      41
     ],
     [
       "2026-09-17",
-      97
+      114
     ],
     [
       "2026-09-18",
@@ -9150,7 +9150,7 @@
     ],
     [
       "2026-09-19",
-      27
+      26
     ],
     [
       "2026-09-20",
@@ -9166,15 +9166,23 @@
     ],
     [
       "2026-09-23",
-      14
+      20
     ],
     [
       "2026-09-24",
-      24
+      62
     ],
     [
       "2026-09-25",
-      2
+      50
+    ],
+    [
+      "2026-09-26",
+      201
+    ],
+    [
+      "2026-09-27",
+      13
     ]
   ],
   "sessionDays": [
@@ -9657,6 +9665,10 @@
     [
       "2026-09-23",
       5
+    ],
+    [
+      "2026-09-26",
+      4
     ]
   ]
 }
