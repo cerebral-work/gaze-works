@@ -21,9 +21,18 @@
     {
       "name": "cerebral/reverie-backfill-prov",
       "commits": 2928,
-      "insertions": 819922,
-      "deletions": 114175,
-      "net": 705747,
+      "insertions": 819935,
+      "deletions": 114189,
+      "net": 705746,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/paas-est379",
+      "commits": 2405,
+      "insertions": 573162,
+      "deletions": 63126,
+      "net": 510036,
       "desc": "",
       "category": "ops"
     },
@@ -34,15 +43,6 @@
       "deletions": 72916,
       "net": 873819,
       "desc": "Claude Code configuration and custom rules.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/paas-est379",
-      "commits": 2163,
-      "insertions": 565304,
-      "deletions": 62201,
-      "net": 503103,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -73,20 +73,20 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/soma-os-coral-mesh-edge",
+      "commits": 1170,
+      "insertions": 319440,
+      "deletions": 201471,
+      "net": 117969,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/substrate",
       "commits": 1017,
       "insertions": 4763149,
       "deletions": 818074,
       "net": 3945075,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-os-wt-tasksplans",
-      "commits": 979,
-      "insertions": 296129,
-      "deletions": 197993,
-      "net": 98136,
       "desc": "",
       "category": "ops"
     },
@@ -118,6 +118,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex-wt-wXp1-exec-target",
+      "commits": 471,
+      "insertions": 84215,
+      "deletions": 4910,
+      "net": 79305,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/overflow-license-wt",
       "commits": 465,
       "insertions": 46386,
@@ -127,11 +136,20 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/MA-CC",
+      "commits": 460,
+      "insertions": 987683,
+      "deletions": 82368,
+      "net": 905315,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/revenant",
-      "commits": 406,
-      "insertions": 70622,
-      "deletions": 13558,
-      "net": 57064,
+      "commits": 416,
+      "insertions": 72282,
+      "deletions": 13679,
+      "net": 58603,
       "desc": "",
       "category": "infra"
     },
@@ -154,13 +172,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cortex-shadow-log",
-      "commits": 360,
-      "insertions": 70665,
-      "deletions": 3858,
-      "net": 66807,
-      "desc": "",
-      "category": "ops"
+      "name": "unsigned/gg",
+      "commits": 351,
+      "insertions": 85805,
+      "deletions": 10140,
+      "net": 75665,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
     },
     {
       "name": "cerebral/site",
@@ -170,15 +188,6 @@
       "net": 27767,
       "desc": "",
       "category": "design"
-    },
-    {
-      "name": "unsigned/gg",
-      "commits": 294,
-      "insertions": 71750,
-      "deletions": 9812,
-      "net": 61938,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
     },
     {
       "name": "todie/heretic",
@@ -217,6 +226,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/agentic-hooks-wt",
+      "commits": 199,
+      "insertions": 24042,
+      "deletions": 6362,
+      "net": 17680,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/lizard",
       "commits": 193,
       "insertions": 114501,
@@ -235,15 +253,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/agentic",
-      "commits": 191,
-      "insertions": 23045,
-      "deletions": 5647,
-      "net": 17398,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/blackwall",
       "commits": 186,
       "insertions": 64232,
@@ -254,10 +263,10 @@
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 144,
-      "insertions": 6976,
-      "deletions": 1586,
-      "net": 5390,
+      "commits": 150,
+      "insertions": 7138,
+      "deletions": 1592,
+      "net": 5546,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
@@ -289,6 +298,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/action-runners",
+      "commits": 117,
+      "insertions": 11982,
+      "deletions": 806,
+      "net": 11176,
+      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
+      "category": "infra"
+    },
+    {
       "name": "ieva",
       "commits": 106,
       "insertions": 19941,
@@ -296,15 +314,6 @@
       "net": 18383,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/action-runners",
-      "commits": 103,
-      "insertions": 11420,
-      "deletions": 751,
-      "net": 10669,
-      "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
-      "category": "infra"
     },
     {
       "name": "vendor/herdr-plus",
@@ -317,10 +326,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 99,
-      "insertions": 21728,
-      "deletions": 8232,
-      "net": 13496,
+      "commits": 100,
+      "insertions": 21943,
+      "deletions": 8412,
+      "net": 13531,
       "desc": "",
       "category": "ops"
     },
@@ -335,10 +344,10 @@
     },
     {
       "name": "cerebral/slurm-cygnus",
-      "commits": 88,
-      "insertions": 9316,
-      "deletions": 193,
-      "net": 9123,
+      "commits": 90,
+      "insertions": 9325,
+      "deletions": 194,
+      "net": 9131,
       "desc": "",
       "category": "ops"
     },
@@ -370,20 +379,20 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/soma-design-wp-decision",
+      "commits": 56,
+      "insertions": 7197,
+      "deletions": 496,
+      "net": 6701,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "er-terminal",
       "commits": 56,
       "insertions": 12842,
       "deletions": 1119,
       "net": 11723,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-design",
-      "commits": 54,
-      "insertions": 7164,
-      "deletions": 483,
-      "net": 6681,
       "desc": "",
       "category": "ops"
     },
@@ -604,6 +613,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/github-jury-exit",
+      "commits": 21,
+      "insertions": 1179,
+      "deletions": 108,
+      "net": 1071,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "templates/rust",
       "commits": 20,
       "insertions": 860,
@@ -611,6 +629,15 @@
       "net": 783,
       "desc": "Rust project template. Standard scaffolding.",
       "category": "templates"
+    },
+    {
+      "name": "unsigned/juarez",
+      "commits": 20,
+      "insertions": 1635,
+      "deletions": 76,
+      "net": 1559,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "unsigned/agent-jury",
@@ -627,15 +654,6 @@
       "insertions": 1114,
       "deletions": 1026,
       "net": 88,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/github-jury-exit",
-      "commits": 20,
-      "insertions": 1179,
-      "deletions": 108,
-      "net": 1071,
       "desc": "",
       "category": "ops"
     },
@@ -682,15 +700,6 @@
       "deletions": 0,
       "net": 10492,
       "desc": "Ghost blog deployment. Content publishing pipeline.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/juarez",
-      "commits": 15,
-      "insertions": 1603,
-      "deletions": 57,
-      "net": 1546,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -808,6 +817,15 @@
       "deletions": 1,
       "net": 493,
       "desc": "URI snapshot tool. Capture and compare web resources.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/soma-atlas",
+      "commits": 6,
+      "insertions": 14250,
+      "deletions": 89,
+      "net": 14161,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -1367,6 +1385,13 @@
     {
       "t": "land all the waves and let's go over soma canon again to update it now what it's had time to cook",
       "d": "Day 156",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "let's go through my punchlist one by one",
+      "d": "Day 161",
       "tags": [
         "fire"
       ]
@@ -8969,11 +8994,11 @@
     ],
     [
       "2026-07-29",
-      293
+      297
     ],
     [
       "2026-07-30",
-      324
+      339
     ],
     [
       "2026-07-31",
@@ -8981,15 +9006,15 @@
     ],
     [
       "2026-08-01",
-      255
+      258
     ],
     [
       "2026-08-02",
-      227
+      230
     ],
     [
       "2026-08-03",
-      220
+      222
     ],
     [
       "2026-08-04",
@@ -8997,11 +9022,11 @@
     ],
     [
       "2026-08-05",
-      300
+      306
     ],
     [
       "2026-08-06",
-      159
+      161
     ],
     [
       "2026-08-07",
@@ -9017,23 +9042,23 @@
     ],
     [
       "2026-08-10",
-      139
+      141
     ],
     [
       "2026-08-11",
-      242
+      248
     ],
     [
       "2026-08-12",
-      198
+      205
     ],
     [
       "2026-08-13",
-      320
+      324
     ],
     [
       "2026-08-14",
-      395
+      401
     ],
     [
       "2026-08-15",
@@ -9045,15 +9070,15 @@
     ],
     [
       "2026-08-17",
-      179
+      181
     ],
     [
       "2026-08-18",
-      187
+      195
     ],
     [
       "2026-08-19",
-      437
+      447
     ],
     [
       "2026-08-20",
@@ -9061,11 +9086,11 @@
     ],
     [
       "2026-08-21",
-      176
+      180
     ],
     [
       "2026-08-22",
-      66
+      72
     ],
     [
       "2026-08-23",
@@ -9081,139 +9106,143 @@
     ],
     [
       "2026-08-26",
-      65
+      75
     ],
     [
       "2026-08-27",
-      35
+      40
     ],
     [
       "2026-08-28",
-      68
+      75
     ],
     [
       "2026-08-29",
-      39
+      44
     ],
     [
       "2026-08-30",
-      58
+      67
     ],
     [
       "2026-08-31",
-      48
+      55
     ],
     [
       "2026-09-01",
-      120
+      128
     ],
     [
       "2026-09-02",
-      84
+      101
     ],
     [
       "2026-09-03",
-      70
+      84
     ],
     [
       "2026-09-04",
-      58
+      74
     ],
     [
       "2026-09-05",
-      17
+      21
     ],
     [
       "2026-09-06",
-      15
+      16
     ],
     [
       "2026-09-07",
-      72
+      87
     ],
     [
       "2026-09-08",
-      77
+      82
     ],
     [
       "2026-09-09",
-      59
+      62
     ],
     [
       "2026-09-10",
-      29
+      34
     ],
     [
       "2026-09-11",
-      76
+      82
     ],
     [
       "2026-09-12",
-      33
+      34
     ],
     [
       "2026-09-13",
-      37
+      41
     ],
     [
       "2026-09-14",
-      44
+      53
     ],
     [
       "2026-09-15",
-      83
+      90
     ],
     [
       "2026-09-16",
-      58
+      76
     ],
     [
       "2026-09-17",
-      131
+      160
     ],
     [
       "2026-09-18",
-      79
+      90
     ],
     [
       "2026-09-19",
-      80
+      147
     ],
     [
       "2026-09-20",
-      64
+      128
     ],
     [
       "2026-09-21",
-      83
+      121
     ],
     [
       "2026-09-22",
-      44
+      51
     ],
     [
       "2026-09-23",
-      39
+      41
     ],
     [
       "2026-09-24",
-      79
+      88
     ],
     [
       "2026-09-25",
-      64
+      65
     ],
     [
       "2026-09-26",
-      203
+      210
     ],
     [
       "2026-09-27",
-      269
+      277
     ],
     [
       "2026-09-28",
-      29
+      567
+    ],
+    [
+      "2026-09-29",
+      69
     ]
   ],
   "sessionDays": [
@@ -9704,6 +9733,14 @@
     [
       "2026-09-27",
       6
+    ],
+    [
+      "2026-09-28",
+      19
+    ],
+    [
+      "2026-09-29",
+      16
     ]
   ]
 }
