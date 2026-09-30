@@ -20,19 +20,19 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2928,
-      "insertions": 819935,
-      "deletions": 114189,
-      "net": 705746,
+      "commits": 2930,
+      "insertions": 819963,
+      "deletions": 114212,
+      "net": 705751,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/paas-est379",
-      "commits": 2405,
-      "insertions": 573162,
-      "deletions": 63126,
-      "net": 510036,
+      "commits": 2456,
+      "insertions": 574573,
+      "deletions": 64046,
+      "net": 510527,
       "desc": "",
       "category": "ops"
     },
@@ -74,10 +74,10 @@
     },
     {
       "name": "unsigned/soma-os-coral-mesh-edge",
-      "commits": 1170,
-      "insertions": 319440,
-      "deletions": 201471,
-      "net": 117969,
+      "commits": 1197,
+      "insertions": 321644,
+      "deletions": 201914,
+      "net": 119730,
       "desc": "",
       "category": "ops"
     },
@@ -109,6 +109,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex-wt-wXp1-exec-target",
+      "commits": 498,
+      "insertions": 85491,
+      "deletions": 5068,
+      "net": 80423,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/biomni",
       "commits": 489,
       "insertions": 123057,
@@ -118,11 +127,20 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cortex-wt-wXp1-exec-target",
-      "commits": 471,
-      "insertions": 84215,
-      "deletions": 4910,
-      "net": 79305,
+      "name": "unsigned/gg",
+      "commits": 482,
+      "insertions": 134360,
+      "deletions": 16805,
+      "net": 117555,
+      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
+      "category": "platform"
+    },
+    {
+      "name": "cerebral/MA-CC",
+      "commits": 476,
+      "insertions": 997915,
+      "deletions": 82521,
+      "net": 915394,
       "desc": "",
       "category": "ops"
     },
@@ -136,20 +154,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/MA-CC",
-      "commits": 460,
-      "insertions": 987683,
-      "deletions": 82368,
-      "net": 905315,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/revenant",
-      "commits": 416,
-      "insertions": 72282,
-      "deletions": 13679,
-      "net": 58603,
+      "commits": 434,
+      "insertions": 75675,
+      "deletions": 13823,
+      "net": 61852,
       "desc": "",
       "category": "infra"
     },
@@ -170,15 +179,6 @@
       "net": 839178,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "unsigned/gg",
-      "commits": 351,
-      "insertions": 85805,
-      "deletions": 10140,
-      "net": 75665,
-      "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
-      "category": "platform"
     },
     {
       "name": "cerebral/site",
@@ -299,7 +299,7 @@
     },
     {
       "name": "unsigned/action-runners",
-      "commits": 117,
+      "commits": 118,
       "insertions": 11982,
       "deletions": 806,
       "net": 11176,
@@ -326,10 +326,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 100,
-      "insertions": 21943,
-      "deletions": 8412,
-      "net": 13531,
+      "commits": 101,
+      "insertions": 22133,
+      "deletions": 8565,
+      "net": 13568,
       "desc": "",
       "category": "ops"
     },
@@ -352,12 +352,21 @@
       "category": "ops"
     },
     {
-      "name": "todie/pact",
-      "commits": 73,
-      "insertions": 41526,
-      "deletions": 10447,
-      "net": 31079,
-      "desc": "Pact — contract testing and agreement tracking.",
+      "name": "todie/pact-wt-ops1487",
+      "commits": 77,
+      "insertions": 41531,
+      "deletions": 10451,
+      "net": 31080,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/soma-design-wp-decision",
+      "commits": 64,
+      "insertions": 8125,
+      "deletions": 624,
+      "net": 7501,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -375,15 +384,6 @@
       "insertions": 10268,
       "deletions": 1036,
       "net": 9232,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-design-wp-decision",
-      "commits": 56,
-      "insertions": 7197,
-      "deletions": 496,
-      "net": 6701,
       "desc": "",
       "category": "ops"
     },
@@ -793,6 +793,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/soma-atlas",
+      "commits": 8,
+      "insertions": 14296,
+      "deletions": 114,
+      "net": 14182,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/moshi-cli",
       "commits": 7,
       "insertions": 2048,
@@ -817,15 +826,6 @@
       "deletions": 1,
       "net": 493,
       "desc": "URI snapshot tool. Capture and compare web resources.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/soma-atlas",
-      "commits": 6,
-      "insertions": 14250,
-      "deletions": 89,
-      "net": 14161,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -9098,7 +9098,7 @@
     ],
     [
       "2026-08-24",
-      147
+      146
     ],
     [
       "2026-08-25",
@@ -9126,11 +9126,11 @@
     ],
     [
       "2026-08-31",
-      55
+      131
     ],
     [
       "2026-09-01",
-      128
+      147
     ],
     [
       "2026-09-02",
@@ -9178,7 +9178,7 @@
     ],
     [
       "2026-09-13",
-      41
+      47
     ],
     [
       "2026-09-14",
@@ -9186,15 +9186,15 @@
     ],
     [
       "2026-09-15",
-      90
+      96
     ],
     [
       "2026-09-16",
-      76
+      77
     ],
     [
       "2026-09-17",
-      160
+      164
     ],
     [
       "2026-09-18",
@@ -9202,7 +9202,7 @@
     ],
     [
       "2026-09-19",
-      147
+      148
     ],
     [
       "2026-09-20",
@@ -9218,7 +9218,7 @@
     ],
     [
       "2026-09-23",
-      41
+      40
     ],
     [
       "2026-09-24",
@@ -9230,19 +9230,19 @@
     ],
     [
       "2026-09-26",
-      210
+      212
     ],
     [
       "2026-09-27",
-      277
+      280
     ],
     [
       "2026-09-28",
-      567
+      575
     ],
     [
       "2026-09-29",
-      69
+      233
     ]
   ],
   "sessionDays": [
@@ -9740,7 +9740,11 @@
     ],
     [
       "2026-09-29",
-      16
+      18
+    ],
+    [
+      "2026-09-30",
+      1
     ]
   ]
 }
