@@ -29,10 +29,10 @@
     },
     {
       "name": "unsigned/paas-est379",
-      "commits": 2456,
-      "insertions": 574573,
-      "deletions": 64046,
-      "net": 510527,
+      "commits": 2534,
+      "insertions": 576134,
+      "deletions": 64251,
+      "net": 511883,
       "desc": "",
       "category": "ops"
     },
@@ -74,10 +74,10 @@
     },
     {
       "name": "unsigned/soma-os-coral-mesh-edge",
-      "commits": 1197,
-      "insertions": 321644,
-      "deletions": 201914,
-      "net": 119730,
+      "commits": 1221,
+      "insertions": 324335,
+      "deletions": 202057,
+      "net": 122278,
       "desc": "",
       "category": "ops"
     },
@@ -100,20 +100,20 @@
       "category": "vendor"
     },
     {
+      "name": "cerebral/cortex-wt-wXp1-exec-target",
+      "commits": 523,
+      "insertions": 88287,
+      "deletions": 5962,
+      "net": 82325,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "zerodays/zerodays",
       "commits": 514,
       "insertions": 229085,
       "deletions": 22173,
       "net": 206912,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/cortex-wt-wXp1-exec-target",
-      "commits": 498,
-      "insertions": 85491,
-      "deletions": 5068,
-      "net": 80423,
       "desc": "",
       "category": "ops"
     },
@@ -155,10 +155,10 @@
     },
     {
       "name": "cerebral/revenant",
-      "commits": 434,
-      "insertions": 75675,
-      "deletions": 13823,
-      "net": 61852,
+      "commits": 438,
+      "insertions": 76687,
+      "deletions": 13834,
+      "net": 62853,
       "desc": "",
       "category": "infra"
     },
@@ -263,7 +263,7 @@
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 150,
+      "commits": 151,
       "insertions": 7138,
       "deletions": 1592,
       "net": 5546,
@@ -326,10 +326,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 101,
-      "insertions": 22133,
-      "deletions": 8565,
-      "net": 13568,
+      "commits": 102,
+      "insertions": 22222,
+      "deletions": 8650,
+      "net": 13572,
       "desc": "",
       "category": "ops"
     },
@@ -9242,7 +9242,15 @@
     ],
     [
       "2026-09-29",
-      233
+      232
+    ],
+    [
+      "2026-09-30",
+      125
+    ],
+    [
+      "2026-10-01",
+      9
     ]
   ],
   "sessionDays": [
@@ -9744,7 +9752,7 @@
     ],
     [
       "2026-09-30",
-      1
+      2
     ]
   ]
 }
