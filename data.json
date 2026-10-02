@@ -20,19 +20,19 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2930,
-      "insertions": 819963,
-      "deletions": 114212,
-      "net": 705751,
+      "commits": 2932,
+      "insertions": 820037,
+      "deletions": 114244,
+      "net": 705793,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/paas-est379",
-      "commits": 2534,
-      "insertions": 576134,
-      "deletions": 64251,
-      "net": 511883,
+      "commits": 2590,
+      "insertions": 576803,
+      "deletions": 65209,
+      "net": 511594,
       "desc": "",
       "category": "ops"
     },
@@ -74,10 +74,10 @@
     },
     {
       "name": "unsigned/soma-os-coral-mesh-edge",
-      "commits": 1221,
-      "insertions": 324335,
-      "deletions": 202057,
-      "net": 122278,
+      "commits": 1244,
+      "insertions": 335451,
+      "deletions": 202568,
+      "net": 132883,
       "desc": "",
       "category": "ops"
     },
@@ -100,11 +100,20 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/cortex-wt-wXp1-exec-target",
-      "commits": 523,
-      "insertions": 88287,
-      "deletions": 5962,
-      "net": 82325,
+      "name": "cerebral/cortex-wt-w14p1-e5-delivery",
+      "commits": 553,
+      "insertions": 93231,
+      "deletions": 6422,
+      "net": 86809,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/cortex-wt-w14p1-rc28",
+      "commits": 552,
+      "insertions": 93115,
+      "deletions": 6417,
+      "net": 86698,
       "desc": "",
       "category": "ops"
     },
@@ -155,10 +164,10 @@
     },
     {
       "name": "cerebral/revenant",
-      "commits": 438,
-      "insertions": 76687,
-      "deletions": 13834,
-      "net": 62853,
+      "commits": 449,
+      "insertions": 77698,
+      "deletions": 13850,
+      "net": 63848,
       "desc": "",
       "category": "infra"
     },
@@ -208,6 +217,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/agentic-hooks-wt",
+      "commits": 209,
+      "insertions": 24395,
+      "deletions": 6428,
+      "net": 17967,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/linearctl",
       "commits": 203,
       "insertions": 46840,
@@ -223,15 +241,6 @@
       "deletions": 12999,
       "net": 30237,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/agentic-hooks-wt",
-      "commits": 199,
-      "insertions": 24042,
-      "deletions": 6362,
-      "net": 17680,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -316,20 +325,20 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 103,
+      "insertions": 22261,
+      "deletions": 8681,
+      "net": 13580,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/herdr-plus",
       "commits": 102,
       "insertions": 19467,
       "deletions": 8450,
       "net": 11017,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 102,
-      "insertions": 22222,
-      "deletions": 8650,
-      "net": 13572,
       "desc": "",
       "category": "ops"
     },
@@ -1392,6 +1401,20 @@
     {
       "t": "let's go through my punchlist one by one",
       "d": "Day 161",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "never needed shit you dont need to check on me",
+      "d": "Day 165",
+      "tags": [
+        "fire"
+      ]
+    },
+    {
+      "t": "let's go brother",
+      "d": "Day 165",
       "tags": [
         "fire"
       ]
@@ -8498,7 +8521,7 @@
     ],
     [
       "2026-03-27",
-      84
+      89
     ],
     [
       "2026-03-28",
@@ -8914,7 +8937,7 @@
     ],
     [
       "2026-07-09",
-      332
+      333
     ],
     [
       "2026-07-10",
@@ -8938,7 +8961,7 @@
     ],
     [
       "2026-07-15",
-      574
+      576
     ],
     [
       "2026-07-16",
@@ -8962,7 +8985,7 @@
     ],
     [
       "2026-07-21",
-      155
+      156
     ],
     [
       "2026-07-22",
@@ -8974,7 +8997,7 @@
     ],
     [
       "2026-07-24",
-      486
+      488
     ],
     [
       "2026-07-25",
@@ -8990,7 +9013,7 @@
     ],
     [
       "2026-07-28",
-      543
+      547
     ],
     [
       "2026-07-29",
@@ -8998,7 +9021,7 @@
     ],
     [
       "2026-07-30",
-      339
+      340
     ],
     [
       "2026-07-31",
@@ -9006,11 +9029,11 @@
     ],
     [
       "2026-08-01",
-      258
+      265
     ],
     [
       "2026-08-02",
-      230
+      259
     ],
     [
       "2026-08-03",
@@ -9018,7 +9041,7 @@
     ],
     [
       "2026-08-04",
-      323
+      330
     ],
     [
       "2026-08-05",
@@ -9050,7 +9073,7 @@
     ],
     [
       "2026-08-12",
-      205
+      209
     ],
     [
       "2026-08-13",
@@ -9058,51 +9081,51 @@
     ],
     [
       "2026-08-14",
-      401
+      414
     ],
     [
       "2026-08-15",
-      96
+      107
     ],
     [
       "2026-08-16",
-      462
+      473
     ],
     [
       "2026-08-17",
-      181
+      185
     ],
     [
       "2026-08-18",
-      195
+      222
     ],
     [
       "2026-08-19",
-      447
+      465
     ],
     [
       "2026-08-20",
-      264
+      274
     ],
     [
       "2026-08-21",
-      180
+      194
     ],
     [
       "2026-08-22",
-      72
-    ],
-    [
-      "2026-08-23",
       81
     ],
     [
+      "2026-08-23",
+      84
+    ],
+    [
       "2026-08-24",
-      146
+      150
     ],
     [
       "2026-08-25",
-      249
+      260
     ],
     [
       "2026-08-26",
@@ -9126,11 +9149,11 @@
     ],
     [
       "2026-08-31",
-      131
+      133
     ],
     [
       "2026-09-01",
-      147
+      146
     ],
     [
       "2026-09-02",
@@ -9142,7 +9165,7 @@
     ],
     [
       "2026-09-04",
-      74
+      75
     ],
     [
       "2026-09-05",
@@ -9230,27 +9253,31 @@
     ],
     [
       "2026-09-26",
-      212
+      251
     ],
     [
       "2026-09-27",
-      280
+      390
     ],
     [
       "2026-09-28",
-      575
+      684
     ],
     [
       "2026-09-29",
-      232
+      271
     ],
     [
       "2026-09-30",
-      125
+      152
     ],
     [
       "2026-10-01",
-      9
+      122
+    ],
+    [
+      "2026-10-02",
+      48
     ]
   ],
   "sessionDays": [
@@ -9752,6 +9779,10 @@
     ],
     [
       "2026-09-30",
+      2
+    ],
+    [
+      "2026-10-02",
       2
     ]
   ]
