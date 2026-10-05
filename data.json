@@ -20,30 +20,30 @@
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2933,
-      "insertions": 820039,
-      "deletions": 114244,
-      "net": 705795,
+      "commits": 2935,
+      "insertions": 820079,
+      "deletions": 114253,
+      "net": 705826,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/paas-wt-traefik-router-labels",
-      "commits": 2803,
-      "insertions": 581047,
-      "deletions": 66244,
-      "net": 514803,
+      "name": "unsigned/paas-wt-cortex-pin-0.1.53",
+      "commits": 2901,
+      "insertions": 584929,
+      "deletions": 66868,
+      "net": 518061,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/paas-est379",
-      "commits": 2801,
-      "insertions": 581040,
-      "deletions": 66243,
-      "net": 514797,
-      "desc": "",
-      "category": "ops"
+      "name": "vendor/rtk",
+      "commits": 2504,
+      "insertions": 371685,
+      "deletions": 112358,
+      "net": 259327,
+      "desc": "Rust Token Killer — CLI proxy saving 60-90% tokens on dev operations.",
+      "category": "vendor"
     },
     {
       "name": "todie/claude-code",
@@ -64,29 +64,20 @@
       "category": "ops"
     },
     {
-      "name": "vendor/rtk",
-      "commits": 1777,
-      "insertions": 249127,
-      "deletions": 70355,
-      "net": 178772,
-      "desc": "Rust Token Killer — CLI proxy saving 60-90% tokens on dev operations.",
-      "category": "vendor"
-    },
-    {
       "name": "rina",
-      "commits": 1724,
-      "insertions": 585088,
-      "deletions": 213627,
-      "net": 371461,
+      "commits": 1803,
+      "insertions": 630400,
+      "deletions": 236864,
+      "net": 393536,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/soma-os-coral-mesh-edge",
-      "commits": 1331,
-      "insertions": 349774,
-      "deletions": 203805,
-      "net": 145969,
+      "commits": 1369,
+      "insertions": 375977,
+      "deletions": 206112,
+      "net": 169865,
       "desc": "",
       "category": "ops"
     },
@@ -109,29 +100,38 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/cortex-wt-w12p2-meshrule",
-      "commits": 650,
-      "insertions": 108026,
-      "deletions": 7490,
-      "net": 100536,
+      "name": "cerebral/cortex-wt-w14p1-codex-pane-identity",
+      "commits": 782,
+      "insertions": 131817,
+      "deletions": 10770,
+      "net": 121047,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/revenant-wt-mesh-pool",
+      "commits": 591,
+      "insertions": 94860,
+      "deletions": 15407,
+      "net": 79453,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/gg",
-      "commits": 556,
-      "insertions": 159012,
-      "deletions": 23621,
-      "net": 135391,
+      "commits": 566,
+      "insertions": 161033,
+      "deletions": 23681,
+      "net": 137352,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
     {
       "name": "cerebral/MA-CC-wt-strict-upstream",
-      "commits": 535,
-      "insertions": 1048406,
-      "deletions": 84918,
-      "net": 963488,
+      "commits": 543,
+      "insertions": 1050976,
+      "deletions": 84937,
+      "net": 966039,
       "desc": "",
       "category": "ops"
     },
@@ -141,15 +141,6 @@
       "insertions": 231633,
       "deletions": 38673,
       "net": 192960,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/revenant-wt-w12p1-publish",
-      "commits": 523,
-      "insertions": 86638,
-      "deletions": 14678,
-      "net": 71960,
       "desc": "",
       "category": "ops"
     },
@@ -191,12 +182,30 @@
     },
     {
       "name": "cerebral/site",
-      "commits": 333,
-      "insertions": 40474,
-      "deletions": 12707,
-      "net": 27767,
+      "commits": 338,
+      "insertions": 40784,
+      "deletions": 12710,
+      "net": 28074,
       "desc": "",
       "category": "design"
+    },
+    {
+      "name": "cerebral/linearctl",
+      "commits": 302,
+      "insertions": 115234,
+      "deletions": 7453,
+      "net": 107781,
+      "desc": "",
+      "category": "agent"
+    },
+    {
+      "name": "cerebral/linearctl-wt-moveapplied",
+      "commits": 301,
+      "insertions": 115207,
+      "deletions": 7448,
+      "net": 107759,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/heretic",
@@ -209,19 +218,19 @@
     },
     {
       "name": "unsigned/agentic-shell-deck",
-      "commits": 249,
-      "insertions": 52854,
-      "deletions": 7254,
-      "net": 45600,
+      "commits": 251,
+      "insertions": 52982,
+      "deletions": 7259,
+      "net": 45723,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "todie/dotfiles",
-      "commits": 228,
-      "insertions": 48868,
-      "deletions": 13119,
-      "net": 35749,
+      "commits": 241,
+      "insertions": 50879,
+      "deletions": 13998,
+      "net": 36881,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
@@ -235,13 +244,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/linearctl",
-      "commits": 203,
-      "insertions": 46840,
-      "deletions": 5425,
-      "net": 41415,
+      "name": "cerebral/swarm-control-ssa-submitted",
+      "commits": 211,
+      "insertions": 609720,
+      "deletions": 6305,
+      "net": 603415,
       "desc": "",
-      "category": "agent"
+      "category": "ops"
     },
     {
       "name": "cerebral/lizard",
@@ -272,19 +281,19 @@
     },
     {
       "name": "cerebral/tailnet",
-      "commits": 159,
-      "insertions": 7506,
-      "deletions": 1608,
-      "net": 5898,
+      "commits": 162,
+      "insertions": 7572,
+      "deletions": 1642,
+      "net": 5930,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
     },
     {
       "name": "cerebral/vilicus",
-      "commits": 144,
-      "insertions": 55244,
-      "deletions": 21029,
-      "net": 34215,
+      "commits": 152,
+      "insertions": 55376,
+      "deletions": 21056,
+      "net": 34320,
       "desc": "",
       "category": "ops"
     },
@@ -335,10 +344,10 @@
     },
     {
       "name": "cerebral/works",
-      "commits": 105,
-      "insertions": 22579,
-      "deletions": 8936,
-      "net": 13643,
+      "commits": 106,
+      "insertions": 22822,
+      "deletions": 9145,
+      "net": 13677,
       "desc": "",
       "category": "ops"
     },
@@ -370,8 +379,8 @@
       "category": "ops"
     },
     {
-      "name": "todie/pact-wt-ops1487",
-      "commits": 77,
+      "name": "todie/pact",
+      "commits": 78,
       "insertions": 41531,
       "deletions": 10451,
       "net": 31080,
@@ -380,10 +389,19 @@
     },
     {
       "name": "unsigned/soma-design",
-      "commits": 71,
-      "insertions": 8300,
-      "deletions": 709,
-      "net": 7591,
+      "commits": 76,
+      "insertions": 8444,
+      "deletions": 728,
+      "net": 7716,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/mcp-honeypot",
+      "commits": 67,
+      "insertions": 20893,
+      "deletions": 883,
+      "net": 20010,
       "desc": "",
       "category": "ops"
     },
@@ -433,15 +451,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/mcp-honeypot",
-      "commits": 45,
-      "insertions": 18025,
-      "deletions": 735,
-      "net": 17290,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/dc",
       "commits": 43,
       "insertions": 8954,
@@ -487,6 +496,33 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/cadastre",
+      "commits": 36,
+      "insertions": 15774,
+      "deletions": 2903,
+      "net": 12871,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cadastre",
+      "commits": 33,
+      "insertions": 15697,
+      "deletions": 2869,
+      "net": 12828,
+      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/waker-license-wt",
+      "commits": 33,
+      "insertions": 2925,
+      "deletions": 92,
+      "net": 2833,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "pgt",
       "commits": 32,
       "insertions": 21320,
@@ -503,15 +539,6 @@
       "net": 14032,
       "desc": "Archived Rust daemon. Predecessor to current tooling.",
       "category": "archive"
-    },
-    {
-      "name": "unsigned/waker-license-wt",
-      "commits": 31,
-      "insertions": 2924,
-      "deletions": 91,
-      "net": 2833,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/cicatrix",
@@ -532,11 +559,29 @@
       "category": "platform"
     },
     {
-      "name": "cerebral/swarm-control-agent-collaboration",
+      "name": "cerebral/ml-images",
+      "commits": 29,
+      "insertions": 1518,
+      "deletions": 299,
+      "net": 1219,
+      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
+      "category": "infra"
+    },
+    {
+      "name": "todie/reach",
       "commits": 28,
-      "insertions": 44809,
-      "deletions": 60,
-      "net": 44749,
+      "insertions": 17252,
+      "deletions": 1132,
+      "net": 16120,
+      "desc": "Reach — outreach and connection management.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/juarez",
+      "commits": 28,
+      "insertions": 1904,
+      "deletions": 169,
+      "net": 1735,
       "desc": "",
       "category": "ops"
     },
@@ -547,24 +592,6 @@
       "deletions": 468,
       "net": 6126,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/ml-images",
-      "commits": 28,
-      "insertions": 1509,
-      "deletions": 293,
-      "net": 1216,
-      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
-      "category": "infra"
-    },
-    {
-      "name": "todie/reach",
-      "commits": 27,
-      "insertions": 17251,
-      "deletions": 1131,
-      "net": 16120,
-      "desc": "Reach — outreach and connection management.",
       "category": "ops"
     },
     {
@@ -584,6 +611,15 @@
       "net": 1562,
       "desc": "Terraform project template. Standard module structure.",
       "category": "templates"
+    },
+    {
+      "name": "unsigned/soma-atlas-marc",
+      "commits": 26,
+      "insertions": 17219,
+      "deletions": 455,
+      "net": 16764,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "mission-control",
@@ -613,11 +649,11 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/soma-atlas-marc",
+      "name": "cerebral/dot-github",
       "commits": 24,
-      "insertions": 17132,
-      "deletions": 452,
-      "net": 16680,
+      "insertions": 1337,
+      "deletions": 112,
+      "net": 1225,
       "desc": "",
       "category": "ops"
     },
@@ -631,20 +667,20 @@
       "category": "templates"
     },
     {
-      "name": "cadastre",
-      "commits": 23,
-      "insertions": 15489,
-      "deletions": 2586,
-      "net": 12903,
-      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
-      "category": "ops"
-    },
-    {
       "name": "vesperan-ai/vesperan",
       "commits": 23,
       "insertions": 63938,
       "deletions": 272,
       "net": 63666,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/revenue-apollo-wt",
+      "commits": 23,
+      "insertions": 1975,
+      "deletions": 173,
+      "net": 1802,
       "desc": "",
       "category": "ops"
     },
@@ -665,15 +701,6 @@
       "net": 783,
       "desc": "Rust project template. Standard scaffolding.",
       "category": "templates"
-    },
-    {
-      "name": "unsigned/juarez",
-      "commits": 20,
-      "insertions": 1635,
-      "deletions": 76,
-      "net": 1559,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "unsigned/agent-jury",
@@ -701,15 +728,6 @@
       "net": 4491,
       "desc": "beepboopd — a small daemon experiment.",
       "category": "vendor"
-    },
-    {
-      "name": "cerebral/revenue-apollo-wt",
-      "commits": 17,
-      "insertions": 1919,
-      "deletions": 162,
-      "net": 1757,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/reverie-slack",
@@ -776,10 +794,10 @@
     },
     {
       "name": "cerebral/handbook",
-      "commits": 11,
-      "insertions": 287,
-      "deletions": 34,
-      "net": 253,
+      "commits": 13,
+      "insertions": 297,
+      "deletions": 43,
+      "net": 254,
       "desc": "",
       "category": "ops"
     },
@@ -8439,7 +8457,7 @@
     ],
     [
       "2026-02-22",
-      144
+      145
     ],
     [
       "2026-02-23",
@@ -8527,7 +8545,7 @@
     ],
     [
       "2026-03-16",
-      98
+      97
     ],
     [
       "2026-03-17",
@@ -8547,11 +8565,11 @@
     ],
     [
       "2026-03-21",
-      44
+      45
     ],
     [
       "2026-03-22",
-      159
+      108
     ],
     [
       "2026-03-23",
@@ -8619,7 +8637,7 @@
     ],
     [
       "2026-04-08",
-      285
+      289
     ],
     [
       "2026-04-09",
@@ -8627,7 +8645,7 @@
     ],
     [
       "2026-04-10",
-      292
+      293
     ],
     [
       "2026-04-11",
@@ -8643,7 +8661,7 @@
     ],
     [
       "2026-04-14",
-      92
+      93
     ],
     [
       "2026-04-15",
@@ -8659,19 +8677,19 @@
     ],
     [
       "2026-04-18",
-      265
+      264
     ],
     [
       "2026-04-19",
-      92
+      93
     ],
     [
       "2026-04-20",
-      207
+      209
     ],
     [
       "2026-04-21",
-      240
+      244
     ],
     [
       "2026-04-22",
@@ -8683,7 +8701,7 @@
     ],
     [
       "2026-04-24",
-      341
+      342
     ],
     [
       "2026-04-25",
@@ -8703,7 +8721,7 @@
     ],
     [
       "2026-04-29",
-      237
+      230
     ],
     [
       "2026-04-30",
@@ -8731,7 +8749,7 @@
     ],
     [
       "2026-05-06",
-      300
+      301
     ],
     [
       "2026-05-07",
@@ -8791,15 +8809,15 @@
     ],
     [
       "2026-05-21",
-      223
+      219
     ],
     [
       "2026-05-22",
-      201
+      197
     ],
     [
       "2026-05-23",
-      101
+      98
     ],
     [
       "2026-05-24",
@@ -8807,7 +8825,7 @@
     ],
     [
       "2026-05-25",
-      282
+      283
     ],
     [
       "2026-05-26",
@@ -8815,7 +8833,7 @@
     ],
     [
       "2026-05-27",
-      300
+      301
     ],
     [
       "2026-05-28",
@@ -8831,67 +8849,67 @@
     ],
     [
       "2026-05-31",
-      325
-    ],
-    [
-      "2026-06-01",
-      276
-    ],
-    [
-      "2026-06-02",
-      327
-    ],
-    [
-      "2026-06-03",
-      446
-    ],
-    [
-      "2026-06-04",
-      344
-    ],
-    [
-      "2026-06-05",
-      335
-    ],
-    [
-      "2026-06-06",
       306
     ],
     [
+      "2026-06-01",
+      245
+    ],
+    [
+      "2026-06-02",
+      326
+    ],
+    [
+      "2026-06-03",
+      442
+    ],
+    [
+      "2026-06-04",
+      356
+    ],
+    [
+      "2026-06-05",
+      343
+    ],
+    [
+      "2026-06-06",
+      298
+    ],
+    [
       "2026-06-07",
-      279
+      266
     ],
     [
       "2026-06-08",
-      440
+      417
     ],
     [
       "2026-06-09",
-      377
+      329
     ],
     [
       "2026-06-10",
-      385
+      379
     ],
     [
       "2026-06-11",
-      225
+      222
     ],
     [
       "2026-06-12",
-      367
+      360
     ],
     [
       "2026-06-13",
-      285
+      269
     ],
     [
       "2026-06-14",
-      352
+      346
     ],
     [
       "2026-06-15",
-      416
+      405
     ],
     [
       "2026-06-16",
@@ -8903,11 +8921,11 @@
     ],
     [
       "2026-06-18",
-      304
+      301
     ],
     [
       "2026-06-19",
-      284
+      285
     ],
     [
       "2026-06-20",
@@ -8919,11 +8937,11 @@
     ],
     [
       "2026-06-22",
-      244
+      241
     ],
     [
       "2026-06-23",
-      339
+      288
     ],
     [
       "2026-06-24",
@@ -8931,15 +8949,15 @@
     ],
     [
       "2026-06-25",
-      219
+      218
     ],
     [
       "2026-06-26",
-      278
+      279
     ],
     [
       "2026-06-27",
-      250
+      251
     ],
     [
       "2026-06-28",
@@ -8955,115 +8973,115 @@
     ],
     [
       "2026-07-01",
-      414
+      405
     ],
     [
       "2026-07-02",
-      508
-    ],
-    [
-      "2026-07-03",
-      318
-    ],
-    [
-      "2026-07-04",
-      358
-    ],
-    [
-      "2026-07-05",
-      355
-    ],
-    [
-      "2026-07-06",
-      452
-    ],
-    [
-      "2026-07-07",
-      235
-    ],
-    [
-      "2026-07-08",
-      376
-    ],
-    [
-      "2026-07-09",
-      380
-    ],
-    [
-      "2026-07-10",
-      220
-    ],
-    [
-      "2026-07-11",
-      546
-    ],
-    [
-      "2026-07-12",
-      160
-    ],
-    [
-      "2026-07-13",
       467
     ],
     [
+      "2026-07-03",
+      278
+    ],
+    [
+      "2026-07-04",
+      314
+    ],
+    [
+      "2026-07-05",
+      330
+    ],
+    [
+      "2026-07-06",
+      393
+    ],
+    [
+      "2026-07-07",
+      210
+    ],
+    [
+      "2026-07-08",
+      358
+    ],
+    [
+      "2026-07-09",
+      349
+    ],
+    [
+      "2026-07-10",
+      209
+    ],
+    [
+      "2026-07-11",
+      557
+    ],
+    [
+      "2026-07-12",
+      157
+    ],
+    [
+      "2026-07-13",
+      397
+    ],
+    [
       "2026-07-14",
-      526
+      519
     ],
     [
       "2026-07-15",
-      582
+      579
     ],
     [
       "2026-07-16",
-      421
+      404
     ],
     [
       "2026-07-17",
-      344
+      337
     ],
     [
       "2026-07-18",
-      575
+      482
     ],
     [
       "2026-07-19",
-      142
+      122
     ],
     [
       "2026-07-20",
-      100
+      106
     ],
     [
       "2026-07-21",
-      167
+      159
     ],
     [
       "2026-07-22",
-      338
+      336
     ],
     [
       "2026-07-23",
-      398
+      375
     ],
     [
       "2026-07-24",
-      528
+      495
     ],
     [
       "2026-07-25",
-      290
+      281
     ],
     [
       "2026-07-26",
-      308
+      290
     ],
     [
       "2026-07-27",
-      382
+      379
     ],
     [
       "2026-07-28",
-      558
+      568
     ],
     [
       "2026-07-29",
@@ -9071,203 +9089,203 @@
     ],
     [
       "2026-07-30",
-      348
+      339
     ],
     [
       "2026-07-31",
-      316
+      294
     ],
     [
       "2026-08-01",
-      301
+      258
     ],
     [
       "2026-08-02",
-      263
+      230
     ],
     [
       "2026-08-03",
-      229
+      223
     ],
     [
       "2026-08-04",
-      366
+      323
     ],
     [
       "2026-08-05",
-      327
+      306
     ],
     [
       "2026-08-06",
-      187
-    ],
-    [
-      "2026-08-07",
-      358
-    ],
-    [
-      "2026-08-08",
-      175
-    ],
-    [
-      "2026-08-09",
       164
     ],
     [
+      "2026-08-07",
+      323
+    ],
+    [
+      "2026-08-08",
+      163
+    ],
+    [
+      "2026-08-09",
+      158
+    ],
+    [
       "2026-08-10",
-      157
+      142
     ],
     [
       "2026-08-11",
-      252
+      246
     ],
     [
       "2026-08-12",
-      218
+      202
     ],
     [
       "2026-08-13",
-      342
+      329
     ],
     [
       "2026-08-14",
-      413
+      401
     ],
     [
       "2026-08-15",
-      99
+      98
     ],
     [
       "2026-08-16",
-      499
+      481
     ],
     [
       "2026-08-17",
-      200
+      185
     ],
     [
       "2026-08-18",
-      203
+      196
     ],
     [
       "2026-08-19",
-      480
+      449
     ],
     [
       "2026-08-20",
-      282
+      281
     ],
     [
       "2026-08-21",
-      192
+      194
     ],
     [
       "2026-08-22",
-      79
+      86
     ],
     [
       "2026-08-23",
-      124
+      159
     ],
     [
       "2026-08-24",
-      167
+      154
     ],
     [
       "2026-08-25",
-      291
+      273
     ],
     [
       "2026-08-26",
-      80
+      97
     ],
     [
       "2026-08-27",
-      48
+      56
     ],
     [
       "2026-08-28",
-      89
+      98
     ],
     [
       "2026-08-29",
-      57
+      87
     ],
     [
       "2026-08-30",
-      84
+      111
     ],
     [
       "2026-08-31",
-      156
+      163
     ],
     [
       "2026-09-01",
-      168
+      194
     ],
     [
       "2026-09-02",
-      120
+      149
     ],
     [
       "2026-09-03",
-      102
+      118
     ],
     [
       "2026-09-04",
-      84
+      101
     ],
     [
       "2026-09-05",
-      40
+      47
     ],
     [
       "2026-09-06",
-      41
+      34
     ],
     [
       "2026-09-07",
-      109
-    ],
-    [
-      "2026-09-08",
-      92
-    ],
-    [
-      "2026-09-09",
-      74
-    ],
-    [
-      "2026-09-10",
-      51
-    ],
-    [
-      "2026-09-11",
-      133
-    ],
-    [
-      "2026-09-12",
-      68
-    ],
-    [
-      "2026-09-13",
-      108
-    ],
-    [
-      "2026-09-14",
-      108
-    ],
-    [
-      "2026-09-15",
       136
     ],
     [
+      "2026-09-08",
+      123
+    ],
+    [
+      "2026-09-09",
+      86
+    ],
+    [
+      "2026-09-10",
+      56
+    ],
+    [
+      "2026-09-11",
+      139
+    ],
+    [
+      "2026-09-12",
+      59
+    ],
+    [
+      "2026-09-13",
+      120
+    ],
+    [
+      "2026-09-14",
+      111
+    ],
+    [
+      "2026-09-15",
+      128
+    ],
+    [
       "2026-09-16",
-      113
+      106
     ],
     [
       "2026-09-17",
-      239
+      173
     ],
     [
       "2026-09-18",
@@ -9275,67 +9293,71 @@
     ],
     [
       "2026-09-19",
-      177
+      179
     ],
     [
       "2026-09-20",
-      161
+      156
     ],
     [
       "2026-09-21",
-      180
+      157
     ],
     [
       "2026-09-22",
-      91
+      78
     ],
     [
       "2026-09-23",
-      63
+      60
     ],
     [
       "2026-09-24",
-      127
+      119
     ],
     [
       "2026-09-25",
-      71
+      76
     ],
     [
       "2026-09-26",
-      342
+      245
     ],
     [
       "2026-09-27",
-      371
+      322
     ],
     [
       "2026-09-28",
-      835
+      654
     ],
     [
       "2026-09-29",
-      352
+      320
     ],
     [
       "2026-09-30",
-      243
+      182
     ],
     [
       "2026-10-01",
-      234
+      202
     ],
     [
       "2026-10-02",
-      457
+      384
     ],
     [
       "2026-10-03",
-      439
+      381
     ],
     [
       "2026-10-04",
-      103
+      633
+    ],
+    [
+      "2026-10-05",
+      252
     ]
   ],
   "sessionDays": [
@@ -9849,7 +9871,11 @@
     ],
     [
       "2026-10-04",
-      16
+      153
+    ],
+    [
+      "2026-10-05",
+      68
     ]
   ]
 }
