@@ -19,20 +19,20 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/reverie-backfill-prov",
-      "commits": 2935,
-      "insertions": 820079,
-      "deletions": 114253,
-      "net": 705826,
+      "name": "unsigned/paas-wt-cortex-pin-0.1.53",
+      "commits": 2998,
+      "insertions": 587029,
+      "deletions": 67173,
+      "net": 519856,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/paas-wt-cortex-pin-0.1.53",
-      "commits": 2901,
-      "insertions": 584929,
-      "deletions": 66868,
-      "net": 518061,
+      "name": "cerebral/reverie-backfill-prov",
+      "commits": 2960,
+      "insertions": 820869,
+      "deletions": 114823,
+      "net": 706046,
       "desc": "",
       "category": "ops"
     },
@@ -65,19 +65,19 @@
     },
     {
       "name": "rina",
-      "commits": 1803,
-      "insertions": 630400,
-      "deletions": 236864,
-      "net": 393536,
+      "commits": 1815,
+      "insertions": 630546,
+      "deletions": 237313,
+      "net": 393233,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/soma-os-coral-mesh-edge",
-      "commits": 1369,
-      "insertions": 375977,
-      "deletions": 206112,
-      "net": 169865,
+      "commits": 1409,
+      "insertions": 383377,
+      "deletions": 206281,
+      "net": 177096,
       "desc": "",
       "category": "ops"
     },
@@ -91,6 +91,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cortex-wt-w14p1-idrfc",
+      "commits": 852,
+      "insertions": 137581,
+      "deletions": 11402,
+      "net": 126179,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-hud",
       "commits": 845,
       "insertions": 91853,
@@ -100,22 +109,13 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/cortex-wt-w14p1-codex-pane-identity",
-      "commits": 782,
-      "insertions": 131817,
-      "deletions": 10770,
-      "net": 121047,
+      "name": "cerebral/revenant",
+      "commits": 652,
+      "insertions": 114030,
+      "deletions": 16320,
+      "net": 97710,
       "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/revenant-wt-mesh-pool",
-      "commits": 591,
-      "insertions": 94860,
-      "deletions": 15407,
-      "net": 79453,
-      "desc": "",
-      "category": "ops"
+      "category": "infra"
     },
     {
       "name": "unsigned/gg",
@@ -164,46 +164,55 @@
     },
     {
       "name": "cerebral/ma-cc-cygnus",
-      "commits": 453,
-      "insertions": 980193,
-      "deletions": 81587,
-      "net": 898606,
+      "commits": 458,
+      "insertions": 980440,
+      "deletions": 81591,
+      "net": 898849,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "terrarium",
-      "commits": 399,
-      "insertions": 216188,
-      "deletions": 39449,
-      "net": 176739,
+      "commits": 402,
+      "insertions": 216204,
+      "deletions": 39761,
+      "net": 176443,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "cerebral/site",
-      "commits": 338,
-      "insertions": 40784,
-      "deletions": 12710,
-      "net": 28074,
+      "name": "unsigned/agentic-shell-deck",
+      "commits": 386,
+      "insertions": 208470,
+      "deletions": 149917,
+      "net": 58553,
       "desc": "",
-      "category": "design"
+      "category": "ops"
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 302,
-      "insertions": 115234,
-      "deletions": 7453,
-      "net": 107781,
+      "commits": 342,
+      "insertions": 118132,
+      "deletions": 8169,
+      "net": 109963,
       "desc": "",
       "category": "agent"
     },
     {
-      "name": "cerebral/linearctl-wt-moveapplied",
-      "commits": 301,
-      "insertions": 115207,
-      "deletions": 7448,
-      "net": 107759,
+      "name": "cerebral/site",
+      "commits": 340,
+      "insertions": 40793,
+      "deletions": 13022,
+      "net": 27771,
+      "desc": "",
+      "category": "design"
+    },
+    {
+      "name": "cerebral/swarm-control-cleanup",
+      "commits": 271,
+      "insertions": 876022,
+      "deletions": 6186,
+      "net": 869836,
       "desc": "",
       "category": "ops"
     },
@@ -214,15 +223,6 @@
       "deletions": 7107,
       "net": 14639,
       "desc": "Model decensoring and fine-tuning pipeline. Local model experimentation.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/agentic-shell-deck",
-      "commits": 251,
-      "insertions": 52982,
-      "deletions": 7259,
-      "net": 45723,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -240,15 +240,6 @@
       "insertions": 47642,
       "deletions": 7885,
       "net": 39757,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/swarm-control-ssa-submitted",
-      "commits": 211,
-      "insertions": 609720,
-      "deletions": 6305,
-      "net": 603415,
       "desc": "",
       "category": "ops"
     },
@@ -280,6 +271,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/vilicus",
+      "commits": 166,
+      "insertions": 55491,
+      "deletions": 23549,
+      "net": 31942,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/tailnet",
       "commits": 162,
       "insertions": 7572,
@@ -287,15 +287,6 @@
       "net": 5930,
       "desc": "Terraform IaC. Bidirectional mirroring, OAuth, audit, policy reconciliation.",
       "category": "infra"
-    },
-    {
-      "name": "cerebral/vilicus",
-      "commits": 152,
-      "insertions": 55376,
-      "deletions": 21056,
-      "net": 34320,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/IEVAN.ai",
@@ -317,10 +308,10 @@
     },
     {
       "name": "unsigned/action-runners",
-      "commits": 124,
-      "insertions": 12012,
-      "deletions": 820,
-      "net": 11192,
+      "commits": 126,
+      "insertions": 12019,
+      "deletions": 822,
+      "net": 11197,
       "desc": "CI runners. ARC fleets, forgejo runner, baked Rust image, rootless BuildKit.",
       "category": "infra"
     },
@@ -334,20 +325,20 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/works",
+      "commits": 107,
+      "insertions": 23154,
+      "deletions": 9451,
+      "net": 13703,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "ieva",
       "commits": 106,
       "insertions": 19941,
       "deletions": 1558,
       "net": 18383,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/works",
-      "commits": 106,
-      "insertions": 22822,
-      "deletions": 9145,
-      "net": 13677,
       "desc": "",
       "category": "ops"
     },
@@ -397,11 +388,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/mcp-honeypot",
-      "commits": 67,
-      "insertions": 20893,
-      "deletions": 883,
-      "net": 20010,
+      "name": "cerebral/mcp-honeypot-wt-fixes",
+      "commits": 70,
+      "insertions": 20927,
+      "deletions": 1215,
+      "net": 19712,
       "desc": "",
       "category": "ops"
     },
@@ -460,6 +451,15 @@
       "category": "infra"
     },
     {
+      "name": "cerebral-work/comms-swarm-live",
+      "commits": 42,
+      "insertions": 11031,
+      "deletions": 367,
+      "net": 10664,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/lizard",
       "commits": 42,
       "insertions": 6796,
@@ -487,6 +487,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cicatrix",
+      "commits": 37,
+      "insertions": 10212,
+      "deletions": 342,
+      "net": 9870,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
       "name": "unsigned/escapement",
       "commits": 36,
       "insertions": 16483,
@@ -501,6 +510,15 @@
       "insertions": 15774,
       "deletions": 2903,
       "net": 12871,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/dot-github",
+      "commits": 34,
+      "insertions": 1513,
+      "deletions": 162,
+      "net": 1351,
       "desc": "",
       "category": "ops"
     },
@@ -523,6 +541,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/dotgithub",
+      "commits": 33,
+      "insertions": 1513,
+      "deletions": 162,
+      "net": 1351,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "pgt",
       "commits": 32,
       "insertions": 21320,
@@ -541,13 +568,22 @@
       "category": "archive"
     },
     {
-      "name": "cerebral/cicatrix",
+      "name": "cerebral/research-wt-swarm",
       "commits": 31,
-      "insertions": 9768,
-      "deletions": 327,
-      "net": 9441,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
+      "insertions": 73464,
+      "deletions": 69835,
+      "net": 3629,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/juarez",
+      "commits": 30,
+      "insertions": 1904,
+      "deletions": 169,
+      "net": 1735,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral/openpanel",
@@ -557,6 +593,15 @@
       "net": 22642,
       "desc": "OpenPanel integration. Analytics and event tracking for the cerebral estate.",
       "category": "platform"
+    },
+    {
+      "name": "cerebral/handbook-wt-pgray-cto",
+      "commits": 29,
+      "insertions": 2038,
+      "deletions": 52,
+      "net": 1986,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "cerebral/ml-images",
@@ -577,15 +622,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/juarez",
-      "commits": 28,
-      "insertions": 1904,
-      "deletions": 169,
-      "net": 1735,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/meridian",
       "commits": 28,
       "insertions": 6594,
@@ -602,6 +638,15 @@
       "net": 53600,
       "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
       "category": "identity"
+    },
+    {
+      "name": "cerebral/handbook-people-kjanssen",
+      "commits": 27,
+      "insertions": 2034,
+      "deletions": 49,
+      "net": 1985,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "templates/terraform",
@@ -649,15 +694,6 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/dot-github",
-      "commits": 24,
-      "insertions": 1337,
-      "deletions": 112,
-      "net": 1225,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "templates/node",
       "commits": 23,
       "insertions": 802,
@@ -681,6 +717,15 @@
       "insertions": 1975,
       "deletions": 173,
       "net": 1802,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "todie/kerberos-w1N-p3",
+      "commits": 21,
+      "insertions": 1476,
+      "deletions": 97,
+      "net": 1379,
       "desc": "",
       "category": "ops"
     },
@@ -790,15 +835,6 @@
       "deletions": 36,
       "net": 685,
       "desc": "Python project template. Standard scaffolding.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/handbook",
-      "commits": 13,
-      "insertions": 297,
-      "deletions": 43,
-      "net": 254,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -1045,6 +1081,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/brand",
+      "commits": 3,
+      "insertions": 3713,
+      "deletions": 1,
+      "net": 3712,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/artifacts",
       "commits": 3,
       "insertions": 132629,
@@ -1185,6 +1230,15 @@
       "insertions": 381,
       "deletions": 0,
       "net": 381,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/histone-ms",
+      "commits": 1,
+      "insertions": 95638,
+      "deletions": 0,
+      "net": 95638,
       "desc": "",
       "category": "ops"
     },
@@ -8689,7 +8743,7 @@
     ],
     [
       "2026-04-21",
-      244
+      248
     ],
     [
       "2026-04-22",
@@ -8749,7 +8803,7 @@
     ],
     [
       "2026-05-06",
-      301
+      302
     ],
     [
       "2026-05-07",
@@ -8861,19 +8915,19 @@
     ],
     [
       "2026-06-03",
-      442
+      426
     ],
     [
       "2026-06-04",
-      356
+      332
     ],
     [
       "2026-06-05",
-      343
+      337
     ],
     [
       "2026-06-06",
-      298
+      296
     ],
     [
       "2026-06-07",
@@ -8973,11 +9027,11 @@
     ],
     [
       "2026-07-01",
-      405
+      399
     ],
     [
       "2026-07-02",
-      467
+      465
     ],
     [
       "2026-07-03",
@@ -8993,7 +9047,7 @@
     ],
     [
       "2026-07-06",
-      393
+      391
     ],
     [
       "2026-07-07",
@@ -9005,7 +9059,7 @@
     ],
     [
       "2026-07-09",
-      349
+      335
     ],
     [
       "2026-07-10",
@@ -9013,7 +9067,7 @@
     ],
     [
       "2026-07-11",
-      557
+      508
     ],
     [
       "2026-07-12",
@@ -9021,7 +9075,7 @@
     ],
     [
       "2026-07-13",
-      397
+      396
     ],
     [
       "2026-07-14",
@@ -9029,7 +9083,7 @@
     ],
     [
       "2026-07-15",
-      579
+      578
     ],
     [
       "2026-07-16",
@@ -9057,7 +9111,7 @@
     ],
     [
       "2026-07-22",
-      336
+      321
     ],
     [
       "2026-07-23",
@@ -9065,11 +9119,11 @@
     ],
     [
       "2026-07-24",
-      495
+      491
     ],
     [
       "2026-07-25",
-      281
+      269
     ],
     [
       "2026-07-26",
@@ -9081,15 +9135,15 @@
     ],
     [
       "2026-07-28",
-      568
+      552
     ],
     [
       "2026-07-29",
-      305
+      297
     ],
     [
       "2026-07-30",
-      339
+      338
     ],
     [
       "2026-07-31",
@@ -9109,7 +9163,7 @@
     ],
     [
       "2026-08-04",
-      323
+      322
     ],
     [
       "2026-08-05",
@@ -9121,7 +9175,7 @@
     ],
     [
       "2026-08-07",
-      323
+      313
     ],
     [
       "2026-08-08",
@@ -9153,7 +9207,7 @@
     ],
     [
       "2026-08-15",
-      98
+      96
     ],
     [
       "2026-08-16",
@@ -9177,15 +9231,15 @@
     ],
     [
       "2026-08-21",
-      194
+      195
     ],
     [
       "2026-08-22",
-      86
+      88
     ],
     [
       "2026-08-23",
-      159
+      160
     ],
     [
       "2026-08-24",
@@ -9217,7 +9271,7 @@
     ],
     [
       "2026-08-31",
-      163
+      162
     ],
     [
       "2026-09-01",
@@ -9229,7 +9283,7 @@
     ],
     [
       "2026-09-03",
-      118
+      114
     ],
     [
       "2026-09-04",
@@ -9245,7 +9299,7 @@
     ],
     [
       "2026-09-07",
-      136
+      135
     ],
     [
       "2026-09-08",
@@ -9273,7 +9327,7 @@
     ],
     [
       "2026-09-14",
-      111
+      109
     ],
     [
       "2026-09-15",
@@ -9301,7 +9355,7 @@
     ],
     [
       "2026-09-21",
-      157
+      156
     ],
     [
       "2026-09-22",
@@ -9329,11 +9383,11 @@
     ],
     [
       "2026-09-28",
-      654
+      655
     ],
     [
       "2026-09-29",
-      320
+      318
     ],
     [
       "2026-09-30",
@@ -9345,19 +9399,23 @@
     ],
     [
       "2026-10-02",
-      384
+      390
     ],
     [
       "2026-10-03",
-      381
+      386
     ],
     [
       "2026-10-04",
-      633
+      567
     ],
     [
       "2026-10-05",
-      252
+      830
+    ],
+    [
+      "2026-10-06",
+      131
     ]
   ],
   "sessionDays": [
@@ -9875,7 +9933,11 @@
     ],
     [
       "2026-10-05",
-      68
+      168
+    ],
+    [
+      "2026-10-06",
+      25
     ]
   ]
 }
