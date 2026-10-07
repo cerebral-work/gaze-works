@@ -20,19 +20,19 @@
     },
     {
       "name": "unsigned/paas-wt-cortex-pin-0.1.53",
-      "commits": 2998,
-      "insertions": 587029,
-      "deletions": 67173,
-      "net": 519856,
+      "commits": 3118,
+      "insertions": 588273,
+      "deletions": 71171,
+      "net": 517102,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2960,
-      "insertions": 820869,
-      "deletions": 114823,
-      "net": 706046,
+      "commits": 2967,
+      "insertions": 820873,
+      "deletions": 114883,
+      "net": 705990,
       "desc": "",
       "category": "ops"
     },
@@ -65,19 +65,19 @@
     },
     {
       "name": "rina",
-      "commits": 1815,
+      "commits": 1817,
       "insertions": 630546,
-      "deletions": 237313,
-      "net": 393233,
+      "deletions": 237401,
+      "net": 393145,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/soma-os-coral-mesh-edge",
-      "commits": 1409,
-      "insertions": 383377,
-      "deletions": 206281,
-      "net": 177096,
+      "name": "unsigned/soma-os-saga-EST-310",
+      "commits": 1572,
+      "insertions": 422124,
+      "deletions": 209898,
+      "net": 212226,
       "desc": "",
       "category": "ops"
     },
@@ -91,11 +91,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cortex-wt-w14p1-idrfc",
-      "commits": 852,
-      "insertions": 137581,
-      "deletions": 11402,
-      "net": 126179,
+      "name": "cerebral/cortex-wt-s3-write",
+      "commits": 909,
+      "insertions": 182129,
+      "deletions": 36843,
+      "net": 145286,
       "desc": "",
       "category": "ops"
     },
@@ -109,29 +109,29 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/revenant",
-      "commits": 652,
-      "insertions": 114030,
-      "deletions": 16320,
-      "net": 97710,
+      "name": "cerebral/revenant-wt-w14p1-godseat",
+      "commits": 696,
+      "insertions": 120795,
+      "deletions": 16616,
+      "net": 104179,
       "desc": "",
-      "category": "infra"
+      "category": "ops"
     },
     {
       "name": "unsigned/gg",
-      "commits": 566,
-      "insertions": 161033,
-      "deletions": 23681,
-      "net": 137352,
+      "commits": 614,
+      "insertions": 179656,
+      "deletions": 24598,
+      "net": 155058,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
     {
       "name": "cerebral/MA-CC-wt-strict-upstream",
-      "commits": 543,
-      "insertions": 1050976,
-      "deletions": 84937,
-      "net": 966039,
+      "commits": 550,
+      "insertions": 1056999,
+      "deletions": 93230,
+      "net": 963769,
       "desc": "",
       "category": "ops"
     },
@@ -154,6 +154,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/agentic",
+      "commits": 482,
+      "insertions": 292027,
+      "deletions": 229956,
+      "net": 62071,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/overflow-license-wt",
       "commits": 465,
       "insertions": 46386,
@@ -164,7 +173,7 @@
     },
     {
       "name": "cerebral/ma-cc-cygnus",
-      "commits": 458,
+      "commits": 460,
       "insertions": 980440,
       "deletions": 81591,
       "net": 898849,
@@ -173,28 +182,19 @@
     },
     {
       "name": "terrarium",
-      "commits": 402,
+      "commits": 407,
       "insertions": 216204,
-      "deletions": 39761,
-      "net": 176443,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/agentic-shell-deck",
-      "commits": 386,
-      "insertions": 208470,
-      "deletions": 149917,
-      "net": 58553,
+      "deletions": 40060,
+      "net": 176144,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 342,
-      "insertions": 118132,
-      "deletions": 8169,
-      "net": 109963,
+      "commits": 349,
+      "insertions": 118152,
+      "deletions": 8461,
+      "net": 109691,
       "desc": "",
       "category": "agent"
     },
@@ -208,11 +208,11 @@
       "category": "design"
     },
     {
-      "name": "cerebral/swarm-control-cleanup",
-      "commits": 271,
-      "insertions": 876022,
-      "deletions": 6186,
-      "net": 869836,
+      "name": "cerebral/swarm-control-ssa-submitted",
+      "commits": 302,
+      "insertions": 967589,
+      "deletions": 7124,
+      "net": 960465,
       "desc": "",
       "category": "ops"
     },
@@ -227,10 +227,10 @@
     },
     {
       "name": "todie/dotfiles",
-      "commits": 241,
-      "insertions": 50879,
-      "deletions": 13998,
-      "net": 36881,
+      "commits": 245,
+      "insertions": 50888,
+      "deletions": 14329,
+      "net": 36559,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
@@ -272,10 +272,10 @@
     },
     {
       "name": "cerebral/vilicus",
-      "commits": 166,
-      "insertions": 55491,
-      "deletions": 23549,
-      "net": 31942,
+      "commits": 172,
+      "insertions": 55514,
+      "deletions": 23863,
+      "net": 31651,
       "desc": "",
       "category": "ops"
     },
@@ -316,6 +316,15 @@
       "category": "infra"
     },
     {
+      "name": "cerebral/works",
+      "commits": 108,
+      "insertions": 23390,
+      "deletions": 9625,
+      "net": 13765,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/shell-deck",
       "commits": 107,
       "insertions": 28766,
@@ -325,20 +334,20 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/works",
-      "commits": 107,
-      "insertions": 23154,
-      "deletions": 9451,
-      "net": 13703,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "ieva",
       "commits": 106,
       "insertions": 19941,
       "deletions": 1558,
       "net": 18383,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/saga-wt-cli-agent-contract",
+      "commits": 105,
+      "insertions": 46364,
+      "deletions": 1825,
+      "net": 44539,
       "desc": "",
       "category": "ops"
     },
@@ -362,19 +371,28 @@
     },
     {
       "name": "cerebral/slurm-cygnus",
-      "commits": 91,
-      "insertions": 9325,
-      "deletions": 194,
-      "net": 9131,
+      "commits": 93,
+      "insertions": 9361,
+      "deletions": 195,
+      "net": 9166,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "todie/pact",
+      "commits": 80,
+      "insertions": 41679,
+      "deletions": 10493,
+      "net": 31186,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/mcp-honeypot",
       "commits": 78,
-      "insertions": 41531,
-      "deletions": 10451,
-      "net": 31080,
+      "insertions": 20931,
+      "deletions": 1237,
+      "net": 19694,
       "desc": "",
       "category": "ops"
     },
@@ -384,15 +402,6 @@
       "insertions": 8444,
       "deletions": 728,
       "net": 7716,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/mcp-honeypot-wt-fixes",
-      "commits": 70,
-      "insertions": 20927,
-      "deletions": 1215,
-      "net": 19712,
       "desc": "",
       "category": "ops"
     },
@@ -442,6 +451,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/comms",
+      "commits": 44,
+      "insertions": 11031,
+      "deletions": 367,
+      "net": 10664,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/dc",
       "commits": 43,
       "insertions": 8954,
@@ -449,15 +467,6 @@
       "net": 6702,
       "desc": "",
       "category": "infra"
-    },
-    {
-      "name": "cerebral-work/comms-swarm-live",
-      "commits": 42,
-      "insertions": 11031,
-      "deletions": 367,
-      "net": 10664,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "unsigned/lizard",
@@ -478,6 +487,24 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cicatrix",
+      "commits": 41,
+      "insertions": 10212,
+      "deletions": 924,
+      "net": 9288,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
+      "name": "cerebral/research",
+      "commits": 39,
+      "insertions": 73947,
+      "deletions": 69861,
+      "net": 4086,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/unsigned-onboard",
       "commits": 38,
       "insertions": 15414,
@@ -487,13 +514,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cicatrix",
+      "name": "unsigned/waker-license-wt",
       "commits": 37,
-      "insertions": 10212,
-      "deletions": 342,
-      "net": 9870,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
+      "insertions": 2934,
+      "deletions": 686,
+      "net": 2248,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "unsigned/escapement",
@@ -532,15 +559,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/waker-license-wt",
-      "commits": 33,
-      "insertions": 2925,
-      "deletions": 92,
-      "net": 2833,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/dotgithub",
       "commits": 33,
       "insertions": 1513,
@@ -568,11 +586,11 @@
       "category": "archive"
     },
     {
-      "name": "cerebral/research-wt-swarm",
+      "name": "cerebral/handbook",
       "commits": 31,
-      "insertions": 73464,
-      "deletions": 69835,
-      "net": 3629,
+      "insertions": 2320,
+      "deletions": 49,
+      "net": 2271,
       "desc": "",
       "category": "ops"
     },
@@ -593,15 +611,6 @@
       "net": 22642,
       "desc": "OpenPanel integration. Analytics and event tracking for the cerebral estate.",
       "category": "platform"
-    },
-    {
-      "name": "cerebral/handbook-wt-pgray-cto",
-      "commits": 29,
-      "insertions": 2038,
-      "deletions": 52,
-      "net": 1986,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "cerebral/ml-images",
@@ -631,6 +640,15 @@
       "category": "ops"
     },
     {
+      "name": "todie/kerberos-w1N-p7",
+      "commits": 27,
+      "insertions": 2022,
+      "deletions": 496,
+      "net": 1526,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "identity",
       "commits": 27,
       "insertions": 53706,
@@ -638,15 +656,6 @@
       "net": 53600,
       "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
       "category": "identity"
-    },
-    {
-      "name": "cerebral/handbook-people-kjanssen",
-      "commits": 27,
-      "insertions": 2034,
-      "deletions": 49,
-      "net": 1985,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "templates/terraform",
@@ -721,15 +730,6 @@
       "category": "ops"
     },
     {
-      "name": "todie/kerberos-w1N-p3",
-      "commits": 21,
-      "insertions": 1476,
-      "deletions": 97,
-      "net": 1379,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/github-jury-exit",
       "commits": 21,
       "insertions": 1179,
@@ -775,6 +775,15 @@
       "category": "vendor"
     },
     {
+      "name": "todie/todie-assistant",
+      "commits": 17,
+      "insertions": 8678,
+      "deletions": 798,
+      "net": 7880,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/reverie-slack",
       "commits": 17,
       "insertions": 5251,
@@ -809,15 +818,6 @@
       "net": 9498,
       "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
       "category": "platform"
-    },
-    {
-      "name": "todie/todie-assistant",
-      "commits": 14,
-      "insertions": 8473,
-      "deletions": 798,
-      "net": 7675,
-      "desc": "",
-      "category": "ops"
     },
     {
       "name": "todie/aaronbisla.com",
@@ -9083,7 +9083,7 @@
     ],
     [
       "2026-07-15",
-      578
+      581
     ],
     [
       "2026-07-16",
@@ -9123,7 +9123,7 @@
     ],
     [
       "2026-07-25",
-      269
+      267
     ],
     [
       "2026-07-26",
@@ -9215,7 +9215,7 @@
     ],
     [
       "2026-08-17",
-      185
+      184
     ],
     [
       "2026-08-18",
@@ -9295,11 +9295,11 @@
     ],
     [
       "2026-09-06",
-      34
+      33
     ],
     [
       "2026-09-07",
-      135
+      134
     ],
     [
       "2026-09-08",
@@ -9315,7 +9315,7 @@
     ],
     [
       "2026-09-11",
-      139
+      137
     ],
     [
       "2026-09-12",
@@ -9323,7 +9323,7 @@
     ],
     [
       "2026-09-13",
-      120
+      119
     ],
     [
       "2026-09-14",
@@ -9383,7 +9383,7 @@
     ],
     [
       "2026-09-28",
-      655
+      654
     ],
     [
       "2026-09-29",
@@ -9391,7 +9391,7 @@
     ],
     [
       "2026-09-30",
-      182
+      180
     ],
     [
       "2026-10-01",
@@ -9399,23 +9399,27 @@
     ],
     [
       "2026-10-02",
-      390
+      397
     ],
     [
       "2026-10-03",
-      386
+      377
     ],
     [
       "2026-10-04",
-      567
+      573
     ],
     [
       "2026-10-05",
-      830
+      864
     ],
     [
       "2026-10-06",
-      131
+      626
+    ],
+    [
+      "2026-10-07",
+      194
     ]
   ],
   "sessionDays": [
@@ -9938,6 +9942,10 @@
     [
       "2026-10-06",
       25
+    ],
+    [
+      "2026-10-07",
+      49
     ]
   ]
 }
