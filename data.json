@@ -1,6 +1,15 @@
 {
   "repos": [
     {
+      "name": "unsigned/litellm",
+      "commits": 73680,
+      "insertions": 16621491,
+      "deletions": 9947400,
+      "net": 6674091,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/dreamcode",
       "commits": 38843,
       "insertions": 5263033,
@@ -11,28 +20,37 @@
     },
     {
       "name": "unsigned/omp",
-      "commits": 25706,
-      "insertions": 8572289,
-      "deletions": 3251815,
-      "net": 5320474,
+      "commits": 33628,
+      "insertions": 10212149,
+      "deletions": 4422333,
+      "net": 5789816,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/paas-wt-hygiene-standards",
-      "commits": 3193,
-      "insertions": 594338,
-      "deletions": 74833,
-      "net": 519505,
+      "name": "cerebral-work/buzz",
+      "commits": 5944,
+      "insertions": 2999242,
+      "deletions": 1416721,
+      "net": 1582521,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/paas-grafana-public",
+      "commits": 3253,
+      "insertions": 602968,
+      "deletions": 75557,
+      "net": 527411,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/reverie-backfill-prov",
-      "commits": 2965,
-      "insertions": 820825,
+      "commits": 2969,
+      "insertions": 821353,
       "deletions": 114891,
-      "net": 705934,
+      "net": 706462,
       "desc": "",
       "category": "ops"
     },
@@ -44,6 +62,15 @@
       "net": 259327,
       "desc": "Rust Token Killer — CLI proxy saving 60-90% tokens on dev operations.",
       "category": "vendor"
+    },
+    {
+      "name": "unsigned/herdr-private",
+      "commits": 2417,
+      "insertions": 1741298,
+      "deletions": 458529,
+      "net": 1282769,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/claude-code",
@@ -74,28 +101,46 @@
     },
     {
       "name": "unsigned/soma-wt-cer2594",
-      "commits": 1589,
-      "insertions": 430957,
-      "deletions": 210660,
-      "net": 220297,
+      "commits": 1602,
+      "insertions": 436628,
+      "deletions": 210884,
+      "net": 225744,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "unsigned/substrate",
-      "commits": 1017,
-      "insertions": 4763149,
-      "deletions": 818074,
-      "net": 3945075,
+      "commits": 1095,
+      "insertions": 4812933,
+      "deletions": 839586,
+      "net": 3973347,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/revenant-wt-cer2312",
+      "commits": 1085,
+      "insertions": 394451,
+      "deletions": 241475,
+      "net": 152976,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/cortex-wt-cli-improvements",
-      "commits": 936,
-      "insertions": 179041,
-      "deletions": 36926,
-      "net": 142115,
+      "commits": 1011,
+      "insertions": 188595,
+      "deletions": 38031,
+      "net": 150564,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/blackwall-opencode",
+      "commits": 881,
+      "insertions": 274592,
+      "deletions": 33489,
+      "net": 241103,
       "desc": "",
       "category": "ops"
     },
@@ -109,29 +154,47 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/revenant-wt-w14p1-godseat",
-      "commits": 735,
-      "insertions": 123096,
-      "deletions": 17066,
-      "net": 106030,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/gg",
-      "commits": 614,
-      "insertions": 179656,
-      "deletions": 24598,
-      "net": 155058,
+      "commits": 713,
+      "insertions": 214382,
+      "deletions": 26896,
+      "net": 187486,
       "desc": "The unsigned.gg website. Monorepo layout, Pages deploy, onboard + learn modules.",
       "category": "platform"
     },
     {
+      "name": "unsigned/ax",
+      "commits": 643,
+      "insertions": 98814,
+      "deletions": 82454,
+      "net": 16360,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/MA-CC-wt-strict-upstream",
-      "commits": 560,
-      "insertions": 1072516,
-      "deletions": 93540,
-      "net": 978976,
+      "commits": 562,
+      "insertions": 1073664,
+      "deletions": 93764,
+      "net": 979900,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "revenant-forgejo",
+      "commits": 556,
+      "insertions": 99675,
+      "deletions": 11491,
+      "net": 88184,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/agentic-wt-agentic-persona",
+      "commits": 533,
+      "insertions": 296956,
+      "deletions": 230408,
+      "net": 66548,
       "desc": "",
       "category": "ops"
     },
@@ -141,15 +204,6 @@
       "insertions": 231698,
       "deletions": 52057,
       "net": 179641,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/agentic-wt-shm-spec",
-      "commits": 514,
-      "insertions": 295586,
-      "deletions": 230219,
-      "net": 65367,
       "desc": "",
       "category": "ops"
     },
@@ -164,10 +218,10 @@
     },
     {
       "name": "unsigned/overflow-license-wt",
-      "commits": 465,
-      "insertions": 46386,
-      "deletions": 6924,
-      "net": 39462,
+      "commits": 476,
+      "insertions": 46595,
+      "deletions": 7653,
+      "net": 38942,
       "desc": "",
       "category": "ops"
     },
@@ -181,38 +235,56 @@
       "category": "ops"
     },
     {
-      "name": "terrarium",
-      "commits": 407,
-      "insertions": 216204,
-      "deletions": 40060,
-      "net": 176144,
+      "name": "cerebral-work/once-campfire",
+      "commits": 426,
+      "insertions": 50973,
+      "deletions": 4248,
+      "net": 46725,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "cerebral/swarm-control-wt-rd214",
-      "commits": 380,
-      "insertions": 989439,
-      "deletions": 8174,
-      "net": 981265,
+      "name": "terrarium",
+      "commits": 408,
+      "insertions": 216206,
+      "deletions": 40060,
+      "net": 176146,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/swarm-control-macc-migrate",
+      "commits": 388,
+      "insertions": 1449448,
+      "deletions": 8342,
+      "net": 1441106,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/linearctl",
-      "commits": 364,
-      "insertions": 122261,
-      "deletions": 8581,
-      "net": 113680,
+      "commits": 374,
+      "insertions": 123887,
+      "deletions": 8643,
+      "net": 115244,
       "desc": "",
       "category": "agent"
     },
     {
+      "name": "unsigned/shell-deck",
+      "commits": 369,
+      "insertions": 139363,
+      "deletions": 8843,
+      "net": 130520,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/site",
-      "commits": 340,
+      "commits": 341,
       "insertions": 40793,
-      "deletions": 13022,
-      "net": 27771,
+      "deletions": 13304,
+      "net": 27489,
       "desc": "",
       "category": "design"
     },
@@ -227,28 +299,28 @@
     },
     {
       "name": "todie/dotfiles",
-      "commits": 247,
-      "insertions": 50893,
+      "commits": 249,
+      "insertions": 51336,
       "deletions": 14329,
-      "net": 36564,
+      "net": 37007,
       "desc": "Chezmoi-managed dotfiles. XDG cleanup, skills unification, hook drift capture.",
       "category": "ops"
     },
     {
-      "name": "revenant-forgejo",
-      "commits": 222,
-      "insertions": 47642,
-      "deletions": 7885,
-      "net": 39757,
+      "name": "unsigned/saga-wt-spec-0032-frame",
+      "commits": 206,
+      "insertions": 71231,
+      "deletions": 2980,
+      "net": 68251,
       "desc": "",
       "category": "ops"
     },
     {
       "name": "cerebral/lizard",
-      "commits": 195,
-      "insertions": 114512,
-      "deletions": 32555,
-      "net": 81957,
+      "commits": 199,
+      "insertions": 114521,
+      "deletions": 32886,
+      "net": 81635,
       "desc": "",
       "category": "ops"
     },
@@ -259,15 +331,6 @@
       "deletions": 4285,
       "net": 29155,
       "desc": "Interactive explainers for platform features. GitHub Pages with tutorial gates.",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/blackwall",
-      "commits": 186,
-      "insertions": 64232,
-      "deletions": 6703,
-      "net": 57529,
-      "desc": "",
       "category": "ops"
     },
     {
@@ -289,22 +352,13 @@
       "category": "infra"
     },
     {
-      "name": "cerebral/identity",
-      "commits": 149,
-      "insertions": 66023,
-      "deletions": 1025,
-      "net": 64998,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "unsigned/saga-wt-raid-and-tui",
-      "commits": 145,
-      "insertions": 55381,
-      "deletions": 2486,
-      "net": 52895,
-      "desc": "",
-      "category": "ops"
+      "name": "identity",
+      "commits": 152,
+      "insertions": 66546,
+      "deletions": 1028,
+      "net": 65518,
+      "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
+      "category": "identity"
     },
     {
       "name": "cerebral/IEVAN.ai",
@@ -334,20 +388,29 @@
       "category": "infra"
     },
     {
-      "name": "cerebral/works",
-      "commits": 109,
-      "insertions": 23569,
-      "deletions": 9796,
-      "net": 13773,
+      "name": "cerebral/research",
+      "commits": 126,
+      "insertions": 90724,
+      "deletions": 70153,
+      "net": 20571,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/shell-deck",
+      "name": "cerebral/works",
+      "commits": 110,
+      "insertions": 23725,
+      "deletions": 9935,
+      "net": 13790,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/allentech",
       "commits": 107,
-      "insertions": 28766,
-      "deletions": 1702,
-      "net": 27064,
+      "insertions": 27813,
+      "deletions": 10727,
+      "net": 17086,
       "desc": "",
       "category": "ops"
     },
@@ -370,6 +433,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/slurm-cygnus",
+      "commits": 95,
+      "insertions": 9435,
+      "deletions": 195,
+      "net": 9240,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "vendor/claude-esp",
       "commits": 93,
       "insertions": 9927,
@@ -379,12 +451,12 @@
       "category": "vendor"
     },
     {
-      "name": "cerebral/slurm-cygnus",
-      "commits": 93,
-      "insertions": 9361,
-      "deletions": 195,
-      "net": 9166,
-      "desc": "",
+      "name": "todie/mcp-honeypot",
+      "commits": 82,
+      "insertions": 20932,
+      "deletions": 1238,
+      "net": 19694,
+      "desc": "MCP honeypot — security research and deception tooling.",
       "category": "ops"
     },
     {
@@ -398,7 +470,7 @@
     },
     {
       "name": "cerebral/mcp-honeypot",
-      "commits": 78,
+      "commits": 79,
       "insertions": 20931,
       "deletions": 1237,
       "net": 19694,
@@ -415,13 +487,40 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/mimir",
+      "commits": 72,
+      "insertions": 393519,
+      "deletions": 1466,
+      "net": 392053,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/lace",
+      "commits": 72,
+      "insertions": 8285,
+      "deletions": 2325,
+      "net": 5960,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/cerebral-design",
-      "commits": 63,
-      "insertions": 20850,
-      "deletions": 1416,
-      "net": 19434,
+      "commits": 67,
+      "insertions": 20859,
+      "deletions": 1747,
+      "net": 19112,
       "desc": "The brand canon. Six releases, realm-lint, theme contract, Zed generator, Martian Mono.",
       "category": "design"
+    },
+    {
+      "name": "cerebral/cas-substrate",
+      "commits": 63,
+      "insertions": 30544,
+      "deletions": 1560,
+      "net": 28984,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "goudetmarc/nephele",
@@ -433,7 +532,7 @@
       "category": "ops"
     },
     {
-      "name": "er-terminal",
+      "name": "cerebral-work/even-reality-terminal",
       "commits": 56,
       "insertions": 12842,
       "deletions": 1119,
@@ -442,11 +541,20 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/research",
-      "commits": 52,
-      "insertions": 81388,
-      "deletions": 69877,
-      "net": 11511,
+      "name": "cerebral/rust-monorepo-template",
+      "commits": 56,
+      "insertions": 7576,
+      "deletions": 80,
+      "net": 7496,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/comms",
+      "commits": 51,
+      "insertions": 11135,
+      "deletions": 370,
+      "net": 10765,
       "desc": "",
       "category": "ops"
     },
@@ -460,31 +568,31 @@
       "category": "ops"
     },
     {
-      "name": "todie/mcp-honeypot",
-      "commits": 48,
-      "insertions": 18026,
-      "deletions": 736,
-      "net": 17290,
-      "desc": "MCP honeypot — security research and deception tooling.",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral-work/comms",
-      "commits": 44,
-      "insertions": 11031,
-      "deletions": 367,
-      "net": 10664,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "unsigned/dc",
-      "commits": 43,
-      "insertions": 8954,
-      "deletions": 2252,
-      "net": 6702,
+      "commits": 47,
+      "insertions": 8963,
+      "deletions": 2639,
+      "net": 6324,
       "desc": "",
       "category": "infra"
+    },
+    {
+      "name": "cerebral/cicatrix",
+      "commits": 46,
+      "insertions": 10231,
+      "deletions": 943,
+      "net": 9288,
+      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
+      "category": "infra"
+    },
+    {
+      "name": "unsigned/unsigned-onboard",
+      "commits": 44,
+      "insertions": 15446,
+      "deletions": 4539,
+      "net": 10907,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "unsigned/lizard",
@@ -505,21 +613,12 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/cicatrix",
-      "commits": 41,
-      "insertions": 10212,
-      "deletions": 924,
-      "net": 9288,
-      "desc": "Cicatrix — scar tissue tracking. Post-incident learning system.",
-      "category": "infra"
-    },
-    {
-      "name": "unsigned/unsigned-onboard",
-      "commits": 38,
-      "insertions": 15414,
-      "deletions": 4204,
-      "net": 11210,
-      "desc": "",
+      "name": "cadastre",
+      "commits": 39,
+      "insertions": 15780,
+      "deletions": 3171,
+      "net": 12609,
+      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
       "category": "ops"
     },
     {
@@ -528,6 +627,15 @@
       "insertions": 2934,
       "deletions": 686,
       "net": 2248,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/cortex-mod",
+      "commits": 36,
+      "insertions": 13692,
+      "deletions": 931,
+      "net": 12761,
       "desc": "",
       "category": "ops"
     },
@@ -541,15 +649,6 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/cadastre",
-      "commits": 36,
-      "insertions": 15774,
-      "deletions": 2903,
-      "net": 12871,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/handbook",
       "commits": 36,
       "insertions": 2787,
@@ -559,7 +658,16 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/dot-github",
+      "name": "unsigned/juarez",
+      "commits": 34,
+      "insertions": 1913,
+      "deletions": 762,
+      "net": 1151,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/github-jury-exit",
       "commits": 34,
       "insertions": 1513,
       "deletions": 162,
@@ -568,21 +676,21 @@
       "category": "ops"
     },
     {
-      "name": "cadastre",
-      "commits": 33,
-      "insertions": 15697,
-      "deletions": 2869,
-      "net": 12828,
-      "desc": "Estate preset pipeline. Alchemy pilot, rehearsal runbook, green-gate CI.",
-      "category": "ops"
+      "name": "cerebral/ml-images",
+      "commits": 34,
+      "insertions": 1527,
+      "deletions": 630,
+      "net": 897,
+      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
+      "category": "infra"
     },
     {
-      "name": "cerebral/dotgithub",
+      "name": "unsigned/metal-foundry",
       "commits": 33,
-      "insertions": 1513,
-      "deletions": 162,
-      "net": 1351,
-      "desc": "",
+      "insertions": 1291,
+      "deletions": 617,
+      "net": 674,
+      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
       "category": "ops"
     },
     {
@@ -604,20 +712,56 @@
       "category": "archive"
     },
     {
+      "name": "cerebral/meridian",
+      "commits": 32,
+      "insertions": 6603,
+      "deletions": 799,
+      "net": 5804,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "mission-control",
+      "commits": 32,
+      "insertions": 3596,
+      "deletions": 518,
+      "net": 3078,
+      "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.",
+      "category": "ops"
+    },
+    {
       "name": "todie/kerberos-wt-persona",
-      "commits": 30,
-      "insertions": 3678,
-      "deletions": 499,
+      "commits": 31,
+      "insertions": 3679,
+      "deletions": 500,
       "net": 3179,
       "desc": "",
       "category": "ops"
     },
     {
-      "name": "unsigned/juarez",
+      "name": "unsigned/plan-master",
+      "commits": 31,
+      "insertions": 15040,
+      "deletions": 2583,
+      "net": 12457,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/herdr-dagr",
       "commits": 30,
-      "insertions": 1904,
-      "deletions": 169,
-      "net": 1735,
+      "insertions": 23612,
+      "deletions": 4832,
+      "net": 18780,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/toolmon",
+      "commits": 29,
+      "insertions": 9423,
+      "deletions": 246,
+      "net": 9177,
       "desc": "",
       "category": "ops"
     },
@@ -631,13 +775,13 @@
       "category": "platform"
     },
     {
-      "name": "cerebral/ml-images",
+      "name": "cerebral/crm",
       "commits": 29,
-      "insertions": 1518,
-      "deletions": 299,
-      "net": 1219,
-      "desc": "Hardened LiteLLM image + kaniko build pipeline.",
-      "category": "infra"
+      "insertions": 8771,
+      "deletions": 494,
+      "net": 8277,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/reach",
@@ -649,22 +793,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/meridian",
-      "commits": 28,
-      "insertions": 6594,
-      "deletions": 468,
-      "net": 6126,
+      "name": "cerebral-work/reverie-cloud",
+      "commits": 27,
+      "insertions": 21605,
+      "deletions": 808,
+      "net": 20797,
       "desc": "",
       "category": "ops"
-    },
-    {
-      "name": "identity",
-      "commits": 27,
-      "insertions": 53706,
-      "deletions": 106,
-      "net": 53600,
-      "desc": "Google Workspace as code. OU tree, GAM, GCP foundation, lifecycle automation.",
-      "category": "identity"
     },
     {
       "name": "templates/terraform",
@@ -685,15 +820,6 @@
       "category": "ops"
     },
     {
-      "name": "mission-control",
-      "commits": 26,
-      "insertions": 3592,
-      "deletions": 251,
-      "net": 3341,
-      "desc": "Operator console. Fleet inventory pane, estate deploy RFC, cron snapshots.",
-      "category": "ops"
-    },
-    {
       "name": "todie/nahbro.dev",
       "commits": 25,
       "insertions": 3872,
@@ -703,12 +829,39 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/metal-foundry",
+      "name": "cerebral-work/lattice",
       "commits": 25,
-      "insertions": 1278,
-      "deletions": 19,
-      "net": 1259,
-      "desc": "Talos-on-Vultr-metal. Schematic registry, machine-config patterns.",
+      "insertions": 36337,
+      "deletions": 1447,
+      "net": 34890,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "vesperan-ai/vesperan",
+      "commits": 25,
+      "insertions": 64597,
+      "deletions": 292,
+      "net": 64305,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/access-tui",
+      "commits": 25,
+      "insertions": 4551,
+      "deletions": 265,
+      "net": 4286,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/very-good-document-imposer",
+      "commits": 24,
+      "insertions": 10061,
+      "deletions": 1044,
+      "net": 9017,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -721,15 +874,6 @@
       "category": "templates"
     },
     {
-      "name": "vesperan-ai/vesperan",
-      "commits": 23,
-      "insertions": 63938,
-      "deletions": 272,
-      "net": 63666,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/revenue-apollo-wt",
       "commits": 23,
       "insertions": 1975,
@@ -739,11 +883,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/github-jury-exit",
-      "commits": 21,
-      "insertions": 1179,
-      "deletions": 108,
-      "net": 1071,
+      "name": "cerebral-work/keycloak-extensions",
+      "commits": 22,
+      "insertions": 5095,
+      "deletions": 448,
+      "net": 4647,
       "desc": "",
       "category": "ops"
     },
@@ -784,6 +928,15 @@
       "category": "vendor"
     },
     {
+      "name": "cerebral/files-portal",
+      "commits": 19,
+      "insertions": 11390,
+      "deletions": 2214,
+      "net": 9176,
+      "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
+      "category": "platform"
+    },
+    {
       "name": "todie/todie-assistant",
       "commits": 17,
       "insertions": 8678,
@@ -811,6 +964,15 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/k8s-audit",
+      "commits": 16,
+      "insertions": 5884,
+      "deletions": 494,
+      "net": 5390,
+      "desc": "",
+      "category": "infra"
+    },
+    {
       "name": "todie/ghost-blog",
       "commits": 15,
       "insertions": 10492,
@@ -820,13 +982,13 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/files-portal",
+      "name": "unsigned/daybook",
       "commits": 15,
-      "insertions": 11381,
-      "deletions": 1883,
-      "net": 9498,
-      "desc": "files.cerebral.work. Access-gated per-user file handoff PWA.",
-      "category": "platform"
+      "insertions": 5879,
+      "deletions": 51,
+      "net": 5828,
+      "desc": "",
+      "category": "ops"
     },
     {
       "name": "todie/aaronbisla.com",
@@ -838,12 +1000,48 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/brand-wt-saga",
+      "commits": 14,
+      "insertions": 11612,
+      "deletions": 617,
+      "net": 10995,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/dr",
+      "commits": 14,
+      "insertions": 6286,
+      "deletions": 415,
+      "net": 5871,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "templates/python",
       "commits": 13,
       "insertions": 721,
       "deletions": 36,
       "net": 685,
       "desc": "Python project template. Standard scaffolding.",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/estate-standards",
+      "commits": 11,
+      "insertions": 622,
+      "deletions": 269,
+      "net": 353,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/cos",
+      "commits": 11,
+      "insertions": 1002,
+      "deletions": 40,
+      "net": 962,
+      "desc": "",
       "category": "ops"
     },
     {
@@ -865,20 +1063,11 @@
       "category": "ops"
     },
     {
-      "name": "unsigned/k8s-audit",
+      "name": "cerebral/dealroom",
       "commits": 10,
-      "insertions": 5881,
-      "deletions": 228,
-      "net": 5653,
-      "desc": "",
-      "category": "infra"
-    },
-    {
-      "name": "unsigned/dr",
-      "commits": 10,
-      "insertions": 6285,
-      "deletions": 151,
-      "net": 6134,
+      "insertions": 10517,
+      "deletions": 926,
+      "net": 9591,
       "desc": "",
       "category": "ops"
     },
@@ -892,11 +1081,29 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/cas-substrate-prep-wt-domain",
+      "commits": 9,
+      "insertions": 8820,
+      "deletions": 679,
+      "net": 8141,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/gh-token-mint",
       "commits": 9,
       "insertions": 2613,
       "deletions": 115,
       "net": 2498,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral/gami-vst",
+      "commits": 8,
+      "insertions": 1656,
+      "deletions": 365,
+      "net": 1291,
       "desc": "",
       "category": "ops"
     },
@@ -919,6 +1126,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral/film",
+      "commits": 7,
+      "insertions": 1426,
+      "deletions": 334,
+      "net": 1092,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "todie/uri-snapshot",
       "commits": 6,
       "insertions": 494,
@@ -928,20 +1144,11 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/brand",
+      "name": "unsigned/gls",
       "commits": 6,
-      "insertions": 4010,
-      "deletions": 1,
-      "net": 4009,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/dealroom",
-      "commits": 6,
-      "insertions": 10508,
-      "deletions": 595,
-      "net": 9913,
+      "insertions": 3239,
+      "deletions": 22,
+      "net": 3217,
       "desc": "",
       "category": "ops"
     },
@@ -973,6 +1180,15 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/cerebral-android",
+      "commits": 5,
+      "insertions": 8479,
+      "deletions": 419,
+      "net": 8060,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "cerebral/enterprise-genie",
       "commits": 5,
       "insertions": 711,
@@ -1000,11 +1216,56 @@
       "category": "ops"
     },
     {
-      "name": "cerebral/crm",
-      "commits": 5,
-      "insertions": 997,
-      "deletions": 22,
-      "net": 975,
+      "name": "cerebral-work/cerebral-work.github.io",
+      "commits": 4,
+      "insertions": 196,
+      "deletions": 1,
+      "net": 195,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/cerebral-windows",
+      "commits": 4,
+      "insertions": 11776,
+      "deletions": 254,
+      "net": 11522,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/legba",
+      "commits": 4,
+      "insertions": 227,
+      "deletions": 114,
+      "net": 113,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/herdr-norn",
+      "commits": 4,
+      "insertions": 1841,
+      "deletions": 50,
+      "net": 1791,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/samedi",
+      "commits": 4,
+      "insertions": 227,
+      "deletions": 114,
+      "net": 113,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/afterlife",
+      "commits": 4,
+      "insertions": 227,
+      "deletions": 114,
+      "net": 113,
       "desc": "",
       "category": "ops"
     },
@@ -1036,15 +1297,6 @@
       "category": "design"
     },
     {
-      "name": "cerebral/gami-vst",
-      "commits": 4,
-      "insertions": 1647,
-      "deletions": 34,
-      "net": 1613,
-      "desc": "",
-      "category": "ops"
-    },
-    {
       "name": "cerebral/soma-brief-worker",
       "commits": 4,
       "insertions": 1950,
@@ -1059,15 +1311,6 @@
       "insertions": 949,
       "deletions": 0,
       "net": 949,
-      "desc": "",
-      "category": "ops"
-    },
-    {
-      "name": "cerebral/film",
-      "commits": 4,
-      "insertions": 1417,
-      "deletions": 3,
-      "net": 1414,
       "desc": "",
       "category": "ops"
     },
@@ -1108,6 +1351,51 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/somnium",
+      "commits": 3,
+      "insertions": 1417,
+      "deletions": 0,
+      "net": 1417,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/meshctl",
+      "commits": 3,
+      "insertions": 12411,
+      "deletions": 0,
+      "net": 12411,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/wizapedia",
+      "commits": 3,
+      "insertions": 5163,
+      "deletions": 16,
+      "net": 5147,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/calc",
+      "commits": 3,
+      "insertions": 2102,
+      "deletions": 0,
+      "net": 2102,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/flashed-web",
+      "commits": 3,
+      "insertions": 3464,
+      "deletions": 0,
+      "net": 3464,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "augh",
       "commits": 2,
       "insertions": 1925,
@@ -1126,6 +1414,33 @@
       "category": "ops"
     },
     {
+      "name": "cerebral-work/dotfiles",
+      "commits": 2,
+      "insertions": 2595,
+      "deletions": 6,
+      "net": 2589,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/demo-repository",
+      "commits": 2,
+      "insertions": 48,
+      "deletions": 0,
+      "net": 48,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/truth",
+      "commits": 2,
+      "insertions": 246,
+      "deletions": 1,
+      "net": 245,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/delta-gateway",
       "commits": 2,
       "insertions": 971,
@@ -1135,11 +1450,29 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/demo-repository",
+      "commits": 2,
+      "insertions": 48,
+      "deletions": 0,
+      "net": 48,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "unsigned/sd-packer",
       "commits": 2,
       "insertions": 164065,
       "deletions": 0,
       "net": 164065,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/dash",
+      "commits": 2,
+      "insertions": 130,
+      "deletions": 0,
+      "net": 130,
       "desc": "",
       "category": "ops"
     },
@@ -1189,11 +1522,29 @@
       "category": "ops"
     },
     {
-      "name": "cerebral-work/dotfiles",
+      "name": "cerebral-work/gtm-prep",
       "commits": 1,
-      "insertions": 2489,
+      "insertions": 665,
       "deletions": 0,
-      "net": 2489,
+      "net": 665,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "cerebral-work/homebrew-cerebral",
+      "commits": 1,
+      "insertions": 36,
+      "deletions": 0,
+      "net": 36,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "vesperan-ai/homebrew-vesperan",
+      "commits": 1,
+      "insertions": 36,
+      "deletions": 0,
+      "net": 36,
       "desc": "",
       "category": "ops"
     },
@@ -1216,11 +1567,47 @@
       "category": "ops"
     },
     {
+      "name": "unsigned/ade-interaction-design",
+      "commits": 1,
+      "insertions": 862,
+      "deletions": 0,
+      "net": 862,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "unsigned/homebrew-unsigned",
+      "commits": 1,
+      "insertions": 36,
+      "deletions": 0,
+      "net": 36,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "zerodays/homebrew-zerodays",
+      "commits": 1,
+      "insertions": 36,
+      "deletions": 0,
+      "net": 36,
+      "desc": "",
+      "category": "ops"
+    },
+    {
       "name": "noelane-portal",
       "commits": 1,
       "insertions": 1566,
       "deletions": 0,
       "net": 1566,
+      "desc": "",
+      "category": "ops"
+    },
+    {
+      "name": "overview",
+      "commits": 1,
+      "insertions": 1201,
+      "deletions": 0,
+      "net": 1201,
       "desc": "",
       "category": "ops"
     },
@@ -4808,43 +5195,43 @@
     ],
     [
       "2023-07-26",
-      29
+      46
     ],
     [
       "2023-07-27",
-      49
+      51
     ],
     [
       "2023-07-28",
-      28
+      38
     ],
     [
       "2023-07-29",
-      1
+      11
     ],
     [
       "2023-07-31",
-      16
+      70
     ],
     [
       "2023-08-01",
-      26
+      89
     ],
     [
       "2023-08-02",
-      30
+      51
     ],
     [
       "2023-08-03",
-      26
+      43
     ],
     [
       "2023-08-04",
-      19
+      20
     ],
     [
       "2023-08-05",
-      3
+      45
     ],
     [
       "2023-08-06",
@@ -4852,295 +5239,307 @@
     ],
     [
       "2023-08-07",
-      24
+      31
     ],
     [
       "2023-08-08",
-      48
+      79
     ],
     [
       "2023-08-09",
-      38
+      61
     ],
     [
       "2023-08-10",
-      13
+      38
     ],
     [
       "2023-08-11",
-      23
-    ],
-    [
-      "2023-08-12",
-      14
-    ],
-    [
-      "2023-08-13",
-      11
-    ],
-    [
-      "2023-08-14",
-      46
-    ],
-    [
-      "2023-08-15",
-      41
-    ],
-    [
-      "2023-08-16",
-      42
-    ],
-    [
-      "2023-08-17",
-      29
-    ],
-    [
-      "2023-08-18",
-      47
-    ],
-    [
-      "2023-08-19",
-      9
-    ],
-    [
-      "2023-08-20",
-      1
-    ],
-    [
-      "2023-08-21",
-      30
-    ],
-    [
-      "2023-08-22",
-      45
-    ],
-    [
-      "2023-08-23",
-      41
-    ],
-    [
-      "2023-08-24",
-      38
-    ],
-    [
-      "2023-08-25",
-      49
-    ],
-    [
-      "2023-08-26",
-      21
-    ],
-    [
-      "2023-08-27",
-      5
-    ],
-    [
-      "2023-08-28",
-      31
-    ],
-    [
-      "2023-08-29",
-      44
-    ],
-    [
-      "2023-08-30",
-      36
-    ],
-    [
-      "2023-08-31",
-      27
-    ],
-    [
-      "2023-09-01",
-      19
-    ],
-    [
-      "2023-09-02",
-      2
-    ],
-    [
-      "2023-09-05",
-      31
-    ],
-    [
-      "2023-09-06",
-      33
-    ],
-    [
-      "2023-09-07",
-      39
-    ],
-    [
-      "2023-09-08",
-      38
-    ],
-    [
-      "2023-09-09",
-      9
-    ],
-    [
-      "2023-09-10",
-      1
-    ],
-    [
-      "2023-09-11",
-      33
-    ],
-    [
-      "2023-09-12",
-      24
-    ],
-    [
-      "2023-09-13",
-      24
-    ],
-    [
-      "2023-09-14",
-      45
-    ],
-    [
-      "2023-09-15",
-      48
-    ],
-    [
-      "2023-09-16",
-      1
-    ],
-    [
-      "2023-09-17",
-      1
-    ],
-    [
-      "2023-09-18",
-      23
-    ],
-    [
-      "2023-09-19",
-      46
-    ],
-    [
-      "2023-09-20",
-      51
-    ],
-    [
-      "2023-09-21",
-      35
-    ],
-    [
-      "2023-09-22",
-      30
-    ],
-    [
-      "2023-09-23",
-      11
-    ],
-    [
-      "2023-09-24",
-      4
-    ],
-    [
-      "2023-09-25",
-      25
-    ],
-    [
-      "2023-09-26",
-      26
-    ],
-    [
-      "2023-09-27",
-      47
-    ],
-    [
-      "2023-09-28",
-      32
-    ],
-    [
-      "2023-09-29",
-      37
-    ],
-    [
-      "2023-09-30",
-      3
-    ],
-    [
-      "2023-10-01",
-      5
-    ],
-    [
-      "2023-10-02",
-      36
-    ],
-    [
-      "2023-10-03",
-      47
-    ],
-    [
-      "2023-10-04",
-      58
-    ],
-    [
-      "2023-10-05",
-      34
-    ],
-    [
-      "2023-10-06",
-      51
-    ],
-    [
-      "2023-10-07",
-      19
-    ],
-    [
-      "2023-10-08",
-      2
-    ],
-    [
-      "2023-10-09",
-      62
-    ],
-    [
-      "2023-10-10",
-      51
-    ],
-    [
-      "2023-10-11",
-      40
-    ],
-    [
-      "2023-10-12",
-      52
-    ],
-    [
-      "2023-10-13",
       43
     ],
     [
-      "2023-10-15",
-      1
-    ],
-    [
-      "2023-10-16",
-      23
-    ],
-    [
-      "2023-10-17",
-      74
-    ],
-    [
-      "2023-10-18",
-      75
-    ],
-    [
-      "2023-10-19",
-      76
-    ],
-    [
-      "2023-10-20",
+      "2023-08-12",
       42
     ],
     [
+      "2023-08-13",
+      13
+    ],
+    [
+      "2023-08-14",
+      73
+    ],
+    [
+      "2023-08-15",
+      61
+    ],
+    [
+      "2023-08-16",
+      56
+    ],
+    [
+      "2023-08-17",
+      98
+    ],
+    [
+      "2023-08-18",
+      72
+    ],
+    [
+      "2023-08-19",
+      26
+    ],
+    [
+      "2023-08-20",
+      9
+    ],
+    [
+      "2023-08-21",
+      79
+    ],
+    [
+      "2023-08-22",
+      85
+    ],
+    [
+      "2023-08-23",
+      97
+    ],
+    [
+      "2023-08-24",
+      115
+    ],
+    [
+      "2023-08-25",
+      88
+    ],
+    [
+      "2023-08-26",
+      74
+    ],
+    [
+      "2023-08-27",
+      8
+    ],
+    [
+      "2023-08-28",
+      95
+    ],
+    [
+      "2023-08-29",
+      111
+    ],
+    [
+      "2023-08-30",
+      77
+    ],
+    [
+      "2023-08-31",
+      63
+    ],
+    [
+      "2023-09-01",
+      43
+    ],
+    [
+      "2023-09-02",
+      33
+    ],
+    [
+      "2023-09-03",
+      4
+    ],
+    [
+      "2023-09-04",
+      47
+    ],
+    [
+      "2023-09-05",
+      67
+    ],
+    [
+      "2023-09-06",
+      102
+    ],
+    [
+      "2023-09-07",
+      75
+    ],
+    [
+      "2023-09-08",
+      92
+    ],
+    [
+      "2023-09-09",
+      62
+    ],
+    [
+      "2023-09-10",
+      9
+    ],
+    [
+      "2023-09-11",
+      104
+    ],
+    [
+      "2023-09-12",
+      72
+    ],
+    [
+      "2023-09-13",
+      55
+    ],
+    [
+      "2023-09-14",
+      136
+    ],
+    [
+      "2023-09-15",
+      117
+    ],
+    [
+      "2023-09-16",
+      54
+    ],
+    [
+      "2023-09-17",
+      22
+    ],
+    [
+      "2023-09-18",
+      62
+    ],
+    [
+      "2023-09-19",
+      108
+    ],
+    [
+      "2023-09-20",
+      93
+    ],
+    [
+      "2023-09-21",
+      94
+    ],
+    [
+      "2023-09-22",
+      45
+    ],
+    [
+      "2023-09-23",
+      39
+    ],
+    [
+      "2023-09-24",
+      6
+    ],
+    [
+      "2023-09-25",
+      44
+    ],
+    [
+      "2023-09-26",
+      81
+    ],
+    [
+      "2023-09-27",
+      81
+    ],
+    [
+      "2023-09-28",
+      57
+    ],
+    [
+      "2023-09-29",
+      78
+    ],
+    [
+      "2023-09-30",
+      29
+    ],
+    [
+      "2023-10-01",
+      11
+    ],
+    [
+      "2023-10-02",
+      79
+    ],
+    [
+      "2023-10-03",
+      72
+    ],
+    [
+      "2023-10-04",
+      98
+    ],
+    [
+      "2023-10-05",
+      67
+    ],
+    [
+      "2023-10-06",
+      83
+    ],
+    [
+      "2023-10-07",
+      92
+    ],
+    [
+      "2023-10-08",
+      10
+    ],
+    [
+      "2023-10-09",
+      103
+    ],
+    [
+      "2023-10-10",
+      99
+    ],
+    [
+      "2023-10-11",
+      89
+    ],
+    [
+      "2023-10-12",
+      89
+    ],
+    [
+      "2023-10-13",
+      86
+    ],
+    [
+      "2023-10-14",
+      33
+    ],
+    [
+      "2023-10-15",
+      3
+    ],
+    [
+      "2023-10-16",
+      51
+    ],
+    [
+      "2023-10-17",
+      141
+    ],
+    [
+      "2023-10-18",
+      152
+    ],
+    [
+      "2023-10-19",
+      111
+    ],
+    [
+      "2023-10-20",
+      74
+    ],
+    [
       "2023-10-21",
-      19
+      68
     ],
     [
       "2023-10-22",
@@ -5148,79 +5547,83 @@
     ],
     [
       "2023-10-23",
-      38
+      131
     ],
     [
       "2023-10-24",
-      68
+      127
     ],
     [
       "2023-10-25",
-      52
+      121
     ],
     [
       "2023-10-26",
-      83
-    ],
-    [
-      "2023-10-27",
-      15
-    ],
-    [
-      "2023-10-28",
-      4
-    ],
-    [
-      "2023-10-29",
-      3
-    ],
-    [
-      "2023-10-30",
-      72
-    ],
-    [
-      "2023-10-31",
-      43
-    ],
-    [
-      "2023-11-01",
-      67
-    ],
-    [
-      "2023-11-02",
       107
     ],
     [
+      "2023-10-27",
+      60
+    ],
+    [
+      "2023-10-28",
+      50
+    ],
+    [
+      "2023-10-29",
+      6
+    ],
+    [
+      "2023-10-30",
+      126
+    ],
+    [
+      "2023-10-31",
+      81
+    ],
+    [
+      "2023-11-01",
+      115
+    ],
+    [
+      "2023-11-02",
+      145
+    ],
+    [
       "2023-11-03",
-      72
+      114
     ],
     [
       "2023-11-04",
-      5
+      39
     ],
     [
       "2023-11-05",
-      9
+      21
     ],
     [
       "2023-11-06",
-      42
+      92
     ],
     [
       "2023-11-07",
-      72
+      112
     ],
     [
       "2023-11-08",
-      101
+      152
     ],
     [
       "2023-11-09",
-      68
+      129
     ],
     [
       "2023-11-10",
-      24
+      67
+    ],
+    [
+      "2023-11-11",
+      28
     ],
     [
       "2023-11-12",
@@ -5228,27 +5631,27 @@
     ],
     [
       "2023-11-13",
-      87
+      150
     ],
     [
       "2023-11-14",
-      85
+      132
     ],
     [
       "2023-11-15",
-      55
+      127
     ],
     [
       "2023-11-16",
-      59
+      107
     ],
     [
       "2023-11-17",
-      59
+      106
     ],
     [
       "2023-11-18",
-      19
+      74
     ],
     [
       "2023-11-19",
@@ -5256,23 +5659,27 @@
     ],
     [
       "2023-11-20",
-      47
+      85
     ],
     [
       "2023-11-21",
-      33
+      135
     ],
     [
       "2023-11-22",
-      46
+      85
     ],
     [
       "2023-11-23",
-      21
+      116
     ],
     [
       "2023-11-24",
-      26
+      74
+    ],
+    [
+      "2023-11-25",
+      43
     ],
     [
       "2023-11-26",
@@ -5280,127 +5687,139 @@
     ],
     [
       "2023-11-27",
-      63
+      100
     ],
     [
       "2023-11-28",
-      60
+      97
     ],
     [
       "2023-11-29",
-      64
+      137
     ],
     [
       "2023-11-30",
-      60
+      135
     ],
     [
       "2023-12-01",
-      65
+      103
     ],
     [
       "2023-12-02",
-      1
+      82
     ],
     [
       "2023-12-03",
-      1
+      10
     ],
     [
       "2023-12-04",
-      60
+      133
     ],
     [
       "2023-12-05",
-      68
+      152
     ],
     [
       "2023-12-06",
-      94
+      192
     ],
     [
       "2023-12-07",
-      75
+      123
     ],
     [
       "2023-12-08",
-      74
+      133
     ],
     [
       "2023-12-09",
-      9
+      64
     ],
     [
       "2023-12-10",
-      4
+      6
     ],
     [
       "2023-12-11",
-      93
+      173
     ],
     [
       "2023-12-12",
-      62
+      111
     ],
     [
       "2023-12-13",
-      74
+      107
     ],
     [
       "2023-12-14",
-      75
+      140
     ],
     [
       "2023-12-15",
-      67
+      138
+    ],
+    [
+      "2023-12-16",
+      55
+    ],
+    [
+      "2023-12-17",
+      6
     ],
     [
       "2023-12-18",
-      44
+      65
     ],
     [
       "2023-12-19",
-      60
+      82
     ],
     [
       "2023-12-20",
-      69
+      99
     ],
     [
       "2023-12-21",
-      51
+      75
     ],
     [
       "2023-12-22",
-      62
+      76
     ],
     [
       "2023-12-23",
-      14
+      37
     ],
     [
-      "2023-12-25",
-      8
-    ],
-    [
-      "2023-12-26",
-      5
-    ],
-    [
-      "2023-12-27",
-      4
-    ],
-    [
-      "2023-12-28",
-      3
-    ],
-    [
-      "2023-12-29",
+      "2023-12-24",
       2
     ],
     [
+      "2023-12-25",
+      35
+    ],
+    [
+      "2023-12-26",
+      68
+    ],
+    [
+      "2023-12-27",
+      55
+    ],
+    [
+      "2023-12-28",
+      50
+    ],
+    [
+      "2023-12-29",
+      53
+    ],
+    [
       "2023-12-30",
-      3
+      47
     ],
     [
       "2023-12-31",
@@ -5408,139 +5827,139 @@
     ],
     [
       "2024-01-01",
-      10
+      59
     ],
     [
       "2024-01-02",
-      60
+      105
     ],
     [
       "2024-01-03",
-      88
+      135
     ],
     [
       "2024-01-04",
-      67
+      121
     ],
     [
       "2024-01-05",
-      63
+      105
     ],
     [
       "2024-01-06",
-      24
+      70
     ],
     [
       "2024-01-07",
-      10
+      11
     ],
     [
       "2024-01-08",
-      66
+      126
     ],
     [
       "2024-01-09",
-      70
+      166
     ],
     [
       "2024-01-10",
-      46
+      140
     ],
     [
       "2024-01-11",
-      64
+      120
     ],
     [
       "2024-01-12",
-      32
+      63
     ],
     [
       "2024-01-13",
-      9
+      44
     ],
     [
       "2024-01-14",
-      5
+      10
     ],
     [
       "2024-01-15",
-      48
+      85
     ],
     [
       "2024-01-16",
-      43
+      103
     ],
     [
       "2024-01-17",
-      81
+      136
     ],
     [
       "2024-01-18",
-      80
+      154
     ],
     [
       "2024-01-19",
-      46
+      118
     ],
     [
       "2024-01-20",
-      22
+      41
     ],
     [
       "2024-01-21",
-      23
+      25
     ],
     [
       "2024-01-22",
-      58
+      122
     ],
     [
       "2024-01-23",
-      70
+      134
     ],
     [
       "2024-01-24",
-      79
+      144
     ],
     [
       "2024-01-25",
-      50
+      134
     ],
     [
       "2024-01-26",
-      52
+      107
     ],
     [
       "2024-01-27",
-      21
+      92
     ],
     [
       "2024-01-28",
-      27
+      29
     ],
     [
       "2024-01-29",
-      28
+      92
     ],
     [
       "2024-01-30",
-      43
+      101
     ],
     [
       "2024-01-31",
-      27
+      93
     ],
     [
       "2024-02-01",
-      32
+      120
     ],
     [
       "2024-02-02",
-      35
+      139
     ],
     [
       "2024-02-03",
-      15
+      95
     ],
     [
       "2024-02-04",
@@ -5548,55 +5967,55 @@
     ],
     [
       "2024-02-05",
-      29
+      117
     ],
     [
       "2024-02-06",
-      20
+      298
     ],
     [
       "2024-02-07",
-      34
+      80
     ],
     [
       "2024-02-08",
-      27
+      66
     ],
     [
       "2024-02-09",
-      27
+      67
     ],
     [
       "2024-02-10",
-      8
+      38
     ],
     [
       "2024-02-11",
-      1
+      3
     ],
     [
       "2024-02-12",
-      13
+      71
     ],
     [
       "2024-02-13",
-      14
+      57
     ],
     [
       "2024-02-14",
-      20
+      70
     ],
     [
       "2024-02-15",
-      31
+      101
     ],
     [
       "2024-02-16",
-      15
+      106
     ],
     [
       "2024-02-17",
-      8
+      100
     ],
     [
       "2024-02-18",
@@ -5604,603 +6023,615 @@
     ],
     [
       "2024-02-19",
-      16
+      66
     ],
     [
       "2024-02-20",
-      36
+      71
     ],
     [
       "2024-02-21",
-      19
+      67
     ],
     [
       "2024-02-22",
-      26
+      87
     ],
     [
       "2024-02-23",
-      40
+      95
     ],
     [
       "2024-02-24",
-      13
+      48
     ],
     [
       "2024-02-25",
-      15
+      23
     ],
     [
       "2024-02-26",
-      25
+      100
     ],
     [
       "2024-02-27",
-      20
+      94
     ],
     [
       "2024-02-28",
-      28
+      117
     ],
     [
       "2024-02-29",
-      19
+      93
     ],
     [
       "2024-03-01",
-      21
+      75
     ],
     [
       "2024-03-02",
-      45
+      129
     ],
     [
       "2024-03-03",
-      20
+      21
     ],
     [
       "2024-03-04",
-      27
+      94
     ],
     [
       "2024-03-05",
-      31
+      75
     ],
     [
       "2024-03-06",
-      28
+      70
     ],
     [
       "2024-03-07",
-      32
+      62
     ],
     [
       "2024-03-08",
-      18
+      87
     ],
     [
       "2024-03-09",
-      9
+      63
     ],
     [
       "2024-03-10",
-      2
+      8
     ],
     [
       "2024-03-11",
-      33
+      74
     ],
     [
       "2024-03-12",
-      24
+      81
     ],
     [
       "2024-03-13",
-      26
+      99
     ],
     [
       "2024-03-14",
-      29
+      65
     ],
     [
       "2024-03-15",
-      32
+      120
     ],
     [
       "2024-03-16",
-      2
+      73
     ],
     [
       "2024-03-17",
-      4
-    ],
-    [
-      "2024-03-18",
-      28
-    ],
-    [
-      "2024-03-19",
-      24
-    ],
-    [
-      "2024-03-20",
-      23
-    ],
-    [
-      "2024-03-21",
-      24
-    ],
-    [
-      "2024-03-22",
-      19
-    ],
-    [
-      "2024-03-23",
-      1
-    ],
-    [
-      "2024-03-24",
-      1
-    ],
-    [
-      "2024-03-25",
-      24
-    ],
-    [
-      "2024-03-26",
-      25
-    ],
-    [
-      "2024-03-27",
-      18
-    ],
-    [
-      "2024-03-28",
-      20
-    ],
-    [
-      "2024-03-29",
-      24
-    ],
-    [
-      "2024-03-30",
-      3
-    ],
-    [
-      "2024-03-31",
-      2
-    ],
-    [
-      "2024-04-01",
-      22
-    ],
-    [
-      "2024-04-02",
-      20
-    ],
-    [
-      "2024-04-03",
-      24
-    ],
-    [
-      "2024-04-04",
-      17
-    ],
-    [
-      "2024-04-05",
-      15
-    ],
-    [
-      "2024-04-06",
-      3
-    ],
-    [
-      "2024-04-07",
-      2
-    ],
-    [
-      "2024-04-08",
-      26
-    ],
-    [
-      "2024-04-09",
-      20
-    ],
-    [
-      "2024-04-10",
-      20
-    ],
-    [
-      "2024-04-11",
-      32
-    ],
-    [
-      "2024-04-12",
-      33
-    ],
-    [
-      "2024-04-13",
-      3
-    ],
-    [
-      "2024-04-14",
-      2
-    ],
-    [
-      "2024-04-15",
-      25
-    ],
-    [
-      "2024-04-16",
-      40
-    ],
-    [
-      "2024-04-17",
-      17
-    ],
-    [
-      "2024-04-18",
-      14
-    ],
-    [
-      "2024-04-19",
-      25
-    ],
-    [
-      "2024-04-20",
-      4
-    ],
-    [
-      "2024-04-21",
-      1
-    ],
-    [
-      "2024-04-22",
-      20
-    ],
-    [
-      "2024-04-23",
-      11
-    ],
-    [
-      "2024-04-24",
-      19
-    ],
-    [
-      "2024-04-25",
-      32
-    ],
-    [
-      "2024-04-26",
-      19
-    ],
-    [
-      "2024-04-27",
-      8
-    ],
-    [
-      "2024-04-28",
-      4
-    ],
-    [
-      "2024-04-29",
-      32
-    ],
-    [
-      "2024-04-30",
-      24
-    ],
-    [
-      "2024-05-01",
-      28
-    ],
-    [
-      "2024-05-02",
-      16
-    ],
-    [
-      "2024-05-03",
-      37
-    ],
-    [
-      "2024-05-05",
-      7
-    ],
-    [
-      "2024-05-06",
-      40
-    ],
-    [
-      "2024-05-07",
-      26
-    ],
-    [
-      "2024-05-08",
-      26
-    ],
-    [
-      "2024-05-09",
-      31
-    ],
-    [
-      "2024-05-10",
-      22
-    ],
-    [
-      "2024-05-11",
-      7
-    ],
-    [
-      "2024-05-12",
-      6
-    ],
-    [
-      "2024-05-13",
-      20
-    ],
-    [
-      "2024-05-14",
-      36
-    ],
-    [
-      "2024-05-15",
-      28
-    ],
-    [
-      "2024-05-16",
-      33
-    ],
-    [
-      "2024-05-17",
-      23
-    ],
-    [
-      "2024-05-18",
-      2
-    ],
-    [
-      "2024-05-19",
-      1
-    ],
-    [
-      "2024-05-20",
-      13
-    ],
-    [
-      "2024-05-21",
-      12
-    ],
-    [
-      "2024-05-22",
-      31
-    ],
-    [
-      "2024-05-23",
-      12
-    ],
-    [
-      "2024-05-24",
-      18
-    ],
-    [
-      "2024-05-25",
-      8
-    ],
-    [
-      "2024-05-26",
-      9
-    ],
-    [
-      "2024-05-27",
-      13
-    ],
-    [
-      "2024-05-28",
-      20
-    ],
-    [
-      "2024-05-29",
-      28
-    ],
-    [
-      "2024-05-30",
-      21
-    ],
-    [
-      "2024-05-31",
-      11
-    ],
-    [
-      "2024-06-01",
       5
     ],
     [
-      "2024-06-02",
-      2
+      "2024-03-18",
+      77
     ],
     [
-      "2024-06-03",
-      21
+      "2024-03-19",
+      91
     ],
     [
-      "2024-06-04",
-      16
+      "2024-03-20",
+      61
     ],
     [
-      "2024-06-05",
-      22
+      "2024-03-21",
+      69
     ],
     [
-      "2024-06-06",
-      18
+      "2024-03-22",
+      52
     ],
     [
-      "2024-06-07",
-      13
+      "2024-03-23",
+      54
     ],
     [
-      "2024-06-08",
-      3
+      "2024-03-24",
+      10
     ],
     [
-      "2024-06-10",
-      17
+      "2024-03-25",
+      85
     ],
     [
-      "2024-06-11",
-      14
+      "2024-03-26",
+      88
     ],
     [
-      "2024-06-12",
-      18
+      "2024-03-27",
+      64
     ],
     [
-      "2024-06-13",
-      36
+      "2024-03-28",
+      122
     ],
     [
-      "2024-06-14",
-      41
+      "2024-03-29",
+      98
     ],
     [
-      "2024-06-15",
-      4
+      "2024-03-30",
+      61
     ],
     [
-      "2024-06-16",
-      1
-    ],
-    [
-      "2024-06-17",
-      33
-    ],
-    [
-      "2024-06-18",
-      36
-    ],
-    [
-      "2024-06-19",
-      13
-    ],
-    [
-      "2024-06-20",
-      19
-    ],
-    [
-      "2024-06-21",
-      19
-    ],
-    [
-      "2024-06-22",
-      4
-    ],
-    [
-      "2024-06-23",
-      9
-    ],
-    [
-      "2024-06-24",
-      23
-    ],
-    [
-      "2024-06-25",
-      28
-    ],
-    [
-      "2024-06-26",
-      16
-    ],
-    [
-      "2024-06-27",
-      23
-    ],
-    [
-      "2024-06-28",
-      15
-    ],
-    [
-      "2024-06-29",
-      1
-    ],
-    [
-      "2024-06-30",
-      1
-    ],
-    [
-      "2024-07-01",
-      15
-    ],
-    [
-      "2024-07-02",
-      12
-    ],
-    [
-      "2024-07-03",
-      21
-    ],
-    [
-      "2024-07-04",
-      9
-    ],
-    [
-      "2024-07-05",
-      26
-    ],
-    [
-      "2024-07-07",
-      1
-    ],
-    [
-      "2024-07-08",
-      29
-    ],
-    [
-      "2024-07-09",
-      43
-    ],
-    [
-      "2024-07-10",
-      33
-    ],
-    [
-      "2024-07-11",
-      47
-    ],
-    [
-      "2024-07-12",
-      15
-    ],
-    [
-      "2024-07-13",
+      "2024-03-31",
       11
     ],
     [
+      "2024-04-01",
+      65
+    ],
+    [
+      "2024-04-02",
+      82
+    ],
+    [
+      "2024-04-03",
+      87
+    ],
+    [
+      "2024-04-04",
+      84
+    ],
+    [
+      "2024-04-05",
+      94
+    ],
+    [
+      "2024-04-06",
+      64
+    ],
+    [
+      "2024-04-07",
+      5
+    ],
+    [
+      "2024-04-08",
+      93
+    ],
+    [
+      "2024-04-09",
+      65
+    ],
+    [
+      "2024-04-10",
+      77
+    ],
+    [
+      "2024-04-11",
+      80
+    ],
+    [
+      "2024-04-12",
+      70
+    ],
+    [
+      "2024-04-13",
+      54
+    ],
+    [
+      "2024-04-14",
+      5
+    ],
+    [
+      "2024-04-15",
+      92
+    ],
+    [
+      "2024-04-16",
+      104
+    ],
+    [
+      "2024-04-17",
+      63
+    ],
+    [
+      "2024-04-18",
+      101
+    ],
+    [
+      "2024-04-19",
+      78
+    ],
+    [
+      "2024-04-20",
+      68
+    ],
+    [
+      "2024-04-21",
+      10
+    ],
+    [
+      "2024-04-22",
+      64
+    ],
+    [
+      "2024-04-23",
+      61
+    ],
+    [
+      "2024-04-24",
+      88
+    ],
+    [
+      "2024-04-25",
+      105
+    ],
+    [
+      "2024-04-26",
+      33
+    ],
+    [
+      "2024-04-27",
+      70
+    ],
+    [
+      "2024-04-28",
+      11
+    ],
+    [
+      "2024-04-29",
+      88
+    ],
+    [
+      "2024-04-30",
+      90
+    ],
+    [
+      "2024-05-01",
+      99
+    ],
+    [
+      "2024-05-02",
+      58
+    ],
+    [
+      "2024-05-03",
+      112
+    ],
+    [
+      "2024-05-04",
+      86
+    ],
+    [
+      "2024-05-05",
+      21
+    ],
+    [
+      "2024-05-06",
+      115
+    ],
+    [
+      "2024-05-07",
+      117
+    ],
+    [
+      "2024-05-08",
+      77
+    ],
+    [
+      "2024-05-09",
+      80
+    ],
+    [
+      "2024-05-10",
+      98
+    ],
+    [
+      "2024-05-11",
+      120
+    ],
+    [
+      "2024-05-12",
+      19
+    ],
+    [
+      "2024-05-13",
+      141
+    ],
+    [
+      "2024-05-14",
+      115
+    ],
+    [
+      "2024-05-15",
+      98
+    ],
+    [
+      "2024-05-16",
+      142
+    ],
+    [
+      "2024-05-17",
+      71
+    ],
+    [
+      "2024-05-18",
+      9
+    ],
+    [
+      "2024-05-19",
+      12
+    ],
+    [
+      "2024-05-20",
+      95
+    ],
+    [
+      "2024-05-21",
+      62
+    ],
+    [
+      "2024-05-22",
+      80
+    ],
+    [
+      "2024-05-23",
+      63
+    ],
+    [
+      "2024-05-24",
+      78
+    ],
+    [
+      "2024-05-25",
+      75
+    ],
+    [
+      "2024-05-26",
+      23
+    ],
+    [
+      "2024-05-27",
+      92
+    ],
+    [
+      "2024-05-28",
+      73
+    ],
+    [
+      "2024-05-29",
+      85
+    ],
+    [
+      "2024-05-30",
+      69
+    ],
+    [
+      "2024-05-31",
+      98
+    ],
+    [
+      "2024-06-01",
+      68
+    ],
+    [
+      "2024-06-02",
+      6
+    ],
+    [
+      "2024-06-03",
+      90
+    ],
+    [
+      "2024-06-04",
+      81
+    ],
+    [
+      "2024-06-05",
+      75
+    ],
+    [
+      "2024-06-06",
+      92
+    ],
+    [
+      "2024-06-07",
+      109
+    ],
+    [
+      "2024-06-08",
+      46
+    ],
+    [
+      "2024-06-09",
+      1
+    ],
+    [
+      "2024-06-10",
+      98
+    ],
+    [
+      "2024-06-11",
+      94
+    ],
+    [
+      "2024-06-12",
+      92
+    ],
+    [
+      "2024-06-13",
+      180
+    ],
+    [
+      "2024-06-14",
+      99
+    ],
+    [
+      "2024-06-15",
+      63
+    ],
+    [
+      "2024-06-16",
+      6
+    ],
+    [
+      "2024-06-17",
+      130
+    ],
+    [
+      "2024-06-18",
+      91
+    ],
+    [
+      "2024-06-19",
+      74
+    ],
+    [
+      "2024-06-20",
+      97
+    ],
+    [
+      "2024-06-21",
+      70
+    ],
+    [
+      "2024-06-22",
+      64
+    ],
+    [
+      "2024-06-23",
+      20
+    ],
+    [
+      "2024-06-24",
+      105
+    ],
+    [
+      "2024-06-25",
+      141
+    ],
+    [
+      "2024-06-26",
+      113
+    ],
+    [
+      "2024-06-27",
+      91
+    ],
+    [
+      "2024-06-28",
+      66
+    ],
+    [
+      "2024-06-29",
+      83
+    ],
+    [
+      "2024-06-30",
+      3
+    ],
+    [
+      "2024-07-01",
+      70
+    ],
+    [
+      "2024-07-02",
+      66
+    ],
+    [
+      "2024-07-03",
+      60
+    ],
+    [
+      "2024-07-04",
+      47
+    ],
+    [
+      "2024-07-05",
+      78
+    ],
+    [
+      "2024-07-06",
+      72
+    ],
+    [
+      "2024-07-07",
+      11
+    ],
+    [
+      "2024-07-08",
+      100
+    ],
+    [
+      "2024-07-09",
+      94
+    ],
+    [
+      "2024-07-10",
+      109
+    ],
+    [
+      "2024-07-11",
+      129
+    ],
+    [
+      "2024-07-12",
+      41
+    ],
+    [
+      "2024-07-13",
+      66
+    ],
+    [
       "2024-07-14",
-      2
+      5
     ],
     [
       "2024-07-15",
-      29
+      81
     ],
     [
       "2024-07-16",
-      39
+      127
     ],
     [
       "2024-07-17",
-      37
+      104
     ],
     [
       "2024-07-18",
-      30
+      130
     ],
     [
       "2024-07-19",
-      36
+      90
     ],
     [
       "2024-07-20",
-      9
+      60
     ],
     [
       "2024-07-21",
@@ -6208,55 +6639,55 @@
     ],
     [
       "2024-07-22",
-      23
+      87
     ],
     [
       "2024-07-23",
-      41
+      99
     ],
     [
       "2024-07-24",
-      48
+      117
     ],
     [
       "2024-07-25",
-      53
+      168
     ],
     [
       "2024-07-26",
-      43
+      106
     ],
     [
       "2024-07-27",
-      26
+      81
     ],
     [
       "2024-07-28",
-      9
+      10
     ],
     [
       "2024-07-29",
-      28
+      94
     ],
     [
       "2024-07-30",
-      25
+      89
     ],
     [
       "2024-07-31",
-      33
+      97
     ],
     [
       "2024-08-01",
-      32
+      249
     ],
     [
       "2024-08-02",
-      16
+      72
     ],
     [
       "2024-08-03",
-      5
+      101
     ],
     [
       "2024-08-04",
@@ -6264,27 +6695,27 @@
     ],
     [
       "2024-08-05",
-      18
+      103
     ],
     [
       "2024-08-06",
-      34
+      102
     ],
     [
       "2024-08-07",
-      14
+      109
     ],
     [
       "2024-08-08",
-      27
+      244
     ],
     [
       "2024-08-09",
-      19
+      69
     ],
     [
       "2024-08-10",
-      2
+      43
     ],
     [
       "2024-08-11",
@@ -6292,55 +6723,55 @@
     ],
     [
       "2024-08-12",
-      25
+      79
     ],
     [
       "2024-08-13",
-      38
+      89
     ],
     [
       "2024-08-14",
-      38
+      114
     ],
     [
       "2024-08-15",
-      35
+      79
     ],
     [
       "2024-08-16",
-      26
+      82
     ],
     [
       "2024-08-17",
-      5
+      55
     ],
     [
       "2024-08-18",
-      7
+      9
     ],
     [
       "2024-08-19",
-      26
+      119
     ],
     [
       "2024-08-20",
-      22
+      91
     ],
     [
       "2024-08-21",
-      19
+      116
     ],
     [
       "2024-08-22",
-      41
+      132
     ],
     [
       "2024-08-23",
-      22
+      72
     ],
     [
       "2024-08-24",
-      4
+      43
     ],
     [
       "2024-08-25",
@@ -6348,55 +6779,55 @@
     ],
     [
       "2024-08-26",
-      38
+      111
     ],
     [
       "2024-08-27",
-      29
+      112
     ],
     [
       "2024-08-28",
-      29
+      113
     ],
     [
       "2024-08-29",
-      50
+      102
     ],
     [
       "2024-08-30",
-      25
+      74
     ],
     [
       "2024-08-31",
-      5
+      31
     ],
     [
       "2024-09-01",
-      5
+      8
     ],
     [
       "2024-09-02",
-      8
+      68
     ],
     [
       "2024-09-03",
-      15
+      65
     ],
     [
       "2024-09-04",
-      26
+      80
     ],
     [
       "2024-09-05",
-      42
+      148
     ],
     [
       "2024-09-06",
-      17
+      56
     ],
     [
       "2024-09-07",
-      8
+      54
     ],
     [
       "2024-09-08",
@@ -6404,55 +6835,55 @@
     ],
     [
       "2024-09-09",
-      8
+      50
     ],
     [
       "2024-09-10",
-      32
+      76
     ],
     [
       "2024-09-11",
-      8
+      53
     ],
     [
       "2024-09-12",
-      11
+      51
     ],
     [
       "2024-09-13",
-      17
+      21
     ],
     [
       "2024-09-14",
-      4
+      46
     ],
     [
       "2024-09-15",
-      3
+      5
     ],
     [
       "2024-09-16",
-      35
+      54
     ],
     [
       "2024-09-17",
-      47
+      72
     ],
     [
       "2024-09-18",
-      34
+      59
     ],
     [
       "2024-09-19",
-      32
+      59
     ],
     [
       "2024-09-20",
-      25
+      44
     ],
     [
       "2024-09-21",
-      3
+      28
     ],
     [
       "2024-09-22",
@@ -6460,135 +6891,139 @@
     ],
     [
       "2024-09-23",
-      21
+      46
     ],
     [
       "2024-09-24",
-      27
+      39
     ],
     [
       "2024-09-25",
-      28
+      49
     ],
     [
       "2024-09-26",
-      25
+      52
     ],
     [
       "2024-09-27",
-      18
+      47
     ],
     [
       "2024-09-28",
-      3
+      49
     ],
     [
       "2024-09-29",
-      2
-    ],
-    [
-      "2024-09-30",
-      22
-    ],
-    [
-      "2024-10-01",
-      20
-    ],
-    [
-      "2024-10-02",
-      26
-    ],
-    [
-      "2024-10-03",
-      17
-    ],
-    [
-      "2024-10-04",
-      16
-    ],
-    [
-      "2024-10-05",
-      3
-    ],
-    [
-      "2024-10-06",
-      5
-    ],
-    [
-      "2024-10-07",
-      22
-    ],
-    [
-      "2024-10-08",
-      24
-    ],
-    [
-      "2024-10-09",
-      33
-    ],
-    [
-      "2024-10-10",
-      19
-    ],
-    [
-      "2024-10-11",
-      25
-    ],
-    [
-      "2024-10-12",
       4
     ],
     [
-      "2024-10-13",
-      8
+      "2024-09-30",
+      30
     ],
     [
-      "2024-10-14",
-      13
+      "2024-10-01",
+      33
     ],
     [
-      "2024-10-15",
-      21
-    ],
-    [
-      "2024-10-16",
-      43
-    ],
-    [
-      "2024-10-17",
-      26
-    ],
-    [
-      "2024-10-18",
-      26
-    ],
-    [
-      "2024-10-19",
-      6
-    ],
-    [
-      "2024-10-21",
-      16
-    ],
-    [
-      "2024-10-22",
+      "2024-10-02",
       32
     ],
     [
-      "2024-10-23",
+      "2024-10-03",
+      35
+    ],
+    [
+      "2024-10-04",
+      35
+    ],
+    [
+      "2024-10-05",
+      27
+    ],
+    [
+      "2024-10-06",
+      10
+    ],
+    [
+      "2024-10-07",
+      36
+    ],
+    [
+      "2024-10-08",
+      48
+    ],
+    [
+      "2024-10-09",
+      52
+    ],
+    [
+      "2024-10-10",
       31
     ],
     [
+      "2024-10-11",
+      44
+    ],
+    [
+      "2024-10-12",
+      15
+    ],
+    [
+      "2024-10-13",
+      12
+    ],
+    [
+      "2024-10-14",
+      37
+    ],
+    [
+      "2024-10-15",
+      25
+    ],
+    [
+      "2024-10-16",
+      60
+    ],
+    [
+      "2024-10-17",
+      44
+    ],
+    [
+      "2024-10-18",
+      32
+    ],
+    [
+      "2024-10-19",
+      13
+    ],
+    [
+      "2024-10-20",
+      2
+    ],
+    [
+      "2024-10-21",
+      35
+    ],
+    [
+      "2024-10-22",
+      61
+    ],
+    [
+      "2024-10-23",
+      54
+    ],
+    [
       "2024-10-24",
-      18
+      29
     ],
     [
       "2024-10-25",
-      19
+      47
     ],
     [
       "2024-10-26",
-      6
+      14
     ],
     [
       "2024-10-27",
@@ -6596,131 +7031,131 @@
     ],
     [
       "2024-10-28",
-      28
+      36
     ],
     [
       "2024-10-29",
-      33
+      52
     ],
     [
       "2024-10-30",
-      23
+      29
     ],
     [
       "2024-10-31",
-      21
+      27
     ],
     [
       "2024-11-01",
-      20
+      29
     ],
     [
       "2024-11-02",
-      1
-    ],
-    [
-      "2024-11-04",
-      33
-    ],
-    [
-      "2024-11-05",
-      38
-    ],
-    [
-      "2024-11-06",
-      31
-    ],
-    [
-      "2024-11-07",
-      35
-    ],
-    [
-      "2024-11-08",
-      22
-    ],
-    [
-      "2024-11-09",
-      2
-    ],
-    [
-      "2024-11-10",
       9
     ],
     [
-      "2024-11-11",
-      21
+      "2024-11-04",
+      48
     ],
     [
-      "2024-11-12",
-      12
+      "2024-11-05",
+      72
     ],
     [
-      "2024-11-13",
-      30
+      "2024-11-06",
+      49
     ],
     [
-      "2024-11-14",
-      32
+      "2024-11-07",
+      50
     ],
     [
-      "2024-11-15",
-      32
+      "2024-11-08",
+      38
     ],
     [
-      "2024-11-16",
-      10
+      "2024-11-09",
+      3
     ],
     [
-      "2024-11-17",
-      1
-    ],
-    [
-      "2024-11-18",
-      26
-    ],
-    [
-      "2024-11-19",
-      18
-    ],
-    [
-      "2024-11-20",
-      24
-    ],
-    [
-      "2024-11-21",
-      31
-    ],
-    [
-      "2024-11-22",
-      24
-    ],
-    [
-      "2024-11-23",
-      8
-    ],
-    [
-      "2024-11-24",
-      2
-    ],
-    [
-      "2024-11-25",
-      21
-    ],
-    [
-      "2024-11-26",
+      "2024-11-10",
       11
     ],
     [
+      "2024-11-11",
+      34
+    ],
+    [
+      "2024-11-12",
+      41
+    ],
+    [
+      "2024-11-13",
+      53
+    ],
+    [
+      "2024-11-14",
+      46
+    ],
+    [
+      "2024-11-15",
+      52
+    ],
+    [
+      "2024-11-16",
+      22
+    ],
+    [
+      "2024-11-17",
+      5
+    ],
+    [
+      "2024-11-18",
+      37
+    ],
+    [
+      "2024-11-19",
+      34
+    ],
+    [
+      "2024-11-20",
+      33
+    ],
+    [
+      "2024-11-21",
+      74
+    ],
+    [
+      "2024-11-22",
+      39
+    ],
+    [
+      "2024-11-23",
+      24
+    ],
+    [
+      "2024-11-24",
+      5
+    ],
+    [
+      "2024-11-25",
+      32
+    ],
+    [
+      "2024-11-26",
+      29
+    ],
+    [
       "2024-11-27",
-      10
+      27
     ],
     [
       "2024-11-28",
-      25
+      33
     ],
     [
       "2024-11-29",
-      13
+      14
     ],
     [
       "2024-11-30",
@@ -6728,115 +7163,115 @@
     ],
     [
       "2024-12-01",
-      6
-    ],
-    [
-      "2024-12-02",
-      24
-    ],
-    [
-      "2024-12-03",
-      27
-    ],
-    [
-      "2024-12-04",
-      21
-    ],
-    [
-      "2024-12-05",
-      15
-    ],
-    [
-      "2024-12-06",
-      25
-    ],
-    [
-      "2024-12-07",
-      8
-    ],
-    [
-      "2024-12-08",
-      4
-    ],
-    [
-      "2024-12-09",
-      26
-    ],
-    [
-      "2024-12-10",
-      23
-    ],
-    [
-      "2024-12-11",
-      19
-    ],
-    [
-      "2024-12-12",
-      27
-    ],
-    [
-      "2024-12-13",
-      34
-    ],
-    [
-      "2024-12-14",
-      9
-    ],
-    [
-      "2024-12-15",
-      2
-    ],
-    [
-      "2024-12-16",
-      40
-    ],
-    [
-      "2024-12-17",
-      34
-    ],
-    [
-      "2024-12-18",
-      28
-    ],
-    [
-      "2024-12-19",
-      15
-    ],
-    [
-      "2024-12-20",
-      30
-    ],
-    [
-      "2024-12-21",
       10
     ],
     [
-      "2024-12-22",
-      5
+      "2024-12-02",
+      53
     ],
     [
-      "2024-12-23",
-      5
+      "2024-12-03",
+      51
     ],
     [
-      "2024-12-24",
-      5
+      "2024-12-04",
+      38
     ],
     [
-      "2024-12-25",
-      2
+      "2024-12-05",
+      29
     ],
     [
-      "2024-12-26",
-      4
+      "2024-12-06",
+      42
     ],
     [
-      "2024-12-27",
+      "2024-12-07",
+      18
+    ],
+    [
+      "2024-12-08",
       9
     ],
     [
+      "2024-12-09",
+      30
+    ],
+    [
+      "2024-12-10",
+      44
+    ],
+    [
+      "2024-12-11",
+      34
+    ],
+    [
+      "2024-12-12",
+      48
+    ],
+    [
+      "2024-12-13",
+      43
+    ],
+    [
+      "2024-12-14",
+      39
+    ],
+    [
+      "2024-12-15",
+      3
+    ],
+    [
+      "2024-12-16",
+      50
+    ],
+    [
+      "2024-12-17",
+      48
+    ],
+    [
+      "2024-12-18",
+      50
+    ],
+    [
+      "2024-12-19",
+      32
+    ],
+    [
+      "2024-12-20",
+      49
+    ],
+    [
+      "2024-12-21",
+      38
+    ],
+    [
+      "2024-12-22",
+      7
+    ],
+    [
+      "2024-12-23",
+      30
+    ],
+    [
+      "2024-12-24",
+      19
+    ],
+    [
+      "2024-12-25",
+      24
+    ],
+    [
+      "2024-12-26",
+      18
+    ],
+    [
+      "2024-12-27",
+      42
+    ],
+    [
       "2024-12-28",
-      8
+      57
     ],
     [
       "2024-12-29",
@@ -6844,335 +7279,335 @@
     ],
     [
       "2024-12-30",
-      6
-    ],
-    [
-      "2024-12-31",
-      6
-    ],
-    [
-      "2025-01-01",
-      8
-    ],
-    [
-      "2025-01-02",
-      25
-    ],
-    [
-      "2025-01-03",
-      24
-    ],
-    [
-      "2025-01-04",
-      8
-    ],
-    [
-      "2025-01-05",
-      6
-    ],
-    [
-      "2025-01-06",
-      33
-    ],
-    [
-      "2025-01-07",
-      37
-    ],
-    [
-      "2025-01-08",
-      36
-    ],
-    [
-      "2025-01-09",
-      28
-    ],
-    [
-      "2025-01-10",
-      32
-    ],
-    [
-      "2025-01-11",
-      8
-    ],
-    [
-      "2025-01-12",
-      5
-    ],
-    [
-      "2025-01-13",
-      23
-    ],
-    [
-      "2025-01-14",
-      27
-    ],
-    [
-      "2025-01-15",
-      31
-    ],
-    [
-      "2025-01-16",
-      30
-    ],
-    [
-      "2025-01-17",
-      23
-    ],
-    [
-      "2025-01-18",
-      12
-    ],
-    [
-      "2025-01-19",
-      3
-    ],
-    [
-      "2025-01-20",
-      20
-    ],
-    [
-      "2025-01-21",
-      32
-    ],
-    [
-      "2025-01-22",
-      32
-    ],
-    [
-      "2025-01-23",
-      37
-    ],
-    [
-      "2025-01-24",
-      21
-    ],
-    [
-      "2025-01-25",
-      10
-    ],
-    [
-      "2025-01-26",
-      7
-    ],
-    [
-      "2025-01-27",
-      25
-    ],
-    [
-      "2025-01-28",
-      38
-    ],
-    [
-      "2025-01-29",
-      32
-    ],
-    [
-      "2025-01-30",
-      40
-    ],
-    [
-      "2025-01-31",
-      23
-    ],
-    [
-      "2025-02-01",
-      6
-    ],
-    [
-      "2025-02-02",
-      12
-    ],
-    [
-      "2025-02-03",
-      28
-    ],
-    [
-      "2025-02-04",
-      44
-    ],
-    [
-      "2025-02-05",
-      45
-    ],
-    [
-      "2025-02-06",
-      48
-    ],
-    [
-      "2025-02-07",
-      38
-    ],
-    [
-      "2025-02-08",
-      5
-    ],
-    [
-      "2025-02-09",
-      11
-    ],
-    [
-      "2025-02-10",
-      34
-    ],
-    [
-      "2025-02-11",
-      44
-    ],
-    [
-      "2025-02-12",
-      29
-    ],
-    [
-      "2025-02-13",
-      22
-    ],
-    [
-      "2025-02-14",
-      31
-    ],
-    [
-      "2025-02-15",
       17
     ],
     [
-      "2025-02-16",
-      4
+      "2024-12-31",
+      12
     ],
     [
-      "2025-02-17",
-      26
-    ],
-    [
-      "2025-02-18",
-      34
-    ],
-    [
-      "2025-02-19",
-      51
-    ],
-    [
-      "2025-02-20",
-      35
-    ],
-    [
-      "2025-02-21",
-      37
-    ],
-    [
-      "2025-02-22",
-      13
-    ],
-    [
-      "2025-02-23",
-      9
-    ],
-    [
-      "2025-02-24",
-      46
-    ],
-    [
-      "2025-02-25",
-      40
-    ],
-    [
-      "2025-02-26",
-      43
-    ],
-    [
-      "2025-02-27",
-      42
-    ],
-    [
-      "2025-02-28",
-      28
-    ],
-    [
-      "2025-03-01",
-      10
-    ],
-    [
-      "2025-03-02",
-      9
-    ],
-    [
-      "2025-03-03",
-      40
-    ],
-    [
-      "2025-03-04",
+      "2025-01-01",
       39
     ],
     [
-      "2025-03-05",
-      41
-    ],
-    [
-      "2025-03-06",
-      48
-    ],
-    [
-      "2025-03-07",
-      30
-    ],
-    [
-      "2025-03-08",
-      5
-    ],
-    [
-      "2025-03-09",
-      5
-    ],
-    [
-      "2025-03-10",
-      45
-    ],
-    [
-      "2025-03-11",
-      37
-    ],
-    [
-      "2025-03-12",
-      51
-    ],
-    [
-      "2025-03-13",
-      50
-    ],
-    [
-      "2025-03-14",
-      29
-    ],
-    [
-      "2025-03-15",
-      16
-    ],
-    [
-      "2025-03-16",
-      2
-    ],
-    [
-      "2025-03-17",
-      36
-    ],
-    [
-      "2025-03-18",
+      "2025-01-02",
       40
     ],
     [
-      "2025-03-19",
+      "2025-01-03",
       51
     ],
     [
-      "2025-03-20",
+      "2025-01-04",
+      26
+    ],
+    [
+      "2025-01-05",
+      20
+    ],
+    [
+      "2025-01-06",
+      51
+    ],
+    [
+      "2025-01-07",
+      49
+    ],
+    [
+      "2025-01-08",
+      59
+    ],
+    [
+      "2025-01-09",
+      41
+    ],
+    [
+      "2025-01-10",
+      63
+    ],
+    [
+      "2025-01-11",
+      25
+    ],
+    [
+      "2025-01-12",
+      24
+    ],
+    [
+      "2025-01-13",
       33
+    ],
+    [
+      "2025-01-14",
+      43
+    ],
+    [
+      "2025-01-15",
+      44
+    ],
+    [
+      "2025-01-16",
+      49
+    ],
+    [
+      "2025-01-17",
+      51
+    ],
+    [
+      "2025-01-18",
+      38
+    ],
+    [
+      "2025-01-19",
+      9
+    ],
+    [
+      "2025-01-20",
+      35
+    ],
+    [
+      "2025-01-21",
+      50
+    ],
+    [
+      "2025-01-22",
+      65
+    ],
+    [
+      "2025-01-23",
+      59
+    ],
+    [
+      "2025-01-24",
+      42
+    ],
+    [
+      "2025-01-25",
+      21
+    ],
+    [
+      "2025-01-26",
+      10
+    ],
+    [
+      "2025-01-27",
+      45
+    ],
+    [
+      "2025-01-28",
+      65
+    ],
+    [
+      "2025-01-29",
+      53
+    ],
+    [
+      "2025-01-30",
+      59
+    ],
+    [
+      "2025-01-31",
+      45
+    ],
+    [
+      "2025-02-01",
+      26
+    ],
+    [
+      "2025-02-02",
+      17
+    ],
+    [
+      "2025-02-03",
+      50
+    ],
+    [
+      "2025-02-04",
+      73
+    ],
+    [
+      "2025-02-05",
+      69
+    ],
+    [
+      "2025-02-06",
+      76
+    ],
+    [
+      "2025-02-07",
+      54
+    ],
+    [
+      "2025-02-08",
+      14
+    ],
+    [
+      "2025-02-09",
+      18
+    ],
+    [
+      "2025-02-10",
+      68
+    ],
+    [
+      "2025-02-11",
+      59
+    ],
+    [
+      "2025-02-12",
+      50
+    ],
+    [
+      "2025-02-13",
+      45
+    ],
+    [
+      "2025-02-14",
+      63
+    ],
+    [
+      "2025-02-15",
+      47
+    ],
+    [
+      "2025-02-16",
+      9
+    ],
+    [
+      "2025-02-17",
+      50
+    ],
+    [
+      "2025-02-18",
+      60
+    ],
+    [
+      "2025-02-19",
+      66
+    ],
+    [
+      "2025-02-20",
+      49
+    ],
+    [
+      "2025-02-21",
+      44
+    ],
+    [
+      "2025-02-22",
+      23
+    ],
+    [
+      "2025-02-23",
+      10
+    ],
+    [
+      "2025-02-24",
+      60
+    ],
+    [
+      "2025-02-25",
+      70
+    ],
+    [
+      "2025-02-26",
+      79
+    ],
+    [
+      "2025-02-27",
+      66
+    ],
+    [
+      "2025-02-28",
+      47
+    ],
+    [
+      "2025-03-01",
+      38
+    ],
+    [
+      "2025-03-02",
+      15
+    ],
+    [
+      "2025-03-03",
+      63
+    ],
+    [
+      "2025-03-04",
+      57
+    ],
+    [
+      "2025-03-05",
+      61
+    ],
+    [
+      "2025-03-06",
+      89
+    ],
+    [
+      "2025-03-07",
+      51
+    ],
+    [
+      "2025-03-08",
+      38
+    ],
+    [
+      "2025-03-09",
+      12
+    ],
+    [
+      "2025-03-10",
+      157
+    ],
+    [
+      "2025-03-11",
+      139
+    ],
+    [
+      "2025-03-12",
+      176
+    ],
+    [
+      "2025-03-13",
+      139
+    ],
+    [
+      "2025-03-14",
+      111
+    ],
+    [
+      "2025-03-15",
+      104
+    ],
+    [
+      "2025-03-16",
+      11
+    ],
+    [
+      "2025-03-17",
+      102
+    ],
+    [
+      "2025-03-18",
+      138
+    ],
+    [
+      "2025-03-19",
+      121
+    ],
+    [
+      "2025-03-20",
+      96
     ],
     [
       "2025-03-21",
-      33
+      125
     ],
     [
       "2025-03-22",
-      10
+      132
     ],
     [
       "2025-03-23",
@@ -7180,83 +7615,83 @@
     ],
     [
       "2025-03-24",
-      29
+      82
     ],
     [
       "2025-03-25",
-      52
+      97
     ],
     [
       "2025-03-26",
-      50
+      142
     ],
     [
       "2025-03-27",
-      48
+      95
     ],
     [
       "2025-03-28",
-      43
+      88
     ],
     [
       "2025-03-29",
-      11
+      92
     ],
     [
       "2025-03-30",
-      3
+      13
     ],
     [
       "2025-03-31",
-      38
+      90
     ],
     [
       "2025-04-01",
-      46
+      85
     ],
     [
       "2025-04-02",
-      47
+      114
     ],
     [
       "2025-04-03",
-      30
+      54
     ],
     [
       "2025-04-04",
-      40
+      103
     ],
     [
       "2025-04-05",
-      16
-    ],
-    [
-      "2025-04-06",
-      6
-    ],
-    [
-      "2025-04-07",
-      42
-    ],
-    [
-      "2025-04-08",
-      64
-    ],
-    [
-      "2025-04-09",
-      44
-    ],
-    [
-      "2025-04-10",
-      35
-    ],
-    [
-      "2025-04-11",
       41
     ],
     [
+      "2025-04-06",
+      15
+    ],
+    [
+      "2025-04-07",
+      54
+    ],
+    [
+      "2025-04-08",
+      86
+    ],
+    [
+      "2025-04-09",
+      93
+    ],
+    [
+      "2025-04-10",
+      60
+    ],
+    [
+      "2025-04-11",
+      61
+    ],
+    [
       "2025-04-12",
-      2
+      45
     ],
     [
       "2025-04-13",
@@ -7264,2175 +7699,2179 @@
     ],
     [
       "2025-04-14",
-      30
+      46
     ],
     [
       "2025-04-15",
-      58
+      87
     ],
     [
       "2025-04-16",
-      44
-    ],
-    [
-      "2025-04-17",
-      38
-    ],
-    [
-      "2025-04-18",
-      37
-    ],
-    [
-      "2025-04-19",
-      16
-    ],
-    [
-      "2025-04-20",
-      5
-    ],
-    [
-      "2025-04-21",
-      29
-    ],
-    [
-      "2025-04-22",
-      32
-    ],
-    [
-      "2025-04-23",
-      39
-    ],
-    [
-      "2025-04-24",
-      28
-    ],
-    [
-      "2025-04-25",
-      39
-    ],
-    [
-      "2025-04-26",
-      13
-    ],
-    [
-      "2025-04-27",
-      2
-    ],
-    [
-      "2025-04-28",
-      44
-    ],
-    [
-      "2025-04-29",
-      41
-    ],
-    [
-      "2025-04-30",
-      32
-    ],
-    [
-      "2025-05-01",
-      29
-    ],
-    [
-      "2025-05-02",
-      29
-    ],
-    [
-      "2025-05-03",
-      7
-    ],
-    [
-      "2025-05-04",
-      25
-    ],
-    [
-      "2025-05-05",
-      47
-    ],
-    [
-      "2025-05-06",
-      63
-    ],
-    [
-      "2025-05-07",
-      51
-    ],
-    [
-      "2025-05-08",
-      45
-    ],
-    [
-      "2025-05-09",
-      48
-    ],
-    [
-      "2025-05-10",
-      5
-    ],
-    [
-      "2025-05-11",
-      9
-    ],
-    [
-      "2025-05-12",
-      51
-    ],
-    [
-      "2025-05-13",
-      25
-    ],
-    [
-      "2025-05-14",
-      33
-    ],
-    [
-      "2025-05-15",
-      15
-    ],
-    [
-      "2025-05-16",
-      23
-    ],
-    [
-      "2025-05-17",
-      19
-    ],
-    [
-      "2025-05-18",
-      5
-    ],
-    [
-      "2025-05-19",
-      28
-    ],
-    [
-      "2025-05-20",
-      24
-    ],
-    [
-      "2025-05-21",
-      35
-    ],
-    [
-      "2025-05-22",
-      36
-    ],
-    [
-      "2025-05-23",
-      34
-    ],
-    [
-      "2025-05-24",
-      7
-    ],
-    [
-      "2025-05-25",
-      4
-    ],
-    [
-      "2025-05-26",
-      58
-    ],
-    [
-      "2025-05-27",
-      39
-    ],
-    [
-      "2025-05-28",
-      47
-    ],
-    [
-      "2025-05-29",
-      27
-    ],
-    [
-      "2025-05-30",
-      38
-    ],
-    [
-      "2025-05-31",
-      11
-    ],
-    [
-      "2025-06-01",
-      3
-    ],
-    [
-      "2025-06-02",
-      39
-    ],
-    [
-      "2025-06-03",
-      48
-    ],
-    [
-      "2025-06-04",
-      46
-    ],
-    [
-      "2025-06-05",
-      34
-    ],
-    [
-      "2025-06-06",
-      45
-    ],
-    [
-      "2025-06-07",
-      17
-    ],
-    [
-      "2025-06-08",
-      5
-    ],
-    [
-      "2025-06-09",
-      45
-    ],
-    [
-      "2025-06-10",
-      38
-    ],
-    [
-      "2025-06-11",
-      29
-    ],
-    [
-      "2025-06-12",
-      32
-    ],
-    [
-      "2025-06-13",
-      35
-    ],
-    [
-      "2025-06-14",
-      5
-    ],
-    [
-      "2025-06-15",
-      13
-    ],
-    [
-      "2025-06-16",
-      28
-    ],
-    [
-      "2025-06-17",
-      43
-    ],
-    [
-      "2025-06-18",
-      27
-    ],
-    [
-      "2025-06-19",
-      23
-    ],
-    [
-      "2025-06-20",
-      16
-    ],
-    [
-      "2025-06-21",
-      11
-    ],
-    [
-      "2025-06-22",
-      11
-    ],
-    [
-      "2025-06-23",
-      28
-    ],
-    [
-      "2025-06-24",
-      22
-    ],
-    [
-      "2025-06-25",
-      38
-    ],
-    [
-      "2025-06-26",
-      25
-    ],
-    [
-      "2025-06-27",
-      24
-    ],
-    [
-      "2025-06-28",
-      9
-    ],
-    [
-      "2025-06-29",
-      5
-    ],
-    [
-      "2025-06-30",
-      35
-    ],
-    [
-      "2025-07-01",
-      34
-    ],
-    [
-      "2025-07-02",
-      26
-    ],
-    [
-      "2025-07-03",
-      23
-    ],
-    [
-      "2025-07-04",
-      12
-    ],
-    [
-      "2025-07-05",
-      5
-    ],
-    [
-      "2025-07-06",
-      2
-    ],
-    [
-      "2025-07-07",
-      25
-    ],
-    [
-      "2025-07-08",
-      27
-    ],
-    [
-      "2025-07-09",
-      41
-    ],
-    [
-      "2025-07-10",
-      47
-    ],
-    [
-      "2025-07-11",
-      31
-    ],
-    [
-      "2025-07-12",
-      32
-    ],
-    [
-      "2025-07-13",
-      9
-    ],
-    [
-      "2025-07-14",
-      39
-    ],
-    [
-      "2025-07-15",
-      35
-    ],
-    [
-      "2025-07-16",
-      48
-    ],
-    [
-      "2025-07-17",
-      48
-    ],
-    [
-      "2025-07-18",
-      41
-    ],
-    [
-      "2025-07-19",
-      12
-    ],
-    [
-      "2025-07-20",
-      4
-    ],
-    [
-      "2025-07-21",
-      35
-    ],
-    [
-      "2025-07-22",
-      44
-    ],
-    [
-      "2025-07-23",
-      34
-    ],
-    [
-      "2025-07-24",
-      31
-    ],
-    [
-      "2025-07-25",
-      36
-    ],
-    [
-      "2025-07-26",
-      25
-    ],
-    [
-      "2025-07-27",
-      8
-    ],
-    [
-      "2025-07-28",
-      38
-    ],
-    [
-      "2025-07-29",
-      41
-    ],
-    [
-      "2025-07-30",
-      30
-    ],
-    [
-      "2025-07-31",
-      30
-    ],
-    [
-      "2025-08-01",
-      22
-    ],
-    [
-      "2025-08-02",
-      10
-    ],
-    [
-      "2025-08-03",
-      23
-    ],
-    [
-      "2025-08-04",
-      28
-    ],
-    [
-      "2025-08-05",
-      49
-    ],
-    [
-      "2025-08-06",
-      45
-    ],
-    [
-      "2025-08-07",
-      40
-    ],
-    [
-      "2025-08-08",
-      42
-    ],
-    [
-      "2025-08-09",
-      26
-    ],
-    [
-      "2025-08-10",
-      20
-    ],
-    [
-      "2025-08-11",
-      49
-    ],
-    [
-      "2025-08-12",
-      34
-    ],
-    [
-      "2025-08-13",
-      39
-    ],
-    [
-      "2025-08-14",
-      37
-    ],
-    [
-      "2025-08-15",
-      45
-    ],
-    [
-      "2025-08-16",
-      32
-    ],
-    [
-      "2025-08-17",
-      13
-    ],
-    [
-      "2025-08-18",
-      43
-    ],
-    [
-      "2025-08-19",
-      47
-    ],
-    [
-      "2025-08-20",
-      59
-    ],
-    [
-      "2025-08-21",
-      48
-    ],
-    [
-      "2025-08-22",
-      28
-    ],
-    [
-      "2025-08-23",
-      13
-    ],
-    [
-      "2025-08-24",
-      10
-    ],
-    [
-      "2025-08-25",
-      46
-    ],
-    [
-      "2025-08-26",
-      27
-    ],
-    [
-      "2025-08-27",
-      27
-    ],
-    [
-      "2025-08-28",
-      39
-    ],
-    [
-      "2025-08-29",
-      29
-    ],
-    [
-      "2025-08-30",
-      19
-    ],
-    [
-      "2025-08-31",
-      31
-    ],
-    [
-      "2025-09-01",
-      33
-    ],
-    [
-      "2025-09-02",
-      46
-    ],
-    [
-      "2025-09-03",
-      46
-    ],
-    [
-      "2025-09-04",
-      35
-    ],
-    [
-      "2025-09-05",
-      20
-    ],
-    [
-      "2025-09-06",
-      14
-    ],
-    [
-      "2025-09-07",
-      7
-    ],
-    [
-      "2025-09-08",
-      38
-    ],
-    [
-      "2025-09-09",
-      52
-    ],
-    [
-      "2025-09-10",
-      34
-    ],
-    [
-      "2025-09-11",
-      36
-    ],
-    [
-      "2025-09-12",
-      32
-    ],
-    [
-      "2025-09-13",
-      7
-    ],
-    [
-      "2025-09-14",
-      15
-    ],
-    [
-      "2025-09-15",
-      34
-    ],
-    [
-      "2025-09-16",
-      31
-    ],
-    [
-      "2025-09-17",
-      36
-    ],
-    [
-      "2025-09-18",
-      36
-    ],
-    [
-      "2025-09-19",
-      30
-    ],
-    [
-      "2025-09-20",
-      8
-    ],
-    [
-      "2025-09-21",
-      7
-    ],
-    [
-      "2025-09-22",
-      38
-    ],
-    [
-      "2025-09-23",
-      45
-    ],
-    [
-      "2025-09-24",
-      44
-    ],
-    [
-      "2025-09-25",
-      55
-    ],
-    [
-      "2025-09-26",
-      29
-    ],
-    [
-      "2025-09-27",
-      22
-    ],
-    [
-      "2025-09-28",
-      10
-    ],
-    [
-      "2025-09-29",
-      45
-    ],
-    [
-      "2025-09-30",
-      44
-    ],
-    [
-      "2025-10-01",
-      31
-    ],
-    [
-      "2025-10-02",
-      42
-    ],
-    [
-      "2025-10-03",
-      32
-    ],
-    [
-      "2025-10-04",
-      11
-    ],
-    [
-      "2025-10-05",
-      20
-    ],
-    [
-      "2025-10-06",
-      62
-    ],
-    [
-      "2025-10-07",
-      34
-    ],
-    [
-      "2025-10-08",
-      63
-    ],
-    [
-      "2025-10-09",
-      46
-    ],
-    [
-      "2025-10-10",
-      34
-    ],
-    [
-      "2025-10-11",
-      19
-    ],
-    [
-      "2025-10-12",
-      23
-    ],
-    [
-      "2025-10-13",
-      43
-    ],
-    [
-      "2025-10-14",
-      36
-    ],
-    [
-      "2025-10-15",
-      34
-    ],
-    [
-      "2025-10-16",
-      45
-    ],
-    [
-      "2025-10-17",
-      40
-    ],
-    [
-      "2025-10-18",
-      16
-    ],
-    [
-      "2025-10-19",
-      9
-    ],
-    [
-      "2025-10-20",
-      41
-    ],
-    [
-      "2025-10-21",
-      52
-    ],
-    [
-      "2025-10-22",
-      52
-    ],
-    [
-      "2025-10-23",
-      45
-    ],
-    [
-      "2025-10-24",
-      21
-    ],
-    [
-      "2025-10-25",
-      17
-    ],
-    [
-      "2025-10-26",
-      29
-    ],
-    [
-      "2025-10-27",
-      39
-    ],
-    [
-      "2025-10-28",
-      47
-    ],
-    [
-      "2025-10-29",
-      44
-    ],
-    [
-      "2025-10-30",
-      29
-    ],
-    [
-      "2025-10-31",
-      24
-    ],
-    [
-      "2025-11-01",
-      7
-    ],
-    [
-      "2025-11-02",
-      13
-    ],
-    [
-      "2025-11-03",
-      41
-    ],
-    [
-      "2025-11-04",
-      43
-    ],
-    [
-      "2025-11-05",
-      39
-    ],
-    [
-      "2025-11-06",
-      50
-    ],
-    [
-      "2025-11-07",
-      42
-    ],
-    [
-      "2025-11-08",
-      10
-    ],
-    [
-      "2025-11-09",
-      8
-    ],
-    [
-      "2025-11-10",
-      43
-    ],
-    [
-      "2025-11-11",
-      85
-    ],
-    [
-      "2025-11-12",
-      108
-    ],
-    [
-      "2025-11-13",
-      71
-    ],
-    [
-      "2025-11-14",
-      26
-    ],
-    [
-      "2025-11-15",
-      3
-    ],
-    [
-      "2025-11-16",
-      21
-    ],
-    [
-      "2025-11-17",
-      46
-    ],
-    [
-      "2025-11-18",
-      33
-    ],
-    [
-      "2025-11-19",
-      50
-    ],
-    [
-      "2025-11-20",
-      68
-    ],
-    [
-      "2025-11-21",
-      44
-    ],
-    [
-      "2025-11-22",
-      8
-    ],
-    [
-      "2025-11-23",
-      8
-    ],
-    [
-      "2025-11-24",
-      42
-    ],
-    [
-      "2025-11-25",
-      41
-    ],
-    [
-      "2025-11-26",
-      49
-    ],
-    [
-      "2025-11-27",
-      61
-    ],
-    [
-      "2025-11-28",
-      31
-    ],
-    [
-      "2025-11-29",
-      23
-    ],
-    [
-      "2025-11-30",
-      3
-    ],
-    [
-      "2025-12-01",
-      71
-    ],
-    [
-      "2025-12-02",
-      103
-    ],
-    [
-      "2025-12-03",
-      61
-    ],
-    [
-      "2025-12-04",
-      84
-    ],
-    [
-      "2025-12-05",
-      86
-    ],
-    [
-      "2025-12-06",
-      40
-    ],
-    [
-      "2025-12-07",
-      22
-    ],
-    [
-      "2025-12-08",
-      75
-    ],
-    [
-      "2025-12-09",
-      148
-    ],
-    [
-      "2025-12-10",
-      73
-    ],
-    [
-      "2025-12-11",
-      56
-    ],
-    [
-      "2025-12-12",
-      84
-    ],
-    [
-      "2025-12-13",
-      66
-    ],
-    [
-      "2025-12-14",
-      24
-    ],
-    [
-      "2025-12-15",
-      116
-    ],
-    [
-      "2025-12-16",
-      97
-    ],
-    [
-      "2025-12-17",
-      120
-    ],
-    [
-      "2025-12-18",
-      99
-    ],
-    [
-      "2025-12-19",
-      147
-    ],
-    [
-      "2025-12-20",
-      69
-    ],
-    [
-      "2025-12-21",
-      42
-    ],
-    [
-      "2025-12-22",
-      91
-    ],
-    [
-      "2025-12-23",
-      20
-    ],
-    [
-      "2025-12-24",
-      97
-    ],
-    [
-      "2025-12-25",
-      67
-    ],
-    [
-      "2025-12-26",
-      71
-    ],
-    [
-      "2025-12-27",
-      78
-    ],
-    [
-      "2025-12-28",
-      94
-    ],
-    [
-      "2025-12-29",
-      135
-    ],
-    [
-      "2025-12-30",
-      95
-    ],
-    [
-      "2025-12-31",
-      212
-    ],
-    [
-      "2026-01-01",
-      172
-    ],
-    [
-      "2026-01-02",
-      155
-    ],
-    [
-      "2026-01-03",
-      342
-    ],
-    [
-      "2026-01-04",
-      119
-    ],
-    [
-      "2026-01-05",
-      201
-    ],
-    [
-      "2026-01-06",
-      212
-    ],
-    [
-      "2026-01-07",
-      180
-    ],
-    [
-      "2026-01-08",
-      185
-    ],
-    [
-      "2026-01-09",
-      140
-    ],
-    [
-      "2026-01-10",
-      100
-    ],
-    [
-      "2026-01-11",
-      154
-    ],
-    [
-      "2026-01-12",
-      167
-    ],
-    [
-      "2026-01-13",
-      104
-    ],
-    [
-      "2026-01-14",
-      110
-    ],
-    [
-      "2026-01-15",
-      74
-    ],
-    [
-      "2026-01-16",
-      132
-    ],
-    [
-      "2026-01-17",
-      37
-    ],
-    [
-      "2026-01-18",
-      65
-    ],
-    [
-      "2026-01-19",
-      121
-    ],
-    [
-      "2026-01-20",
-      43
-    ],
-    [
-      "2026-01-21",
-      126
-    ],
-    [
-      "2026-01-22",
-      92
-    ],
-    [
-      "2026-01-23",
-      217
-    ],
-    [
-      "2026-01-24",
-      77
-    ],
-    [
-      "2026-01-25",
-      116
-    ],
-    [
-      "2026-01-26",
-      97
-    ],
-    [
-      "2026-01-27",
-      76
-    ],
-    [
-      "2026-01-28",
-      160
-    ],
-    [
-      "2026-01-29",
-      112
-    ],
-    [
-      "2026-01-30",
-      76
-    ],
-    [
-      "2026-01-31",
-      82
-    ],
-    [
-      "2026-02-01",
-      180
-    ],
-    [
-      "2026-02-02",
-      119
-    ],
-    [
-      "2026-02-03",
-      79
-    ],
-    [
-      "2026-02-04",
-      120
-    ],
-    [
-      "2026-02-05",
-      207
-    ],
-    [
-      "2026-02-06",
-      133
-    ],
-    [
-      "2026-02-07",
-      63
-    ],
-    [
-      "2026-02-08",
-      21
-    ],
-    [
-      "2026-02-09",
-      48
-    ],
-    [
-      "2026-02-10",
-      147
-    ],
-    [
-      "2026-02-11",
-      93
-    ],
-    [
-      "2026-02-12",
-      169
-    ],
-    [
-      "2026-02-13",
-      142
-    ],
-    [
-      "2026-02-14",
-      89
-    ],
-    [
-      "2026-02-15",
-      105
-    ],
-    [
-      "2026-02-16",
-      211
-    ],
-    [
-      "2026-02-17",
-      87
-    ],
-    [
-      "2026-02-18",
-      118
-    ],
-    [
-      "2026-02-19",
-      177
-    ],
-    [
-      "2026-02-20",
-      136
-    ],
-    [
-      "2026-02-21",
-      92
-    ],
-    [
-      "2026-02-22",
-      145
-    ],
-    [
-      "2026-02-23",
-      107
-    ],
-    [
-      "2026-02-24",
-      91
-    ],
-    [
-      "2026-02-25",
-      58
-    ],
-    [
-      "2026-02-26",
-      133
-    ],
-    [
-      "2026-02-27",
-      111
-    ],
-    [
-      "2026-02-28",
-      148
-    ],
-    [
-      "2026-03-01",
-      142
-    ],
-    [
-      "2026-03-02",
-      75
-    ],
-    [
-      "2026-03-03",
-      155
-    ],
-    [
-      "2026-03-04",
-      138
-    ],
-    [
-      "2026-03-05",
-      111
-    ],
-    [
-      "2026-03-06",
-      97
-    ],
-    [
-      "2026-03-07",
-      27
-    ],
-    [
-      "2026-03-08",
       72
     ],
     [
-      "2026-03-09",
-      92
-    ],
-    [
-      "2026-03-10",
-      122
-    ],
-    [
-      "2026-03-11",
-      89
-    ],
-    [
-      "2026-03-12",
-      77
-    ],
-    [
-      "2026-03-13",
-      125
-    ],
-    [
-      "2026-03-14",
-      94
-    ],
-    [
-      "2026-03-15",
-      61
-    ],
-    [
-      "2026-03-16",
-      97
-    ],
-    [
-      "2026-03-17",
-      98
-    ],
-    [
-      "2026-03-18",
-      121
-    ],
-    [
-      "2026-03-19",
-      97
-    ],
-    [
-      "2026-03-20",
-      89
-    ],
-    [
-      "2026-03-21",
-      45
-    ],
-    [
-      "2026-03-22",
-      108
-    ],
-    [
-      "2026-03-23",
-      102
-    ],
-    [
-      "2026-03-24",
-      77
-    ],
-    [
-      "2026-03-25",
-      73
-    ],
-    [
-      "2026-03-26",
-      155
-    ],
-    [
-      "2026-03-27",
-      84
-    ],
-    [
-      "2026-03-28",
-      127
-    ],
-    [
-      "2026-03-29",
-      71
-    ],
-    [
-      "2026-03-30",
-      191
-    ],
-    [
-      "2026-03-31",
-      279
-    ],
-    [
-      "2026-04-01",
-      493
-    ],
-    [
-      "2026-04-02",
-      225
-    ],
-    [
-      "2026-04-03",
-      216
-    ],
-    [
-      "2026-04-04",
-      239
-    ],
-    [
-      "2026-04-05",
-      155
-    ],
-    [
-      "2026-04-06",
-      255
-    ],
-    [
-      "2026-04-07",
-      388
-    ],
-    [
-      "2026-04-08",
-      289
-    ],
-    [
-      "2026-04-09",
-      315
-    ],
-    [
-      "2026-04-10",
-      293
-    ],
-    [
-      "2026-04-11",
-      108
-    ],
-    [
-      "2026-04-12",
-      87
-    ],
-    [
-      "2026-04-13",
-      197
-    ],
-    [
-      "2026-04-14",
-      93
-    ],
-    [
-      "2026-04-15",
-      130
-    ],
-    [
-      "2026-04-16",
-      217
-    ],
-    [
-      "2026-04-17",
-      329
-    ],
-    [
-      "2026-04-18",
-      264
-    ],
-    [
-      "2026-04-19",
-      93
-    ],
-    [
-      "2026-04-20",
-      209
-    ],
-    [
-      "2026-04-21",
-      248
-    ],
-    [
-      "2026-04-22",
-      274
-    ],
-    [
-      "2026-04-23",
-      271
-    ],
-    [
-      "2026-04-24",
-      342
-    ],
-    [
-      "2026-04-25",
-      106
-    ],
-    [
-      "2026-04-26",
-      290
-    ],
-    [
-      "2026-04-27",
-      194
-    ],
-    [
-      "2026-04-28",
-      98
-    ],
-    [
-      "2026-04-29",
-      230
-    ],
-    [
-      "2026-04-30",
-      326
-    ],
-    [
-      "2026-05-01",
-      91
-    ],
-    [
-      "2026-05-02",
-      116
-    ],
-    [
-      "2026-05-03",
-      135
-    ],
-    [
-      "2026-05-04",
-      133
-    ],
-    [
-      "2026-05-05",
-      150
-    ],
-    [
-      "2026-05-06",
-      302
-    ],
-    [
-      "2026-05-07",
-      180
-    ],
-    [
-      "2026-05-08",
-      149
-    ],
-    [
-      "2026-05-09",
-      184
-    ],
-    [
-      "2026-05-10",
-      131
-    ],
-    [
-      "2026-05-11",
-      161
-    ],
-    [
-      "2026-05-12",
-      286
-    ],
-    [
-      "2026-05-13",
-      261
-    ],
-    [
-      "2026-05-14",
-      251
-    ],
-    [
-      "2026-05-15",
-      585
-    ],
-    [
-      "2026-05-16",
-      126
-    ],
-    [
-      "2026-05-17",
-      216
-    ],
-    [
-      "2026-05-18",
-      58
-    ],
-    [
-      "2026-05-19",
-      246
-    ],
-    [
-      "2026-05-20",
-      154
-    ],
-    [
-      "2026-05-21",
-      219
-    ],
-    [
-      "2026-05-22",
-      197
-    ],
-    [
-      "2026-05-23",
-      98
-    ],
-    [
-      "2026-05-24",
-      71
-    ],
-    [
-      "2026-05-25",
-      283
-    ],
-    [
-      "2026-05-26",
-      280
-    ],
-    [
-      "2026-05-27",
-      301
-    ],
-    [
-      "2026-05-28",
-      167
-    ],
-    [
-      "2026-05-29",
-      159
-    ],
-    [
-      "2026-05-30",
-      183
-    ],
-    [
-      "2026-05-31",
-      306
-    ],
-    [
-      "2026-06-01",
-      245
-    ],
-    [
-      "2026-06-02",
-      326
-    ],
-    [
-      "2026-06-03",
-      426
-    ],
-    [
-      "2026-06-04",
-      332
-    ],
-    [
-      "2026-06-05",
-      337
-    ],
-    [
-      "2026-06-06",
-      296
-    ],
-    [
-      "2026-06-07",
-      266
-    ],
-    [
-      "2026-06-08",
-      417
-    ],
-    [
-      "2026-06-09",
-      329
-    ],
-    [
-      "2026-06-10",
-      379
-    ],
-    [
-      "2026-06-11",
-      222
-    ],
-    [
-      "2026-06-12",
-      360
-    ],
-    [
-      "2026-06-13",
-      269
-    ],
-    [
-      "2026-06-14",
-      346
-    ],
-    [
-      "2026-06-15",
-      405
-    ],
-    [
-      "2026-06-16",
-      250
-    ],
-    [
-      "2026-06-17",
-      271
-    ],
-    [
-      "2026-06-18",
-      301
-    ],
-    [
-      "2026-06-19",
-      285
-    ],
-    [
-      "2026-06-20",
-      182
-    ],
-    [
-      "2026-06-21",
-      157
-    ],
-    [
-      "2026-06-22",
-      241
-    ],
-    [
-      "2026-06-23",
-      288
-    ],
-    [
-      "2026-06-24",
-      194
-    ],
-    [
-      "2026-06-25",
-      218
-    ],
-    [
-      "2026-06-26",
-      279
-    ],
-    [
-      "2026-06-27",
-      251
-    ],
-    [
-      "2026-06-28",
-      222
-    ],
-    [
-      "2026-06-29",
-      172
-    ],
-    [
-      "2026-06-30",
-      240
-    ],
-    [
-      "2026-07-01",
-      399
-    ],
-    [
-      "2026-07-02",
-      465
-    ],
-    [
-      "2026-07-03",
-      278
-    ],
-    [
-      "2026-07-04",
-      314
-    ],
-    [
-      "2026-07-05",
-      330
-    ],
-    [
-      "2026-07-06",
-      391
-    ],
-    [
-      "2026-07-07",
-      216
-    ],
-    [
-      "2026-07-08",
-      368
-    ],
-    [
-      "2026-07-09",
-      340
-    ],
-    [
-      "2026-07-10",
-      209
-    ],
-    [
-      "2026-07-11",
-      508
-    ],
-    [
-      "2026-07-12",
-      157
-    ],
-    [
-      "2026-07-13",
-      396
-    ],
-    [
-      "2026-07-14",
-      519
-    ],
-    [
-      "2026-07-15",
-      580
-    ],
-    [
-      "2026-07-16",
-      404
-    ],
-    [
-      "2026-07-17",
-      337
-    ],
-    [
-      "2026-07-18",
-      482
-    ],
-    [
-      "2026-07-19",
-      122
-    ],
-    [
-      "2026-07-20",
-      106
-    ],
-    [
-      "2026-07-21",
-      158
-    ],
-    [
-      "2026-07-22",
-      321
-    ],
-    [
-      "2026-07-23",
-      375
-    ],
-    [
-      "2026-07-24",
-      490
-    ],
-    [
-      "2026-07-25",
-      267
-    ],
-    [
-      "2026-07-26",
-      290
-    ],
-    [
-      "2026-07-27",
-      381
-    ],
-    [
-      "2026-07-28",
-      556
-    ],
-    [
-      "2026-07-29",
-      297
-    ],
-    [
-      "2026-07-30",
-      338
-    ],
-    [
-      "2026-07-31",
-      294
-    ],
-    [
-      "2026-08-01",
-      258
-    ],
-    [
-      "2026-08-02",
-      230
-    ],
-    [
-      "2026-08-03",
-      223
-    ],
-    [
-      "2026-08-04",
-      322
-    ],
-    [
-      "2026-08-05",
-      306
-    ],
-    [
-      "2026-08-06",
-      164
-    ],
-    [
-      "2026-08-07",
-      313
-    ],
-    [
-      "2026-08-08",
-      163
-    ],
-    [
-      "2026-08-09",
-      158
-    ],
-    [
-      "2026-08-10",
-      142
-    ],
-    [
-      "2026-08-11",
-      246
-    ],
-    [
-      "2026-08-12",
-      200
-    ],
-    [
-      "2026-08-13",
-      329
-    ],
-    [
-      "2026-08-14",
-      401
-    ],
-    [
-      "2026-08-15",
-      96
-    ],
-    [
-      "2026-08-16",
-      481
-    ],
-    [
-      "2026-08-17",
-      184
-    ],
-    [
-      "2026-08-18",
-      196
-    ],
-    [
-      "2026-08-19",
-      449
-    ],
-    [
-      "2026-08-20",
-      281
-    ],
-    [
-      "2026-08-21",
-      195
-    ],
-    [
-      "2026-08-22",
-      88
-    ],
-    [
-      "2026-08-23",
-      160
-    ],
-    [
-      "2026-08-24",
-      154
-    ],
-    [
-      "2026-08-25",
-      273
-    ],
-    [
-      "2026-08-26",
-      97
-    ],
-    [
-      "2026-08-27",
-      56
-    ],
-    [
-      "2026-08-28",
-      98
-    ],
-    [
-      "2026-08-29",
-      87
-    ],
-    [
-      "2026-08-30",
-      111
-    ],
-    [
-      "2026-08-31",
-      162
-    ],
-    [
-      "2026-09-01",
-      194
-    ],
-    [
-      "2026-09-02",
-      149
-    ],
-    [
-      "2026-09-03",
-      114
-    ],
-    [
-      "2026-09-04",
-      101
-    ],
-    [
-      "2026-09-05",
+      "2025-04-17",
       47
     ],
     [
-      "2026-09-06",
-      33
+      "2025-04-18",
+      50
     ],
     [
-      "2026-09-07",
-      134
+      "2025-04-19",
+      58
     ],
     [
-      "2026-09-08",
-      123
+      "2025-04-20",
+      13
     ],
     [
-      "2026-09-09",
-      86
+      "2025-04-21",
+      44
     ],
     [
-      "2026-09-10",
-      56
+      "2025-04-22",
+      49
     ],
     [
-      "2026-09-11",
-      137
+      "2025-04-23",
+      63
     ],
     [
-      "2026-09-12",
+      "2025-04-24",
+      40
+    ],
+    [
+      "2025-04-25",
+      52
+    ],
+    [
+      "2025-04-26",
+      68
+    ],
+    [
+      "2025-04-27",
+      4
+    ],
+    [
+      "2025-04-28",
+      51
+    ],
+    [
+      "2025-04-29",
+      64
+    ],
+    [
+      "2025-04-30",
+      48
+    ],
+    [
+      "2025-05-01",
+      51
+    ],
+    [
+      "2025-05-02",
+      45
+    ],
+    [
+      "2025-05-03",
+      50
+    ],
+    [
+      "2025-05-04",
+      29
+    ],
+    [
+      "2025-05-05",
       59
     ],
     [
-      "2026-09-13",
-      119
+      "2025-05-06",
+      74
     ],
     [
-      "2026-09-14",
-      111
+      "2025-05-07",
+      67
     ],
     [
-      "2026-09-15",
-      128
+      "2025-05-08",
+      65
     ],
     [
-      "2026-09-16",
-      112
+      "2025-05-09",
+      77
     ],
     [
-      "2026-09-17",
-      173
+      "2025-05-10",
+      75
     ],
     [
-      "2026-09-18",
-      124
+      "2025-05-11",
+      11
     ],
     [
-      "2026-09-19",
-      198
+      "2025-05-12",
+      74
     ],
     [
-      "2026-09-20",
-      156
+      "2025-05-13",
+      52
     ],
     [
-      "2026-09-21",
-      156
-    ],
-    [
-      "2026-09-22",
-      104
-    ],
-    [
-      "2026-09-23",
+      "2025-05-14",
       70
     ],
     [
-      "2026-09-24",
-      119
+      "2025-05-15",
+      44
     ],
     [
-      "2026-09-25",
+      "2025-05-16",
+      48
+    ],
+    [
+      "2025-05-17",
+      59
+    ],
+    [
+      "2025-05-18",
+      10
+    ],
+    [
+      "2025-05-19",
+      74
+    ],
+    [
+      "2025-05-20",
+      44
+    ],
+    [
+      "2025-05-21",
+      65
+    ],
+    [
+      "2025-05-22",
+      68
+    ],
+    [
+      "2025-05-23",
+      65
+    ],
+    [
+      "2025-05-24",
+      84
+    ],
+    [
+      "2025-05-25",
+      6
+    ],
+    [
+      "2025-05-26",
+      72
+    ],
+    [
+      "2025-05-27",
+      57
+    ],
+    [
+      "2025-05-28",
+      87
+    ],
+    [
+      "2025-05-29",
+      50
+    ],
+    [
+      "2025-05-30",
+      58
+    ],
+    [
+      "2025-05-31",
+      54
+    ],
+    [
+      "2025-06-01",
+      7
+    ],
+    [
+      "2025-06-02",
+      84
+    ],
+    [
+      "2025-06-03",
+      82
+    ],
+    [
+      "2025-06-04",
+      67
+    ],
+    [
+      "2025-06-05",
+      67
+    ],
+    [
+      "2025-06-06",
+      85
+    ],
+    [
+      "2025-06-07",
+      70
+    ],
+    [
+      "2025-06-08",
+      10
+    ],
+    [
+      "2025-06-09",
+      63
+    ],
+    [
+      "2025-06-10",
+      64
+    ],
+    [
+      "2025-06-11",
+      58
+    ],
+    [
+      "2025-06-12",
+      67
+    ],
+    [
+      "2025-06-13",
+      61
+    ],
+    [
+      "2025-06-14",
+      67
+    ],
+    [
+      "2025-06-15",
+      29
+    ],
+    [
+      "2025-06-16",
+      61
+    ],
+    [
+      "2025-06-17",
+      65
+    ],
+    [
+      "2025-06-18",
+      75
+    ],
+    [
+      "2025-06-19",
+      63
+    ],
+    [
+      "2025-06-20",
+      36
+    ],
+    [
+      "2025-06-21",
+      57
+    ],
+    [
+      "2025-06-22",
+      17
+    ],
+    [
+      "2025-06-23",
+      62
+    ],
+    [
+      "2025-06-24",
+      48
+    ],
+    [
+      "2025-06-25",
       76
     ],
     [
-      "2026-09-26",
-      245
+      "2025-06-26",
+      61
     ],
     [
-      "2026-09-27",
-      318
+      "2025-06-27",
+      69
     ],
     [
-      "2026-09-28",
-      674
+      "2025-06-28",
+      55
     ],
     [
-      "2026-09-29",
-      320
+      "2025-06-29",
+      6
     ],
     [
-      "2026-09-30",
-      182
+      "2025-06-30",
+      57
     ],
     [
-      "2026-10-01",
-      202
+      "2025-07-01",
+      81
     ],
     [
-      "2026-10-02",
-      399
+      "2025-07-02",
+      62
     ],
     [
-      "2026-10-03",
-      385
+      "2025-07-03",
+      86
     ],
     [
-      "2026-10-04",
-      579
+      "2025-07-04",
+      42
     ],
     [
-      "2026-10-05",
-      865
+      "2025-07-05",
+      59
     ],
     [
-      "2026-10-06",
-      653
+      "2025-07-06",
+      10
     ],
     [
-      "2026-10-07",
+      "2025-07-07",
+      41
+    ],
+    [
+      "2025-07-08",
+      51
+    ],
+    [
+      "2025-07-09",
+      70
+    ],
+    [
+      "2025-07-10",
+      73
+    ],
+    [
+      "2025-07-11",
+      63
+    ],
+    [
+      "2025-07-12",
+      67
+    ],
+    [
+      "2025-07-13",
+      16
+    ],
+    [
+      "2025-07-14",
+      58
+    ],
+    [
+      "2025-07-15",
+      81
+    ],
+    [
+      "2025-07-16",
+      92
+    ],
+    [
+      "2025-07-17",
+      75
+    ],
+    [
+      "2025-07-18",
+      83
+    ],
+    [
+      "2025-07-19",
+      71
+    ],
+    [
+      "2025-07-20",
+      13
+    ],
+    [
+      "2025-07-21",
+      91
+    ],
+    [
+      "2025-07-22",
+      92
+    ],
+    [
+      "2025-07-23",
+      68
+    ],
+    [
+      "2025-07-24",
+      62
+    ],
+    [
+      "2025-07-25",
+      83
+    ],
+    [
+      "2025-07-26",
+      33
+    ],
+    [
+      "2025-07-27",
+      19
+    ],
+    [
+      "2025-07-28",
+      61
+    ],
+    [
+      "2025-07-29",
+      93
+    ],
+    [
+      "2025-07-30",
+      78
+    ],
+    [
+      "2025-07-31",
+      62
+    ],
+    [
+      "2025-08-01",
+      59
+    ],
+    [
+      "2025-08-02",
+      76
+    ],
+    [
+      "2025-08-03",
+      25
+    ],
+    [
+      "2025-08-04",
+      55
+    ],
+    [
+      "2025-08-05",
+      88
+    ],
+    [
+      "2025-08-06",
+      61
+    ],
+    [
+      "2025-08-07",
+      91
+    ],
+    [
+      "2025-08-08",
+      68
+    ],
+    [
+      "2025-08-09",
+      58
+    ],
+    [
+      "2025-08-10",
+      31
+    ],
+    [
+      "2025-08-11",
+      79
+    ],
+    [
+      "2025-08-12",
+      101
+    ],
+    [
+      "2025-08-13",
+      99
+    ],
+    [
+      "2025-08-14",
+      72
+    ],
+    [
+      "2025-08-15",
+      79
+    ],
+    [
+      "2025-08-16",
+      74
+    ],
+    [
+      "2025-08-17",
+      19
+    ],
+    [
+      "2025-08-18",
+      79
+    ],
+    [
+      "2025-08-19",
+      79
+    ],
+    [
+      "2025-08-20",
+      102
+    ],
+    [
+      "2025-08-21",
+      83
+    ],
+    [
+      "2025-08-22",
+      60
+    ],
+    [
+      "2025-08-23",
+      61
+    ],
+    [
+      "2025-08-24",
+      15
+    ],
+    [
+      "2025-08-25",
+      72
+    ],
+    [
+      "2025-08-26",
+      51
+    ],
+    [
+      "2025-08-27",
+      79
+    ],
+    [
+      "2025-08-28",
+      78
+    ],
+    [
+      "2025-08-29",
+      67
+    ],
+    [
+      "2025-08-30",
+      48
+    ],
+    [
+      "2025-08-31",
+      46
+    ],
+    [
+      "2025-09-01",
+      101
+    ],
+    [
+      "2025-09-02",
+      88
+    ],
+    [
+      "2025-09-03",
+      75
+    ],
+    [
+      "2025-09-04",
+      80
+    ],
+    [
+      "2025-09-05",
+      56
+    ],
+    [
+      "2025-09-06",
+      117
+    ],
+    [
+      "2025-09-07",
+      17
+    ],
+    [
+      "2025-09-08",
+      75
+    ],
+    [
+      "2025-09-09",
+      95
+    ],
+    [
+      "2025-09-10",
+      63
+    ],
+    [
+      "2025-09-11",
+      76
+    ],
+    [
+      "2025-09-12",
+      74
+    ],
+    [
+      "2025-09-13",
+      63
+    ],
+    [
+      "2025-09-14",
+      34
+    ],
+    [
+      "2025-09-15",
+      83
+    ],
+    [
+      "2025-09-16",
+      83
+    ],
+    [
+      "2025-09-17",
+      92
+    ],
+    [
+      "2025-09-18",
+      153
+    ],
+    [
+      "2025-09-19",
+      87
+    ],
+    [
+      "2025-09-20",
+      67
+    ],
+    [
+      "2025-09-21",
+      52
+    ],
+    [
+      "2025-09-22",
+      70
+    ],
+    [
+      "2025-09-23",
+      126
+    ],
+    [
+      "2025-09-24",
+      92
+    ],
+    [
+      "2025-09-25",
+      102
+    ],
+    [
+      "2025-09-26",
+      76
+    ],
+    [
+      "2025-09-27",
+      205
+    ],
+    [
+      "2025-09-28",
+      61
+    ],
+    [
+      "2025-09-29",
+      97
+    ],
+    [
+      "2025-09-30",
+      102
+    ],
+    [
+      "2025-10-01",
+      74
+    ],
+    [
+      "2025-10-02",
+      77
+    ],
+    [
+      "2025-10-03",
+      68
+    ],
+    [
+      "2025-10-04",
+      145
+    ],
+    [
+      "2025-10-05",
+      36
+    ],
+    [
+      "2025-10-06",
+      113
+    ],
+    [
+      "2025-10-07",
+      83
+    ],
+    [
+      "2025-10-08",
+      134
+    ],
+    [
+      "2025-10-09",
+      131
+    ],
+    [
+      "2025-10-10",
+      96
+    ],
+    [
+      "2025-10-11",
+      135
+    ],
+    [
+      "2025-10-12",
+      45
+    ],
+    [
+      "2025-10-13",
+      63
+    ],
+    [
+      "2025-10-14",
+      50
+    ],
+    [
+      "2025-10-15",
+      64
+    ],
+    [
+      "2025-10-16",
+      136
+    ],
+    [
+      "2025-10-17",
+      88
+    ],
+    [
+      "2025-10-18",
+      53
+    ],
+    [
+      "2025-10-19",
+      15
+    ],
+    [
+      "2025-10-20",
+      56
+    ],
+    [
+      "2025-10-21",
+      88
+    ],
+    [
+      "2025-10-22",
+      81
+    ],
+    [
+      "2025-10-23",
+      73
+    ],
+    [
+      "2025-10-24",
+      36
+    ],
+    [
+      "2025-10-25",
+      111
+    ],
+    [
+      "2025-10-26",
+      33
+    ],
+    [
+      "2025-10-27",
+      68
+    ],
+    [
+      "2025-10-28",
+      98
+    ],
+    [
+      "2025-10-29",
+      79
+    ],
+    [
+      "2025-10-30",
+      52
+    ],
+    [
+      "2025-10-31",
+      73
+    ],
+    [
+      "2025-11-01",
+      48
+    ],
+    [
+      "2025-11-02",
+      33
+    ],
+    [
+      "2025-11-03",
+      77
+    ],
+    [
+      "2025-11-04",
+      81
+    ],
+    [
+      "2025-11-05",
+      75
+    ],
+    [
+      "2025-11-06",
+      100
+    ],
+    [
+      "2025-11-07",
+      88
+    ],
+    [
+      "2025-11-08",
+      100
+    ],
+    [
+      "2025-11-09",
+      15
+    ],
+    [
+      "2025-11-10",
+      65
+    ],
+    [
+      "2025-11-11",
+      121
+    ],
+    [
+      "2025-11-12",
+      168
+    ],
+    [
+      "2025-11-13",
+      109
+    ],
+    [
+      "2025-11-14",
+      92
+    ],
+    [
+      "2025-11-15",
+      73
+    ],
+    [
+      "2025-11-16",
+      27
+    ],
+    [
+      "2025-11-17",
+      83
+    ],
+    [
+      "2025-11-18",
+      82
+    ],
+    [
+      "2025-11-19",
+      99
+    ],
+    [
+      "2025-11-20",
+      94
+    ],
+    [
+      "2025-11-21",
+      105
+    ],
+    [
+      "2025-11-22",
+      134
+    ],
+    [
+      "2025-11-23",
+      14
+    ],
+    [
+      "2025-11-24",
+      83
+    ],
+    [
+      "2025-11-25",
+      126
+    ],
+    [
+      "2025-11-26",
+      177
+    ],
+    [
+      "2025-11-27",
+      137
+    ],
+    [
+      "2025-11-28",
+      67
+    ],
+    [
+      "2025-11-29",
+      31
+    ],
+    [
+      "2025-11-30",
+      7
+    ],
+    [
+      "2025-12-01",
+      124
+    ],
+    [
+      "2025-12-02",
+      186
+    ],
+    [
+      "2025-12-03",
+      177
+    ],
+    [
+      "2025-12-04",
+      151
+    ],
+    [
+      "2025-12-05",
+      189
+    ],
+    [
+      "2025-12-06",
+      167
+    ],
+    [
+      "2025-12-07",
+      27
+    ],
+    [
+      "2025-12-08",
+      142
+    ],
+    [
+      "2025-12-09",
+      230
+    ],
+    [
+      "2025-12-10",
+      136
+    ],
+    [
+      "2025-12-11",
+      126
+    ],
+    [
+      "2025-12-12",
+      168
+    ],
+    [
+      "2025-12-13",
+      140
+    ],
+    [
+      "2025-12-14",
+      53
+    ],
+    [
+      "2025-12-15",
+      195
+    ],
+    [
+      "2025-12-16",
+      203
+    ],
+    [
+      "2025-12-17",
+      220
+    ],
+    [
+      "2025-12-18",
+      167
+    ],
+    [
+      "2025-12-19",
+      223
+    ],
+    [
+      "2025-12-20",
+      158
+    ],
+    [
+      "2025-12-21",
+      52
+    ],
+    [
+      "2025-12-22",
+      156
+    ],
+    [
+      "2025-12-23",
+      95
+    ],
+    [
+      "2025-12-24",
+      130
+    ],
+    [
+      "2025-12-25",
+      71
+    ],
+    [
+      "2025-12-26",
+      78
+    ],
+    [
+      "2025-12-27",
+      85
+    ],
+    [
+      "2025-12-28",
+      98
+    ],
+    [
+      "2025-12-29",
+      172
+    ],
+    [
+      "2025-12-30",
+      115
+    ],
+    [
+      "2025-12-31",
+      232
+    ],
+    [
+      "2026-01-01",
+      241
+    ],
+    [
+      "2026-01-02",
+      231
+    ],
+    [
+      "2026-01-03",
+      402
+    ],
+    [
+      "2026-01-04",
+      131
+    ],
+    [
+      "2026-01-05",
+      309
+    ],
+    [
+      "2026-01-06",
+      337
+    ],
+    [
+      "2026-01-07",
+      312
+    ],
+    [
+      "2026-01-08",
+      286
+    ],
+    [
+      "2026-01-09",
+      234
+    ],
+    [
+      "2026-01-10",
+      246
+    ],
+    [
+      "2026-01-11",
+      169
+    ],
+    [
+      "2026-01-12",
+      288
+    ],
+    [
+      "2026-01-13",
+      216
+    ],
+    [
+      "2026-01-14",
+      244
+    ],
+    [
+      "2026-01-15",
+      186
+    ],
+    [
+      "2026-01-16",
+      345
+    ],
+    [
+      "2026-01-17",
+      195
+    ],
+    [
+      "2026-01-18",
+      80
+    ],
+    [
+      "2026-01-19",
+      271
+    ],
+    [
+      "2026-01-20",
+      194
+    ],
+    [
+      "2026-01-21",
+      272
+    ],
+    [
+      "2026-01-22",
+      247
+    ],
+    [
+      "2026-01-23",
+      358
+    ],
+    [
+      "2026-01-24",
+      172
+    ],
+    [
+      "2026-01-25",
+      130
+    ],
+    [
+      "2026-01-26",
+      230
+    ],
+    [
+      "2026-01-27",
+      255
+    ],
+    [
+      "2026-01-28",
+      290
+    ],
+    [
+      "2026-01-29",
+      218
+    ],
+    [
+      "2026-01-30",
+      219
+    ],
+    [
+      "2026-01-31",
+      261
+    ],
+    [
+      "2026-02-01",
+      222
+    ],
+    [
+      "2026-02-02",
+      287
+    ],
+    [
+      "2026-02-03",
+      251
+    ],
+    [
+      "2026-02-04",
+      259
+    ],
+    [
+      "2026-02-05",
+      382
+    ],
+    [
+      "2026-02-06",
+      353
+    ],
+    [
+      "2026-02-07",
+      244
+    ],
+    [
+      "2026-02-08",
+      38
+    ],
+    [
+      "2026-02-09",
+      205
+    ],
+    [
+      "2026-02-10",
+      325
+    ],
+    [
+      "2026-02-11",
+      231
+    ],
+    [
+      "2026-02-12",
+      334
+    ],
+    [
+      "2026-02-13",
+      395
+    ],
+    [
+      "2026-02-14",
+      279
+    ],
+    [
+      "2026-02-15",
+      170
+    ],
+    [
+      "2026-02-16",
+      401
+    ],
+    [
+      "2026-02-17",
+      351
+    ],
+    [
+      "2026-02-18",
+      358
+    ],
+    [
+      "2026-02-19",
+      486
+    ],
+    [
+      "2026-02-20",
+      368
+    ],
+    [
+      "2026-02-21",
+      469
+    ],
+    [
+      "2026-02-22",
+      175
+    ],
+    [
+      "2026-02-23",
+      246
+    ],
+    [
+      "2026-02-24",
+      366
+    ],
+    [
+      "2026-02-25",
+      332
+    ],
+    [
+      "2026-02-26",
+      433
+    ],
+    [
+      "2026-02-27",
+      325
+    ],
+    [
+      "2026-02-28",
+      447
+    ],
+    [
+      "2026-03-01",
+      193
+    ],
+    [
+      "2026-03-02",
+      190
+    ],
+    [
+      "2026-03-03",
+      391
+    ],
+    [
+      "2026-03-04",
+      423
+    ],
+    [
+      "2026-03-05",
+      405
+    ],
+    [
+      "2026-03-06",
+      258
+    ],
+    [
+      "2026-03-07",
+      298
+    ],
+    [
+      "2026-03-08",
+      88
+    ],
+    [
+      "2026-03-09",
+      249
+    ],
+    [
+      "2026-03-10",
+      387
+    ],
+    [
+      "2026-03-11",
+      372
+    ],
+    [
+      "2026-03-12",
+      304
+    ],
+    [
+      "2026-03-13",
+      289
+    ],
+    [
+      "2026-03-14",
+      273
+    ],
+    [
+      "2026-03-15",
+      128
+    ],
+    [
+      "2026-03-16",
+      257
+    ],
+    [
+      "2026-03-17",
+      292
+    ],
+    [
+      "2026-03-18",
+      368
+    ],
+    [
+      "2026-03-19",
+      289
+    ],
+    [
+      "2026-03-20",
+      268
+    ],
+    [
+      "2026-03-21",
+      309
+    ],
+    [
+      "2026-03-22",
+      158
+    ],
+    [
+      "2026-03-23",
+      436
+    ],
+    [
+      "2026-03-24",
+      145
+    ],
+    [
+      "2026-03-25",
+      118
+    ],
+    [
+      "2026-03-26",
+      220
+    ],
+    [
+      "2026-03-27",
+      181
+    ],
+    [
+      "2026-03-28",
+      216
+    ],
+    [
+      "2026-03-29",
+      81
+    ],
+    [
+      "2026-03-30",
+      337
+    ],
+    [
+      "2026-03-31",
+      364
+    ],
+    [
+      "2026-04-01",
+      574
+    ],
+    [
+      "2026-04-02",
+      404
+    ],
+    [
+      "2026-04-03",
+      291
+    ],
+    [
+      "2026-04-04",
+      760
+    ],
+    [
+      "2026-04-05",
+      981
+    ],
+    [
+      "2026-04-06",
+      327
+    ],
+    [
+      "2026-04-07",
+      470
+    ],
+    [
+      "2026-04-08",
+      390
+    ],
+    [
+      "2026-04-09",
+      481
+    ],
+    [
+      "2026-04-10",
+      393
+    ],
+    [
+      "2026-04-11",
+      278
+    ],
+    [
+      "2026-04-12",
+      97
+    ],
+    [
+      "2026-04-13",
+      317
+    ],
+    [
+      "2026-04-14",
+      313
+    ],
+    [
+      "2026-04-15",
+      283
+    ],
+    [
+      "2026-04-16",
+      407
+    ],
+    [
+      "2026-04-17",
+      497
+    ],
+    [
+      "2026-04-18",
+      365
+    ],
+    [
+      "2026-04-19",
+      105
+    ],
+    [
+      "2026-04-20",
+      297
+    ],
+    [
+      "2026-04-21",
+      395
+    ],
+    [
+      "2026-04-22",
+      411
+    ],
+    [
+      "2026-04-23",
+      659
+    ],
+    [
+      "2026-04-24",
+      613
+    ],
+    [
+      "2026-04-25",
+      282
+    ],
+    [
+      "2026-04-26",
+      312
+    ],
+    [
+      "2026-04-27",
+      347
+    ],
+    [
+      "2026-04-28",
+      253
+    ],
+    [
+      "2026-04-29",
+      485
+    ],
+    [
+      "2026-04-30",
+      596
+    ],
+    [
+      "2026-05-01",
+      394
+    ],
+    [
+      "2026-05-02",
+      171
+    ],
+    [
+      "2026-05-03",
+      178
+    ],
+    [
+      "2026-05-04",
+      324
+    ],
+    [
+      "2026-05-05",
+      260
+    ],
+    [
+      "2026-05-06",
+      749
+    ],
+    [
+      "2026-05-07",
+      393
+    ],
+    [
+      "2026-05-08",
+      217
+    ],
+    [
+      "2026-05-09",
+      260
+    ],
+    [
+      "2026-05-10",
+      150
+    ],
+    [
+      "2026-05-11",
+      282
+    ],
+    [
+      "2026-05-12",
+      449
+    ],
+    [
+      "2026-05-13",
+      427
+    ],
+    [
+      "2026-05-14",
+      365
+    ],
+    [
+      "2026-05-15",
+      692
+    ],
+    [
+      "2026-05-16",
+      220
+    ],
+    [
+      "2026-05-17",
+      278
+    ],
+    [
+      "2026-05-18",
+      172
+    ],
+    [
+      "2026-05-19",
+      452
+    ],
+    [
+      "2026-05-20",
+      467
+    ],
+    [
+      "2026-05-21",
+      465
+    ],
+    [
+      "2026-05-22",
+      359
+    ],
+    [
+      "2026-05-23",
+      207
+    ],
+    [
+      "2026-05-24",
+      103
+    ],
+    [
+      "2026-05-25",
+      393
+    ],
+    [
+      "2026-05-26",
+      417
+    ],
+    [
+      "2026-05-27",
+      440
+    ],
+    [
+      "2026-05-28",
+      305
+    ],
+    [
+      "2026-05-29",
+      246
+    ],
+    [
+      "2026-05-30",
+      316
+    ],
+    [
+      "2026-05-31",
+      329
+    ],
+    [
+      "2026-06-01",
+      344
+    ],
+    [
+      "2026-06-02",
+      472
+    ],
+    [
+      "2026-06-03",
+      580
+    ],
+    [
+      "2026-06-04",
+      529
+    ],
+    [
+      "2026-06-05",
+      449
+    ],
+    [
+      "2026-06-06",
+      375
+    ],
+    [
+      "2026-06-07",
+      310
+    ],
+    [
+      "2026-06-08",
+      607
+    ],
+    [
+      "2026-06-09",
+      471
+    ],
+    [
+      "2026-06-10",
+      585
+    ],
+    [
+      "2026-06-11",
+      384
+    ],
+    [
+      "2026-06-12",
+      598
+    ],
+    [
+      "2026-06-13",
+      377
+    ],
+    [
+      "2026-06-14",
+      394
+    ],
+    [
+      "2026-06-15",
+      537
+    ],
+    [
+      "2026-06-16",
+      413
+    ],
+    [
+      "2026-06-17",
+      418
+    ],
+    [
+      "2026-06-18",
+      432
+    ],
+    [
+      "2026-06-19",
+      392
+    ],
+    [
+      "2026-06-20",
+      275
+    ],
+    [
+      "2026-06-21",
+      186
+    ],
+    [
+      "2026-06-22",
+      400
+    ],
+    [
+      "2026-06-23",
       523
     ],
     [
+      "2026-06-24",
+      448
+    ],
+    [
+      "2026-06-25",
+      457
+    ],
+    [
+      "2026-06-26",
+      520
+    ],
+    [
+      "2026-06-27",
+      412
+    ],
+    [
+      "2026-06-28",
+      264
+    ],
+    [
+      "2026-06-29",
+      376
+    ],
+    [
+      "2026-06-30",
+      425
+    ],
+    [
+      "2026-07-01",
+      519
+    ],
+    [
+      "2026-07-02",
+      634
+    ],
+    [
+      "2026-07-03",
+      406
+    ],
+    [
+      "2026-07-04",
+      433
+    ],
+    [
+      "2026-07-05",
+      385
+    ],
+    [
+      "2026-07-06",
+      640
+    ],
+    [
+      "2026-07-07",
+      431
+    ],
+    [
+      "2026-07-08",
+      706
+    ],
+    [
+      "2026-07-09",
+      592
+    ],
+    [
+      "2026-07-10",
+      513
+    ],
+    [
+      "2026-07-11",
+      766
+    ],
+    [
+      "2026-07-12",
+      235
+    ],
+    [
+      "2026-07-13",
+      678
+    ],
+    [
+      "2026-07-14",
+      709
+    ],
+    [
+      "2026-07-15",
+      752
+    ],
+    [
+      "2026-07-16",
+      676
+    ],
+    [
+      "2026-07-17",
+      487
+    ],
+    [
+      "2026-07-18",
+      609
+    ],
+    [
+      "2026-07-19",
+      199
+    ],
+    [
+      "2026-07-20",
+      294
+    ],
+    [
+      "2026-07-21",
+      356
+    ],
+    [
+      "2026-07-22",
+      462
+    ],
+    [
+      "2026-07-23",
+      574
+    ],
+    [
+      "2026-07-24",
+      660
+    ],
+    [
+      "2026-07-25",
+      400
+    ],
+    [
+      "2026-07-26",
+      386
+    ],
+    [
+      "2026-07-27",
+      633
+    ],
+    [
+      "2026-07-28",
+      784
+    ],
+    [
+      "2026-07-29",
+      507
+    ],
+    [
+      "2026-07-30",
+      667
+    ],
+    [
+      "2026-07-31",
+      613
+    ],
+    [
+      "2026-08-01",
+      476
+    ],
+    [
+      "2026-08-02",
+      386
+    ],
+    [
+      "2026-08-03",
+      371
+    ],
+    [
+      "2026-08-04",
+      530
+    ],
+    [
+      "2026-08-05",
+      531
+    ],
+    [
+      "2026-08-06",
+      325
+    ],
+    [
+      "2026-08-07",
+      451
+    ],
+    [
+      "2026-08-08",
+      274
+    ],
+    [
+      "2026-08-09",
+      227
+    ],
+    [
+      "2026-08-10",
+      294
+    ],
+    [
+      "2026-08-11",
+      412
+    ],
+    [
+      "2026-08-12",
+      350
+    ],
+    [
+      "2026-08-13",
+      530
+    ],
+    [
+      "2026-08-14",
+      642
+    ],
+    [
+      "2026-08-15",
+      220
+    ],
+    [
+      "2026-08-16",
+      513
+    ],
+    [
+      "2026-08-17",
+      352
+    ],
+    [
+      "2026-08-18",
+      460
+    ],
+    [
+      "2026-08-19",
+      704
+    ],
+    [
+      "2026-08-20",
+      813
+    ],
+    [
+      "2026-08-21",
+      561
+    ],
+    [
+      "2026-08-22",
+      502
+    ],
+    [
+      "2026-08-23",
+      416
+    ],
+    [
+      "2026-08-24",
+      580
+    ],
+    [
+      "2026-08-25",
+      632
+    ],
+    [
+      "2026-08-26",
+      637
+    ],
+    [
+      "2026-08-27",
+      415
+    ],
+    [
+      "2026-08-28",
+      404
+    ],
+    [
+      "2026-08-29",
+      504
+    ],
+    [
+      "2026-08-30",
+      240
+    ],
+    [
+      "2026-08-31",
+      585
+    ],
+    [
+      "2026-09-01",
+      724
+    ],
+    [
+      "2026-09-02",
+      683
+    ],
+    [
+      "2026-09-03",
+      682
+    ],
+    [
+      "2026-09-04",
+      561
+    ],
+    [
+      "2026-09-05",
+      435
+    ],
+    [
+      "2026-09-06",
+      174
+    ],
+    [
+      "2026-09-07",
+      486
+    ],
+    [
+      "2026-09-08",
+      541
+    ],
+    [
+      "2026-09-09",
+      535
+    ],
+    [
+      "2026-09-10",
+      518
+    ],
+    [
+      "2026-09-11",
+      756
+    ],
+    [
+      "2026-09-12",
+      492
+    ],
+    [
+      "2026-09-13",
+      425
+    ],
+    [
+      "2026-09-14",
+      618
+    ],
+    [
+      "2026-09-15",
+      1050
+    ],
+    [
+      "2026-09-16",
+      825
+    ],
+    [
+      "2026-09-17",
+      787
+    ],
+    [
+      "2026-09-18",
+      677
+    ],
+    [
+      "2026-09-19",
+      709
+    ],
+    [
+      "2026-09-20",
+      441
+    ],
+    [
+      "2026-09-21",
+      830
+    ],
+    [
+      "2026-09-22",
+      545
+    ],
+    [
+      "2026-09-23",
+      426
+    ],
+    [
+      "2026-09-24",
+      551
+    ],
+    [
+      "2026-09-25",
+      223
+    ],
+    [
+      "2026-09-26",
+      422
+    ],
+    [
+      "2026-09-27",
+      585
+    ],
+    [
+      "2026-09-28",
+      1122
+    ],
+    [
+      "2026-09-29",
+      632
+    ],
+    [
+      "2026-09-30",
+      458
+    ],
+    [
+      "2026-10-01",
+      523
+    ],
+    [
+      "2026-10-02",
+      705
+    ],
+    [
+      "2026-10-03",
+      484
+    ],
+    [
+      "2026-10-04",
+      759
+    ],
+    [
+      "2026-10-05",
+      1200
+    ],
+    [
+      "2026-10-06",
+      1050
+    ],
+    [
+      "2026-10-07",
+      884
+    ],
+    [
       "2026-10-08",
-      29
+      826
+    ],
+    [
+      "2026-10-09",
+      47
     ]
   ],
   "sessionDays": [
@@ -9962,7 +10401,11 @@
     ],
     [
       "2026-10-08",
-      28
+      84
+    ],
+    [
+      "2026-10-09",
+      49
     ]
   ]
 }
